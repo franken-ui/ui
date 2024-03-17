@@ -1,0 +1,140 @@
+import ui from './src/lib/index.ts';
+
+/** @type {import('tailwindcss').Config} */
+export default {
+	content: ['./src/**/*.{html,js,svelte,ts}'],
+	theme: {
+		extend: {}
+	},
+	plugins: [
+		ui({
+			base: true,
+			components: {
+				accordion: {},
+				alert: {},
+				align: {
+					media: true
+				},
+				animation: {},
+				article: {
+					media: true
+				},
+				background: {
+					media: true
+				},
+				badge: {},
+				breadcrumb: {},
+				button: {},
+				card: {
+					media: true
+				},
+				close: {},
+				column: {
+					media: true
+				},
+				comment: {
+					media: true
+				},
+				container: {
+					media: true
+				},
+				countdown: {
+					media: true
+				},
+				cover: {},
+				'description-list': {},
+				divider: {},
+				dotnav: {},
+				drop: {},
+				dropbar: {
+					media: true
+				},
+				dropdown: {
+					media: true
+				},
+				dropnav: {},
+				flex: {
+					media: true
+				},
+				'form-range': {},
+				form: {
+					media: true
+				},
+				grid: {
+					media: true
+				},
+				heading: {
+					media: true
+				},
+				height: {},
+				icon: {},
+				iconnav: {},
+				label: {},
+				leader: {},
+				lightbox: {},
+				link: {},
+				list: {},
+				margin: {
+					media: true
+				},
+				marker: {},
+				modal: {
+					media: true
+				},
+				nav: {},
+				navbar: {
+					media: true
+				},
+				notification: {},
+				offcanvas: {
+					media: true
+				},
+				overlay: {},
+				padding: {
+					media: true
+				},
+				pagination: {},
+				placeholder: {},
+				position: {
+					media: true
+				},
+				progress: {},
+				search: {},
+				section: {
+					media: true
+				},
+				slidenav: {},
+				slider: {},
+				slideshow: {},
+				sortable: {},
+				spinner: {},
+				sticky: {},
+				subnav: {},
+				svg: {},
+				switcher: {},
+				tab: {},
+				table: {
+					media: true
+				},
+				text: {
+					media: true
+				},
+				thumbnav: {},
+				tile: {
+					media: true
+				},
+				tooltip: {},
+				totop: {},
+				transition: {},
+				utility: {},
+				visibility: {
+					media: true
+				},
+				width: {
+					media: true
+				},
+				print: {}
+			}
+		})
+	]
+};
