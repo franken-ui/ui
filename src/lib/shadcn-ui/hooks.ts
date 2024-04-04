@@ -1131,6 +1131,9 @@ export default (options: OptionsType = {}) => {
 			},
 
 			'hook-misc': {
+				'.uk-nav li > a': {
+					columnGap: null
+				},
 				'.uk-nav > li > a': {
 					padding: null,
 					columnGap: null
