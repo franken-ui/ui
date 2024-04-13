@@ -173,7 +173,9 @@ export default (options: OptionsType = {}) => {
 
 	const defaultHooks = {
 		accordion: {
-			// 'hook-accordion': {},
+			'hook-accordion': {
+				'@apply text-sm': {}
+			},
 			'hook-item': {
 				marginTop: null
 			},
@@ -209,17 +211,18 @@ export default (options: OptionsType = {}) => {
 		alert: {
 			'hook-alert': {
 				marginBottom: null,
-				padding: `${defaultTheme.spacing[3]} 30px ${defaultTheme.spacing[3]} ${defaultTheme.spacing[4]}`,
+				padding: null,
 				backgroundColor: null,
 				color: null,
-				'@apply border border-border': {}
+				'@apply rounded-lg border border-border px-4 py-3 text-sm [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg~*]:pl-7':
+					{}
 			},
 			'hook-close': {
 				top: null,
 				right: null,
 				color: null,
 				opacity: null,
-				'@apply top-1 right-1': {}
+				'@apply right-3': {}
 			},
 			'hook-close-hover': {
 				color: null,
@@ -251,6 +254,12 @@ export default (options: OptionsType = {}) => {
 				'.uk-alert a:not([class]):hover': {
 					color: null,
 					textDecoration: null
+				},
+				'.uk-alert-title': {
+					'@apply mb-1 font-medium leading-none tracking-tight': {}
+				},
+				'.uk-alert-description': {
+					'@apply [&_p]:leading-relaxed': {}
 				}
 			}
 		},
@@ -265,7 +274,7 @@ export default (options: OptionsType = {}) => {
 				color: null,
 				fontSize: null,
 				lineHeight: null,
-				'@apply text-xs font-semibold border border-border text-foreground': {}
+				'@apply text-xs font-semibold border border-border text-foreground shadow': {}
 			},
 			'hook-hover': {
 				textDecoration: null
@@ -285,21 +294,22 @@ export default (options: OptionsType = {}) => {
 			}
 		},
 		breadcrumb: {
-			'hook-breadcrumb': {},
-			'hook-breadcrumb-solid': {
-				padding: `${defaultTheme.spacing[1]} ${defaultTheme.spacing[3]}`,
-				'@apply border border-border bg-muted text-muted-foreground': {}
+			'hook-breadcrumb': {
+				'@apply text-sm': {}
 			},
+			// 'hook-breadcrumb-solid': {},
 			'hook-item': {
-				display: 'inline-flex',
-				alignItems: 'center',
+				display: null,
+				alignItems: null,
 				fontSize: null,
 				fontWeight: null,
-				textDecoration: 'none',
+				textDecoration: null,
 				color: null,
-				'@apply text-muted-foreground': {}
+				'@apply inline-flex items-center text-muted-foreground': {}
 			},
-			// 'hook-item-hover': {},
+			'hook-item-hover': {
+				'@apply text-foreground': {}
+			},
 			'hook-item-disabled': {
 				'@apply opacity-50': {}
 			},
@@ -307,12 +317,16 @@ export default (options: OptionsType = {}) => {
 				'@apply text-foreground font-medium': {}
 			},
 			'hook-divider': {
-				margin: `0 ${defaultTheme.spacing[3]} 0 ${defaultTheme.spacing[2]}`,
+				margin: null,
 				color: null,
-				'@apply text-muted-foreground': {}
+				'@apply mr-3 ml-2 text-muted-foreground': {}
+			},
+			'hook-misc': {
+				'.uk-breadcrumb-solid': null
 			}
-			// 'hook-misc': {}
 		},
+
+		// TODO
 		button: {
 			'hook-button': {
 				border: null,
@@ -419,15 +433,30 @@ export default (options: OptionsType = {}) => {
 			},
 			'hook-small': {},
 			'hook-large': {},
-			'hook-misc': {}
+			'hook-misc': {
+				'.uk-button-ghost:hover': {
+					'@apply bg-accent': {}
+				}
+			}
 		},
+		// END TODO
+
 		card: {
 			'hook-card': {
-				'@apply border border-border shadow': {}
+				'@apply rounded-xl border border-border shadow': {}
 			},
-			// 'hook-body': {},
-			// 'hook-header': {},
-			// 'hook-footer': {},
+			'hook-body': {
+				padding: null,
+				'@apply p-6': {}
+			},
+			'hook-header': {
+				padding: null,
+				'@apply p-6': {}
+			},
+			'hook-footer': {
+				padding: null,
+				'@apply p-6': {}
+			},
 			// 'hook-media': {},
 			// 'hook-media-top': {},
 			// 'hook-media-bottom': {},
@@ -436,13 +465,10 @@ export default (options: OptionsType = {}) => {
 			'hook-title': {
 				fontSize: null,
 				lineHeight: null,
-				'@apply text-2xl font-semibold': {}
+				'@apply font-semibold leading-none tracking-tight': {}
 			},
 			// 'hook-badge': {},
-			'hook-hover': {
-				backgroundColor: null,
-				boxShadow: null
-			},
+			// 'hook-hover': {},
 			'hook-default': {
 				backgroundColor: null,
 				color: null,
@@ -452,10 +478,7 @@ export default (options: OptionsType = {}) => {
 			'hook-default-title': {
 				color: null
 			},
-			'hook-default-hover': {
-				backgroundColor: null,
-				boxShadow: null
-			},
+			// 'hook-default-hover': {},
 			'hook-default-header': {
 				borderBottom: '1px solid',
 				'@apply border-border': {}
@@ -473,10 +496,7 @@ export default (options: OptionsType = {}) => {
 			'hook-primary-title': {
 				color: null
 			},
-			'hook-primary-hover': {
-				backgroundColor: null,
-				boxShadow: null
-			},
+			// 'hook-primary-hover': {},
 			'hook-secondary': {
 				backgroundColor: null,
 				color: null,
@@ -486,13 +506,18 @@ export default (options: OptionsType = {}) => {
 			'hook-secondary-title': {
 				color: null
 			},
-			'hook-secondary-hover': {
-				backgroundColor: null,
-				boxShadow: null
-			},
+			// 'hook-secondary-hover': {},
 			'hook-misc': {
 				'.uk-card-badge': null,
 				'.uk-card-badge:first-child + *': null,
+				'.uk-card-hover:not(.uk-card-default):not(.uk-card-primary):not(.uk-card-secondary):hover':
+					null,
+				'.uk-card-default.uk-card-hover:hover': null,
+				'.uk-card-primary.uk-card-hover:hover': null,
+				'.uk-card-secondary.uk-card-hover:hover': null,
+				'.uk-card-small.uk-card-body, .uk-card-small .uk-card-body': null,
+				'.uk-card-small .uk-card-header': null,
+				'.uk-card-small .uk-card-footer': null,
 				'.uk-card-body > .uk-nav-default': null,
 				'.uk-card-body > .uk-nav-default:only-child': null,
 				'.uk-card-body > .uk-nav-default > li > a, .uk-card-body > .uk-nav-default .uk-nav-header, .uk-card-body > .uk-nav-default .uk-nav-divider':
@@ -501,7 +526,10 @@ export default (options: OptionsType = {}) => {
 				'.uk-card-small > .uk-nav-default:only-child': null,
 				'.uk-card-small > .uk-nav-default > li > a, .uk-card-small > .uk-nav-default .uk-nav-header, .uk-card-small > .uk-nav-default .uk-nav-divider':
 					null,
-				'.uk-card-small > .uk-nav-default .uk-nav-sub': null
+				'.uk-card-small > .uk-nav-default .uk-nav-sub': null,
+				'.uk-card-danger': {
+					'@apply bg-destructive text-destructive-foreground': {}
+				}
 			}
 		},
 		close: {
@@ -566,15 +594,15 @@ export default (options: OptionsType = {}) => {
 				'@apply bg-primary': {}
 			}
 		},
-		drop: {},
-		dropbar: {},
+		// drop: {},
+		// dropbar: {},
 		dropdown: {
 			'hook-dropdown': {
 				padding: null,
 				backgroundColor: null,
 				color: null,
 				boxShadow: null,
-				'@apply bg-popover text-popover-foreground border border-border': {}
+				'@apply bg-popover text-popover-foreground border border-border rounded-md shadow-md': {}
 			},
 			'hook-dropbar': {
 				padding: null
@@ -582,7 +610,7 @@ export default (options: OptionsType = {}) => {
 			'hook-nav-item': {
 				color: null,
 				padding: null,
-				'@apply px-2 py-1.5 flex select-none items-center m-1': {}
+				'@apply px-2 py-1.5 flex select-none items-center m-1 rounded-sm text-sm': {}
 			},
 			'hook-nav-item-hover': {
 				color: null,
@@ -610,15 +638,11 @@ export default (options: OptionsType = {}) => {
 			'hook-text-disabled': {
 				color: null,
 				'@apply opacity-50': {}
-			},
-			'hook-misc': {
-				'.uk-button-ghost:hover': {
-					'@apply bg-accent': {}
-				}
 			}
+			// 'hook-misc': {}
 		},
-		dropnav: {},
-		flex: {},
+		// dropnav: {},
+		// flex: {},
 		'form-range': {
 			'hook-form-range': {},
 			'hook-track': {
@@ -636,6 +660,8 @@ export default (options: OptionsType = {}) => {
 			},
 			'hook-misc': {}
 		},
+
+		// TODO
 		form: {
 			'hook-form': {
 				border: null,
@@ -820,6 +846,8 @@ export default (options: OptionsType = {}) => {
 				}
 			}
 		},
+		// END TODO
+
 		// grid: {},
 		// heading: {},
 		// height: {},
@@ -864,20 +892,21 @@ export default (options: OptionsType = {}) => {
 		},
 		iconnav: {
 			'hook-iconnav': {
-				gap: defaultTheme.spacing[1],
-				marginLeft: '0px'
+				gap: null,
+				marginLeft: null,
+				'@apply gap-1': {}
 			},
 			'hook-item': {
-				display: 'inline-flex',
-				justifyContent: 'center',
+				display: null,
+				justifyContent: null,
 				height: null,
 				width: null,
 				color: null,
-				'@apply h-9 w-9': {}
+				'@apply inline-flex justify-center h-9 w-9 rounded-md': {}
 			},
 			'hook-item-hover': {
 				color: null,
-				'@apply bg-muted': {}
+				'@apply bg-accent text-accent-foreground': {}
 			},
 			'hook-item-active': {
 				color: null,
@@ -895,6 +924,9 @@ export default (options: OptionsType = {}) => {
 				},
 				'.uk-iconnav-vertical > *': {
 					paddingTop: '0'
+				},
+				'.uk-iconnav-outline > * > a': {
+					'@apply border border-border': {}
 				}
 			}
 		},
@@ -910,7 +942,7 @@ export default (options: OptionsType = {}) => {
 				whiteSpace: null,
 				borderRadius: null,
 				textTransform: null,
-				'@apply inline-flex items-center border px-2.5 py-0.5 text-xs font-semibold transition-colors border-border text-foreground':
+				'@apply inline-flex items-center border px-2.5 py-0.5 text-xs font-semibold transition-colors border-border text-foreground rounded-md shadow':
 					{}
 			},
 			'hook-danger': {
@@ -932,38 +964,48 @@ export default (options: OptionsType = {}) => {
 			}
 		},
 		// leader: {},
-		lightbox: {},
+		// lightbox: {},
 		// link: {},
 		// list: {},
-		margin: {},
+		// margin: {},
 		// marker: {},
 		modal: {
 			'hook-modal': {
+				padding: null,
 				backgroundColor: `rgba(0, 0, 0, 0.8)`,
 				'@apply backdrop-blur-sm': {}
 			},
 			'hook-dialog': {
+				width: null,
+				maxWidth: null,
 				backgroundColor: null,
-				'@apply border border-border bg-background overflow-hidden': {}
+				'@apply border border-border bg-background overflow-hidden w-full sm:max-w-md sm:rounded-lg':
+					{}
 			},
 			'hook-full': {
 				backgroundColor: null,
-				'@apply border-none': {}
+				'@apply border-none w-full sm:max-w-full': {}
 			},
 			'hook-header': {
+				padding: null,
 				backgroundColor: null,
 				borderBottom: null,
-				'@apply border-b border-border': {}
+				'@apply p-6': {}
+			},
+			'hook-body': {
+				padding: null,
+				'@apply p-6': {}
 			},
 			'hook-footer': {
+				padding: null,
 				backgroundColor: null,
-				borderBottom: null,
-				'@apply border-t border-border': {}
+				borderTop: null,
+				'@apply p-6': {}
 			},
 			'hook-title': {
 				fontSize: null,
 				lineHeight: null,
-				'@apply text-2xl font-semibold': {}
+				'@apply text-lg font-semibold leading-none tracking-tight': {}
 			},
 			'hook-close-full': {
 				backgroundColor: null
@@ -971,24 +1013,33 @@ export default (options: OptionsType = {}) => {
 			'hook-misc': {
 				'.uk-modal-full': {
 					padding: '0 !important'
-				}
+				},
+				'.uk-flex': {
+					'@apply flex': {}
+				},
+				'.uk-flex-top': {
+					'@apply items-start': {}
+				},
+				'.uk-margin-auto-vertical': {
+					marginTop: 'auto !important',
+					marginBottom: 'auto !important'
+				},
+				'.uk-overflow-auto': { overflow: 'auto' },
+				'.uk-overflow-auto > :last-child': { marginBottom: '0' }
 			}
 		},
 		nav: {
 			'hook-sub': {
 				padding: null
 			},
-
 			'hook-header': {
 				textTransform: null,
 				padding: null,
 				'@apply font-semibold': {}
 			},
-
 			'hook-divider': {
 				margin: null
 			},
-
 			'hook-default': {
 				fontSize: null
 			},
@@ -1004,21 +1055,17 @@ export default (options: OptionsType = {}) => {
 				color: null,
 				'@apply font-medium text-foreground': {}
 			},
-
 			'hook-default-subtitle': {
 				fontSize: null
 			},
-
 			'hook-default-header': {
 				color: null,
 				'@apply px-2 py-1': {}
 			},
-
 			'hook-default-divider': {
 				borderTop: '1px solid',
 				'@apply border-border': {}
 			},
-
 			'hook-default-sublist': {
 				color: null,
 				'@apply px-2 py-1 text-muted-foreground': {}
@@ -1031,14 +1078,13 @@ export default (options: OptionsType = {}) => {
 				color: null,
 				'@apply text-foreground': {}
 			},
-
 			'hook-primary': {
 				fontSize: null,
 				lineHeight: null
 			},
 			'hook-primary-item': {
 				color: null,
-				'@apply px-2 py-1.5 m-1': {}
+				'@apply px-2 py-1.5 m-1 rounded-md': {}
 			},
 			'hook-primary-item-hover': {
 				color: null,
@@ -1048,21 +1094,17 @@ export default (options: OptionsType = {}) => {
 				color: null,
 				'@apply bg-primary text-primary-foreground': {}
 			},
-
 			'hook-primary-subtitle': {
 				fontSize: null
 			},
-
 			'hook-primary-header': {
 				color: null,
 				'@apply px-2 py-1.5 m-1': {}
 			},
-
 			'hook-primary-divider': {
 				borderTop: '1px solid',
 				'@apply border-border': {}
 			},
-
 			'hook-primary-sublist': {
 				color: null,
 				'@apply px-2 py-1.5 ml-1': {}
@@ -1075,7 +1117,6 @@ export default (options: OptionsType = {}) => {
 				color: null,
 				'@apply bg-primary text-primary-foreground': {}
 			},
-
 			'hook-secondary': {
 				fontSize: null,
 				lineHeight: null
@@ -1083,7 +1124,7 @@ export default (options: OptionsType = {}) => {
 			'hook-secondary-item': {
 				color: null,
 				padding: null,
-				'@apply px-2 py-1.5 m-1': {}
+				'@apply px-2 py-1.5 m-1 rounded-md': {}
 			},
 			'hook-secondary-item-hover': {
 				color: null,
@@ -1095,7 +1136,6 @@ export default (options: OptionsType = {}) => {
 				backgroundColor: null,
 				'@apply bg-secondary text-secondary-foreground': {}
 			},
-
 			'hook-secondary-subtitle': {
 				color: null,
 				fontSize: null
@@ -1106,17 +1146,14 @@ export default (options: OptionsType = {}) => {
 			'hook-secondary-subtitle-active': {
 				color: null
 			},
-
 			'hook-secondary-header': {
 				color: null,
 				'@apply px-2 py-1.5 m-1': {}
 			},
-
 			'hook-secondary-divider': {
 				borderTop: '1px solid',
 				'@apply border-border': {}
 			},
-
 			'hook-secondary-sublist': {
 				color: null,
 				'@apply px-2 py-1.5 ml-1': {}
@@ -1129,8 +1166,11 @@ export default (options: OptionsType = {}) => {
 				color: null,
 				'@apply bg-secondary text-secondary-foreground': {}
 			},
-
+			// 'hook-dividers': {},
 			'hook-misc': {
+				'.uk-nav': {
+					'@apply text-sm': {}
+				},
 				'.uk-nav li > a': {
 					columnGap: null
 				},
@@ -1147,7 +1187,8 @@ export default (options: OptionsType = {}) => {
 					'@apply ml-5 mt-1 border-l border-border space-y-1': {}
 				},
 				'.uk-nav-sub a': {
-					padding: null
+					padding: null,
+					'@apply rounded-md': {}
 				},
 				'.uk-nav > li.uk-open > a .uk-nav-parent-icon': {
 					transform: 'rotate(180deg)'
@@ -1171,105 +1212,114 @@ export default (options: OptionsType = {}) => {
 					null
 			}
 		},
-		navbar: {
-			'hook-navbar': {},
-			'hook-container': {
-				backgroundColor: null,
-				'@apply bg-muted': {}
-			},
-			'hook-nav-item': {
-				color: null,
-				textTransform: null,
-				'@apply text-muted-foreground': {}
-			},
-			'hook-nav-item-hover': {
-				color: null,
-				'@apply text-foreground': {}
-			},
-			'hook-nav-item-onclick': {
-				color: null
-			},
-			'hook-nav-item-active': {
-				color: null
-			},
-			'hook-item': {
-				color: null
-			},
-			'hook-toggle': {
-				color: null
-			},
-			'hook-toggle-hover': {
-				color: null
-			},
-			'hook-toggle-icon': {
-				color: null
-			},
-			'hook-toggle-icon-hover': {
-				color: null
-			},
-			'hook-subtitle': {},
-			'hook-primary': {},
-			'hook-transparent': {},
-			'hook-sticky': {},
-			'hook-dropdown': {
-				backgroundColor: null,
-				color: null,
-				boxShadow: null,
-				'@apply bg-popover text-popover-foreground': {}
-			},
-			'hook-dropdown-large': {},
-			'hook-dropdown-dropbar': {},
-			'hook-dropdown-dropbar-large': {},
-			'hook-dropdown-nav': {},
-			'hook-dropdown-nav-item': {
-				color: null
-			},
-			'hook-dropdown-nav-item-hover': {
-				color: null
-			},
-			'hook-dropdown-nav-item-active': {
-				color: null
-			},
-			'hook-dropdown-nav-subtitle': {},
-			'hook-dropdown-nav-header': {
-				color: null
-			},
-			'hook-dropdown-nav-divider': {
-				borderTop: '1px solid',
-				'@apply border-border': {}
-			},
-			'hook-dropbar': {},
-			'hook-misc': {
-				'.uk-navbar-dropdown-nav .uk-nav-sub a': {
-					color: null
-				},
-				'.uk-navbar-dropdown-nav .uk-nav-sub a:hover': {
-					color: null
-				},
-				'.uk-navbar-dropdown-nav .uk-nav-sub li.uk-active > a': {
-					color: null
-				}
-			}
-		},
+		// navbar: {
+		// 	'hook-navbar': {},
+		// 	'hook-container': {
+		// 		backgroundColor: null,
+		// 		'@apply bg-muted': {}
+		// 	},
+		// 	'hook-nav-item': {
+		// 		color: null,
+		// 		textTransform: null,
+		// 		'@apply text-muted-foreground': {}
+		// 	},
+		// 	'hook-nav-item-hover': {
+		// 		color: null,
+		// 		'@apply text-foreground': {}
+		// 	},
+		// 	'hook-nav-item-onclick': {
+		// 		color: null
+		// 	},
+		// 	'hook-nav-item-active': {
+		// 		color: null
+		// 	},
+		// 	'hook-item': {
+		// 		color: null
+		// 	},
+		// 	'hook-toggle': {
+		// 		color: null
+		// 	},
+		// 	'hook-toggle-hover': {
+		// 		color: null
+		// 	},
+		// 	'hook-toggle-icon': {
+		// 		color: null
+		// 	},
+		// 	'hook-toggle-icon-hover': {
+		// 		color: null
+		// 	},
+		// 	'hook-subtitle': {},
+		// 	'hook-primary': {},
+		// 	'hook-transparent': {},
+		// 	'hook-sticky': {},
+		// 	'hook-dropdown': {
+		// 		backgroundColor: null,
+		// 		color: null,
+		// 		boxShadow: null,
+		// 		'@apply bg-popover text-popover-foreground': {}
+		// 	},
+		// 	'hook-dropdown-large': {},
+		// 	'hook-dropdown-dropbar': {},
+		// 	'hook-dropdown-dropbar-large': {},
+		// 	'hook-dropdown-nav': {},
+		// 	'hook-dropdown-nav-item': {
+		// 		color: null
+		// 	},
+		// 	'hook-dropdown-nav-item-hover': {
+		// 		color: null
+		// 	},
+		// 	'hook-dropdown-nav-item-active': {
+		// 		color: null
+		// 	},
+		// 	'hook-dropdown-nav-subtitle': {},
+		// 	'hook-dropdown-nav-header': {
+		// 		color: null
+		// 	},
+		// 	'hook-dropdown-nav-divider': {
+		// 		borderTop: '1px solid',
+		// 		'@apply border-border': {}
+		// 	},
+		// 	'hook-dropbar': {},
+		// 	'hook-misc': {
+		// 		'.uk-navbar-dropdown-nav .uk-nav-sub a': {
+		// 			color: null
+		// 		},
+		// 		'.uk-navbar-dropdown-nav .uk-nav-sub a:hover': {
+		// 			color: null
+		// 		},
+		// 		'.uk-navbar-dropdown-nav .uk-nav-sub li.uk-active > a': {
+		// 			color: null
+		// 		}
+		// 	}
+		// },
 		notification: {
+			// 'hook-notification': {},
+			'hook-close': {
+				top: null,
+				right: null,
+				'@apply right-1 top-1 p-1 text-foreground/50': {}
+			},
+			// 'hook-close-hover': {},
 			'hook-message': {
 				padding: null,
 				backgroundColor: null,
 				color: null,
 				fontSize: null,
 				lineHeight: null,
-				'@apply bg-background p-4 pr-6 text-foreground border border-border text-sm': {}
+				'@apply bg-background p-4 pr-6 text-foreground border border-border text-sm rounded-md shadow-lg':
+					{}
 			},
-			'hook-close': {
-				top: null,
-				right: null,
-				'@apply right-1 top-1 p-1 text-foreground/50': {}
-			},
+			// 'hook-primary': {},
+			// 'hook-success': {},
+			// 'hook-warning': {},
 			'hook-danger': {
 				color: null,
 				'@apply bg-destructive text-destructive-foreground border-destructive': {}
 			},
 			'hook-misc': {
+				'.uk-notification-message-primary': null,
+				'.uk-notification-message-success': null,
+				'.uk-notification-message-warning': null,
 				'.uk-notification-message-danger .uk-notification-close': {
 					'@apply text-destructive-foreground/50': {}
 				}
@@ -1292,7 +1342,7 @@ export default (options: OptionsType = {}) => {
 				}
 			}
 		},
-		overlay: {},
+		// overlay: {},
 		// padding: {},
 		pagination: {
 			'hook-pagination': {
@@ -1342,7 +1392,7 @@ export default (options: OptionsType = {}) => {
 				}
 			}
 		},
-		position: {},
+		// position: {},
 		progress: {
 			'hook-progress': {
 				backgroundColor: null,
@@ -1360,12 +1410,12 @@ export default (options: OptionsType = {}) => {
 		},
 		// search: {},
 		// section: {},
-		slidenav: {},
-		slider: {},
-		slideshow: {},
+		// slidenav: {},
+		// slider: {},
+		// slideshow: {},
 		// sortable: {},
-		spinner: {},
-		sticky: {},
+		// spinner: {},
+		// sticky: {},
 		subnav: {
 			'hook-subnav': {
 				display: null,
@@ -1432,8 +1482,8 @@ export default (options: OptionsType = {}) => {
 				}
 			}
 		},
-		svg: {},
-		switcher: {},
+		// svg: {},
+		// switcher: {},
 		tab: {
 			'hook-tab': {
 				marginLeft: null,
@@ -1551,7 +1601,7 @@ export default (options: OptionsType = {}) => {
 					}
 			}
 		},
-		text: {},
+		// text: {},
 		// thumbnav: {},
 		// tile: {},
 		tooltip: {
@@ -1563,10 +1613,10 @@ export default (options: OptionsType = {}) => {
 				color: null,
 				'@apply bg-primary text-primary-foreground': {}
 			}
-		},
+		}
 		// totop: {},
-		transition: {},
-		utility: {}
+		// transition: {},
+		// utility: {}
 		// visibility: {},
 		// width: {},
 		// print: {},
