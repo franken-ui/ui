@@ -325,16 +325,25 @@ export default (options: OptionsType = {}) => {
 				'.uk-breadcrumb-solid': null
 			}
 		},
-
-		// TODO
 		button: {
 			'hook-button': {
+				margin: null,
 				border: null,
+				overflow: null,
+				font: null,
 				color: null,
-				fontWeight: null,
 				textTransform: null,
-				display: 'inline-flex',
-				'@apply font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring':
+				WebkitAppearance: null,
+				borderRadius: null,
+				display: null,
+				boxSizing: null,
+				padding: null,
+				verticalAlign: null,
+				fontSize: null,
+				lineHeight: null,
+				textAlign: null,
+				textDecoration: null,
+				'@apply inline-flex justify-center items-center font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring text-sm h-9 px-4 py-2 rounded-md shadow':
 					{}
 			},
 			'hook-disabled': {
@@ -412,7 +421,8 @@ export default (options: OptionsType = {}) => {
 				borderColor: null
 			},
 			'hook-link': {
-				color: null
+				color: null,
+				'@apply shadow-none rounded-none': {}
 			},
 			'hook-link-hover': {
 				color: null
@@ -422,7 +432,8 @@ export default (options: OptionsType = {}) => {
 				'@apply opacity-50': {}
 			},
 			'hook-text': {
-				color: null
+				color: null,
+				'@apply h-auto shadow-none rounded-none': {}
 			},
 			'hook-text-hover': {
 				color: null
@@ -434,13 +445,21 @@ export default (options: OptionsType = {}) => {
 			'hook-small': {},
 			'hook-large': {},
 			'hook-misc': {
+				'.uk-button-small': null,
+				'.uk-button-large': null,
+				'.uk-button-group': null,
+				'.uk-button-group > .uk-button:nth-child(n + 2), .uk-button-group > div:nth-child(n + 2) .uk-button':
+					null,
+				'.uk-button-group .uk-button:hover, .uk-button-group .uk-button:focus, .uk-button-group .uk-button:active, .uk-button-group .uk-button.uk-active':
+					null,
+				'.uk-button-ghost': {
+					'@apply shadow-none': {}
+				},
 				'.uk-button-ghost:hover': {
 					'@apply bg-accent': {}
 				}
 			}
 		},
-		// END TODO
-
 		card: {
 			'hook-card': {
 				'@apply rounded-xl border border-border shadow': {}
@@ -660,15 +679,22 @@ export default (options: OptionsType = {}) => {
 			},
 			'hook-misc': {}
 		},
-
-		// TODO
 		form: {
 			'hook-form': {
 				border: null,
+				padding: null,
 				backgroundColor: null,
 				color: null,
 				fontSize: null,
-				'@apply bg-transparent text-foreground border border-input': {}
+				'@apply bg-transparent text-foreground border border-input text-sm px-3 py-1 rounded-md shadow-sm':
+					{}
+			},
+			'hook-single-line': {
+				height: null,
+				'@apply h-9': {}
+			},
+			'hook-multi-line': {
+				'@apply min-h-[60px]': {}
 			},
 			'hook-focus': {
 				backgroundColor: null,
@@ -687,6 +713,14 @@ export default (options: OptionsType = {}) => {
 				borderColor: null,
 				'@apply ring-destructive': {}
 			},
+			'hook-blank': {
+				'@apply shadow-none': {}
+			},
+			'hook-blank-focus': {
+				borderColor: null,
+				borderStyle: null,
+				'@apply ring-0': {}
+			},
 			'hook-placeholder': {
 				color: null,
 				'@apply text-muted-foreground': {}
@@ -694,7 +728,7 @@ export default (options: OptionsType = {}) => {
 			'hook-radio': {
 				backgroundColor: null,
 				border: null,
-				'@apply border border-primary': {}
+				'@apply border border-primary rounded-sm shadow': {}
 			},
 			'hook-radio-focus': {
 				backgroundColor: null,
@@ -728,19 +762,44 @@ export default (options: OptionsType = {}) => {
 				color: null
 			},
 			'hook-toggle-switch': {
+				width: null,
+				height: null,
 				backgroundColor: null,
-				'@apply bg-input': {}
+				'@apply h-5 w-9 bg-input shadow-sm': {}
 			},
 			'hook-toggle-switch-before': {
+				width: null,
+				height: null,
 				backgroundColor: null,
-				'@apply bg-background': {}
+				'@apply h-4 w-4 bg-background': {}
+			},
+			'hook-toggle-switch-checked-before': {
+				left: null,
+				'@apply left-4': {}
 			},
 			'hook-toggle-switch-primary': {
 				backgroundColor: null,
 				'@apply bg-primary': {}
 			},
+			'hook-toggle-switch-danger': {
+				backgroundColor: null,
+				'@apply bg-destructive': {}
+			},
 			'hook-misc': {
+				'.uk-form-small': null,
+				'.uk-form-small:not(textarea):not([multiple]):not([size])': null,
+				'textarea.uk-form-small, [multiple].uk-form-small, [size].uk-form-small': null,
+				'.uk-form-small:not(select):not(input):not(textarea)': null,
+				'.uk-form-large': null,
+				'.uk-form-large:not(textarea):not([multiple]):not([size])': null,
+				'textarea.uk-form-large, [multiple].uk-form-large, [size].uk-form-large': null,
+				'.uk-form-large:not(select):not(input):not(textarea)': null,
 				'.uk-form-success, .uk-form-success:focus': null,
+				'input.uk-form-width-xsmall': null,
+				'select.uk-form-width-xsmall': null,
+				'.uk-form-width-small': null,
+				'.uk-form-width-medium': null,
+				'.uk-form-width-large': null,
 				'.uk-form-help': {
 					fontSize: '0.8rem',
 					fontWeight: defaultTheme.fontWeight.medium
@@ -843,11 +902,17 @@ export default (options: OptionsType = {}) => {
 					backgroundImage: `url("data:image/svg+xml,%3Csvg width='24' height='16' viewBox='0 0 24 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon fill='${encodeURIComponent(
 						scheme.dark.primary
 					)}' points='12 12 8 6 16 6' /%3E%3C/svg%3E")`
+				},
+				'.uk-toggle-switch-secondary:checked': null,
+				"[class*='uk-inline']": {
+					display: 'inline-block',
+					position: 'relative',
+					maxWidth: '100%',
+					verticalAlign: 'middle',
+					WebkitBackfaceVisibility: 'hidden'
 				}
 			}
 		},
-		// END TODO
-
 		// grid: {},
 		// heading: {},
 		// height: {},
@@ -1346,22 +1411,25 @@ export default (options: OptionsType = {}) => {
 		// padding: {},
 		pagination: {
 			'hook-pagination': {
-				gap: defaultTheme.spacing[1],
+				gap: null,
 				fontSize: null,
 				marginLeft: null,
-				padding: null
+				padding: null,
+				'@apply gap-1': {}
 			},
 			'hook-item': {
 				padding: null,
 				color: null,
-				textDecoration: 'none',
+				textDecoration: null,
 				fontWeight: null,
-				display: 'inline-flex',
-				justifyContent: 'center',
-				alignItems: 'center',
-				height: defaultTheme.spacing[9],
-				minWidth: defaultTheme.spacing[9],
-				whiteSpace: 'nowrap'
+				display: null,
+				justifyContent: null,
+				alignItems: null,
+				height: null,
+				minWidth: null,
+				whiteSpace: null,
+				'@apply inline-flex items-center justify-center h-9 min-w-9 whitespace-nowrap rounded-md':
+					{}
 			},
 			'hook-item-hover': {
 				color: null,
@@ -1369,7 +1437,7 @@ export default (options: OptionsType = {}) => {
 			},
 			'hook-item-active': {
 				color: null,
-				'@apply border border-input': {}
+				'@apply border border-input shadow': {}
 			},
 			'hook-item-disabled': {
 				color: null,
@@ -1424,7 +1492,7 @@ export default (options: OptionsType = {}) => {
 				marginLeft: null,
 				padding: null,
 				listStyle: null,
-				'@apply flex items-center': {}
+				'@apply flex items-center text-sm': {}
 			},
 			'hook-item': {
 				display: null,
@@ -1542,7 +1610,8 @@ export default (options: OptionsType = {}) => {
 		},
 		table: {
 			'hook-table': {
-				marginBottom: null
+				marginBottom: null,
+				'@apply text-sm': {}
 			},
 			'hook-header-cell': {
 				padding: null,
