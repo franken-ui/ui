@@ -1049,7 +1049,7 @@ export default (options: OptionsType = {}) => {
 			},
 			'hook-full': {
 				backgroundColor: null,
-				'@apply border-none w-full sm:max-w-full': {}
+				'@apply border-none rounded-none w-full sm:max-w-full': {}
 			},
 			'hook-header': {
 				padding: null,
