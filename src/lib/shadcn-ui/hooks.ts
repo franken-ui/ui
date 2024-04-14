@@ -1593,7 +1593,7 @@ export default (options: OptionsType = {}) => {
 					paddingLeft: null
 				},
 				'.uk-tab-alt': {
-					'@apply flex h-9 w-full items-center justify-center bg-muted p-1 text-muted-foreground':
+					'@apply flex h-9 w-full items-center justify-center bg-muted p-1 text-muted-foreground rounded-md':
 						{}
 				},
 				'.uk-tab-alt > *': {
@@ -1604,7 +1604,7 @@ export default (options: OptionsType = {}) => {
 						{}
 				},
 				'.uk-tab-alt > .uk-active > a': {
-					'@apply border-b-0 bg-background text-foreground': {}
+					'@apply border-b-0 bg-background text-foreground rounded-sm': {}
 				}
 			}
 		},
@@ -1680,7 +1680,7 @@ export default (options: OptionsType = {}) => {
 				borderRadius: null,
 				backgroundColor: null,
 				color: null,
-				'@apply bg-primary text-primary-foreground': {}
+				'@apply bg-primary text-primary-foreground rounded-md': {}
 			}
 		}
 		// totop: {},
