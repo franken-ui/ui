@@ -748,7 +748,11 @@ export default (options: OptionsType = {}) => {
 				borderColor: null
 			},
 			'hook-legend': {
-				color: null
+				width: null,
+				color: null,
+				padding: null,
+				fontSize: null,
+				lineHeight: null
 			},
 			'hook-label': {
 				color: null,
@@ -942,7 +946,7 @@ export default (options: OptionsType = {}) => {
 				alignItems: null,
 				transition: null,
 				transitionProperty: null,
-				'@apply inline-flex items-center justify-center whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background h-9 w-9':
+				'@apply inline-flex items-center justify-center whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background h-9 w-9 rounded-md':
 					{}
 			},
 			'hook-button-hover': {
@@ -991,7 +995,7 @@ export default (options: OptionsType = {}) => {
 					paddingTop: '0'
 				},
 				'.uk-iconnav-outline > * > a': {
-					'@apply border border-border': {}
+					'@apply border border-border shadow-sm': {}
 				}
 			}
 		},
@@ -1251,6 +1255,19 @@ export default (options: OptionsType = {}) => {
 					paddingLeft: null,
 					'@apply ml-5 mt-1 border-l border-border space-y-1': {}
 				},
+				'.uk-nav-sub li': {
+					'@apply relative': {}
+				},
+				'.uk-nav-sub li::before': {
+					content: "''",
+					'@apply absolute w-[1px] top-0 bottom-0 -left-[1px] bg-border': {}
+				},
+				// '.uk-nav-sub ul li:hover::before': {
+				// 	'@apply bg-primary': {}
+				// },
+				'.uk-nav-sub li.uk-active::before': {
+					'@apply bg-primary': {}
+				},
 				'.uk-nav-sub a': {
 					padding: null,
 					'@apply rounded-md': {}
@@ -1277,86 +1294,111 @@ export default (options: OptionsType = {}) => {
 					null
 			}
 		},
-		// navbar: {
-		// 	'hook-navbar': {},
-		// 	'hook-container': {
-		// 		backgroundColor: null,
-		// 		'@apply bg-muted': {}
-		// 	},
-		// 	'hook-nav-item': {
-		// 		color: null,
-		// 		textTransform: null,
-		// 		'@apply text-muted-foreground': {}
-		// 	},
-		// 	'hook-nav-item-hover': {
-		// 		color: null,
-		// 		'@apply text-foreground': {}
-		// 	},
-		// 	'hook-nav-item-onclick': {
-		// 		color: null
-		// 	},
-		// 	'hook-nav-item-active': {
-		// 		color: null
-		// 	},
-		// 	'hook-item': {
-		// 		color: null
-		// 	},
-		// 	'hook-toggle': {
-		// 		color: null
-		// 	},
-		// 	'hook-toggle-hover': {
-		// 		color: null
-		// 	},
-		// 	'hook-toggle-icon': {
-		// 		color: null
-		// 	},
-		// 	'hook-toggle-icon-hover': {
-		// 		color: null
-		// 	},
-		// 	'hook-subtitle': {},
-		// 	'hook-primary': {},
-		// 	'hook-transparent': {},
-		// 	'hook-sticky': {},
-		// 	'hook-dropdown': {
-		// 		backgroundColor: null,
-		// 		color: null,
-		// 		boxShadow: null,
-		// 		'@apply bg-popover text-popover-foreground': {}
-		// 	},
-		// 	'hook-dropdown-large': {},
-		// 	'hook-dropdown-dropbar': {},
-		// 	'hook-dropdown-dropbar-large': {},
-		// 	'hook-dropdown-nav': {},
-		// 	'hook-dropdown-nav-item': {
-		// 		color: null
-		// 	},
-		// 	'hook-dropdown-nav-item-hover': {
-		// 		color: null
-		// 	},
-		// 	'hook-dropdown-nav-item-active': {
-		// 		color: null
-		// 	},
-		// 	'hook-dropdown-nav-subtitle': {},
-		// 	'hook-dropdown-nav-header': {
-		// 		color: null
-		// 	},
-		// 	'hook-dropdown-nav-divider': {
-		// 		borderTop: '1px solid',
-		// 		'@apply border-border': {}
-		// 	},
-		// 	'hook-dropbar': {},
-		// 	'hook-misc': {
-		// 		'.uk-navbar-dropdown-nav .uk-nav-sub a': {
-		// 			color: null
-		// 		},
-		// 		'.uk-navbar-dropdown-nav .uk-nav-sub a:hover': {
-		// 			color: null
-		// 		},
-		// 		'.uk-navbar-dropdown-nav .uk-nav-sub li.uk-active > a': {
-		// 			color: null
-		// 		}
-		// 	}
-		// },
+		navbar: {
+			// 'hook-navbar': {},
+			'hook-container': {
+				backgroundColor: null,
+				'@apply bg-background/95 border-b border-border/40 backdrop-blur supports-[backdrop-filter]:bg-background/60':
+					{}
+			},
+			'hook-nav-item': {
+				color: null,
+				textTransform: null,
+				'@apply text-foreground/60': {}
+			},
+			'hook-nav-item-hover': {
+				color: null,
+				'@apply text-foreground/80': {}
+			},
+			'hook-nav-item-onclick': {
+				color: null
+			},
+			'hook-nav-item-active': {
+				color: null,
+				'@apply text-foreground': {}
+			},
+			'hook-item': {
+				color: null,
+				'@apply text-foreground/60': {}
+			},
+			'hook-toggle': {
+				color: null,
+				'@apply text-foreground/60': {}
+			},
+			'hook-toggle-hover': {
+				color: null,
+				'@apply text-foreground/80': {}
+			},
+			'hook-toggle-icon': {
+				color: null,
+				'@apply text-foreground/60': {}
+			},
+			'hook-toggle-icon-hover': {
+				color: null,
+				'@apply text-foreground/80': {}
+			},
+			// 'hook-subtitle': {},
+			// 'hook-primary': {},
+			// 'hook-transparent': {},
+			// 'hook-sticky': {},
+			'hook-dropdown': {
+				padding: null,
+				backgroundColor: null,
+				color: null,
+				boxShadow: null,
+				'@apply bg-popover text-popover-foreground border border-border rounded-md shadow-md': {}
+			},
+			// 'hook-dropdown-large': {},
+			// 'hook-dropdown-dropbar': {},
+			// 'hook-dropdown-dropbar-large': {},
+			// 'hook-dropdown-nav': {},
+			'hook-dropdown-nav-item': {
+				color: null,
+				'@apply px-2 py-1.5 flex select-none items-center m-1 rounded-sm text-sm': {}
+			},
+			'hook-dropdown-nav-item-hover': {
+				color: null,
+				'@apply bg-accent text-accent-foreground': {}
+			},
+			'hook-dropdown-nav-item-active': {
+				color: null,
+				'@apply bg-secondary text-secondary-foreground': {}
+			},
+			'hook-dropdown-nav-subtitle': {},
+			'hook-dropdown-nav-header': {
+				color: null,
+				'@apply px-2 py-1.5 m-1': {}
+			},
+			'hook-dropdown-nav-divider': {
+				borderTop: '1px solid',
+				'@apply border-border': {}
+			},
+			// 'hook-dropbar': {},
+			'hook-misc': {
+				'.uk-navbar-nav > li > a, .uk-navbar-item, .uk-navbar-toggle': {
+					minHeight: null,
+					fontFamily: null,
+					'@apply min-h-14': {}
+				},
+				'.uk-navbar-nav > li > a[aria-expanded="true"] .uk-navbar-parent-icon': {
+					transform: 'rotate(180deg)'
+				},
+				'.uk-navbar-dropdown-nav .uk-nav-sub a': {
+					color: null,
+					'@apply px-2 py-1.5 ml-1': {}
+				},
+				'.uk-navbar-dropdown-nav .uk-nav-sub a:hover': {
+					color: null,
+					'@apply bg-accent text-accent-foreground': {}
+				},
+				'.uk-navbar-dropdown-nav .uk-nav-sub li.uk-active > a': {
+					color: null,
+					'@apply bg-secondary text-secondary-foreground': {}
+				},
+				'.uk-navbar-dropdown-large': null,
+				'.uk-navbar-dropdown-dropbar-large': null
+			}
+		},
 		notification: {
 			// 'hook-notification': {},
 			'hook-close': {
@@ -1593,7 +1635,7 @@ export default (options: OptionsType = {}) => {
 					paddingLeft: null
 				},
 				'.uk-tab-alt': {
-					'@apply flex h-9 w-full items-center justify-center bg-muted p-1 text-muted-foreground rounded-md':
+					'@apply flex h-9 w-full items-center justify-center bg-muted p-1 text-muted-foreground rounded-lg':
 						{}
 				},
 				'.uk-tab-alt > *': {
@@ -1604,7 +1646,7 @@ export default (options: OptionsType = {}) => {
 						{}
 				},
 				'.uk-tab-alt > .uk-active > a': {
-					'@apply border-b-0 bg-background text-foreground rounded-sm': {}
+					'@apply border-b-0 bg-background text-foreground rounded-md': {}
 				}
 			}
 		},

@@ -294,13 +294,13 @@ export const addHooks = (args: Args): CSSRuleObject => {
 			..._hooks['hook-dropdown-nav']
 		},
 		'.uk-navbar-dropdown-nav > li > a': {
-			..._hooks['hook-nav-item']
+			..._hooks['hook-dropdown-nav-item']
 		},
 		'.uk-navbar-dropdown-nav > li > a:hover': {
-			..._hooks['hook-nav-item-hover']
+			..._hooks['hook-dropdown-nav-item-hover']
 		},
 		'.uk-navbar-dropdown-nav > li.uk-active > a': {
-			..._hooks['hook-nav-item-active']
+			..._hooks['hook-dropdown-nav-item-active']
 		},
 		'.uk-navbar-dropdown-nav .uk-nav-subtitle': {
 			..._hooks['hook-subtitle']
