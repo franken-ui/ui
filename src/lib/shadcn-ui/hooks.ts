@@ -657,8 +657,12 @@ export default (options: OptionsType = {}) => {
 			'hook-text-disabled': {
 				color: null,
 				'@apply opacity-50': {}
+			},
+			'hook-misc': {
+				'.uk-dropdown :focus-visible': {
+					outlineColor: null
+				}
 			}
-			// 'hook-misc': {}
 		},
 		// dropnav: {},
 		// flex: {},
@@ -675,7 +679,7 @@ export default (options: OptionsType = {}) => {
 			'hook-thumb': {
 				backgroundColor: null,
 				border: '1px solid',
-				'@apply border-primary/50': {}
+				'@apply bg-background border-primary/50': {}
 			},
 			'hook-misc': {}
 		},
