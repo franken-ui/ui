@@ -4,7 +4,13 @@ HTML-first, framework-agnostic, beautifully designed components that you can tru
 
 ## Documentation
 
-Visit https://franken-ui.sveltecult.com to view the documentation.
+Visit https://www.franken-ui.dev to view the documentation.
+
+## Credits
+- [shadcn/ui](https://ui.shadcn.com) - For the design
+- [UIkit](https://getuikit.com) - For the base and JavaScript
+- [Flowbite](https://flowbite.com) - For documentation and other components
+- And all the amazing tools used to build this library
 
 ## License
 

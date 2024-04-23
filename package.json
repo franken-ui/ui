@@ -21,7 +21,7 @@
 	"bugs": {
 		"url": "https://github.com/sveltecult/franken-ui/issues"
 	},
-	"homepage": "https://franken-ui.sveltecult.com",
+	"homepage": "https://www.franken-ui.dev",
 	"license": "MIT",
 	"version": "0.0.7",
 	"scripts": {
