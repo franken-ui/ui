@@ -1,7 +1,7 @@
 {
 	"name": "franken-ui",
 	"author": "Sveltecult <leader@sveltecult.com>",
-	"description": "Franken UI is a UI library of common web components. It is a based on UIkit 3 exposed as a Tailwind CSS plugin.",
+	"description": "Franken UI is an HTML-first, open-source library of UI components based on the utility-first Tailwind CSS with UIkit 3 compatibility. The design is based on shadcn/ui ported to be framework-agnostic.",
 	"keywords": [
 		"uikit",
 		"tailwind",
@@ -23,7 +23,7 @@
 	},
 	"homepage": "https://www.franken-ui.dev",
 	"license": "MIT",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",

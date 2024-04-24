@@ -12,6 +12,10 @@ Visit https://www.franken-ui.dev to view the documentation.
 - [Flowbite](https://flowbite.com) - For documentation and other components
 - And all the amazing tools used to build this library
 
+## Disclaimer
+
+I'm a completely independent developer and have no affiliation with Svelte, @shadcn, UIkit and YOOtheme, or any other entities.
+
 ## License
 
 Licensed under the [MIT license](https://github.com/sveltecult/franken-ui/blob/master/LICENSE.md).

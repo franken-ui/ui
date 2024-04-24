@@ -9,7 +9,7 @@ import type { AnimationHooks as AnimationHooksType } from '$lib/components/anima
 import type { ArticleHooks as ArticleHooksType } from '$lib/components/article.js';
 import type { BackgroundHooks as BackgroundHooksType } from '$lib/components/background.js';
 import type { BadgeHooks as BadgeHooksType } from '$lib/components/badge.js';
-import type { BaseHooks as BaseHooksType } from '$lib/components/base.js';
+// import type { BaseHooks as BaseHooksType } from '$lib/components/base.js';
 import type { BreadcrumbHooks as BreadcrumbHooksType } from '$lib/components/breadcrumb.js';
 import type { ButtonHooks as ButtonHooksType } from '$lib/components/button.js';
 import type { CardHooks as CardHooksType } from '$lib/components/card.js';
@@ -1524,7 +1524,17 @@ export default (options: OptionsType = {}) => {
 		},
 		// search: {},
 		// section: {},
-		// slidenav: {},
+		slidenav: {
+			'hook-slidenav': {
+				color: null
+			},
+			'hook-hover': {
+				color: null
+			},
+			'hook-active': {
+				color: null
+			}
+		},
 		// slider: {},
 		// slideshow: {},
 		// sortable: {},
