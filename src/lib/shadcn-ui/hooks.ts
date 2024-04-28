@@ -1157,7 +1157,7 @@ export default (options: OptionsType = {}) => {
 			},
 			'hook-primary-item': {
 				color: null,
-				'@apply px-2 py-1.5 m-1 rounded-md': {}
+				'@apply px-4 py-2 m-1 rounded-md': {}
 			},
 			'hook-primary-item-hover': {
 				color: null,
@@ -1172,7 +1172,7 @@ export default (options: OptionsType = {}) => {
 			},
 			'hook-primary-header': {
 				color: null,
-				'@apply px-2 py-1.5 m-1': {}
+				'@apply px-4 py-2 m-1': {}
 			},
 			'hook-primary-divider': {
 				borderTop: '1px solid',
@@ -1180,7 +1180,7 @@ export default (options: OptionsType = {}) => {
 			},
 			'hook-primary-sublist': {
 				color: null,
-				'@apply px-2 py-1.5 ml-1': {}
+				'@apply px-4 py-2 ml-1': {}
 			},
 			'hook-primary-sublist-hover': {
 				color: null,
@@ -1197,7 +1197,7 @@ export default (options: OptionsType = {}) => {
 			'hook-secondary-item': {
 				color: null,
 				padding: null,
-				'@apply px-2 py-1.5 m-1 rounded-md': {}
+				'@apply px-4 py-2 m-1 rounded-md': {}
 			},
 			'hook-secondary-item-hover': {
 				color: null,
@@ -1221,7 +1221,7 @@ export default (options: OptionsType = {}) => {
 			},
 			'hook-secondary-header': {
 				color: null,
-				'@apply px-2 py-1.5 m-1': {}
+				'@apply px-4 py-2 m-1': {}
 			},
 			'hook-secondary-divider': {
 				borderTop: '1px solid',
@@ -1229,7 +1229,7 @@ export default (options: OptionsType = {}) => {
 			},
 			'hook-secondary-sublist': {
 				color: null,
-				'@apply px-2 py-1.5 ml-1': {}
+				'@apply px-4 py-2 ml-1': {}
 			},
 			'hook-secondary-sublist-hover': {
 				color: null,
@@ -1284,6 +1284,10 @@ export default (options: OptionsType = {}) => {
 					lineHeight: null
 				},
 				'.uk-nav-primary .uk-nav-sub': {
+					fontSize: null,
+					lineHeight: null
+				},
+				'.uk-nav-secondary .uk-nav-sub': {
 					fontSize: null,
 					lineHeight: null
 				},
