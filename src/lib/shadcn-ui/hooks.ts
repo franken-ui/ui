@@ -422,7 +422,8 @@ export default (options: OptionsType = {}) => {
 			},
 			'hook-link': {
 				color: null,
-				'@apply shadow-none rounded-none': {}
+				lineHeight: null,
+				'@apply h-auto shadow-none rounded-none': {}
 			},
 			'hook-link-hover': {
 				color: null
@@ -433,6 +434,7 @@ export default (options: OptionsType = {}) => {
 			},
 			'hook-text': {
 				color: null,
+				lineHeight: null,
 				'@apply h-auto shadow-none rounded-none': {}
 			},
 			'hook-text-hover': {
