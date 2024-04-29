@@ -920,6 +920,45 @@ export default (options: OptionsType = {}) => {
 					maxWidth: '100%',
 					verticalAlign: 'middle',
 					WebkitBackfaceVisibility: 'hidden'
+				},
+				'.uk-tag-input': {
+					'@apply flex min-h-9 flex-wrap items-center gap-1 rounded-md border border-input bg-background px-3 py-1':
+						{}
+				},
+				'.uk-tag-input input': {
+					'@apply min-h-6 flex-1 bg-transparent px-1 text-sm placeholder-muted-foreground focus:outline-none':
+						{}
+				},
+				'.uk-tag': {
+					'@apply inline-flex min-h-6 items-center gap-2 rounded bg-secondary px-2 py-1 text-sm': {}
+				},
+				'.uk-pin-input': {
+					'@apply inline-flex items-center shadow-sm': {}
+				},
+				'.uk-pin-input input': {
+					'@apply relative -mr-[1px] flex h-9 w-9 border border-input bg-transparent p-3 text-center text-sm placeholder-muted-foreground focus:z-10 focus:outline-none focus:ring-1 focus:ring-ring':
+						{}
+				},
+				'.uk-pin-input input:focus': {
+					'@apply placeholder:text-background': {}
+				},
+				'.uk-pin-input.uk-disabled input, .uk-pin-input input:disabled': {
+					'@apply opacity-50': {}
+				},
+				'.uk-pin-input input:first-child': {
+					'@apply ml-[1px] rounded-l-md': {}
+				},
+				'.uk-pin-input input:last-child': {
+					'@apply rounded-r-md': {}
+				},
+				'.uk-pin-input.uk-pin-separated': {
+					'@apply gap-2 shadow-none': {}
+				},
+				'.uk-pin-input.uk-pin-separated input': {
+					'@apply -mr-0 rounded-md shadow-sm': {}
+				},
+				'.uk-pin-input.uk-pin-separated input:first-child': {
+					'@apply ml-0': {}
 				}
 			}
 		},
