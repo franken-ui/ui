@@ -6,10 +6,13 @@ HTML-first, framework-agnostic, beautifully designed components that you can tru
 
 Visit https://www.franken-ui.dev to view the documentation.
 
+### Is it down?
+
+Probably not, but you can always clone [the documentation](https://github.com/sveltecult/franken-ui-site) and run it locally.
+
 ## Templates
 - [Franken UI - Template Astro](https://github.com/sveltecult/franken-ui-template-astro/)
 - [Franken UI - Template Laravel (Blade)](https://github.com/sveltecult/franken-ui-template-laravel/)
-- [Franken UI - Template HTML (Non-NPM)](https://github.com/sveltecult/franken-ui-template-html/)
 
 ## Credits
 - [shadcn/ui](https://ui.shadcn.com) - For the design
@@ -19,7 +22,7 @@ Visit https://www.franken-ui.dev to view the documentation.
 
 ## Disclaimer
 
-I'm a completely independent developer and have no affiliation with Svelte, @shadcn, UIkit and YOOtheme, or any other entities.
+I'm a completely independent developer and have no affiliation with Svelte, @shadcn, UIkit and YOOtheme, or any other entities. Follow [@sveltecult](https://mas.to/@sveltecult) on Mastodon for project updates.
 
 ## License
 
