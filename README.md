@@ -18,6 +18,7 @@ Probably not, but you can always clone [the documentation](https://github.com/sv
 - [shadcn/ui](https://ui.shadcn.com) - For the design
 - [UIkit](https://getuikit.com) - For the documentation, base and JavaScript
 - [Flowbite](https://flowbite.com) - For the documentation and other components
+- [Pines](https://devdojo.com/pines) - For other components
 - And all the amazing tools used to build this library
 
 ## Disclaimer
