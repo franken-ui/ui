@@ -69,6 +69,9 @@ export const addHooks = (args: Args): CSSRuleObject => {
 		'.uk-section-muted': {
 			..._hooks['hook-muted']
 		},
+		'.uk-section-primary': {
+			..._hooks['hook-primary']
+		},
 		'.uk-section-secondary': {
 			..._hooks['hook-secondary']
 		},

@@ -356,6 +356,7 @@ type ComponentsType = {
 		hooks?: Partial<NavbarHooksType>;
 	};
 	notification: {
+		media?: boolean;
 		hooks?: Partial<NotificationHooksType>;
 	};
 	offcanvas: {

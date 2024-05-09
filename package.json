@@ -55,6 +55,10 @@
 		"./shadcn-ui/preset": {
 			"types": "./dist/shadcn-ui/preset.d.ts",
 			"default": "./dist/shadcn-ui/preset.js"
+		},
+		"./shadcn-ui/preset-quick": {
+			"types": "./dist/shadcn-ui/preset-quick.d.ts",
+			"default": "./dist/shadcn-ui/preset-quick.js"
 		}
 	},
 	"files": [

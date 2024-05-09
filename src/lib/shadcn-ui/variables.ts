@@ -549,8 +549,7 @@ export default plugin.withOptions((options: OptionsType = {}) => {
 	return async ({ addBase }) => {
 		addBase({
 			':root': variables[`.theme-${options.theme || 'zinc'}`],
-			'.dark': variables[`.dark .theme-${options.theme || 'zinc'}`],
-			...variables
+			'.dark': variables[`.dark .theme-${options.theme || 'zinc'}`]
 		});
 	};
 });
