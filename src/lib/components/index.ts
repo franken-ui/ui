@@ -118,6 +118,7 @@ import { rules as sliderRules, addHooks as addSliderHooks } from './slider.js';
 import { rules as slideshowRules, addHooks as addSlideshowHooks } from './slideshow.js';
 import { rules as sortableRules, addHooks as addSortableHooks } from './sortable.js';
 import { rules as spinnerRules, addHooks as addSpinnerHooks } from './spinner.js';
+import { rules as stepperRules, addHooks as addStepperHooks } from './stepper.js';
 import { rules as stickyRules, addHooks as addStickyHooks } from './sticky.js';
 import { rules as subnavRules, addHooks as addSubnavHooks } from './subnav.js';
 import { rules as svgRules, addHooks as addSvgHooks } from './svg.js';
@@ -196,6 +197,7 @@ import type { SlidenavHooks as SlidenavHooksType } from './slidenav.js';
 import type { SlideshowHooks as SlideshowHooksType } from './slideshow.js';
 import type { SortableHooks as SortableHooksType } from './sortable.js';
 import type { SpinnerHooks as SpinnerHooksType } from './spinner.js';
+import type { StepperHooks as StepperHooksType } from './stepper.js';
 import type { StickyHooks as StickyHooksType } from './sticky.js';
 import type { SubnavHooks as SubnavHooksType } from './subnav.js';
 import type { SwitcherHooks as SwitcherHooksType } from './switcher.js';
@@ -401,6 +403,9 @@ type ComponentsType = {
 	};
 	spinner: {
 		hooks?: Partial<SpinnerHooksType>;
+	};
+	stepper: {
+		hooks?: Partial<StepperHooksType>;
 	};
 	sticky: {
 		hooks?: Partial<StickyHooksType>;
@@ -712,6 +717,10 @@ export const components = {
 	spinner: {
 		rules: spinnerRules,
 		addHooks: addSpinnerHooks
+	},
+	stepper: {
+		rules: stepperRules,
+		addHooks: addStepperHooks
 	},
 	sticky: {
 		rules: stickyRules,
