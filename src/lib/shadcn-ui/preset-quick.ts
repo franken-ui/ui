@@ -199,9 +199,9 @@ export default function (options: OptionsType = {}) {
 					},
 					sortable: {},
 					spinner: {},
-					stepper: {
-						hooks: shadcn.stepper
-					},
+					// stepper: {
+					// 	hooks: shadcn.stepper
+					// },
 					sticky: {},
 					subnav: {
 						hooks: shadcn.subnav
