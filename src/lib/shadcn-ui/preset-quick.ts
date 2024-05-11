@@ -137,9 +137,7 @@ export default function (options: OptionsType = {}) {
 						hooks: shadcn.label
 					},
 					leader: {},
-					lightbox: {
-						hooks: shadcn.lightbox
-					},
+					lightbox: {},
 					link: {
 						hooks: shadcn.link
 					},
@@ -167,6 +165,7 @@ export default function (options: OptionsType = {}) {
 						media: true
 					},
 					offcanvas: {
+						hooks: shadcn.offcanvas,
 						media: true
 					},
 					overlay: {},
