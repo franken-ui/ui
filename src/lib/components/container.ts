@@ -43,7 +43,7 @@ export const media: CSSRuleObject = {
 		'.uk-container-item-padding-remove-left': { marginLeft: '-30px' },
 		'.uk-container-item-padding-remove-right': { marginRight: '-30px' }
 	},
-	'@media (min-width: 960px)': {
+	'@media (min-width: 768px)': {
 		'.uk-container': { paddingLeft: '40px', paddingRight: '40px' },
 		'.uk-container-expand-left,.uk-container-expand-right': {
 			maxWidth: 'calc(50% + (1200px / 2) - 40px)'

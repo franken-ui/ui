@@ -24,7 +24,7 @@ export const media: CSSRuleObject = {
 	'@media (min-width: 640px)': {
 		'.uk-dropbar': { paddingLeft: '30px', paddingRight: '30px' }
 	},
-	'@media (min-width: 960px)': {
+	'@media (min-width: 768px)': {
 		'.uk-dropbar': { paddingLeft: '40px', paddingRight: '40px' }
 	}
 };

@@ -2,7 +2,6 @@ import merge from 'lodash/merge.js';
 import type { CSSRuleObject } from 'tailwindcss/types/config.js';
 
 export const rules: CSSRuleObject = {
-	':root': { '--uk-position-margin-offset': '0px' },
 	"[class*='uk-position-top'], [class*='uk-position-bottom'], [class*='uk-position-left'], [class*='uk-position-right'], [class*='uk-position-center']":
 		{
 			position: 'absolute !important',
@@ -72,7 +71,7 @@ export const rules: CSSRuleObject = {
 };
 
 export const media: CSSRuleObject = {
-	'@media (min-width: 1200px)': {
+	'@media (min-width: 1024px)': {
 		'.uk-position-large': {
 			margin: '50px',
 			'--uk-position-margin-offset': '50px'

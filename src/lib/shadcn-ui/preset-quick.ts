@@ -117,7 +117,8 @@ export default function (options: OptionsType = {}) {
 						hooks: shadcn['form-range']
 					},
 					form: {
-						hooks: shadcn.form
+						hooks: shadcn.form,
+						media: true
 					},
 					grid: {
 						hooks: shadcn.grid,
@@ -211,7 +212,8 @@ export default function (options: OptionsType = {}) {
 						hooks: shadcn.tab
 					},
 					table: {
-						hooks: shadcn.table
+						hooks: shadcn.table,
+						media: true
 					},
 					text: {
 						hooks: shadcn.text,

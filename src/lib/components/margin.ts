@@ -72,7 +72,7 @@ export const media: CSSRuleObject = {
 		'.uk-margin-remove-left\\@s': { marginLeft: '0 !important' },
 		'.uk-margin-remove-right\\@s': { marginRight: '0 !important' }
 	},
-	'@media (min-width: 960px)': {
+	'@media (min-width: 768px)': {
 		'.uk-margin-auto\\@m': {
 			marginLeft: 'auto !important',
 			marginRight: 'auto !important'
@@ -82,7 +82,7 @@ export const media: CSSRuleObject = {
 		'.uk-margin-remove-left\\@m': { marginLeft: '0 !important' },
 		'.uk-margin-remove-right\\@m': { marginRight: '0 !important' }
 	},
-	'@media (min-width: 1200px)': {
+	'@media (min-width: 1024px)': {
 		'.uk-margin-large': { marginBottom: '70px' },
 		'* + .uk-margin-large': { marginTop: '70px !important' },
 		'.uk-margin-large-top': { marginTop: '70px !important' },
@@ -104,7 +104,7 @@ export const media: CSSRuleObject = {
 		'.uk-margin-remove-left\\@l': { marginLeft: '0 !important' },
 		'.uk-margin-remove-right\\@l': { marginRight: '0 !important' }
 	},
-	'@media (min-width: 1600px)': {
+	'@media (min-width: 1280px)': {
 		'.uk-margin-auto\\@xl': {
 			marginLeft: 'auto !important',
 			marginRight: 'auto !important'

@@ -143,7 +143,7 @@ export const rules: CSSRuleObject = {
 };
 
 export const media: CSSRuleObject = {
-	'@media (min-width: 1200px)': {
+	'@media (min-width: 1024px)': {
 		'.uk-grid': { marginLeft: '-40px' },
 		'.uk-grid > *': { paddingLeft: '40px' },
 		'.uk-grid + .uk-grid,.uk-grid > .uk-grid-margin,* + .uk-grid-margin': {

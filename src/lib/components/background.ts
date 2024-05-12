@@ -50,16 +50,16 @@ export const rules: CSSRuleObject = {
 };
 
 export const media: CSSRuleObject = {
-	'@media (max-width: 639px)': {
+	'@media (max-width: 640px)': {
 		'.uk-background-image\\@s': { backgroundImage: 'none !important' }
 	},
-	'@media (max-width: 959px)': {
+	'@media (max-width: 768px)': {
 		'.uk-background-image\\@m': { backgroundImage: 'none !important' }
 	},
-	'@media (max-width: 1199px)': {
+	'@media (max-width: 1024px)': {
 		'.uk-background-image\\@l': { backgroundImage: 'none !important' }
 	},
-	'@media (max-width: 1599px)': {
+	'@media (max-width: 1280px)': {
 		'.uk-background-image\\@xl': { backgroundImage: 'none !important' }
 	}
 };

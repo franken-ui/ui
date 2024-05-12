@@ -86,7 +86,7 @@ export const media: CSSRuleObject = {
 		'.uk-modal-header': { padding: '15px 30px' },
 		'.uk-modal-footer': { padding: '15px 30px' }
 	},
-	'@media (min-width: 960px)': {
+	'@media (min-width: 768px)': {
 		'.uk-modal': { paddingLeft: '40px', paddingRight: '40px' },
 		'.uk-modal-close-outside': {
 			right: '0',

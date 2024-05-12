@@ -103,7 +103,7 @@ export const addHooks = (args: Args): CSSRuleObject => {
 };
 
 export const media: CSSRuleObject = {
-	'@media (min-width: 960px)': {
+	'@media (min-width: 768px)': {
 		'.uk-comment-list .uk-comment ~ ul': { paddingLeft: '100px' }
 	}
 };

@@ -10,8 +10,7 @@ export const rules: CSSRuleObject = {
 		content: 'attr(data-fill)',
 		whiteSpace: 'nowrap'
 	},
-	'.uk-leader-fill.uk-leader-hide::after': { display: 'none' },
-	':root': { '--uk-leader-fill-content': '.' }
+	'.uk-leader-fill.uk-leader-hide::after': { display: 'none' }
 };
 
 export interface LeaderHooks {

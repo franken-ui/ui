@@ -22,7 +22,7 @@ export const media: CSSRuleObject = {
 			cssFloat: 'right'
 		}
 	},
-	'@media (min-width: 960px)': {
+	'@media (min-width: 768px)': {
 		'.uk-align-left\\@m': {
 			marginTop: '0',
 			marginRight: '30px',
@@ -34,7 +34,7 @@ export const media: CSSRuleObject = {
 			cssFloat: 'right'
 		}
 	},
-	'@media (min-width: 1200px)': {
+	'@media (min-width: 1024px)': {
 		'.uk-align-left\\@l': { marginTop: '0', cssFloat: 'left' },
 		'.uk-align-right\\@l': { marginTop: '0', cssFloat: 'right' },
 		'.uk-align-left,.uk-align-left\\@s,.uk-align-left\\@m,.uk-align-left\\@l': {
@@ -44,7 +44,7 @@ export const media: CSSRuleObject = {
 			marginLeft: '40px'
 		}
 	},
-	'@media (min-width: 1600px)': {
+	'@media (min-width: 1280px)': {
 		'.uk-align-left\\@xl': {
 			marginTop: '0',
 			marginRight: '40px',

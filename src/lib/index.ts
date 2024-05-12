@@ -6,6 +6,17 @@ import { rules as baseRules, media as baseMedia, addHooks } from './components/b
 
 export default plugin.withOptions((options: OptionsType = {}) => {
 	return async ({ addBase, addComponents, theme }) => {
+		addBase({
+			':root': {
+				'--uk-breakpoint-s': '640px',
+				'--uk-breakpoint-m': '768px',
+				'--uk-breakpoint-l': '1024px',
+				'--uk-breakpoint-xl': '1080px',
+				'--uk-leader-fill-content': '.',
+				'--uk-position-margin-offset': '0px'
+			}
+		});
+
 		if (options.base) {
 			addBase(baseMedia);
 

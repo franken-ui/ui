@@ -59,17 +59,17 @@ export const media: CSSRuleObject = {
 		'.uk-text-right\\@s': { textAlign: 'right !important' },
 		'.uk-text-center\\@s': { textAlign: 'center !important' }
 	},
-	'@media (min-width: 960px)': {
+	'@media (min-width: 768px)': {
 		'.uk-text-left\\@m': { textAlign: 'left !important' },
 		'.uk-text-right\\@m': { textAlign: 'right !important' },
 		'.uk-text-center\\@m': { textAlign: 'center !important' }
 	},
-	'@media (min-width: 1200px)': {
+	'@media (min-width: 1024px)': {
 		'.uk-text-left\\@l': { textAlign: 'left !important' },
 		'.uk-text-right\\@l': { textAlign: 'right !important' },
 		'.uk-text-center\\@l': { textAlign: 'center !important' }
 	},
-	'@media (min-width: 1600px)': {
+	'@media (min-width: 1280px)': {
 		'.uk-text-left\\@xl': { textAlign: 'left !important' },
 		'.uk-text-right\\@xl': { textAlign: 'right !important' },
 		'.uk-text-center\\@xl': { textAlign: 'center !important' }

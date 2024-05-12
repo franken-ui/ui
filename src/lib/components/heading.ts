@@ -43,7 +43,7 @@ export const rules: CSSRuleObject = {
 };
 
 export const media: CSSRuleObject = {
-	'@media (min-width: 960px)': {
+	'@media (min-width: 768px)': {
 		'.uk-heading-small': { fontSize: '3.25rem' },
 		'.uk-heading-medium': { fontSize: '3.5rem' },
 		'.uk-heading-large': { fontSize: '4rem' },
@@ -51,7 +51,7 @@ export const media: CSSRuleObject = {
 		'.uk-heading-2xlarge': { fontSize: '8rem' },
 		'.uk-heading-3xlarge': { fontSize: '11rem' }
 	},
-	'@media (min-width: 1200px)': {
+	'@media (min-width: 1024px)': {
 		'.uk-heading-medium': { fontSize: '4rem' },
 		'.uk-heading-large': { fontSize: '6rem' },
 		'.uk-heading-xlarge': { fontSize: '8rem' },

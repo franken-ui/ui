@@ -41,7 +41,7 @@ export const media: CSSRuleObject = {
 	'@media (min-width: 640px)': {
 		'.uk-dropdown-dropbar': { '--uk-position-viewport-offset': '30px' }
 	},
-	'@media (min-width: 960px)': {
+	'@media (min-width: 768px)': {
 		'.uk-dropdown-dropbar': { '--uk-position-viewport-offset': '40px' }
 	}
 };

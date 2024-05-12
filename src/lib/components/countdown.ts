@@ -15,7 +15,7 @@ export const media: CSSRuleObject = {
 		'.uk-countdown-number': { fontSize: '4rem' },
 		'.uk-countdown-separator': { fontSize: '2rem' }
 	},
-	'@media (min-width: 960px)': {
+	'@media (min-width: 768px)': {
 		'.uk-countdown-number': { fontSize: '6rem' },
 		'.uk-countdown-separator': { fontSize: '3rem' }
 	}

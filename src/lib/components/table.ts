@@ -65,7 +65,7 @@ export const rules: CSSRuleObject = {
 };
 
 export const media: CSSRuleObject = {
-	'@media (max-width: 959px)': {
+	'@media (max-width: 768px)': {
 		'.uk-table-responsive, .uk-table-responsive tbody, .uk-table-responsive th, .uk-table-responsive td, .uk-table-responsive tr':
 			{
 				display: 'block'

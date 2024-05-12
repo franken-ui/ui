@@ -104,7 +104,7 @@ export const rules: CSSRuleObject = {
 };
 
 export const media: CSSRuleObject = {
-	'@media (min-width: 1200px)': {
+	'@media (min-width: 1024px)': {
 		'.uk-card-body': { padding: '40px 40px' },
 		'.uk-card-header': { padding: '20px 40px' },
 		'.uk-card-footer': { padding: '20px 40px' },

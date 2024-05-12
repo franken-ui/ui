@@ -272,13 +272,13 @@ export const rules: CSSRuleObject = {
 };
 
 export const media: CSSRuleObject = {
-	'@media (max-width: 959px)': {
+	'@media (max-width: 768px)': {
 		'.uk-form-horizontal .uk-form-label': {
 			display: 'block',
 			marginBottom: '5px'
 		}
 	},
-	'@media (min-width: 960px)': {
+	'@media (min-width: 768px)': {
 		'.uk-form-horizontal .uk-form-label': {
 			width: '200px',
 			marginTop: '7px',

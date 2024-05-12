@@ -127,17 +127,11 @@ export const rules: CSSRuleObject = {
 	'::selection': { backgroundColor: '#39f', color: '#fff', textShadow: 'none' },
 	'details, main': { display: 'block' },
 	summary: { display: 'list-item' },
-	template: { display: 'none' },
-	':root': {
-		'--uk-breakpoint-s': '640px',
-		'--uk-breakpoint-m': '960px',
-		'--uk-breakpoint-l': '1200px',
-		'--uk-breakpoint-xl': '1600px'
-	}
+	template: { display: 'none' }
 };
 
 export const media: CSSRuleObject = {
-	'@media (min-width: 960px)': {
+	'@media (min-width: 768px)': {
 		'h1, .uk-h1': { fontSize: '2.625rem' },
 		'h2, .uk-h2': { fontSize: '2rem' }
 	}

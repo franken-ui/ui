@@ -14,7 +14,7 @@ export const rules: CSSRuleObject = {
 };
 
 export const media: CSSRuleObject = {
-	'@media (min-width: 1200px)': {
+	'@media (min-width: 1024px)': {
 		"[class*='uk-column-']": { columnGap: '40px' },
 		'.uk-column-divider': { columnGap: '80px' },
 
@@ -31,14 +31,14 @@ export const media: CSSRuleObject = {
 		'.uk-column-1-5\\@s': { columnCount: '5' },
 		'.uk-column-1-6\\@s': { columnCount: '6' }
 	},
-	'@media (min-width: 960px)': {
+	'@media (min-width: 768px)': {
 		'.uk-column-1-2\\@m': { columnCount: '2' },
 		'.uk-column-1-3\\@m': { columnCount: '3' },
 		'.uk-column-1-4\\@m': { columnCount: '4' },
 		'.uk-column-1-5\\@m': { columnCount: '5' },
 		'.uk-column-1-6\\@m': { columnCount: '6' }
 	},
-	'@media (min-width: 1600px)': {
+	'@media (min-width: 1280px)': {
 		'.uk-column-1-2\\@xl': { columnCount: '2' },
 		'.uk-column-1-3\\@xl': { columnCount: '3' },
 		'.uk-column-1-4\\@xl': { columnCount: '4' },

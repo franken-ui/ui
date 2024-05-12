@@ -29,25 +29,25 @@ export const media: CSSRuleObject = {
 	'@media (min-width: 640px)': {
 		'.uk-hidden\\@s': { display: 'none !important' }
 	},
-	'@media (min-width: 960px)': {
+	'@media (min-width: 768px)': {
 		'.uk-hidden\\@m': { display: 'none !important' }
 	},
-	'@media (min-width: 1200px)': {
+	'@media (min-width: 1024px)': {
 		'.uk-hidden\\@l': { display: 'none !important' }
 	},
-	'@media (min-width: 1600px)': {
+	'@media (min-width: 1280px)': {
 		'.uk-hidden\\@xl': { display: 'none !important' }
 	},
-	'@media (max-width: 639px)': {
+	'@media (max-width: 640px)': {
 		'.uk-visible\\@s': { display: 'none !important' }
 	},
-	'@media (max-width: 959px)': {
+	'@media (max-width: 768px)': {
 		'.uk-visible\\@m': { display: 'none !important' }
 	},
-	'@media (max-width: 1199px)': {
+	'@media (max-width: 1024px)': {
 		'.uk-visible\\@l': { display: 'none !important' }
 	},
-	'@media (max-width: 1599px)': {
+	'@media (max-width: 1280px)': {
 		'.uk-visible\\@xl': { display: 'none !important' }
 	}
 };

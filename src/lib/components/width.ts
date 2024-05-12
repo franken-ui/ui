@@ -81,7 +81,7 @@ export const media: CSSRuleObject = {
 				flex: 'initial'
 			}
 	},
-	'@media (min-width: 960px)': {
+	'@media (min-width: 768px)': {
 		'.uk-child-width-1-1\\@m > *': { width: '100%' },
 		'.uk-child-width-1-2\\@m > *': { width: '50%' },
 		'.uk-child-width-1-3\\@m > *': { width: 'calc(100% / 3)' },
@@ -121,7 +121,7 @@ export const media: CSSRuleObject = {
 				flex: 'initial'
 			}
 	},
-	'@media (min-width: 1200px)': {
+	'@media (min-width: 1024px)': {
 		'.uk-child-width-1-1\\@l > *': { width: '100%' },
 		'.uk-child-width-1-2\\@l > *': { width: '50%' },
 		'.uk-child-width-1-3\\@l > *': { width: 'calc(100% / 3)' },
@@ -161,7 +161,7 @@ export const media: CSSRuleObject = {
 				flex: 'initial'
 			}
 	},
-	'@media (min-width: 1600px)': {
+	'@media (min-width: 1280px)': {
 		'.uk-child-width-1-1\\@xl > *': { width: '100%' },
 		'.uk-child-width-1-2\\@xl > *': { width: '50%' },
 		'.uk-child-width-1-3\\@xl > *': { width: 'calc(100% / 3)' },
