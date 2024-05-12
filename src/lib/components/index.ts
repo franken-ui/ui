@@ -86,7 +86,11 @@ import {
 	media as navbarMedia,
 	addHooks as addNavbarHooks
 } from './navbar.js';
-import { rules as notificationRules, addHooks as addNotificationHooks } from './notification.js';
+import {
+	rules as notificationRules,
+	media as notificationMedia,
+	addHooks as addNotificationHooks
+} from './notification.js';
 import {
 	rules as offcanvasRules,
 	media as offcanvasMedia,
@@ -653,6 +657,7 @@ export const components = {
 	},
 	notification: {
 		rules: notificationRules,
+		media: notificationMedia,
 		addHooks: addNotificationHooks
 	},
 	offcanvas: {
