@@ -5,14 +5,14 @@ export default function () {
 			'@apply text-sm': {}
 		},
 		'hook-header-cell': {
-			padding: null,
+			// padding: null,
 			verticalAlign: null,
 			color: null,
 			textTransform: null,
 			'@apply text-muted-foreground': {}
 		},
 		'hook-cell': {
-			padding: null
+			// padding: null
 		},
 		'hook-footer': {},
 		'hook-caption': {
@@ -38,10 +38,10 @@ export default function () {
 			'@apply bg-muted/50': {}
 		},
 		'hook-small': {
-			padding: null
+			// padding: null
 		},
 		'hook-large': {
-			padding: null
+			// padding: null
 		},
 		'hook-misc': {
 			'* + .uk-table': {
@@ -51,8 +51,8 @@ export default function () {
 				marginBottom: null
 			},
 			'.uk-table-link > a': {
-				display: null,
-				padding: null
+				display: null
+				// padding: null
 			},
 			'.uk-table-striped > tr:nth-of-type(even):last-child, .uk-table-striped tbody tr:nth-of-type(even):last-child':
 				{

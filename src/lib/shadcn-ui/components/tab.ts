@@ -2,7 +2,7 @@ export default function () {
 	return {
 		'hook-tab': {
 			marginLeft: null,
-			padding: null,
+			// padding: null,
 			'@apply text-muted-foreground': {}
 		},
 		'hook-tab-before': {
@@ -14,7 +14,7 @@ export default function () {
 			color: null,
 			textTransform: 'none',
 			borderBottom: '2px solid transparent',
-			padding: null,
+			// padding: null,
 			'@apply font-semibold text-muted-foreground': {}
 		},
 		'hook-item-hover': {
