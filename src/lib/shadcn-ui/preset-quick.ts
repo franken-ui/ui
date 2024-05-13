@@ -152,14 +152,15 @@ export default function (options: OptionsType = {}) {
 						hooks: shadcn.marker
 					},
 					modal: {
-						hooks: shadcn.modal
+						hooks: shadcn.modal,
+						media: true
 					},
 					nav: {
 						hooks: shadcn.nav
 					},
 					navbar: {
 						hooks: shadcn.navbar,
-						media: false
+						media: true
 					},
 					notification: {
 						hooks: shadcn.notification,
