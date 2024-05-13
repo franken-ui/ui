@@ -9,8 +9,7 @@ export default function () {
 			width: null,
 			maxWidth: null,
 			backgroundColor: null,
-			'@apply w-full overflow-hidden border border-border bg-background sm:max-w-md sm:rounded-lg':
-				{}
+			'@apply w-full overflow-hidden border border-border bg-background sm:max-w-md rounded-lg': {}
 		},
 		'hook-full': {
 			backgroundColor: null,
