@@ -177,11 +177,15 @@ export default function (options: OptionsType = {}) {
 					pagination: {
 						hooks: shadcn.pagination
 					},
-					placeholder: {},
+					placeholder: {
+						hooks: shadcn.placeholder
+					},
 					position: {
 						media: true
 					},
-					progress: {},
+					progress: {
+						hooks: shadcn.progress
+					},
 					search: {
 						hooks: shadcn.search
 					},
