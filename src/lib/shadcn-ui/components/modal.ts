@@ -1,7 +1,7 @@
 export default function () {
 	return {
 		'hook-modal': {
-			padding: null,
+			// padding: null,
 			backgroundColor: `rgba(0, 0, 0, 0.8)`,
 			'@apply backdrop-blur-sm': {}
 		},
@@ -17,20 +17,20 @@ export default function () {
 			'@apply w-full rounded-none border-none sm:max-w-full': {}
 		},
 		'hook-header': {
-			padding: null,
+			// padding: null,
 			backgroundColor: null,
-			borderBottom: null,
-			'@apply p-6': {}
+			borderBottom: null
+			// '@apply p-6': {}
 		},
 		'hook-body': {
-			padding: null,
-			'@apply p-6': {}
+			// padding: null,
+			// '@apply p-6': {}
 		},
 		'hook-footer': {
-			padding: null,
+			// padding: null,
 			backgroundColor: null,
-			borderTop: null,
-			'@apply p-6': {}
+			borderTop: null
+			// '@apply p-6': {}
 		},
 		'hook-title': {
 			fontSize: null,
@@ -45,7 +45,7 @@ export default function () {
 				padding: '0 !important'
 			},
 			'.uk-flex': {
-				'@apply flex': {}
+				display: 'flex !important'
 			},
 			'.uk-flex-top': {
 				'@apply items-start': {}
