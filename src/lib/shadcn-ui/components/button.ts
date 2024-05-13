@@ -17,7 +17,7 @@ export default function () {
 			lineHeight: null,
 			textAlign: null,
 			textDecoration: null,
-			'@apply inline-flex justify-center items-center font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring text-sm h-9 px-4 py-2 rounded-md shadow':
+			'@apply inline-flex h-9 items-center justify-center rounded-md px-4 py-2 text-sm font-medium shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring':
 				{}
 		},
 		'hook-disabled': {
@@ -29,8 +29,7 @@ export default function () {
 		'hook-default': {
 			backgroundColor: null,
 			color: null,
-			borderColor: null,
-			border: '1px solid',
+			border: null,
 			'@apply border border-input bg-background text-accent-foreground': {}
 		},
 		'hook-default-hover': {
@@ -47,53 +46,44 @@ export default function () {
 		'hook-primary': {
 			backgroundColor: null,
 			color: null,
-			borderColor: null,
 			'@apply bg-primary text-primary-foreground': {}
 		},
 		'hook-primary-hover': {
 			backgroundColor: null,
 			color: null,
-			borderColor: null,
 			'@apply opacity-90': {}
 		},
 		'hook-primary-active': {
 			backgroundColor: null,
-			color: null,
-			borderColor: null
+			color: null
 		},
 		'hook-secondary': {
 			backgroundColor: null,
 			color: null,
-			borderColor: null,
 			'@apply bg-secondary text-secondary-foreground': {}
 		},
 		'hook-secondary-hover': {
 			backgroundColor: null,
 			color: null,
-			borderColor: null,
 			'@apply opacity-90': {}
 		},
 		'hook-secondary-active': {
 			backgroundColor: null,
-			color: null,
-			borderColor: null
+			color: null
 		},
 		'hook-danger': {
 			backgroundColor: null,
 			color: null,
-			borderColor: null,
 			'@apply bg-destructive text-destructive-foreground': {}
 		},
 		'hook-danger-hover': {
 			backgroundColor: null,
 			color: null,
-			borderColor: null,
 			'@apply opacity-90': {}
 		},
 		'hook-danger-active': {
 			backgroundColor: null,
-			color: null,
-			borderColor: null
+			color: null
 		},
 		'hook-link': {
 			color: null,
