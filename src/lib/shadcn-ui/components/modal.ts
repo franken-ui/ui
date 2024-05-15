@@ -6,14 +6,13 @@ export default function () {
 			'@apply backdrop-blur-sm': {}
 		},
 		'hook-dialog': {
-			width: null,
-			maxWidth: null,
+			width: '32rem',
 			backgroundColor: null,
-			'@apply w-full overflow-hidden border border-border bg-background sm:max-w-md rounded-lg': {}
+			'@apply overflow-hidden border border-border bg-background rounded-lg': {}
 		},
 		'hook-full': {
 			backgroundColor: null,
-			'@apply w-full rounded-none border-none sm:max-w-full': {}
+			'@apply w-full rounded-none border-none': {}
 		},
 		'hook-header': {
 			// padding: null,
