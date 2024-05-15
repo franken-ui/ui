@@ -222,7 +222,7 @@ export default function (options: OptionsType = {}) {
 					},
 					text: {
 						hooks: shadcn.text,
-						media: true
+						media: false
 					},
 					thumbnav: {},
 					tile: {

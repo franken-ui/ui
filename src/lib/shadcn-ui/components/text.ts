@@ -31,6 +31,10 @@ export default function () {
 				color: null,
 				textDecoration: null
 			},
+			'.uk-text-default': {
+				fontSize: null,
+				'@apply text-base': {}
+			},
 			'.uk-text-muted': { color: null, '@apply text-muted-foreground': {} },
 			'.uk-text-emphasis': null,
 			'.uk-text-primary': null,
