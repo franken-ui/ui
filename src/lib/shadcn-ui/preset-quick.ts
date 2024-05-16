@@ -76,6 +76,7 @@ export default function (options: OptionsType = {}) {
 					},
 					card: {
 						hooks: shadcn.card
+						// media: true
 					},
 					close: {
 						hooks: shadcn.close
@@ -106,13 +107,17 @@ export default function (options: OptionsType = {}) {
 					},
 					drop: {},
 					dropbar: {
-						hooks: shadcn.dropbar
+						hooks: shadcn.dropbar,
+						media: true
 					},
 					dropdown: {
-						hooks: shadcn.dropdown
+						hooks: shadcn.dropdown,
+						media: true
 					},
 					dropnav: {},
-					flex: {},
+					flex: {
+						media: true
+					},
 					'form-range': {
 						hooks: shadcn['form-range']
 					},
@@ -126,6 +131,7 @@ export default function (options: OptionsType = {}) {
 					},
 					heading: {
 						hooks: shadcn.heading
+						// media: true
 					},
 					height: {},
 					icon: {
@@ -222,7 +228,7 @@ export default function (options: OptionsType = {}) {
 					},
 					text: {
 						hooks: shadcn.text,
-						media: false
+						media: true
 					},
 					thumbnav: {},
 					tile: {

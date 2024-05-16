@@ -80,6 +80,14 @@ export default function () {
 		},
 		// 'hook-dropbar': {},
 		'hook-misc': {
+			".uk-navbar-left, .uk-navbar-right, [class*='uk-navbar-center']": {
+				gap: null,
+				'@apply gap-6 md:gap-6': {}
+			},
+			'.uk-navbar-nav': {
+				gap: null,
+				'@apply gap-6 md:gap-6': {}
+			},
 			'.uk-navbar-nav > li > a, .uk-navbar-item, .uk-navbar-toggle': {
 				minHeight: null,
 				fontFamily: null,
