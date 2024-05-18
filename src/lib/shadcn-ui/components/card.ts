@@ -66,6 +66,12 @@ export default function () {
 		},
 		// 'hook-secondary-hover': {},
 		'hook-misc': {
+			"[class*='uk-card-media']": null,
+			'.uk-card-media-top, .uk-grid-stack > .uk-card-media-left, .uk-grid-stack > .uk-card-media-right':
+				null,
+			'.uk-card-media-bottom': null,
+			':not(.uk-grid-stack) > .uk-card-media-left': null,
+			':not(.uk-grid-stack) > .uk-card-media-right': null,
 			'.uk-card-badge': null,
 			'.uk-card-badge:first-child + *': null,
 			'.uk-card-hover:not(.uk-card-default):not(.uk-card-primary):not(.uk-card-secondary):hover':
@@ -81,6 +87,7 @@ export default function () {
 			'.uk-card-body > .uk-nav-default > li > a, .uk-card-body > .uk-nav-default .uk-nav-header, .uk-card-body > .uk-nav-default .uk-nav-divider':
 				null,
 			'.uk-card-body > .uk-nav-default .uk-nav-sub': null,
+			'.uk-card-small > .uk-nav-default': null,
 			'.uk-card-small > .uk-nav-default:only-child': null,
 			'.uk-card-small > .uk-nav-default > li > a, .uk-card-small > .uk-nav-default .uk-nav-header, .uk-card-small > .uk-nav-default .uk-nav-divider':
 				null,
