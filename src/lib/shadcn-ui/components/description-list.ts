@@ -4,12 +4,10 @@ export default function () {
 			color: null
 		},
 		'hook-description': {},
-		'hook-divider-term': {},
-		'hook-misc': {
-			'.uk-description-list-divider > dt:nth-child(n + 2)': {
-				borderTop: null,
-				'@apply border-t': {}
-			}
-		}
+		'hook-divider-term': {
+			borderTop: null,
+			'@apply border-t border-border': {}
+		},
+		'hook-misc': {}
 	};
 }

@@ -9,7 +9,7 @@ export const rules: CSSRuleObject = {
 		textTransform: 'uppercase'
 	},
 	'.uk-description-list > dt:nth-child(n + 2)': { marginTop: '20px' },
-	'.uk-description-list-divider > dt:nth-child(n + 2)': {
+	'.uk-description-list-divider > dt:nth-child(n + 2)':{
 		marginTop: '20px',
 		paddingTop: '20px',
 		borderTop: '1px solid #e5e5e5'
@@ -46,7 +46,7 @@ export const addHooks = (args: Args): CSSRuleObject => {
 		'.uk-description-list > dd': {
 			..._hooks['hook-description']
 		},
-		'.uk-description-list-divider > dt:nth-child(n+2)': {
+		'.uk-description-list-divider > dt:nth-child(n + 2)': {
 			..._hooks['hook-divider-term']
 		},
 		..._hooks['hook-misc']
