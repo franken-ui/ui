@@ -10,6 +10,10 @@ Visit https://www.franken-ui.dev to view the documentation. Looking for releases
 
 Probably not, but you can always clone [the documentation](https://github.com/sveltecult/franken-ui-site) and run it locally.
 
+## Credits
+
+Credits and attributions are now on their [dedicated page](https://www.franken-ui.dev/about).
+
 ## Disclaimer
 
 I'm a completely independent developer and have no affiliation with Svelte, @shadcn, UIkit and YOOtheme, or any other entities. Follow me on [Mastodon](https://mas.to/@sveltecult) or [X, formerly known as Twitter &#8482;](https://x.com/sveltecult) for updates.
