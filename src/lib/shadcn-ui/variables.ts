@@ -1,27 +1,8 @@
 import plugin from 'tailwindcss/plugin.js';
+import type { Palette, Theme } from './preset-types.js';
 
-const variables: {
-	[key: string]: {
-		'--background': string;
-		'--foreground': string;
-		'--muted': string;
-		'--muted-foreground': string;
-		'--popover': string;
-		'--popover-foreground': string;
-		'--card': string;
-		'--card-foreground': string;
-		'--border': string;
-		'--input': string;
-		'--primary': string;
-		'--primary-foreground': string;
-		'--secondary': string;
-		'--secondary-foreground': string;
-		'--accent': string;
-		'--accent-foreground': string;
-		'--destructive': string;
-		'--destructive-foreground': string;
-		'--ring': string;
-	};
+export const variables: {
+	[key: string]: Palette;
 } = {
 	'.theme-zinc': {
 		'--background': '0 0% 100%',
@@ -530,26 +511,26 @@ const variables: {
 };
 
 type OptionsType = {
-	theme?:
-		| 'zinc'
-		| 'slate'
-		| 'stone'
-		| 'gray'
-		| 'neutral'
-		| 'red'
-		| 'rose'
-		| 'orange'
-		| 'green'
-		| 'blue'
-		| 'yellow'
-		| 'violet';
+	palette?: {
+		':root': Palette;
+		'.dark': Palette;
+	};
+	theme?: Theme;
 };
 
 export default plugin.withOptions((options: OptionsType = {}) => {
 	return async ({ addBase }) => {
+		let root = variables[`.theme-${options.theme || 'zinc'}`];
+		let dark = variables[`.dark .theme-${options.theme || 'zinc'}`];
+
+		if (options.palette && options.palette[':root'] && options.palette['.dark']) {
+			root = options.palette[':root'];
+			dark = options.palette['.dark'];
+		}
+
 		addBase({
-			':root': variables[`.theme-${options.theme || 'zinc'}`],
-			'.dark': variables[`.dark .theme-${options.theme || 'zinc'}`]
+			':root': root,
+			'.dark': dark
 		});
 	};
 });

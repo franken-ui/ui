@@ -149,19 +149,69 @@ export type Overrides = {
 	print: Partial<PrintHooksType>;
 };
 
+export type Palette = {
+	'--background': string;
+	'--foreground': string;
+	'--muted': string;
+	'--muted-foreground': string;
+	'--popover': string;
+	'--popover-foreground': string;
+	'--card': string;
+	'--card-foreground': string;
+	'--border': string;
+	'--input': string;
+	'--primary': string;
+	'--primary-foreground': string;
+	'--secondary': string;
+	'--secondary-foreground': string;
+	'--accent': string;
+	'--accent-foreground': string;
+	'--destructive': string;
+	'--destructive-foreground': string;
+	'--ring': string;
+};
+
+export type Scheme = {
+	background: string;
+	foreground: string;
+	muted: string;
+	mutedForeground: string;
+	popover: string;
+	popoverForeground: string;
+	card: string;
+	cardForeground: string;
+	border: string;
+	input: string;
+	primary: string;
+	primaryForeground: string;
+	secondary: string;
+	secondaryForeground: string;
+	accent: string;
+	accentForeground: string;
+	destructive: string;
+	destructiveForeground: string;
+	ring: string;
+};
+
+export type Theme =
+	| 'zinc'
+	| 'slate'
+	| 'stone'
+	| 'gray'
+	| 'neutral'
+	| 'red'
+	| 'rose'
+	| 'orange'
+	| 'green'
+	| 'blue'
+	| 'yellow'
+	| 'violet';
+
 export type OptionsType = {
-	theme?:
-		| 'zinc'
-		| 'slate'
-		| 'stone'
-		| 'gray'
-		| 'neutral'
-		| 'red'
-		| 'rose'
-		| 'orange'
-		| 'green'
-		| 'blue'
-		| 'yellow'
-		| 'violet';
+	theme?: Theme;
+	palette?: {
+		':root': Palette;
+		'.dark': Palette;
+	};
 	overrides?: Partial<Overrides>;
 };

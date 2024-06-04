@@ -1,519 +1,60 @@
-export default {
-	zinc: {
-		light: {
-			background: '#ffffff',
-			foreground: '#09090b',
-			muted: '#f4f4f5',
-			mutedForeground: '#71717a',
-			popover: '#ffffff',
-			popoverForeground: '#09090b',
-			card: '#ffffff',
-			cardForeground: '#09090b',
-			border: '#e4e4e7',
-			input: '#e4e4e7',
-			primary: '#18181b',
-			primaryForeground: '#fafafa',
-			secondary: '#f4f4f5',
-			secondaryForeground: '#18181b',
-			accent: '#f4f4f5',
-			accentForeground: '#18181b',
-			destructive: '#ef4444',
-			destructiveForeground: '#fafafa',
-			ring: '#18181b'
-		},
-		dark: {
-			background: '#09090b',
-			foreground: '#fafafa',
-			muted: '#27272a',
-			mutedForeground: '#a1a1aa',
-			popover: '#09090b',
-			popoverForeground: '#fafafa',
-			card: '#09090b',
-			cardForeground: '#fafafa',
-			border: '#27272a',
-			input: '#27272a',
-			primary: '#fafafa',
-			primaryForeground: '#18181b',
-			secondary: '#27272a',
-			secondaryForeground: '#fafafa',
-			accent: '#27272a',
-			accentForeground: '#fafafa',
-			destructive: '#7f1d1d',
-			destructiveForeground: '#fafafa'
-		}
-	},
-	slate: {
-		light: {
-			background: '#ffffff',
-			foreground: '#020817',
-			muted: '#f1f5f9',
-			mutedForeground: '#64748b',
-			popover: '#ffffff',
-			popoverForeground: '#020817',
-			card: '#ffffff',
-			cardForeground: '#020817',
-			border: '#e2e8f0',
-			input: '#e2e8f0',
-			primary: '#0f172a',
-			primaryForeground: '#f8fafc',
-			secondary: '#f1f5f9',
-			secondaryForeground: '#0f172a',
-			accent: '#f1f5f9',
-			accentForeground: '#0f172a',
-			destructive: '#ef4444',
-			destructiveForeground: '#f8fafc',
-			ring: '#020817'
-		},
-		dark: {
-			background: '#020817',
-			foreground: '#f8fafc',
-			muted: '#1e293b',
-			mutedForeground: '#94a3b8',
-			popover: '#020817',
-			popoverForeground: '#f8fafc',
-			card: '#020817',
-			cardForeground: '#f8fafc',
-			border: '#1e293b',
-			input: '#1e293b',
-			primary: '#f8fafc',
-			primaryForeground: '#0f172a',
-			secondary: '#1e293b',
-			secondaryForeground: '#f8fafc',
-			accent: '#1e293b',
-			accentForeground: '#f8fafc',
-			destructive: '#7f1d1d',
-			destructiveForeground: '#f8fafc'
-		}
-	},
-	stone: {
-		light: {
-			background: '#ffffff',
-			foreground: '#0c0a09',
-			muted: '#f5f5f4',
-			mutedForeground: '#78716c',
-			popover: '#ffffff',
-			popoverForeground: '#0c0a09',
-			card: '#ffffff',
-			cardForeground: '#0c0a09',
-			border: '#e7e5e4',
-			input: '#e7e5e4',
-			primary: '#1c1917',
-			primaryForeground: '#fafaf9',
-			secondary: '#f5f5f4',
-			secondaryForeground: '#1c1917',
-			accent: '#f5f5f4',
-			accentForeground: '#1c1917',
-			destructive: '#ef4444',
-			destructiveForeground: '#fafaf9',
-			ring: '#0c0a09'
-		},
-		dark: {
-			background: '#0c0a09',
-			foreground: '#fafaf9',
-			muted: '#292524',
-			mutedForeground: '#a8a29e',
-			popover: '#0c0a09',
-			popoverForeground: '#fafaf9',
-			card: '#0c0a09',
-			cardForeground: '#fafaf9',
-			border: '#292524',
-			input: '#292524',
-			primary: '#fafaf9',
-			primaryForeground: '#1c1917',
-			secondary: '#292524',
-			secondaryForeground: '#fafaf9',
-			accent: '#292524',
-			accentForeground: '#fafaf9',
-			destructive: '#7f1d1d',
-			destructiveForeground: '#fafaf9'
-		}
-	},
-	gray: {
-		light: {
-			background: '#ffffff',
-			foreground: '#030712',
-			muted: '#f3f4f6',
-			mutedForeground: '#6b7280',
-			popover: '#ffffff',
-			popoverForeground: '#030712',
-			card: '#ffffff',
-			cardForeground: '#030712',
-			border: '#e5e7eb',
-			input: '#e5e7eb',
-			primary: '#111827',
-			primaryForeground: '#f9fafb',
-			secondary: '#f3f4f6',
-			secondaryForeground: '#111827',
-			accent: '#f3f4f6',
-			accentForeground: '#111827',
-			destructive: '#ef4444',
-			destructiveForeground: '#f9fafb',
-			ring: '#030712'
-		},
-		dark: {
-			background: '#030712',
-			foreground: '#f9fafb',
-			muted: '#1f2937',
-			mutedForeground: '#9ca3af',
-			popover: '#030712',
-			popoverForeground: '#f9fafb',
-			card: '#030712',
-			cardForeground: '#f9fafb',
-			border: '#1f2937',
-			input: '#1f2937',
-			primary: '#f9fafb',
-			primaryForeground: '#111827',
-			secondary: '#1f2937',
-			secondaryForeground: '#f9fafb',
-			accent: '#1f2937',
-			accentForeground: '#f9fafb',
-			destructive: '#7f1d1d',
-			destructiveForeground: '#f9fafb'
-		}
-	},
-	neutral: {
-		light: {
-			background: '#ffffff',
-			foreground: '#0a0a0a',
-			muted: '#f5f5f5',
-			mutedForeground: '#737373',
-			popover: '#ffffff',
-			popoverForeground: '#0a0a0a',
-			card: '#ffffff',
-			cardForeground: '#0a0a0a',
-			border: '#e5e5e5',
-			input: '#e5e5e5',
-			primary: '#171717',
-			primaryForeground: '#fafafa',
-			secondary: '#f5f5f5',
-			secondaryForeground: '#171717',
-			accent: '#f5f5f5',
-			accentForeground: '#171717',
-			destructive: '#ef4444',
-			destructiveForeground: '#fafafa',
-			ring: '#0a0a0a'
-		},
-		dark: {
-			background: '#0a0a0a',
-			foreground: '#fafafa',
-			muted: '#262626',
-			mutedForeground: '#a3a3a3',
-			popover: '#0a0a0a',
-			popoverForeground: '#fafafa',
-			card: '#0a0a0a',
-			cardForeground: '#fafafa',
-			border: '#262626',
-			input: '#262626',
-			primary: '#fafafa',
-			primaryForeground: '#171717',
-			secondary: '#262626',
-			secondaryForeground: '#fafafa',
-			accent: '#262626',
-			accentForeground: '#fafafa',
-			destructive: '#7f1d1d',
-			destructiveForeground: '#fafafa'
-		}
-	},
-	red: {
-		light: {
-			background: '#ffffff',
-			foreground: '#0a0a0a',
-			muted: '#f5f5f5',
-			mutedForeground: '#737373',
-			popover: '#ffffff',
-			popoverForeground: '#0a0a0a',
-			card: '#ffffff',
-			cardForeground: '#0a0a0a',
-			border: '#e5e5e5',
-			input: '#e5e5e5',
-			primary: '#dc2626',
-			primaryForeground: '#fef2f2',
-			secondary: '#f5f5f5',
-			secondaryForeground: '#171717',
-			accent: '#f5f5f5',
-			accentForeground: '#171717',
-			destructive: '#ef4444',
-			destructiveForeground: '#fafafa',
-			ring: '#dc2626'
-		},
-		dark: {
-			background: '#0a0a0a',
-			foreground: '#fafafa',
-			muted: '#262626',
-			mutedForeground: '#a3a3a3',
-			popover: '#0a0a0a',
-			popoverForeground: '#fafafa',
-			card: '#0a0a0a',
-			cardForeground: '#fafafa',
-			border: '#262626',
-			input: '#262626',
-			primary: '#dc2626',
-			primaryForeground: '#fef2f2',
-			secondary: '#262626',
-			secondaryForeground: '#fafafa',
-			accent: '#262626',
-			accentForeground: '#fafafa',
-			destructive: '#7f1d1d',
-			destructiveForeground: '#fafafa'
-		}
-	},
-	rose: {
-		light: {
-			background: '#ffffff',
-			foreground: '#09090b',
-			muted: '#f4f4f5',
-			mutedForeground: '#71717a',
-			popover: '#ffffff',
-			popoverForeground: '#09090b',
-			card: '#ffffff',
-			cardForeground: '#09090b',
-			border: '#e4e4e7',
-			input: '#e4e4e7',
-			primary: '#e11d48',
-			primaryForeground: '#fff1f2',
-			secondary: '#f4f4f5',
-			secondaryForeground: '#18181b',
-			accent: '#f4f4f5',
-			accentForeground: '#18181b',
-			destructive: '#ef4444',
-			destructiveForeground: '#fafafa',
-			ring: '#e11d48'
-		},
-		dark: {
-			background: '#0c0a09',
-			foreground: '#f2f2f2',
-			muted: '#262626',
-			mutedForeground: '#a1a1aa',
-			popover: '#171717',
-			popoverForeground: '#f2f2f2',
-			card: '#1c1917',
-			cardForeground: '#f2f2f2',
-			border: '#27272a',
-			input: '#27272a',
-			primary: '#e11d48',
-			primaryForeground: '#fff1f2',
-			secondary: '#27272a',
-			secondaryForeground: '#fafafa',
-			accent: '#292524',
-			accentForeground: '#fafafa',
-			destructive: '#7f1d1d',
-			destructiveForeground: '#fef2f2',
-			ring: '#e11d48'
-		}
-	},
-	orange: {
-		light: {
-			background: '#ffffff',
-			foreground: '#0c0a09',
-			muted: '#f5f5f4',
-			mutedForeground: '#78716c',
-			popover: '#ffffff',
-			popoverForeground: '#0c0a09',
-			card: '#ffffff',
-			cardForeground: '#0c0a09',
-			border: '#e7e5e4',
-			input: '#e7e5e4',
-			primary: '#f97316',
-			primaryForeground: '#fafaf9',
-			secondary: '#f5f5f4',
-			secondaryForeground: '#1c1917',
-			accent: '#f5f5f4',
-			accentForeground: '#1c1917',
-			destructive: '#ef4444',
-			destructiveForeground: '#fafaf9',
-			ring: '#f97316'
-		},
-		dark: {
-			background: '#0c0a09',
-			foreground: '#fafaf9',
-			muted: '#292524',
-			mutedForeground: '#a8a29e',
-			popover: '#0c0a09',
-			popoverForeground: '#fafaf9',
-			card: '#0c0a09',
-			cardForeground: '#fafaf9',
-			border: '#292524',
-			input: '#292524',
-			primary: '#ea580c',
-			primaryForeground: '#fafaf9',
-			secondary: '#292524',
-			secondaryForeground: '#fafaf9',
-			accent: '#292524',
-			accentForeground: '#fafaf9',
-			destructive: '#dc2626',
-			destructiveForeground: '#fafaf9'
-		}
-	},
-	green: {
-		light: {
-			background: '#ffffff',
-			foreground: '#09090b',
-			muted: '#f4f4f5',
-			mutedForeground: '#71717a',
-			popover: '#ffffff',
-			popoverForeground: '#09090b',
-			card: '#ffffff',
-			cardForeground: '#09090b',
-			border: '#e4e4e7',
-			input: '#e4e4e7',
-			primary: '#16a34a',
-			primaryForeground: '#fff1f2',
-			secondary: '#f4f4f5',
-			secondaryForeground: '#18181b',
-			accent: '#f4f4f5',
-			accentForeground: '#18181b',
-			destructive: '#ef4444',
-			destructiveForeground: '#fafafa',
-			ring: '#16a34a'
-		},
-		dark: {
-			background: '#0c0a09',
-			foreground: '#f2f2f2',
-			muted: '#262626',
-			mutedForeground: '#a1a1aa',
-			popover: '#171717',
-			popoverForeground: '#f2f2f2',
-			card: '#1c1917',
-			cardForeground: '#f2f2f2',
-			border: '#27272a',
-			input: '#27272a',
-			primary: '#22c55e',
-			primaryForeground: '#052e16',
-			secondary: '#27272a',
-			secondaryForeground: '#fafafa',
-			accent: '#292524',
-			accentForeground: '#fafafa',
-			destructive: '#7f1d1d',
-			destructiveForeground: '#fef2f2'
-		}
-	},
-	blue: {
-		light: {
-			background: '#ffffff',
-			foreground: '#020817',
-			muted: '#f1f5f9',
-			mutedForeground: '#64748b',
-			popover: '#ffffff',
-			popoverForeground: '#020817',
-			card: '#ffffff',
-			cardForeground: '#020817',
-			border: '#e2e8f0',
-			input: '#e2e8f0',
-			primary: '#2563eb',
-			primaryForeground: '#f8fafc',
-			secondary: '#f1f5f9',
-			secondaryForeground: '#0f172a',
-			accent: '#f1f5f9',
-			accentForeground: '#0f172a',
-			destructive: '#ef4444',
-			destructiveForeground: '#f8fafc',
-			ring: '#2563eb'
-		},
-		dark: {
-			background: '#020817',
-			foreground: '#f8fafc',
-			muted: '#1e293b',
-			mutedForeground: '#94a3b8',
-			popover: '#020817',
-			popoverForeground: '#f8fafc',
-			card: '#020817',
-			cardForeground: '#f8fafc',
-			border: '#1e293b',
-			input: '#1e293b',
-			primary: '#3b82f6',
-			primaryForeground: '#0f172a',
-			secondary: '#1e293b',
-			secondaryForeground: '#f8fafc',
-			accent: '#1e293b',
-			accentForeground: '#f8fafc',
-			destructive: '#7f1d1d',
-			destructiveForeground: '#f8fafc'
-		}
-	},
-	yellow: {
-		light: {
-			background: '#ffffff',
-			foreground: '#0c0a09',
-			muted: '#f5f5f4',
-			mutedForeground: '#78716c',
-			popover: '#ffffff',
-			popoverForeground: '#0c0a09',
-			card: '#ffffff',
-			cardForeground: '#0c0a09',
-			border: '#e7e5e4',
-			input: '#e7e5e4',
-			primary: '#facc15',
-			primaryForeground: '#422006',
-			secondary: '#f5f5f4',
-			secondaryForeground: '#1c1917',
-			accent: '#f5f5f4',
-			accentForeground: '#1c1917',
-			destructive: '#ef4444',
-			destructiveForeground: '#fafaf9',
-			ring: '#0c0a09'
-		},
-		dark: {
-			background: '#0c0a09',
-			foreground: '#fafaf9',
-			muted: '#292524',
-			mutedForeground: '#a8a29e',
-			popover: '#0c0a09',
-			popoverForeground: '#fafaf9',
-			card: '#0c0a09',
-			cardForeground: '#fafaf9',
-			border: '#292524',
-			input: '#292524',
-			primary: '#facc15',
-			primaryForeground: '#422006',
-			secondary: '#292524',
-			secondaryForeground: '#fafaf9',
-			accent: '#292524',
-			accentForeground: '#fafaf9',
-			destructive: '#7f1d1d',
-			destructiveForeground: '#fafaf9'
-		}
-	},
-	violet: {
-		light: {
-			background: '#ffffff',
-			foreground: '#030712',
-			muted: '#f3f4f6',
-			mutedForeground: '#6b7280',
-			popover: '#ffffff',
-			popoverForeground: '#030712',
-			card: '#ffffff',
-			cardForeground: '#030712',
-			border: '#e5e7eb',
-			input: '#e5e7eb',
-			primary: '#7c3aed',
-			primaryForeground: '#f9fafb',
-			secondary: '#f3f4f6',
-			secondaryForeground: '#111827',
-			accent: '#f3f4f6',
-			accentForeground: '#111827',
-			destructive: '#ef4444',
-			destructiveForeground: '#f9fafb',
-			ring: '#7c3aed'
-		},
-		dark: {
-			background: '#030712',
-			foreground: '#f9fafb',
-			muted: '#1f2937',
-			mutedForeground: '#9ca3af',
-			popover: '#030712',
-			popoverForeground: '#f9fafb',
-			card: '#030712',
-			cardForeground: '#f9fafb',
-			border: '#1f2937',
-			input: '#1f2937',
-			primary: '#6d28d9',
-			primaryForeground: '#f9fafb',
-			secondary: '#1f2937',
-			secondaryForeground: '#f9fafb',
-			accent: '#1f2937',
-			accentForeground: '#f9fafb',
-			destructive: '#7f1d1d',
-			destructiveForeground: '#f9fafb'
-		}
-	}
+import type { Palette, Scheme } from './preset-types.js';
+
+const map: any = {
+	'--background': 'background',
+	'--foreground': 'foreground',
+	'--card': 'card',
+	'--card-foreground': 'cardForeground',
+	'--popover': 'popover',
+	'--popover-foreground': 'popoverForeground',
+	'--primary': 'primary',
+	'--primary-foreground': 'primaryForeground',
+	'--secondary': 'secondary',
+	'--secondary-foreground': 'secondaryForeground',
+	'--muted': 'muted',
+	'--muted-foreground': 'mutedForeground',
+	'--accent': 'accent',
+	'--accent-foreground': 'accentForeground',
+	'--destructive': 'destructive',
+	'--destructive-foreground': 'destructiveForeground',
+	'--border': 'border',
+	'--input': 'input',
+	'--ring': 'ring'
 };
+
+function hex(h: number, s: number, l: number): string {
+	l /= 100;
+	const a = (s * Math.min(l, 1 - l)) / 100;
+	const f = (n: number) => {
+		const k = (n + h / 30) % 12;
+		const color = l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
+
+		return Math.round(255 * color)
+			.toString(16)
+			.padStart(2, '0');
+	};
+
+	return `#${f(0)}${f(8)}${f(4)}`;
+}
+
+function hexes(palette: any) {
+	const hexes: any = {};
+
+	for (const a in palette) {
+		const [h, s, l] = palette[a].split(' ').map((a: string) => Number(a.replace('%', '')));
+
+		hexes[map[a]] = hex(h, s, l);
+	}
+
+	return hexes;
+}
+
+export default function (palette: { ':root': Palette; '.dark': Palette }): {
+	light: Scheme;
+	dark: Scheme;
+} {
+	return {
+		light: hexes(palette[':root']),
+		dark: hexes(palette['.dark'])
+	};
+}
