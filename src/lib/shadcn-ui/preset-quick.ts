@@ -210,9 +210,10 @@ export default function (options: OptionsType = {}) {
 					},
 					sortable: {},
 					spinner: {},
-					// stepper: {
-					// 	hooks: shadcn.stepper
-					// },
+					stepper: {
+						media: true,
+						hooks: shadcn.stepper
+					},
 					sticky: {},
 					subnav: {
 						hooks: shadcn.subnav

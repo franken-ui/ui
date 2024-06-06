@@ -122,7 +122,11 @@ import { rules as sliderRules, addHooks as addSliderHooks } from './slider.js';
 import { rules as slideshowRules, addHooks as addSlideshowHooks } from './slideshow.js';
 import { rules as sortableRules, addHooks as addSortableHooks } from './sortable.js';
 import { rules as spinnerRules, addHooks as addSpinnerHooks } from './spinner.js';
-import { rules as stepperRules, addHooks as addStepperHooks } from './stepper.js';
+import {
+	rules as stepperRules,
+	media as stepperMedia,
+	addHooks as addStepperHooks
+} from './stepper.js';
 import { rules as stickyRules, addHooks as addStickyHooks } from './sticky.js';
 import { rules as subnavRules, addHooks as addSubnavHooks } from './subnav.js';
 import { rules as svgRules, addHooks as addSvgHooks } from './svg.js';
@@ -410,6 +414,7 @@ type ComponentsType = {
 		hooks?: Partial<SpinnerHooksType>;
 	};
 	stepper: {
+		media?: boolean;
 		hooks?: Partial<StepperHooksType>;
 	};
 	sticky: {
@@ -726,6 +731,7 @@ export const components = {
 	},
 	stepper: {
 		rules: stepperRules,
+		media: stepperMedia,
 		addHooks: addStepperHooks
 	},
 	sticky: {
