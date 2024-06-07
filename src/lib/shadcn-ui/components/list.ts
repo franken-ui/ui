@@ -28,10 +28,19 @@ export default function (options: OptionsType = {}) {
 					paddingLeft: null,
 					'@apply ml-6': {}
 				},
-			'.uk-list-muted > ::before': { color: null },
-			'.uk-list-emphasis > ::before': { color: null },
-			'.uk-list-primary > ::before': { color: null },
-			'.uk-list-secondary > ::before': { color: null },
+			'.uk-list-muted > ::before': {
+				color: null,
+				'@apply text-muted-foreground': {}
+			},
+			'.uk-list-emphasis > ::before': null,
+			'.uk-list-primary > ::before': {
+				color: null,
+				'@apply text-primary': {}
+			},
+			'.uk-list-secondary > ::before': {
+				color: null,
+				'@apply text-secondary-foreground': {}
+			},
 			'.uk-list-bullet > *': {
 				paddingLeft: null,
 				'@apply ml-6': {}
