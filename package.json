@@ -23,7 +23,7 @@
 	},
 	"homepage": "https://www.franken-ui.dev",
 	"license": "MIT",
-	"version": "0.0.12",
+	"version": "0.0.13",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -40,25 +40,9 @@
 			"types": "./dist/index.d.ts",
 			"default": "./dist/index.js"
 		},
-		"./shadcn-ui/variables": {
-			"types": "./dist/shadcn-ui/variables.d.ts",
-			"default": "./dist/shadcn-ui/variables.js"
-		},
-		"./shadcn-ui/hooks": {
-			"types": "./dist/shadcn-ui/hooks.d.ts",
-			"default": "./dist/shadcn-ui/hooks.js"
-		},
-		"./shadcn-ui/hexes": {
-			"types": "./dist/shadcn-ui/hexes.d.ts",
-			"default": "./dist/shadcn-ui/hexes.js"
-		},
-		"./shadcn-ui/preset": {
-			"types": "./dist/shadcn-ui/preset.d.ts",
-			"default": "./dist/shadcn-ui/preset.js"
-		},
-		"./shadcn-ui/preset-quick": {
-			"types": "./dist/shadcn-ui/preset-quick.d.ts",
-			"default": "./dist/shadcn-ui/preset-quick.js"
+		"./shadcn-ui/*": {
+			"types": "./dist/shadcn-ui/*.d.ts",
+			"default": "./dist/shadcn-ui/*.js"
 		}
 	},
 	"files": [
