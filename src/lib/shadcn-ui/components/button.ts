@@ -109,10 +109,14 @@ export default function () {
 			color: null,
 			'@apply opacity-50': {}
 		},
-		'hook-small': {},
+		'hook-small': {
+			padding: null,
+			lineHeight: null,
+			fontSize: null,
+			'@apply h-8 px-3 py-0 text-xs': {}
+		},
 		'hook-large': {},
 		'hook-misc': {
-			'.uk-button-small': null,
 			'.uk-button-large': null,
 			'.uk-button-group': null,
 			'.uk-button-group > .uk-button:nth-child(n + 2), .uk-button-group > div:nth-child(n + 2) .uk-button':
@@ -124,6 +128,9 @@ export default function () {
 			},
 			'.uk-button-ghost:hover': {
 				'@apply bg-accent': {}
+			},
+			'.uk-button-xsmall': {
+				'@apply h-7 px-3 py-0 text-xs': {}
 			}
 		}
 	};

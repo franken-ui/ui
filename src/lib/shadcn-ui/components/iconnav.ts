@@ -36,6 +36,12 @@ export default function () {
 			},
 			'.uk-iconnav-outline > * > a': {
 				'@apply border border-border shadow-sm': {}
+			},
+			'.uk-iconnav-small > * > a': {
+				'@apply h-8 w-8': {}
+			},
+			'.uk-iconnav-xsmall > * > a': {
+				'@apply h-7 w-7': {}
 			}
 		}
 	};

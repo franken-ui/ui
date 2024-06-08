@@ -31,7 +31,7 @@ export default function (options: OptionsType) {
 			'@apply h-9': {}
 		},
 		'hook-multi-line': {
-			'@apply min-h-[60px]': {}
+			'@apply min-h-[60px] py-2': {}
 		},
 		'hook-focus': {
 			backgroundColor: null,
@@ -127,8 +127,16 @@ export default function (options: OptionsType) {
 			'@apply bg-destructive': {}
 		},
 		'hook-misc': {
-			'.uk-form-small': null,
-			'.uk-form-small:not(textarea):not([multiple]):not([size])': null,
+			'.uk-form-small': {
+				fontSize: null,
+				'@apply text-xs': {}
+			},
+			'.uk-form-small:not(textarea):not([multiple]):not([size])': {
+				height: null,
+				paddingLeft: null,
+				paddingRight: null,
+				'@apply h-8 px-3 py-0': {}
+			},
 			'textarea.uk-form-small, [multiple].uk-form-small, [size].uk-form-small': null,
 			'.uk-form-small:not(select):not(input):not(textarea)': null,
 			'.uk-form-large': null,
