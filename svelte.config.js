@@ -14,7 +14,7 @@ const config = {
 		adapter: adapter(),
 		alias: {
 			'css/*': './src/css/*',
-			'uikit-util/*': './src/lib/uikit/js/util/*'
+			'uikit-util': './src/lib/uikit/js/util/index.js'
 		}
 	}
 };

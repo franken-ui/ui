@@ -43,6 +43,10 @@
 		"./shadcn-ui/*": {
 			"types": "./dist/shadcn-ui/*.d.ts",
 			"default": "./dist/shadcn-ui/*.js"
+		},
+		"./uikit/*": {
+			"types": "./dist/uikit/*.d.ts",
+			"default": "./dist/uikit/*.js"
 		}
 	},
 	"files": [

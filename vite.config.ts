@@ -6,7 +6,7 @@ export default defineConfig({
 	plugins: [sveltekit()],
 	resolve: {
 		alias: {
-			'uikit-util': path.resolve(__dirname, 'src/lib/uikit/js/util')
+			'uikit-util': path.resolve(__dirname, 'src/lib/uikit/js/util/index.js')
 		}
 	}
 });
