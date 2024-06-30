@@ -1,8 +1,8 @@
 import merge from 'lodash/merge.js';
 import plugin from 'tailwindcss/plugin.js';
-import type { OptionsType } from './components/index.js';
-import { components } from './components/index.js';
-import { rules as baseRules, media as baseMedia, addHooks } from './components/base.js';
+import type { OptionsType } from './uikit/stylings/index.js';
+import { components } from './uikit/stylings/index.js';
+import { rules as baseRules, media as baseMedia, addHooks } from './uikit/stylings/base.js';
 
 export default plugin.withOptions((options: OptionsType = {}) => {
 	return async ({ addBase, addComponents, theme }) => {
