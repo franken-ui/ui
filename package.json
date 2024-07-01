@@ -53,6 +53,7 @@
 			"default": "./dist/postcss/*.cjs"
 		}
 	},
+	"bin": "./dist/bin.js",
 	"files": [
 		"dist",
 		"!dist/**/*.test.*",
