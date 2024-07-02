@@ -1,4 +1,4 @@
-import franken from 'franken-ui/shadcn-ui/preset-recommended';
+import franken from 'franken-ui/shadcn-ui/preset-quick';
 
 /** @type {import('tailwindcss').Config} */
 export default {
