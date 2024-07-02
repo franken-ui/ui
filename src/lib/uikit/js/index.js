@@ -1,8 +1,4 @@
-import boot from './api/boot.js';
-import UIkit from './api/index.js';
+import UIkit from 'uikit';
+import Icons from 'uikit/dist/js/uikit-icons.js';
 
-boot(UIkit);
-
-export * from './core/index.js';
-export * from './components/index.js';
-export default UIkit;
+export { UIkit, Icons };

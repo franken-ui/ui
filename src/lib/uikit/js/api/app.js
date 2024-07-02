@@ -7,6 +7,6 @@ const App = function (options) {
 
 App.util = util;
 App.options = {};
-App.version = "3.21.5";
+App.version = "3.21.6";
 
 export default App;
