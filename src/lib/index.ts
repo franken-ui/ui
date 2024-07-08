@@ -14,6 +14,9 @@ export default plugin.withOptions((options: OptionsType = {}) => {
 				'--uk-breakpoint-xl': '1080px',
 				'--uk-leader-fill-content': '.',
 				'--uk-position-margin-offset': '0px'
+			},
+			'[uk-cloak]': {
+				display: 'none !important'
 			}
 		});
 
