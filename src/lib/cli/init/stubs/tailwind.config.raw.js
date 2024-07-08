@@ -37,6 +37,7 @@ export default {
 				column: {
 					media: true
 				},
+				combobox: {},
 				comment: {
 					media: true
 				},

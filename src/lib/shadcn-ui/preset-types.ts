@@ -11,6 +11,7 @@ import type { ButtonHooks as ButtonHooksType } from '$lib/uikit/stylings/button.
 import type { CardHooks as CardHooksType } from '$lib/uikit/stylings/card.js';
 import type { CloseHooks as CloseHooksType } from '$lib/uikit/stylings/close.js';
 import type { ColumnHooks as ColumnHooksType } from '$lib/uikit/stylings/column.js';
+import type { ComboboxHooks as ComboboxHooksType } from '$lib/uikit/stylings/combobox.js';
 import type { CommentHooks as CommentHooksType } from '$lib/uikit/stylings/comment.js';
 import type { ContainerHooks as ContainerHooksType } from '$lib/uikit/stylings/container.js';
 import type { CountdownHooks as CountdownHooksType } from '$lib/uikit/stylings/countdown.js';
@@ -86,6 +87,7 @@ export type Overrides = {
 	card: Partial<CardHooksType>;
 	close: Partial<CloseHooksType>;
 	column: Partial<ColumnHooksType>;
+	combobox: Partial<ComboboxHooksType>;
 	comment: Partial<CommentHooksType>;
 	container: Partial<ContainerHooksType>;
 	countdown: Partial<CountdownHooksType>;
@@ -220,6 +222,7 @@ export type Components =
 	| 'card'
 	| 'close'
 	| 'column'
+	| 'combobox'
 	| 'comment'
 	| 'container'
 	| 'countdown'

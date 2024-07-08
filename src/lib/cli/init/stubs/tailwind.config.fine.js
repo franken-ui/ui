@@ -63,6 +63,7 @@ export default {
 					hooks: shadcn.column,
 					media: true
 				},
+				combobox: {},
 				comment: {
 					hooks: shadcn.comment,
 					media: true
