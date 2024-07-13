@@ -16,14 +16,14 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/sveltecult/franken-ui.git"
+		"url": "git+https://github.com/franken-ui/ui.git"
 	},
 	"bugs": {
-		"url": "https://github.com/sveltecult/franken-ui/issues"
+		"url": "https://github.com/franken-ui/ui/issues"
 	},
 	"homepage": "https://www.franken-ui.dev",
 	"license": "MIT",
-	"version": "0.0.13",
+	"version": "0.1.0",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
