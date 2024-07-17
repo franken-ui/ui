@@ -83,7 +83,7 @@ export const addHooks = (args: Args): CSSRuleObject => {
 		'.uk-comment-meta': {
 			..._hooks['hook-meta']
 		},
-		'.uk-avatar': {
+		'.uk-comment-avatar': {
 			..._hooks['hook-avatar']
 		},
 		'.uk-comment-list > :nth-child(n + 2)': {

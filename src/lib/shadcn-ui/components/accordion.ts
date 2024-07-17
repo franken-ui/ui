@@ -10,7 +10,7 @@ export default function () {
 			fontSize: null,
 			lineHeight: null,
 			color: null,
-			'@apply items-start px-0 py-3 font-medium text-foreground': {}
+			'@apply items-start px-0 py-4 font-medium text-foreground': {}
 		},
 		'hook-title-hover': {
 			color: null,

@@ -74,6 +74,7 @@
 		"@types/eslint": "^8.56.0",
 		"@types/lodash": "^4.17.0",
 		"@types/node": "^20.14.9",
+		"@types/uikit": "^3.14.5",
 		"@typescript-eslint/eslint-plugin": "^7.0.0",
 		"@typescript-eslint/parser": "^7.0.0",
 		"autoprefixer": "^10.4.18",
