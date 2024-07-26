@@ -1,9 +1,11 @@
 export default function () {
 	return {
 		'hook-comment': {
-			'@apply p-3 text-sm': {}
+			'@apply p-3': {}
 		},
-		'hook-body': {},
+		'hook-body': {
+			'@apply text-sm': {}
+		},
 		'hook-header': {},
 		'hook-title': {
 			fontSize: null,
