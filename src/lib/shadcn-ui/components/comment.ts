@@ -29,7 +29,7 @@ export default function () {
 			margin: null,
 			paddingLeft: null,
 			listStyle: null,
-			'@apply ml-6 mt-6 border-l border-border': {}
+			'@apply ml-6 mt-6 border-l border-border md:pl-0': {}
 		},
 		'hook-list-sub-adjacent': {
 			marginTop: null,
@@ -46,11 +46,6 @@ export default function () {
 			},
 			'.uk-comment-list .uk-comment ~ ul > li': {
 				'@apply ml-3': {}
-			},
-			'@media (min-width: 768px)': {
-				'.uk-comment-list .uk-comment ~ ul': {
-					paddingLeft: null
-				}
 			}
 		}
 	};
