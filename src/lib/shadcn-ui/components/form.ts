@@ -260,43 +260,58 @@ export default function (options: OptionsType) {
 				verticalAlign: 'middle',
 				WebkitBackfaceVisibility: 'hidden'
 			},
-			'.uk-tag-input': {
-				'@apply flex min-h-9 flex-wrap items-center gap-1 rounded-md border border-input bg-background px-3 py-1':
+			'.uk-input-tag': {
+				'@apply flex min-h-9 flex-wrap items-center gap-1 rounded-md border border-input bg-background p-2':
 					{}
 			},
-			'.uk-tag-input input': {
-				'@apply min-h-6 flex-1 bg-transparent px-1 text-sm placeholder-muted-foreground focus:outline-none':
+			'.uk-input-tag.uk-disabled': {
+				'@apply opacity-50': {}
+			},
+			'.uk-input-tag input': {
+				'@apply min-h-7 flex-1 bg-transparent px-1 text-sm placeholder-muted-foreground text-foreground focus:outline-none':
 					{}
 			},
 			'.uk-tag': {
-				'@apply inline-flex min-h-6 items-center gap-2 rounded bg-secondary px-2 py-1 text-sm': {}
+				'@apply inline-flex min-h-7 items-center gap-2 rounded px-2 py-1 text-sm': {}
 			},
-			'.uk-pin-input': {
+			'.uk-tag-primary': {
+				'@apply bg-primary text-primary-foreground hover:bg-primary/80': {}
+			},
+			'.uk-tag-secondary': {
+				'@apply bg-secondary text-secondary-foreground hover:bg-secondary/80': {}
+			},
+			'.uk-tag-danger': {
+				'@apply bg-destructive text-destructive-foreground hover:bg-destructive/80': {}
+			},
+			'.uk-input-pin': {
 				'@apply inline-flex items-center shadow-sm': {}
 			},
-			'.uk-pin-input input': {
-				'@apply relative -mr-[1px] flex h-9 w-9 border border-input bg-transparent p-3 text-center text-sm placeholder-muted-foreground focus:z-10 focus:outline-none focus:ring-1 focus:ring-ring':
+			'.uk-input-pin input': {
+				'@apply relative -mr-[1px] flex h-9 w-9 border border-input bg-transparent text-center text-sm placeholder-muted-foreground focus:z-10 focus:outline-none focus:ring-1 focus:ring-ring':
 					{}
 			},
-			'.uk-pin-input input:focus': {
+			'.uk-input-pin.uk-form-danger input': {
+				'@apply ring-destructive': {}
+			},
+			'.uk-input-pin input:focus': {
 				'@apply placeholder:text-background': {}
 			},
-			'.uk-pin-input.uk-disabled input, .uk-pin-input input:disabled': {
+			'.uk-input-pin.uk-disabled input, .uk-input-pin input:disabled': {
 				'@apply opacity-50': {}
 			},
-			'.uk-pin-input input:first-child': {
+			'.uk-input-pin input:first-child': {
 				'@apply ml-[1px] rounded-l-md': {}
 			},
-			'.uk-pin-input input:last-child': {
+			'.uk-input-pin input:last-child': {
 				'@apply rounded-r-md': {}
 			},
-			'.uk-pin-input.uk-pin-separated': {
+			'.uk-input-pin.uk-input-pin-separated': {
 				'@apply gap-2 shadow-none': {}
 			},
-			'.uk-pin-input.uk-pin-separated input': {
+			'.uk-input-pin.uk-input-pin-separated input': {
 				'@apply -mr-0 rounded-md shadow-sm': {}
 			},
-			'.uk-pin-input.uk-pin-separated input:first-child': {
+			'.uk-input-pin.uk-input-pin-separated input:first-child': {
 				'@apply ml-0': {}
 			}
 		}
