@@ -9,3 +9,7 @@ Visit https://www.franken-ui.dev to view the documentation.
 ## License
 
 Licensed under the [MIT license](https://github.com/franken-ui/ui/blob/master/LICENSE.md).
+
+## Testing
+
+This project is tested with BrowserStack
