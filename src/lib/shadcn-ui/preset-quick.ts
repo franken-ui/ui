@@ -84,6 +84,10 @@ export default function (
 			media: true
 		},
 		dropnav: {},
+		extensions: {
+			hooks: shadcn.extensions,
+			media: true
+		},
 		flex: {
 			media: true
 		},

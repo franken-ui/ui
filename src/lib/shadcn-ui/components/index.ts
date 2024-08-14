@@ -14,6 +14,7 @@ export { default as divider } from './divider.js';
 export { default as dotnav } from './dotnav.js';
 export { default as dropbar } from './dropbar.js';
 export { default as dropdown } from './dropdown.js';
+export { default as extensions } from './extensions.js';
 export { default as formRange } from './form-range.js';
 export { default as form } from './form.js';
 export { default as grid } from './grid.js';

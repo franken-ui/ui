@@ -59,6 +59,9 @@ export default {
 					media: true
 				},
 				dropnav: {},
+				extensions: {
+					media: true
+				},
 				flex: {
 					media: true
 				},
@@ -114,6 +117,7 @@ export default {
 				slideshow: {},
 				sortable: {},
 				spinner: {},
+				stepper: {},
 				sticky: {},
 				subnav: {},
 				svg: {},

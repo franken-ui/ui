@@ -23,6 +23,7 @@ import type { DropHooks as DropHooksType } from '$lib/uikit/stylings/drop.js';
 import type { DropbarHooks as DropbarHooksType } from '$lib/uikit/stylings/dropbar.js';
 import type { DropdownHooks as DropdownHooksType } from '$lib/uikit/stylings/dropdown.js';
 import type { DropnavHooks as DropnavHooksType } from '$lib/uikit/stylings/dropnav.js';
+import type { ExtensionsHooks as ExtensionsHooksType } from '$lib/uikit/stylings/extensions.js';
 import type { FlexHooks as FlexHooksType } from '$lib/uikit/stylings/flex.js';
 import type { FormRangeHooks as FormRangeHooksType } from '$lib/uikit/stylings/form-range.js';
 import type { FormHooks as FormHooksType } from '$lib/uikit/stylings/form.js';
@@ -99,6 +100,7 @@ export type Overrides = {
 	dropbar: Partial<DropbarHooksType>;
 	dropdown: Partial<DropdownHooksType>;
 	dropnav: Partial<DropnavHooksType>;
+	extensions: Partial<ExtensionsHooksType>;
 	flex: Partial<FlexHooksType>;
 	'form-range': Partial<FormRangeHooksType>;
 	form: Partial<FormHooksType>;
@@ -234,6 +236,7 @@ export type Components =
 	| 'dropbar'
 	| 'dropdown'
 	| 'dropnav'
+	| 'extensions'
 	| 'flex'
 	| 'form-range'
 	| 'form'

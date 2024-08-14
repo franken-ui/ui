@@ -57,6 +57,11 @@ import {
 	addHooks as addDropdownHooks
 } from './dropdown.js';
 import { rules as dropnavRules, addHooks as addDropnavHooks } from './dropnav.js';
+import {
+	rules as extensionsRules,
+	media as extensionsMedia,
+	addHooks as addExtensionsHooks
+} from './extensions.js';
 import { rules as flexRules, media as flexMedia, addHooks as addFlexHooks } from './flex.js';
 import { rules as formRangeRules, addHooks as addFormRangeHooks } from './form-range.js';
 import { rules as formRules, media as formMedia, addHooks as addFormHooks } from './form.js';
@@ -173,6 +178,7 @@ import type { DropHooks as DropHooksType } from './drop.js';
 import type { DropbarHooks as DropbarHooksType } from './dropbar.js';
 import type { DropdownHooks as DropdownHooksType } from './dropdown.js';
 import type { DropnavHooks as DropnavHooksType } from './dropnav.js';
+import type { ExtensionsHooks as ExtensionsHooksType } from './extensions.js';
 import type { FlexHooks as FlexHooksType } from './flex.js';
 import type { FormRangeHooks as FormRangeHooksType } from './form-range.js';
 import type { FormHooks as FormHooksType } from './form.js';
@@ -306,6 +312,10 @@ type ComponentsType = {
 	};
 	dropnav: {
 		hooks?: Partial<DropnavHooksType>;
+	};
+	extensions: {
+		media?: boolean;
+		hooks?: Partial<ExtensionsHooksType>;
 	};
 	flex: {
 		media?: boolean;
@@ -589,6 +599,11 @@ export const components = {
 	dropnav: {
 		rules: dropnavRules,
 		addHooks: addDropnavHooks
+	},
+	extensions: {
+		rules: extensionsRules,
+		media: extensionsMedia,
+		addHooks: addExtensionsHooks
 	},
 	flex: {
 		rules: flexRules,
