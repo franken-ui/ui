@@ -65,6 +65,27 @@ export const rules: CSSRuleObject = {
 	},
 	'.uk-input-pin.uk-input-pin-separated input:first-child': {
 		'@apply ml-0': {}
+	},
+	'.uk-custom-select': {
+		'@apply relative': {}
+	},
+	'.uk-custom-select .uk-dropdown': {
+		'@apply mt-1 w-full': {}
+	},
+	'.uk-custom-select .uk-dropdown-nav': {
+		'@apply max-h-[160px] overflow-auto': {}
+	},
+	'.uk-custom-select .uk-dropdown-nav a': {
+		'@apply flex cursor-pointer items-center justify-between': {}
+	},
+	'.uk-custom-select-search': {
+		'@apply flex items-center px-3': {}
+	},
+	'.uk-custom-select-search svg': {
+		'@apply mr-2 opacity-50': {}
+	},
+	'.uk-custom-select-search input': {
+		'@apply placeholder-muted-foreground w-full bg-transparent py-3 text-sm focus:outline-none': {}
 	}
 };
 
