@@ -22,7 +22,6 @@ import {
 	media as columnMedia,
 	addHooks as addColumnHooks
 } from './column.js';
-import { rules as comboboxRules, addHooks as addComboboxHooks } from './combobox.js';
 import {
 	rules as commentRules,
 	media as commentMedia,
@@ -166,7 +165,6 @@ import type { ButtonHooks as ButtonHooksType } from './button.js';
 import type { CardHooks as CardHooksType } from './card.js';
 import type { CloseHooks as CloseHooksType } from './close.js';
 import type { ColumnHooks as ColumnHooksType } from './column.js';
-import type { ComboboxHooks as ComboboxHooksType } from './combobox.js';
 import type { CommentHooks as CommentHooksType } from './comment.js';
 import type { ContainerHooks as ContainerHooksType } from './container.js';
 import type { CountdownHooks as CountdownHooksType } from './countdown.js';
@@ -271,9 +269,6 @@ type ComponentsType = {
 	column: {
 		media?: boolean;
 		hooks?: Partial<ColumnHooksType>;
-	};
-	combobox: {
-		hooks?: Partial<ComboboxHooksType>;
 	};
 	comment: {
 		media?: boolean;
@@ -546,10 +541,6 @@ export const components = {
 		rules: columnRules,
 		media: columnMedia,
 		addHooks: addColumnHooks
-	},
-	combobox: {
-		rules: comboboxRules,
-		addHooks: addComboboxHooks
 	},
 	comment: {
 		rules: commentRules,

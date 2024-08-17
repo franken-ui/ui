@@ -63,7 +63,6 @@ export default (options: OptionsType = {}) => {
 		card: card(),
 		close: close(),
 		column: column(),
-		combobox: {},
 		comment: comment(),
 		// container: {},
 		// countdown: {},

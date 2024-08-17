@@ -51,9 +51,6 @@ export default function (
 			hooks: shadcn.column,
 			media: true
 		},
-		combobox: {
-			hooks: shadcn.combobox
-		},
 		comment: {
 			hooks: shadcn.comment,
 			media: true
