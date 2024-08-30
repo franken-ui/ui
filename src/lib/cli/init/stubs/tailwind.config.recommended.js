@@ -7,7 +7,10 @@ export default {
 	safelist: [
 		{
 			pattern: /^uk-/
-		}
+		},
+		'ProseMirror',
+		'ProseMirror-focused',
+		'tiptap'
 	],
 	theme: {
 		extend: {}

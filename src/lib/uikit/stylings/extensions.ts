@@ -102,6 +102,43 @@ export const rules: CSSRuleObject = {
 	},
 	'.uk-fake-input.uk-form-small': {
 		'@apply h-7 text-xs': {}
+	},
+	'.tiptap p.is-editor-empty:first-child::before': {
+		content: 'attr(data-placeholder)',
+		'@apply text-muted-foreground pointer-events-none float-left h-0': {}
+	},
+	'.ProseMirror': {
+		'@apply border-input text-foreground overflow-auto border bg-transparent p-2': {}
+	},
+	'.ProseMirror p:first-child': {
+		'@apply mt-0': {}
+	},
+	'.ProseMirror p:last-child': {
+		'@apply mb-0': {}
+	},
+	'.ProseMirror-focused': {
+		'@apply ring-ring outline-none ring-1': {}
+	},
+	'.uk-tiptap-header': {
+		'@apply border-border flex flex-nowrap overflow-hidden rounded-t-md border border-b-0 p-2': {}
+	},
+	'.uk-tiptap-toolbar': {
+		'@apply -mb-10 flex w-full gap-x-3 overflow-x-scroll pb-10': {}
+	},
+	'.uk-tiptap-toolbar-group': {
+		'@apply flex gap-1': {}
+	},
+	'.uk-tiptap-toolbar-group button': {
+		'@apply uk-icon-button uk-icon-button-xsmall': {}
+	},
+	'.uk-tiptap-toolbar-group button.uk-active': {
+		'@apply bg-muted text-muted-foreground': {}
+	},
+	'.uk-tiptap-toolbar-group a': {
+		'@apply cursor-pointer': {}
+	},
+	'.uk-tiptap-footer': {
+		'@apply border-border rounded-b-md border border-t-0 p-2 text-xs shadow-sm': {}
 	}
 };
 
