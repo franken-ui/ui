@@ -23,6 +23,8 @@ export default function (options: OptionsType) {
 			backgroundColor: null,
 			color: null,
 			fontSize: null,
+			transition: null,
+			transitionProperty: null,
 			'@apply rounded-md border border-input bg-transparent px-3 py-1 text-sm text-foreground shadow-sm':
 				{}
 		},
@@ -65,6 +67,8 @@ export default function (options: OptionsType) {
 		'hook-radio': {
 			backgroundColor: null,
 			border: null,
+			transition: null,
+			transitionProperty: null,
 			'@apply rounded-sm border border-primary shadow': {}
 		},
 		'hook-radio-focus': {
@@ -112,6 +116,7 @@ export default function (options: OptionsType) {
 			width: null,
 			height: null,
 			backgroundColor: null,
+			transitionProperty: 'left',
 			'@apply h-4 w-4 bg-background': {}
 		},
 		'hook-toggle-switch-checked-before': {
