@@ -122,7 +122,8 @@ export default function (
 			hooks: shadcn.list
 		},
 		margin: {
-			media: true
+			media: true,
+			hooks: shadcn.margin
 		},
 		marker: {
 			hooks: shadcn.marker
@@ -148,7 +149,8 @@ export default function (
 		},
 		overlay: {},
 		padding: {
-			media: true
+			media: true,
+			hooks: shadcn.padding
 		},
 		pagination: {
 			hooks: shadcn.pagination
