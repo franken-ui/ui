@@ -204,7 +204,9 @@ export default {
 					hooks: shadcn.subnav
 				},
 				svg: {},
-				switcher: {},
+				switcher: {
+					hooks: shadcn.switcher
+				},
 				tab: {
 					hooks: shadcn.tab
 				},

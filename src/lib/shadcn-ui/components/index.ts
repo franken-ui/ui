@@ -40,6 +40,7 @@ export { default as section } from './section.js';
 export { default as slidenav } from './slidenav.js';
 export { default as stepper } from './stepper.js';
 export { default as subnav } from './subnav.js';
+export { default as switcher } from './switcher.js';
 export { default as tab } from './tab.js';
 export { default as table } from './table.js';
 export { default as text } from './text.js';
