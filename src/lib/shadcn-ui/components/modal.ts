@@ -1,9 +1,9 @@
 export default function () {
 	return {
 		'hook-modal': {
-			// padding: null,
+			padding: null,
 			backgroundColor: `rgba(0, 0, 0, 0.8)`,
-			'@apply backdrop-blur-sm': {}
+			'@apply backdrop-blur-sm p-4': {}
 		},
 		'hook-dialog': {
 			width: '32rem',
@@ -15,20 +15,20 @@ export default function () {
 			'@apply w-full rounded-none border-none': {}
 		},
 		'hook-header': {
-			// padding: null,
+			padding: null,
 			backgroundColor: null,
-			borderBottom: null
-			// '@apply p-6': {}
+			borderBottom: null,
+			'@apply p-6': {}
 		},
 		'hook-body': {
-			// padding: null,
-			// '@apply p-6': {}
+			padding: null,
+			'@apply p-6': {}
 		},
 		'hook-footer': {
-			// padding: null,
+			padding: null,
 			backgroundColor: null,
-			borderTop: null
-			// '@apply p-6': {}
+			borderTop: null,
+			'@apply p-6': {}
 		},
 		'hook-title': {
 			fontSize: null,
@@ -36,9 +36,20 @@ export default function () {
 			'@apply text-lg font-semibold leading-none tracking-tight': {}
 		},
 		'hook-close-full': {
-			backgroundColor: null
+			backgroundColor: null,
+			padding: null
 		},
 		'hook-misc': {
+			"[class*='uk-modal-close-']": {
+				padding: null,
+				'@apply top-4 right-4': {}
+			},
+			'.uk-modal-header + .uk-modal-body, .uk-modal-body + .uk-modal-footer': {
+				'@apply pt-0': {}
+			},
+			'.uk-modal-header ~ .uk-modal-footer': {
+				'@apply pt-0': {}
+			},
 			'.uk-modal-full': {
 				padding: '0 !important'
 			},

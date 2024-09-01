@@ -129,8 +129,8 @@ export default function (
 			hooks: shadcn.marker
 		},
 		modal: {
-			hooks: shadcn.modal,
-			media: true
+			hooks: shadcn.modal
+			// media: true
 		},
 		nav: {
 			hooks: shadcn.nav

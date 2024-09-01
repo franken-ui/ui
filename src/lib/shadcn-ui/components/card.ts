@@ -94,6 +94,12 @@ export default function () {
 			'.uk-card-small > .uk-nav-default .uk-nav-sub': null,
 			'.uk-card-danger': {
 				'@apply bg-destructive text-destructive-foreground': {}
+			},
+			'.uk-card-header + .uk-card-body, .uk-card-body + .uk-card-footer': {
+				'@apply pt-0': {}
+			},
+			'.uk-card-header ~ .uk-card-footer': {
+				'@apply pt-0': {}
 			}
 		}
 	};

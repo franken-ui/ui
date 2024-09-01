@@ -34,7 +34,7 @@ export default {
 				breadcrumb: {},
 				button: {},
 				card: {
-					media: true
+					// media: true
 				},
 				close: {},
 				column: {
@@ -75,7 +75,7 @@ export default {
 					media: true
 				},
 				heading: {
-					media: true
+					// media: true
 				},
 				height: {},
 				icon: {},
@@ -90,7 +90,7 @@ export default {
 				},
 				marker: {},
 				modal: {
-					media: true
+					// media: true
 				},
 				nav: {},
 				navbar: {
