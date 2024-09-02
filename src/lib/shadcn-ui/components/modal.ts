@@ -50,6 +50,12 @@ export default function () {
 			'.uk-modal-header ~ .uk-modal-footer': {
 				'@apply pt-0': {}
 			},
+			'.uk-modal-header + .uk-modal-body.uk-overflow-auto': {
+				'@apply pb-0': {}
+			},
+			'.uk-modal-body.uk-overflow-auto + .uk-modal-footer': {
+				'@apply pt-6': {}
+			},
 			'.uk-modal-full': {
 				padding: '0 !important'
 			},
