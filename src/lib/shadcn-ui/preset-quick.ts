@@ -114,7 +114,9 @@ export default function (
 			hooks: shadcn.label
 		},
 		leader: {},
-		lightbox: {},
+		lightbox: {
+			hooks: shadcn.lightbox
+		},
 		link: {
 			hooks: shadcn.link
 		},
@@ -149,7 +151,7 @@ export default function (
 		},
 		overlay: {},
 		padding: {
-			media: true,
+			// media: true,
 			hooks: shadcn.padding
 		},
 		pagination: {
@@ -159,7 +161,8 @@ export default function (
 			hooks: shadcn.placeholder
 		},
 		position: {
-			media: true
+			// media: true,
+			hooks: shadcn.position
 		},
 		progress: {
 			hooks: shadcn.progress

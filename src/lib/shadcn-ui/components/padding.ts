@@ -32,7 +32,7 @@ export default function () {
 				'@apply pr-2': {}
 			},
 			'.uk-padding': {
-				'@apply p-4 lg:p-4': {}
+				'@apply p-4': {}
 			},
 			'.uk-padding-top': {
 				'@apply pt-4': {}
@@ -62,7 +62,7 @@ export default function () {
 				'@apply pr-10': {}
 			},
 			'.uk-padding-large': {
-				'@apply p-20 lg:p-20': {}
+				'@apply p-20': {}
 			},
 			'.uk-padding-large-top': {
 				'@apply pt-20': {}

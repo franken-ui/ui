@@ -102,12 +102,12 @@ export default {
 				},
 				overlay: {},
 				padding: {
-					media: true
+					// media: true
 				},
 				pagination: {},
 				placeholder: {},
 				position: {
-					media: true
+					// media: true
 				},
 				progress: {},
 				search: {},

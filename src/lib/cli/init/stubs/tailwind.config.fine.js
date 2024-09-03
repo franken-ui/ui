@@ -163,7 +163,7 @@ export default {
 				},
 				overlay: {},
 				padding: {
-					media: true
+					// media: true
 				},
 				pagination: {
 					hooks: shadcn.pagination
@@ -172,7 +172,8 @@ export default {
 					hooks: shadcn.placeholder
 				},
 				position: {
-					media: true
+					// media: true,
+					hooks: shadcn.position
 				},
 				progress: {
 					hooks: shadcn.progress
