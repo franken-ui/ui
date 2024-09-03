@@ -87,20 +87,20 @@ export const rules: CSSRuleObject = {
 	'.uk-custom-select-search input': {
 		'@apply placeholder-muted-foreground w-full bg-transparent py-3 text-sm focus:outline-none': {}
 	},
-	'.uk-fake-input': {
+	'.uk-input-fake': {
 		'@apply border-input text-foreground flex h-9 w-full items-center rounded-md border bg-transparent px-3 py-1 text-sm shadow-sm':
 			{}
 	},
-	'.uk-fake-input-focus, .uk-fake-input:focus': {
+	'.uk-input-fake-focus, .uk-input-fake:focus': {
 		'@apply ring-ring outline-none ring-1': {}
 	},
-	'.uk-fake-input-focus.uk-form-danger, .uk-fake-input.uk-form-danger:focus': {
+	'.uk-input-fake-focus.uk-form-danger, .uk-input-fake.uk-form-danger:focus': {
 		'@apply ring-destructive': {}
 	},
-	'.uk-fake-input:disabled': {
+	'.uk-input-fake-disabled, .uk-input-fake:disabled': {
 		'@apply opacity-50': {}
 	},
-	'.uk-fake-input.uk-form-small': {
+	'.uk-input-fake.uk-form-small': {
 		'@apply h-7 text-xs': {}
 	},
 	'.tiptap p.is-editor-empty:first-child::before': {
