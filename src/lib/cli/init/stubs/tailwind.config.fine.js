@@ -67,8 +67,8 @@ export default {
 					media: true
 				},
 				comment: {
-					hooks: shadcn.comment,
-					media: true
+					hooks: shadcn.comment
+					// media: true
 				},
 				container: {
 					media: true
@@ -150,8 +150,8 @@ export default {
 					hooks: shadcn.nav
 				},
 				navbar: {
-					hooks: shadcn.navbar,
-					media: true
+					hooks: shadcn.navbar
+					// media: true
 				},
 				notification: {
 					hooks: shadcn.notification,

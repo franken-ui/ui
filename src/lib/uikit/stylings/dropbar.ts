@@ -21,10 +21,10 @@ export const rules: CSSRuleObject = {
 };
 
 export const media: CSSRuleObject = {
-	'@media (min-width: 640px)': {
+	'@screen sm': {
 		'.uk-dropbar': { paddingLeft: '30px', paddingRight: '30px' }
 	},
-	'@media (min-width: 768px)': {
+	'@screen md': {
 		'.uk-dropbar': { paddingLeft: '40px', paddingRight: '40px' }
 	}
 };

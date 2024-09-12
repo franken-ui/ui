@@ -14,7 +14,7 @@ export const rules: CSSRuleObject = {
 };
 
 export const media: CSSRuleObject = {
-	'@media (min-width: 1024px)': {
+	'@screen lg': {
 		"[class*='uk-column-']": { columnGap: '40px' },
 		'.uk-column-divider': { columnGap: '80px' },
 
@@ -24,21 +24,21 @@ export const media: CSSRuleObject = {
 		'.uk-column-1-5\\@l': { columnCount: '5' },
 		'.uk-column-1-6\\@l': { columnCount: '6' }
 	},
-	'@media (min-width: 640px)': {
+	'@screen sm': {
 		'.uk-column-1-2\\@s': { columnCount: '2' },
 		'.uk-column-1-3\\@s': { columnCount: '3' },
 		'.uk-column-1-4\\@s': { columnCount: '4' },
 		'.uk-column-1-5\\@s': { columnCount: '5' },
 		'.uk-column-1-6\\@s': { columnCount: '6' }
 	},
-	'@media (min-width: 768px)': {
+	'@screen md': {
 		'.uk-column-1-2\\@m': { columnCount: '2' },
 		'.uk-column-1-3\\@m': { columnCount: '3' },
 		'.uk-column-1-4\\@m': { columnCount: '4' },
 		'.uk-column-1-5\\@m': { columnCount: '5' },
 		'.uk-column-1-6\\@m': { columnCount: '6' }
 	},
-	'@media (min-width: 1280px)': {
+	'@screen xl': {
 		'.uk-column-1-2\\@xl': { columnCount: '2' },
 		'.uk-column-1-3\\@xl': { columnCount: '3' },
 		'.uk-column-1-4\\@xl': { columnCount: '4' },

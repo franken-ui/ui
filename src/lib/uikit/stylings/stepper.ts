@@ -52,7 +52,7 @@ export const rules: CSSRuleObject = {
 };
 
 export const media: CSSRuleObject = {
-	'@media (min-width: 640px)': {
+	'@screen sm': {
 		'.uk-stepper': { justifyContent: 'center', flexWrap: 'nowrap' },
 		'.uk-stepper-default li': { width: '100%' },
 		'.uk-stepper-counter.uk-stepper-default li::before': {
@@ -82,8 +82,8 @@ export const media: CSSRuleObject = {
 };
 
 export interface StepperHooks {
-	'hook-stepper': {};
-	'hook-misc': {};
+	'hook-stepper': CSSRuleObject;
+	'hook-misc': CSSRuleObject;
 }
 
 export interface Args {

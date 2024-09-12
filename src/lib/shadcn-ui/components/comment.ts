@@ -29,7 +29,7 @@ export default function () {
 			margin: null,
 			paddingLeft: null,
 			listStyle: null,
-			'@apply ml-6 mt-6 border-l border-border md:pl-0': {}
+			'@apply ml-6 mt-6 border-l border-border': {}
 		},
 		'hook-list-sub-adjacent': {
 			marginTop: null,

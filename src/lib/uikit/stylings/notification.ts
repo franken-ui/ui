@@ -108,7 +108,7 @@ export const addHooks = (args: Args): CSSRuleObject => {
 };
 
 export const media: CSSRuleObject = {
-	'@media (max-width: 640px)': {
+	'@screen max-sm': {
 		'.uk-notification': {
 			left: '10px',
 			right: '10px',

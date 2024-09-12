@@ -16,7 +16,6 @@ export default {
 	},
 	plugins: [
 		ui({
-			base: true,
 			components: {
 				accordion: {},
 				alert: {},
@@ -41,7 +40,7 @@ export default {
 					media: true
 				},
 				comment: {
-					media: true
+					// media: true
 				},
 				container: {
 					media: true
@@ -94,7 +93,7 @@ export default {
 				},
 				nav: {},
 				navbar: {
-					media: true
+					// media: true
 				},
 				notification: {},
 				offcanvas: {

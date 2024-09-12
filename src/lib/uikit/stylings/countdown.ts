@@ -11,11 +11,11 @@ export const rules: CSSRuleObject = {
 };
 
 export const media: CSSRuleObject = {
-	'@media (min-width: 640px)': {
+	'@screen sm': {
 		'.uk-countdown-number': { fontSize: '4rem' },
 		'.uk-countdown-separator': { fontSize: '2rem' }
 	},
-	'@media (min-width: 768px)': {
+	'@screen md': {
 		'.uk-countdown-number': { fontSize: '6rem' },
 		'.uk-countdown-separator': { fontSize: '3rem' }
 	}

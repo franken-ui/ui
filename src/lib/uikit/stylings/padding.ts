@@ -21,7 +21,7 @@ export const rules: CSSRuleObject = {
 };
 
 export const media: CSSRuleObject = {
-	'@media (min-width: 1024px)': {
+	'@screen lg': {
 		'.uk-padding': { padding: '40px' },
 		'.uk-padding-large': { padding: '70px' }
 	}

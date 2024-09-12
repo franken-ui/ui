@@ -41,7 +41,7 @@ export const rules: CSSRuleObject = {
 };
 
 export const media: CSSRuleObject = {
-	'@media (min-width: 640px)': {
+	'@screen sm': {
 		'.uk-child-width-1-1\\@s > *': { width: '100%' },
 		'.uk-child-width-1-2\\@s > *': { width: '50%' },
 		'.uk-child-width-1-3\\@s > *': { width: 'calc(100% / 3)' },
@@ -81,7 +81,7 @@ export const media: CSSRuleObject = {
 				flex: 'initial'
 			}
 	},
-	'@media (min-width: 768px)': {
+	'@screen md': {
 		'.uk-child-width-1-1\\@m > *': { width: '100%' },
 		'.uk-child-width-1-2\\@m > *': { width: '50%' },
 		'.uk-child-width-1-3\\@m > *': { width: 'calc(100% / 3)' },
@@ -121,7 +121,7 @@ export const media: CSSRuleObject = {
 				flex: 'initial'
 			}
 	},
-	'@media (min-width: 1024px)': {
+	'@screen lg': {
 		'.uk-child-width-1-1\\@l > *': { width: '100%' },
 		'.uk-child-width-1-2\\@l > *': { width: '50%' },
 		'.uk-child-width-1-3\\@l > *': { width: 'calc(100% / 3)' },
@@ -161,7 +161,7 @@ export const media: CSSRuleObject = {
 				flex: 'initial'
 			}
 	},
-	'@media (min-width: 1280px)': {
+	'@screen xl': {
 		'.uk-child-width-1-1\\@xl > *': { width: '100%' },
 		'.uk-child-width-1-2\\@xl > *': { width: '50%' },
 		'.uk-child-width-1-3\\@xl > *': { width: 'calc(100% / 3)' },

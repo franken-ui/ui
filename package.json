@@ -61,7 +61,6 @@
 	"peerDependencies": {
 		"lodash": "^4.17.21",
 		"postcss-combine-duplicated-selectors": "^10.0.3",
-		"postcss-sort-media-queries": "^5.2.0",
 		"tailwindcss": "^3.4.1"
 	},
 	"devDependencies": {
@@ -80,7 +79,6 @@
 		"eslint-plugin-svelte": "^2.35.1",
 		"lodash": "^4.17.21",
 		"postcss-combine-duplicated-selectors": "^10.0.3",
-		"postcss-sort-media-queries": "^5.2.0",
 		"prettier": "^3.1.1",
 		"prettier-plugin-svelte": "^3.1.2",
 		"prettier-plugin-tailwindcss": "^0.5.12",

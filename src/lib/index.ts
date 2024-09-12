@@ -2,7 +2,6 @@ import merge from 'lodash/merge.js';
 import plugin from 'tailwindcss/plugin.js';
 import type { OptionsType } from './uikit/stylings/index.js';
 import { components } from './uikit/stylings/index.js';
-import { rules as baseRules, media as baseMedia, addHooks } from './uikit/stylings/base.js';
 
 export default plugin.withOptions((options: OptionsType = {}) => {
 	return async ({ addBase, addComponents, theme }) => {
@@ -20,16 +19,6 @@ export default plugin.withOptions((options: OptionsType = {}) => {
 			}
 		});
 
-		if (options.base) {
-			addBase(baseMedia);
-
-			if (options.hooks) {
-				addBase(Object.assign(baseRules, addHooks({ hooks: options.hooks, theme })));
-			} else {
-				addBase(baseRules);
-			}
-		}
-
 		const media = [];
 
 		for (const a in options.components) {
@@ -41,13 +30,6 @@ export default plugin.withOptions((options: OptionsType = {}) => {
 		}
 
 		const rules = {};
-
-		Object.assign(
-			rules,
-			media.reduce((a, b) => {
-				return merge(a, b);
-			}, {})
-		);
 
 		for (const a in options.components) {
 			const component = components[a];
@@ -67,6 +49,13 @@ export default plugin.withOptions((options: OptionsType = {}) => {
 				Object.assign(rules, component.rules);
 			}
 		}
+
+		Object.assign(
+			rules,
+			media.reduce((a, b) => {
+				return merge(a, b);
+			}, {})
+		);
 
 		addComponents(rules);
 	};

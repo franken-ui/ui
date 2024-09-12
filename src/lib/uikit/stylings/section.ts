@@ -23,7 +23,7 @@ export const rules: CSSRuleObject = {
 };
 
 export const media: CSSRuleObject = {
-	'@media (min-width: 768px)': {
+	'@screen md': {
 		'.uk-section': { paddingTop: '70px', paddingBottom: '70px' },
 		'.uk-section-large': { paddingTop: '140px', paddingBottom: '140px' },
 		'.uk-section-xlarge': { paddingTop: '210px', paddingBottom: '210px' }

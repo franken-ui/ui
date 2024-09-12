@@ -46,7 +46,7 @@ export default function () {
 		},
 		'hook-misc': {
 			'.uk-h1': {
-				'@apply text-4xl font-extrabold tracking-tight lg:text-5xl': {}
+				'@apply text-4xl font-extrabold tracking-tight': {}
 			},
 			'.uk-h2': {
 				'@apply text-3xl font-semibold tracking-tight': {}

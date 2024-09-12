@@ -26,28 +26,28 @@ export const rules: CSSRuleObject = {
 };
 
 export const media: CSSRuleObject = {
-	'@media (min-width: 640px)': {
+	'@screen sm': {
 		'.uk-hidden\\@s': { display: 'none !important' }
 	},
-	'@media (min-width: 768px)': {
+	'@screen md': {
 		'.uk-hidden\\@m': { display: 'none !important' }
 	},
-	'@media (min-width: 1024px)': {
+	'@screen lg': {
 		'.uk-hidden\\@l': { display: 'none !important' }
 	},
-	'@media (min-width: 1280px)': {
+	'@screen xl': {
 		'.uk-hidden\\@xl': { display: 'none !important' }
 	},
-	'@media (max-width: 640px)': {
+	'@screen max-sm': {
 		'.uk-visible\\@s': { display: 'none !important' }
 	},
-	'@media (max-width: 768px)': {
+	'@screen max-md': {
 		'.uk-visible\\@m': { display: 'none !important' }
 	},
-	'@media (max-width: 1024px)': {
+	'@screen max-lg': {
 		'.uk-visible\\@l': { display: 'none !important' }
 	},
-	'@media (max-width: 1280px)': {
+	'@screen max-xl': {
 		'.uk-visible\\@xl': { display: 'none !important' }
 	}
 };

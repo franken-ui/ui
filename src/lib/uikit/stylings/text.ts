@@ -54,22 +54,22 @@ export const rules: CSSRuleObject = {
 };
 
 export const media: CSSRuleObject = {
-	'@media (min-width: 640px)': {
+	'@screen sm': {
 		'.uk-text-left\\@s': { textAlign: 'left !important' },
 		'.uk-text-right\\@s': { textAlign: 'right !important' },
 		'.uk-text-center\\@s': { textAlign: 'center !important' }
 	},
-	'@media (min-width: 768px)': {
+	'@screen md': {
 		'.uk-text-left\\@m': { textAlign: 'left !important' },
 		'.uk-text-right\\@m': { textAlign: 'right !important' },
 		'.uk-text-center\\@m': { textAlign: 'center !important' }
 	},
-	'@media (min-width: 1024px)': {
+	'@screen lg': {
 		'.uk-text-left\\@l': { textAlign: 'left !important' },
 		'.uk-text-right\\@l': { textAlign: 'right !important' },
 		'.uk-text-center\\@l': { textAlign: 'center !important' }
 	},
-	'@media (min-width: 1280px)': {
+	'@screen xl': {
 		'.uk-text-left\\@xl': { textAlign: 'left !important' },
 		'.uk-text-right\\@xl': { textAlign: 'right !important' },
 		'.uk-text-center\\@xl': { textAlign: 'center !important' }

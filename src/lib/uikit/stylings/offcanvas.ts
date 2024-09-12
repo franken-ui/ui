@@ -86,7 +86,7 @@ export const rules: CSSRuleObject = {
 };
 
 export const media: CSSRuleObject = {
-	'@media (min-width: 640px)': {
+	'@screen sm': {
 		'.uk-offcanvas-bar': {
 			left: '-350px',
 			width: '350px',

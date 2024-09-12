@@ -159,7 +159,7 @@ import type { AnimationHooks as AnimationHooksType } from './animation.js';
 import type { ArticleHooks as ArticleHooksType } from './article.js';
 import type { BackgroundHooks as BackgroundHooksType } from './background.js';
 import type { BadgeHooks as BadgeHooksType } from './badge.js';
-import type { BaseHooks as BaseHooksType } from './base.js';
+// import type { BaseHooks as BaseHooksType } from './base.js';
 import type { BreadcrumbHooks as BreadcrumbHooksType } from './breadcrumb.js';
 import type { ButtonHooks as ButtonHooksType } from './button.js';
 import type { CardHooks as CardHooksType } from './card.js';
@@ -483,8 +483,8 @@ type ComponentsType = {
 };
 
 export type OptionsType = {
-	base?: boolean;
-	hooks?: Partial<BaseHooksType>;
+	// base?: boolean;
+	// hooks?: Partial<BaseHooksType>;
 	components?: Partial<ComponentsType>;
 };
 

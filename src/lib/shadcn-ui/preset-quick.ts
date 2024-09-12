@@ -52,8 +52,8 @@ export default function (
 			media: true
 		},
 		comment: {
-			hooks: shadcn.comment,
-			media: true
+			hooks: shadcn.comment
+			// media: true
 		},
 		container: {
 			media: true
@@ -138,8 +138,8 @@ export default function (
 			hooks: shadcn.nav
 		},
 		navbar: {
-			hooks: shadcn.navbar,
-			media: true
+			hooks: shadcn.navbar
+			// media: true
 		},
 		notification: {
 			hooks: shadcn.notification,
@@ -304,6 +304,12 @@ export default function (
 				fontFamily: {
 					'geist-sans': ['Geist Sans', ...defaultTheme.fontFamily.sans],
 					'geist-mono': ['Geist Mono', ...defaultTheme.fontFamily.mono]
+				},
+				screens: {
+					'max-sm': { max: '640px' },
+					'max-md': { max: '768px' },
+					'max-lg': { max: '1024px' },
+					'max-xl': { max: '1280px' }
 				}
 			}
 		},

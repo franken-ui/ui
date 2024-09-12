@@ -10,7 +10,7 @@ export const rules: CSSRuleObject = {
 };
 
 export const media: CSSRuleObject = {
-	'@media (min-width: 640px)': {
+	'@screen sm': {
 		'.uk-align-left\\@s': {
 			marginTop: '0',
 			marginRight: '30px',
@@ -22,7 +22,7 @@ export const media: CSSRuleObject = {
 			cssFloat: 'right'
 		}
 	},
-	'@media (min-width: 768px)': {
+	'@screen md': {
 		'.uk-align-left\\@m': {
 			marginTop: '0',
 			marginRight: '30px',
@@ -34,7 +34,7 @@ export const media: CSSRuleObject = {
 			cssFloat: 'right'
 		}
 	},
-	'@media (min-width: 1024px)': {
+	'@screen lg': {
 		'.uk-align-left\\@l': { marginTop: '0', cssFloat: 'left' },
 		'.uk-align-right\\@l': { marginTop: '0', cssFloat: 'right' },
 		'.uk-align-left,.uk-align-left\\@s,.uk-align-left\\@m,.uk-align-left\\@l': {
@@ -44,7 +44,7 @@ export const media: CSSRuleObject = {
 			marginLeft: '40px'
 		}
 	},
-	'@media (min-width: 1280px)': {
+	'@screen xl': {
 		'.uk-align-left\\@xl': {
 			marginTop: '0',
 			marginRight: '40px',

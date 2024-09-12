@@ -71,7 +71,7 @@ export const rules: CSSRuleObject = {
 };
 
 export const media: CSSRuleObject = {
-	'@media (min-width: 1024px)': {
+	'@screen lg': {
 		'.uk-position-large': {
 			margin: '50px',
 			'--uk-position-margin-offset': '50px'

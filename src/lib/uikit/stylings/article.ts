@@ -16,7 +16,7 @@ export const rules: CSSRuleObject = {
 };
 
 export const media: CSSRuleObject = {
-	'@media (min-width: 768px)': {
+	'@screen md': {
 		'.uk-article-title': { fontSize: '2.625rem' }
 	}
 };

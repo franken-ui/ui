@@ -80,13 +80,13 @@ export const rules: CSSRuleObject = {
 };
 
 export const media: CSSRuleObject = {
-	'@media (min-width: 640px)': {
+	'@screen sm': {
 		'.uk-modal': { padding: '50px 30px' },
 		'.uk-modal-body': { padding: '30px 30px' },
 		'.uk-modal-header': { padding: '15px 30px' },
 		'.uk-modal-footer': { padding: '15px 30px' }
 	},
-	'@media (min-width: 768px)': {
+	'@screen md': {
 		'.uk-modal': { paddingLeft: '40px', paddingRight: '40px' },
 		'.uk-modal-close-outside': {
 			right: '0',

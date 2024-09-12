@@ -62,7 +62,7 @@ export const rules: CSSRuleObject = {
 };
 
 export const media: CSSRuleObject = {
-	'@media (min-width: 640px)': {
+	'@screen sm': {
 		'.uk-margin-auto\\@s': {
 			marginLeft: 'auto !important',
 			marginRight: 'auto !important'
@@ -72,7 +72,7 @@ export const media: CSSRuleObject = {
 		'.uk-margin-remove-left\\@s': { marginLeft: '0 !important' },
 		'.uk-margin-remove-right\\@s': { marginRight: '0 !important' }
 	},
-	'@media (min-width: 768px)': {
+	'@screen md': {
 		'.uk-margin-auto\\@m': {
 			marginLeft: 'auto !important',
 			marginRight: 'auto !important'
@@ -82,19 +82,19 @@ export const media: CSSRuleObject = {
 		'.uk-margin-remove-left\\@m': { marginLeft: '0 !important' },
 		'.uk-margin-remove-right\\@m': { marginRight: '0 !important' }
 	},
-	'@media (min-width: 1024px)': {
-		'.uk-margin-large': { marginBottom: '70px' },
-		'* + .uk-margin-large': { marginTop: '70px !important' },
-		'.uk-margin-large-top': { marginTop: '70px !important' },
-		'.uk-margin-large-bottom': { marginBottom: '70px !important' },
-		'.uk-margin-large-left': { marginLeft: '70px !important' },
-		'.uk-margin-large-right': { marginRight: '70px !important' },
-		'.uk-margin-xlarge': { marginBottom: '140px' },
-		'* + .uk-margin-xlarge': { marginTop: '140px !important' },
-		'.uk-margin-xlarge-top': { marginTop: '140px !important' },
-		'.uk-margin-xlarge-bottom': { marginBottom: '140px !important' },
-		'.uk-margin-xlarge-left': { marginLeft: '140px !important' },
-		'.uk-margin-xlarge-right': { marginRight: '140px !important' },
+	'@screen lg': {
+		// '.uk-margin-large': { marginBottom: '70px' },
+		// '* + .uk-margin-large': { marginTop: '70px !important' },
+		// '.uk-margin-large-top': { marginTop: '70px !important' },
+		// '.uk-margin-large-bottom': { marginBottom: '70px !important' },
+		// '.uk-margin-large-left': { marginLeft: '70px !important' },
+		// '.uk-margin-large-right': { marginRight: '70px !important' },
+		// '.uk-margin-xlarge': { marginBottom: '140px' },
+		// '* + .uk-margin-xlarge': { marginTop: '140px !important' },
+		// '.uk-margin-xlarge-top': { marginTop: '140px !important' },
+		// '.uk-margin-xlarge-bottom': { marginBottom: '140px !important' },
+		// '.uk-margin-xlarge-left': { marginLeft: '140px !important' },
+		// '.uk-margin-xlarge-right': { marginRight: '140px !important' },
 		'.uk-margin-auto\\@l': {
 			marginLeft: 'auto !important',
 			marginRight: 'auto !important'
@@ -104,7 +104,7 @@ export const media: CSSRuleObject = {
 		'.uk-margin-remove-left\\@l': { marginLeft: '0 !important' },
 		'.uk-margin-remove-right\\@l': { marginRight: '0 !important' }
 	},
-	'@media (min-width: 1280px)': {
+	'@screen xl': {
 		'.uk-margin-auto\\@xl': {
 			marginLeft: 'auto !important',
 			marginRight: 'auto !important'

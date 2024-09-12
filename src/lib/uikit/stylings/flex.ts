@@ -35,7 +35,7 @@ export const rules: CSSRuleObject = {
 };
 
 export const media: CSSRuleObject = {
-	'@media (min-width: 640px)': {
+	'@screen sm': {
 		'.uk-flex-left\\@s': { justifyContent: 'flex-start' },
 		'.uk-flex-center\\@s': { justifyContent: 'center' },
 		'.uk-flex-right\\@s': { justifyContent: 'flex-end' },
@@ -53,7 +53,7 @@ export const media: CSSRuleObject = {
 		'.uk-flex-none\\@s': { flex: 'none' },
 		'.uk-flex-1\\@s': { flex: '1' }
 	},
-	'@media (min-width: 768px)': {
+	'@screen md': {
 		'.uk-flex-left\\@m': { justifyContent: 'flex-start' },
 		'.uk-flex-center\\@m': { justifyContent: 'center' },
 		'.uk-flex-right\\@m': { justifyContent: 'flex-end' },
@@ -71,7 +71,7 @@ export const media: CSSRuleObject = {
 		'.uk-flex-none\\@m': { flex: 'none' },
 		'.uk-flex-1\\@m': { flex: '1' }
 	},
-	'@media (min-width: 1024px)': {
+	'@screen lg': {
 		'.uk-flex-left\\@l': { justifyContent: 'flex-start' },
 		'.uk-flex-center\\@l': { justifyContent: 'center' },
 		'.uk-flex-right\\@l': { justifyContent: 'flex-end' },
@@ -89,7 +89,7 @@ export const media: CSSRuleObject = {
 		'.uk-flex-none\\@l': { flex: 'none' },
 		'.uk-flex-1\\@l': { flex: '1' }
 	},
-	'@media (min-width: 1280px)': {
+	'@screen xl': {
 		'.uk-flex-left\\@xl': { justifyContent: 'flex-start' },
 		'.uk-flex-center\\@xl': { justifyContent: 'center' },
 		'.uk-flex-right\\@xl': { justifyContent: 'flex-end' },

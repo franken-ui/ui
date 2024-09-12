@@ -131,7 +131,7 @@ export const rules: CSSRuleObject = {
 };
 
 export const media: CSSRuleObject = {
-	'@media (min-width: 768px)': {
+	'@screen md': {
 		'h1, .uk-h1': { fontSize: '2.625rem' },
 		'h2, .uk-h2': { fontSize: '2rem' }
 	}

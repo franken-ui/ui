@@ -28,7 +28,7 @@ export const rules: CSSRuleObject = {
 };
 
 export const media: CSSRuleObject = {
-	'@media (min-width: 640px)': {
+	'@screen sm': {
 		'.uk-container': { paddingLeft: '30px', paddingRight: '30px' },
 		'.uk-container-expand-left.uk-container-xsmall,.uk-container-expand-right.uk-container-xsmall':
 			{
@@ -43,7 +43,7 @@ export const media: CSSRuleObject = {
 		'.uk-container-item-padding-remove-left': { marginLeft: '-30px' },
 		'.uk-container-item-padding-remove-right': { marginRight: '-30px' }
 	},
-	'@media (min-width: 768px)': {
+	'@screen md': {
 		'.uk-container': { paddingLeft: '40px', paddingRight: '40px' },
 		'.uk-container-expand-left,.uk-container-expand-right': {
 			maxWidth: 'calc(50% + (1200px / 2) - 40px)'

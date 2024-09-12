@@ -74,40 +74,40 @@ export default function () {
 				'@apply mr-10': {}
 			},
 			'.uk-margin-large': {
-				'@apply mb-20 lg:mb-20': {}
+				'@apply mb-20': {}
 			},
 			'* + .uk-margin-large': {
-				'@apply mt-20 lg:mt-20': {}
+				'@apply mt-20': {}
 			},
 			'.uk-margin-large-top': {
-				'@apply mt-20 lg:mt-20': {}
+				'@apply mt-20': {}
 			},
 			'.uk-margin-large-bottom': {
-				'@apply mb-20 lg:mb-20': {}
+				'@apply mb-20': {}
 			},
 			'.uk-margin-large-left': {
-				'@apply ml-20 lg:ml-20': {}
+				'@apply ml-20': {}
 			},
 			'.uk-margin-large-right': {
-				'@apply mr-20 lg:mr-20': {}
+				'@apply mr-20': {}
 			},
 			'.uk-margin-xlarge': {
-				'@apply mb-40 lg:mb-40': {}
+				'@apply mb-40': {}
 			},
 			'* + .uk-margin-xlarge': {
-				'@apply mt-40 lg:mt-40': {}
+				'@apply mt-40': {}
 			},
 			'.uk-margin-xlarge-top': {
-				'@apply mt-40 lg:mt-40': {}
+				'@apply mt-40': {}
 			},
 			'.uk-margin-xlarge-bottom': {
-				'@apply mb-40 lg:mb-40': {}
+				'@apply mb-40': {}
 			},
 			'.uk-margin-xlarge-left': {
-				'@apply ml-40 lg:ml-40': {}
+				'@apply ml-40': {}
 			},
 			'.uk-margin-xlarge-right': {
-				'@apply mr-40 lg:mr-40': {}
+				'@apply mr-40': {}
 			}
 		}
 	};
