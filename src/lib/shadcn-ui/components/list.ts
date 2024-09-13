@@ -1,92 +1,93 @@
-import type { OptionsType } from '$lib/shadcn-ui/preset-types.js';
-import { variables } from '../variables.js';
-import hexes from '../hexes.js';
-
-export default function (options: OptionsType = {}) {
-	let root = variables[`.theme-${options.theme || 'zinc'}`];
-	let dark = variables[`.dark .theme-${options.theme || 'zinc'}`];
-
-	if (options.palette && options.palette[':root'] && options.palette['.dark']) {
-		root = options.palette[':root'];
-		dark = options.palette['.dark'];
+export default {
+	'.uk-list': {
+		padding: '0',
+		listStyle: 'none'
+	},
+	'.uk-list > *': {
+		breakInside: 'avoid-column'
+	},
+	'.uk-list > * > :last-child': {
+		marginBottom: '0'
+	},
+	'.uk-list-disc > *, .uk-list-circle > *, .uk-list-square > *, .uk-list-decimal > *, .uk-list-hyphen > *':
+		{
+			'@apply ml-6': {}
+		},
+	'.uk-list-decimal': {
+		counterReset: 'decimal'
+	},
+	'.uk-list-decimal > *': {
+		counterIncrement: 'decimal'
+	},
+	'.uk-list-disc > ::before, .uk-list-circle > ::before, .uk-list-square > ::before, .uk-list-decimal > ::before, .uk-list-hyphen > ::before':
+		{
+			content: "''",
+			position: 'relative',
+			left: '-30px',
+			width: '30px',
+			height: '1.5em',
+			marginBottom: '-1.5em',
+			display: 'list-item',
+			listStylePosition: 'inside',
+			textAlign: 'right'
+		},
+	'.uk-list-disc > ::before': {
+		listStyleType: 'disc'
+	},
+	'.uk-list-circle > ::before': {
+		listStyleType: 'circle'
+	},
+	'.uk-list-square > ::before': {
+		listStyleType: 'square'
+	},
+	'.uk-list-decimal > ::before': {
+		content: "counter(decimal, decimal) '\\200A.\\00A0'"
+	},
+	'.uk-list-hyphen > ::before': {
+		content: "'–\\00A0\\00A0'"
+	},
+	'.uk-list-muted > ::before': {
+		'@apply text-muted-foreground': {}
+	},
+	'.uk-list-primary > ::before': {
+		'@apply text-primary': {}
+	},
+	'.uk-list-secondary > ::before': {
+		'@apply text-secondary-foreground': {}
+	},
+	'.uk-list-bullet > *': {
+		'@apply ml-6': {}
+	},
+	'.uk-list-bullet > ::before': {
+		content: "''",
+		display: 'list-item',
+		position: 'relative',
+		height: '1.5em',
+		marginBottom: '-1.5em',
+		backgroundImage: 'var(--uk-list-bullet-image)',
+		backgroundRepeat: 'no-repeat',
+		backgroundPosition: '50% 50%',
+		'@apply -left-6 w-6': {}
+	},
+	'.uk-list-divider > :nth-child(n + 2)': {
+		'@apply mt-2 border-t border-border pt-2': {}
+	},
+	'.uk-list-striped > *': {
+		'@apply p-2': {}
+	},
+	'.uk-list-striped > *:nth-of-type(odd)': {
+		'@apply border-t border-b border-border': {}
+	},
+	'.uk-list-striped > :nth-of-type(odd)': {
+		'@apply bg-muted/50': {}
+	},
+	'.uk-list-large.uk-list-striped > :nth-child(n + 2), .uk-list-collapse.uk-list-striped > :nth-child(n + 2)':
+		null,
+	'.uk-list-disc > li:not(:first-child), .uk-list-circle > li:not(:first-child), .uk-list-square > li:not(:first-child), .uk-list-decimal > li:not(:first-child), .uk-list-hyphen > li:not(:first-child)':
+		{
+			'@apply mt-2': {}
+		},
+	'.uk-list-bullet > li:not(:first-child)': {
+		'@apply mt-2': {}
 	}
-
-	const scheme = hexes({
-		':root': root,
-		'.dark': dark
-	});
-
-	return {
-		'hook-misc': {
-			'.uk-list-disc > li:not(:first-child), .uk-list-circle > li:not(:first-child), .uk-list-square > li:not(:first-child), .uk-list-decimal > li:not(:first-child), .uk-list-hyphen > li:not(:first-child)':
-				{
-					'@apply mt-2': {}
-				},
-			'.uk-list > :nth-child(n + 2), .uk-list > * > ul': { marginTop: null },
-			'.uk-list-disc > *, .uk-list-circle > *, .uk-list-square > *, .uk-list-decimal > *, .uk-list-hyphen > *':
-				{
-					paddingLeft: null,
-					'@apply ml-6': {}
-				},
-			'.uk-list-muted > ::before': {
-				color: null,
-				'@apply text-muted-foreground': {}
-			},
-			'.uk-list-emphasis > ::before': null,
-			'.uk-list-primary > ::before': {
-				color: null,
-				'@apply text-primary': {}
-			},
-			'.uk-list-secondary > ::before': {
-				color: null,
-				'@apply text-secondary-foreground': {}
-			},
-			'.uk-list-bullet > *': {
-				paddingLeft: null,
-				'@apply ml-6': {}
-			},
-			'.uk-list-bullet > li:not(:first-child)': {
-				'@apply mt-2': {}
-			},
-			'.uk-list-bullet > ::before': {
-				left: null,
-				width: null,
-				backgroundImage: `url('data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%226%22%20height%3D%226%22%20viewBox%3D%220%200%206%206%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22${encodeURIComponent(scheme.light.foreground)}%22%20cx%3D%223%22%20cy%3D%223%22%20r%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E')`,
-				'@apply -left-6 w-6': {}
-			},
-			'.dark .uk-list-bullet > ::before': {
-				backgroundImage: `url('data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%226%22%20height%3D%226%22%20viewBox%3D%220%200%206%206%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22${encodeURIComponent(scheme.dark.foreground)}%22%20cx%3D%223%22%20cy%3D%223%22%20r%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E')`
-			},
-			'.uk-list-divider > :nth-child(n + 2)': {
-				marginTop: null,
-				paddingTop: null,
-				borderTop: null,
-				'@apply mt-2 border-t border-border pt-2': {}
-			},
-			'.uk-list-striped > *': {
-				padding: null,
-				'@apply p-2': {}
-			},
-			'.uk-list-striped > *:nth-of-type(odd)': {
-				borderTop: null,
-				borderBottom: null,
-				'@apply border-t border-b border-border': {}
-			},
-			'.uk-list-striped > :nth-of-type(odd)': {
-				backgroundColor: null,
-				'@apply bg-muted/50': {}
-			},
-			'.uk-list-striped > :nth-child(n + 2)': {
-				marginTop: null
-			},
-			'.uk-list-large > :nth-child(n + 2), .uk-list-large > * > ul': null,
-			'.uk-list-collapse > :nth-child(n + 2), .uk-list-collapse > * > ul': null,
-			'.uk-list-large.uk-list-divider > :nth-child(n + 2)': null,
-			'.uk-list-collapse.uk-list-divider > :nth-child(n + 2)': null,
-			'.uk-list-large.uk-list-striped > *': null,
-			'.uk-list-collapse.uk-list-striped > *': null,
-			'.uk-list-large.uk-list-striped > :nth-child(n + 2), .uk-list-collapse.uk-list-striped > :nth-child(n + 2)':
-				null
-		}
-	};
-}
+};

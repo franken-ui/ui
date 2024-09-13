@@ -1,48 +1,51 @@
-import type { OptionsType } from '$lib/shadcn-ui/preset-types.js';
-import { variables } from '../variables.js';
-import hexes from '../hexes.js';
-
-export default function (options: OptionsType = {}) {
-	let root = variables[`.theme-${options.theme || 'zinc'}`];
-	let dark = variables[`.dark .theme-${options.theme || 'zinc'}`];
-
-	if (options.palette && options.palette[':root'] && options.palette['.dark']) {
-		root = options.palette[':root'];
-		dark = options.palette['.dark'];
+export default {
+	"[class*='uk-divider']": {
+		border: 'none',
+		height: '1px'
+	},
+	'.uk-divider-icon': {
+		position: 'relative',
+		height: '20px',
+		backgroundImage: 'var(--uk-divider-icon-image)',
+		backgroundRepeat: 'no-repeat',
+		backgroundPosition: '50% 50%'
+	},
+	'.uk-divider-icon::before, .uk-divider-icon::after': {
+		content: "''",
+		position: 'absolute',
+		top: '50%',
+		maxWidth: 'calc(50% - (50px / 2))',
+		borderBottom: '1px solid',
+		'@apply border-border': {}
+	},
+	'.uk-divider-icon::before': {
+		right: 'calc(50% + (50px / 2))',
+		width: '100%'
+	},
+	'.uk-divider-icon::after': {
+		left: 'calc(50% + (50px / 2))',
+		width: '100%'
+	},
+	'.uk-divider-small': {
+		lineHeight: '0'
+	},
+	'.uk-divider-small::after': {
+		content: "''",
+		display: 'inline-block',
+		width: '100px',
+		maxWidth: '100%',
+		borderTop: '1px solid #e5e5e5',
+		verticalAlign: 'top',
+		borderBottom: '1px solid',
+		'@apply border-border': {}
+	},
+	'.uk-divider-vertical': {
+		width: 'max-content',
+		height: '100px',
+		marginLeft: 'auto',
+		marginRight: 'auto',
+		borderLeft: '1px solid #e5e5e5',
+		borderBottom: '1px solid',
+		'@apply border-border': {}
 	}
-
-	const scheme = hexes({
-		':root': root,
-		'.dark': dark
-	});
-
-	return {
-		'hook-icon-line': {
-			borderBottom: '1px solid',
-			'@apply border-border': {}
-		},
-		'hook-small': {
-			borderBottom: '1px solid',
-			'@apply border-border': {}
-		},
-		'hook-vertical': {
-			borderBottom: '1px solid',
-			'@apply border-border': {}
-		},
-		'hook-misc': {
-			'.uk-divider-icon': {
-				backgroundImage: `url('data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22none%22%20stroke%3D%22${encodeURIComponent(scheme.light.border)}%22%20stroke-width%3D%222%22%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%227%22%20%2F%3E%0A%3C%2Fsvg%3E%0A')`
-			},
-			'.dark .uk-divider-icon': {
-				backgroundImage: `url('data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22none%22%20stroke%3D%22${encodeURIComponent(scheme.dark.border)}%22%20stroke-width%3D%222%22%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%227%22%20%2F%3E%0A%3C%2Fsvg%3E%0A')`
-			},
-			"[class*='uk-divider']": {
-				marginBottom: null,
-				height: '1px'
-			},
-			"* + [class*='uk-divider']": {
-				marginTop: null
-			}
-		}
-	};
-}
+};

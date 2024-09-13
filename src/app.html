@@ -1,12 +1,38 @@
 <!doctype html>
-<html class="" lang="en">
+<html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%sveltekit.head%
 	</head>
-	<body data-sveltekit-preload-data="hover">
+	<body class="h-screen bg-background text-foreground" data-sveltekit-preload-data="hover">
 		<div>%sveltekit.body%</div>
+		<script>
+			const themeToggleBtn = document.getElementById('theme-toggle');
+
+			themeToggleBtn?.addEventListener('click', function () {
+				// if set via local storage previously
+				if (localStorage.getItem('mode')) {
+					if (localStorage.getItem('mode') === 'light') {
+						document.documentElement.classList.add('dark');
+						localStorage.setItem('mode', 'dark');
+					} else {
+						document.documentElement.classList.remove('dark');
+						localStorage.setItem('mode', 'light');
+					}
+
+					// if NOT set via local storage previously
+				} else {
+					if (document.documentElement.classList.contains('dark')) {
+						document.documentElement.classList.remove('dark');
+						localStorage.setItem('mode', 'light');
+					} else {
+						document.documentElement.classList.add('dark');
+						localStorage.setItem('mode', 'dark');
+					}
+				}
+			});
+		</script>
 	</body>
 </html>

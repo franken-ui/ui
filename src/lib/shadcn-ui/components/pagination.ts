@@ -1,41 +1,28 @@
-export default function () {
-	return {
-		'hook-pagination': {
-			gap: null,
-			fontSize: null,
-			marginLeft: null,
-			padding: null,
-			'@apply gap-1': {}
-		},
-		'hook-item': {
-			padding: null,
-			color: null,
-			textDecoration: null,
-			fontWeight: null,
-			display: null,
-			justifyContent: null,
-			alignItems: null,
-			height: null,
-			minWidth: null,
-			whiteSpace: null,
-			'@apply inline-flex h-9 min-w-9 items-center justify-center whitespace-nowrap rounded-md': {}
-		},
-		'hook-item-hover': {
-			color: null,
-			'@apply bg-accent text-accent-foreground': {}
-		},
-		'hook-item-active': {
-			color: null,
-			'@apply border border-input shadow': {}
-		},
-		'hook-item-disabled': {
-			color: null,
-			'@apply opacity-50': {}
-		},
-		'hook-misc': {
-			'.uk-pagination > *': {
-				paddingLeft: null
-			}
-		}
-	};
-}
+export default {
+	'.uk-pagination': {
+		display: 'flex',
+		flexWrap: 'wrap',
+		alignItems: 'center',
+		listStyle: 'none',
+		'@apply gap-1': {}
+	},
+	'.uk-pagination > *': {
+		flex: 'none',
+		position: 'relative'
+	},
+	'.uk-pagination > * > *': {
+		columnGap: '0.25em',
+		transition: 'color 0.1s ease-in-out',
+		'@apply inline-flex h-9 min-w-9 items-center justify-center whitespace-nowrap rounded-md': {}
+	},
+	'.uk-pagination > * > :hover': {
+		textDecoration: 'none',
+		'@apply bg-accent text-accent-foreground': {}
+	},
+	'.uk-pagination > .uk-active > *': {
+		'@apply border border-input shadow': {}
+	},
+	'.uk-pagination > .uk-disabled > *': {
+		'@apply opacity-50': {}
+	}
+};

@@ -1,27 +1,16 @@
-export default function () {
-	return {
-		'hook-dropbar': {
-			padding: null,
-			backgroundColor: null,
-			color: null,
-			'@apply bg-background': {}
-		},
-		'hook-top': {
-			boxShadow: null
-		},
-		'hook-bottom': {
-			boxShadow: null
-		},
-		'hook-left': {
-			boxShadow: null
-		},
-		'hook-right': {
-			boxShadow: null
-		},
-		'hook-misc': {
-			'.uk-dropbar :focus-visible': {
-				outlineColor: null
-			}
-		}
-	};
-}
+export default {
+	'.uk-dropbar': {
+		'--uk-position-offset': '0',
+		'--uk-position-shift-offset': '0',
+		'--uk-position-viewport-offset': '0',
+		width: 'auto',
+		'@apply bg-background': {}
+	},
+	'.uk-dropbar > :last-child': {
+		marginBottom: '0'
+	},
+	'.uk-dropbar-large': {
+		paddingTop: '40px',
+		paddingBottom: '40px'
+	}
+};

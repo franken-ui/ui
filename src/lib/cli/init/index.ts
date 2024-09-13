@@ -15,8 +15,8 @@ function copy(stub: string, filename: string) {
 }
 
 export default function (args: string[]) {
-	const map: { [key: string]: string } = { p: '--postcss', r: '--raw', i: '--fine', f: '--force' };
-	const safelist = ['-r', '--raw', '-i', '--fine', '-p', '--postcss', '-f', '--force'];
+	const map: { [key: string]: string } = { p: '--postcss', f: '--force' };
+	const safelist = ['-p', '--postcss', '-f', '--force'];
 
 	args = parseArgs(args, safelist, map);
 
@@ -24,29 +24,7 @@ export default function (args: string[]) {
 		console.error('tailwind.config.js already exists');
 	} else {
 		(() => {
-			if (args.some((arg) => ['--raw', '--fine'].includes(arg))) {
-				if (args.includes('--raw') && args.includes('--fine')) {
-					console.error('Choose only one of the two --raw or --fine');
-
-					return;
-				} else {
-					if (args.includes('--raw')) {
-						copy('tailwind.config.raw.js', 'tailwind.config.js');
-
-						return;
-					}
-
-					if (args.includes('--fine')) {
-						copy('tailwind.config.fine.js', 'tailwind.config.js');
-
-						return;
-					}
-				}
-
-				return;
-			}
-
-			copy('tailwind.config.recommended.js', 'tailwind.config.js');
+			copy('tailwind.config.js', 'tailwind.config.js');
 		})();
 	}
 

@@ -1,203 +1,130 @@
-export default function () {
-	return {
-		'hook-sub': {
-			padding: null
-		},
-		'hook-header': {
-			textTransform: null,
-			padding: null,
-			'@apply font-semibold': {}
-		},
-		'hook-divider': {
-			margin: null
-		},
-		'hook-default': {
-			fontSize: null
-		},
-		'hook-default-item': {
-			color: null,
-			'@apply px-2 py-1 text-muted-foreground': {}
-		},
-		'hook-default-item-hover': {
-			color: null,
-			'@apply underline': {}
-		},
-		'hook-default-item-active': {
-			color: null,
-			'@apply font-medium text-foreground': {}
-		},
-		'hook-default-subtitle': {
-			fontSize: null
-		},
-		'hook-default-header': {
-			color: null,
-			'@apply px-2 py-1': {}
-		},
-		'hook-default-divider': {
-			borderTop: '1px solid',
-			'@apply border-border': {}
-		},
-		'hook-default-sublist': {
-			color: null,
-			'@apply px-2 py-1 text-muted-foreground': {}
-		},
-		'hook-default-sublist-hover': {
-			color: null,
-			'@apply underline': {}
-		},
-		'hook-default-sublist-active': {
-			color: null,
-			'@apply text-foreground': {}
-		},
-		'hook-primary': {
-			fontSize: null,
-			lineHeight: null
-		},
-		'hook-primary-item': {
-			color: null,
-			'@apply px-4 py-2 m-1 rounded-md': {}
-		},
-		'hook-primary-item-hover': {
-			color: null,
-			'@apply bg-accent text-accent-foreground': {}
-		},
-		'hook-primary-item-active': {
-			color: null,
-			'@apply bg-primary text-primary-foreground': {}
-		},
-		'hook-primary-subtitle': {
-			fontSize: null
-		},
-		'hook-primary-header': {
-			color: null,
-			'@apply px-4 py-2 m-1': {}
-		},
-		'hook-primary-divider': {
-			borderTop: '1px solid',
-			'@apply border-border': {}
-		},
-		'hook-primary-sublist': {
-			color: null,
-			'@apply px-4 py-2 ml-1': {}
-		},
-		'hook-primary-sublist-hover': {
-			color: null,
-			'@apply bg-accent text-accent-foreground': {}
-		},
-		'hook-primary-sublist-active': {
-			color: null,
-			'@apply bg-primary text-primary-foreground': {}
-		},
-		'hook-secondary': {
-			fontSize: null,
-			lineHeight: null
-		},
-		'hook-secondary-item': {
-			color: null,
-			padding: null,
-			'@apply px-4 py-2 m-1 rounded-md': {}
-		},
-		'hook-secondary-item-hover': {
-			color: null,
-			backgroundColor: null,
-			'@apply bg-secondary text-secondary-foreground': {}
-		},
-		'hook-secondary-item-active': {
-			color: null,
-			backgroundColor: null,
-			'@apply bg-secondary text-secondary-foreground': {}
-		},
-		'hook-secondary-subtitle': {
-			color: null,
-			fontSize: null
-		},
-		'hook-secondary-subtitle-hover': {
-			color: null
-		},
-		'hook-secondary-subtitle-active': {
-			color: null
-		},
-		'hook-secondary-header': {
-			color: null,
-			'@apply px-4 py-2 m-1': {}
-		},
-		'hook-secondary-divider': {
-			borderTop: '1px solid',
-			'@apply border-border': {}
-		},
-		'hook-secondary-sublist': {
-			color: null,
-			'@apply px-4 py-2 ml-1': {}
-		},
-		'hook-secondary-sublist-hover': {
-			color: null,
-			'@apply bg-accent text-accent-foreground': {}
-		},
-		'hook-secondary-sublist-active': {
-			color: null,
-			'@apply bg-secondary text-secondary-foreground': {}
-		},
-		// 'hook-dividers': {},
-		'hook-misc': {
-			'.uk-nav': {
-				'@apply text-sm': {}
-			},
-			'.uk-nav li > a': {
-				columnGap: null
-			},
-			'.uk-nav > li > a': {
-				padding: null,
-				columnGap: null
-			},
-			'ul.uk-nav-sub': {
-				padding: null,
-				'@apply ml-5 mr-1 space-y-1 border-l border-border': {}
-			},
-			'.uk-nav-sub ul': {
-				paddingLeft: null,
-				'@apply ml-5 mt-1 space-y-1 border-l border-border': {}
-			},
-			'.uk-nav-sub li': {
-				'@apply relative': {}
-			},
-			'.uk-nav-sub li::before': {
-				content: "''",
-				'@apply absolute -left-[1px] bottom-0 top-0 w-[1px] bg-border': {}
-			},
-			// '.uk-nav-sub ul li:hover::before': {
-			// 	'@apply bg-primary': {}
-			// },
-			'.uk-nav-sub li.uk-active::before': {
-				'@apply bg-primary': {}
-			},
-			'.uk-nav-sub a': {
-				padding: null,
-				'@apply rounded-md': {}
-			},
-			'.uk-nav > li.uk-open > a .uk-nav-parent-icon': {
-				transform: 'rotate(180deg)'
-			},
-			'.uk-nav-default .uk-nav-sub': {
-				fontSize: null,
-				lineHeight: null
-			},
-			'.uk-nav-primary .uk-nav-sub': {
-				fontSize: null,
-				lineHeight: null
-			},
-			'.uk-nav-secondary .uk-nav-sub': {
-				fontSize: null,
-				lineHeight: null
-			},
-			'.uk-nav-header:not(:first-child)': {
-				marginTop: null
-			},
-			'.uk-nav-center': null,
-			'.uk-nav-center li > a': null,
-			'.uk-nav-center .uk-nav-sub, .uk-nav-center .uk-nav-sub ul': null,
-			'.uk-nav-center .uk-nav-parent-icon': null,
-			'.uk-nav.uk-nav-divider> :not(.uk-nav-header, .uk-nav-divider)+ :not(.uk-nav-header, .uk-nav-divider)':
-				null
-		}
-	};
-}
+export default {
+	'.uk-nav, .uk-nav ul': {
+		margin: '0',
+		padding: '0',
+		listStyle: 'none'
+	},
+	'.uk-nav li > a': {
+		display: 'flex',
+		alignItems: 'center',
+		textDecoration: 'none'
+	},
+	'ul.uk-nav-sub': {
+		'@apply ml-5 mr-1 space-y-1 border-l border-border': {}
+	},
+	'.uk-nav-sub ul': {
+		'@apply ml-5 mt-1 space-y-1 border-l border-border': {}
+	},
+	'.uk-nav-sub a': {
+		'@apply rounded-md': {}
+	},
+	'.uk-nav-parent-icon': {
+		marginLeft: 'auto',
+		transition: 'transform 0.3s ease-out'
+	},
+	'.uk-nav > li.uk-open > a .uk-nav-parent-icon': {
+		transform: 'rotate(180deg)'
+	},
+	'.uk-nav-header': {
+		fontSize: '0.875rem',
+		'@apply font-semibold': {}
+	},
+	'.uk-nav-default': {
+		lineHeight: '1.5'
+	},
+	'.uk-nav-default > li > a': {
+		'@apply px-2 py-1 text-muted-foreground': {}
+	},
+	'.uk-nav-default > li > a:hover': {
+		'@apply underline': {}
+	},
+	'.uk-nav-default > li.uk-active > a': {
+		'@apply font-medium text-foreground': {}
+	},
+	'.uk-nav-default .uk-nav-header': {
+		'@apply px-2 py-1': {}
+	},
+	'.uk-nav-default .uk-nav-divider': {
+		borderTop: '1px solid',
+		'@apply border-border': {}
+	},
+	'.uk-nav-default .uk-nav-sub a': {
+		'@apply px-2 py-1 text-muted-foreground': {}
+	},
+	'.uk-nav-default .uk-nav-sub a:hover': {
+		'@apply underline': {}
+	},
+	'.uk-nav-default .uk-nav-sub li.uk-active > a': {
+		'@apply text-foreground': {}
+	},
+	'.uk-nav-primary > li > a': {
+		'@apply px-4 py-2 m-1 rounded-md': {}
+	},
+	'.uk-nav-primary > li > a:hover': {
+		'@apply bg-accent text-accent-foreground': {}
+	},
+	'.uk-nav-primary > li.uk-active > a': {
+		'@apply bg-primary text-primary-foreground': {}
+	},
+	'.uk-nav-primary .uk-nav-header': {
+		'@apply px-4 py-2 m-1': {}
+	},
+	'.uk-nav-primary .uk-nav-divider': {
+		borderTop: '1px solid',
+		'@apply border-border': {}
+	},
+	'.uk-nav-primary .uk-nav-sub a': {
+		'@apply px-4 py-2 ml-1': {}
+	},
+	'.uk-nav-primary .uk-nav-sub a:hover': {
+		'@apply bg-accent text-accent-foreground': {}
+	},
+	'.uk-nav-primary .uk-nav-sub li.uk-active > a': {
+		'@apply bg-primary text-primary-foreground': {}
+	},
+	'.uk-nav-secondary > :not(.uk-nav-divider) + :not(.uk-nav-header, .uk-nav-divider)': {
+		marginTop: '0'
+	},
+	'.uk-nav-secondary > li > a': {
+		'@apply px-4 py-2 m-1 rounded-md': {}
+	},
+	'.uk-nav-secondary > li > a:hover': {
+		'@apply bg-secondary text-secondary-foreground': {}
+	},
+	'.uk-nav-secondary > li.uk-active > a': {
+		'@apply bg-secondary text-secondary-foreground': {}
+	},
+	'.uk-nav-secondary .uk-nav-header': {
+		'@apply px-4 py-2 m-1': {}
+	},
+	'.uk-nav-secondary .uk-nav-divider': {
+		borderTop: '1px solid',
+		'@apply border-border': {}
+	},
+	'.uk-nav-secondary .uk-nav-sub a': {
+		'@apply px-4 py-2 ml-1': {}
+	},
+	'.uk-nav-secondary .uk-nav-sub a:hover': {
+		'@apply bg-accent text-accent-foreground': {}
+	},
+	'.uk-nav-secondary .uk-nav-sub li.uk-active > a': {
+		'@apply bg-secondary text-secondary-foreground': {}
+	},
+	'.uk-nav.uk-nav-divider> :not(.uk-nav-header, .uk-nav-divider)+ :not(.uk-nav-header, .uk-nav-divider)':
+		null,
+	'.uk-nav.uk-nav-divider > :not(.uk-nav-header, .uk-nav-divider) + :not(.uk-nav-header, .uk-nav-divider)':
+		{},
+	'.uk-nav': {
+		'@apply text-sm': {}
+	},
+	'.uk-nav-sub li': {
+		'@apply relative': {}
+	},
+	'.uk-nav-sub li::before': {
+		content: "''",
+		'@apply absolute -left-[1px] bottom-0 top-0 w-[1px] bg-border': {}
+	},
+	'.uk-nav-sub li.uk-active::before': {
+		'@apply bg-primary': {}
+	}
+};

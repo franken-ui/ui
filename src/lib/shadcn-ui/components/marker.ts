@@ -1,14 +1,10 @@
-export default function () {
-	return {
-		'hook-marker': {
-			backgroundColor: null,
-			color: null,
-			'@apply bg-primary text-primary-foreground': {}
-		},
-		'hook-hover': {
-			color: null,
-			'@apply opacity-90': {}
-		},
-		'hook-misc': {}
-	};
-}
+export default {
+	'.uk-marker': {
+		padding: '5px',
+		borderRadius: '500px',
+		'@apply bg-primary text-primary-foreground': {}
+	},
+	'.uk-marker:hover': {
+		'@apply opacity-90': {}
+	}
+};

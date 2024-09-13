@@ -1,8 +1,5 @@
-export default function () {
-	return {
-		'hook-misc': {
-			'.uk-switcher': null,
-			'.uk-switcher > * > :last-child': null
-		}
-	};
-}
+export default {
+	'.uk-switcher > :not(.uk-active)': {
+		display: 'none'
+	}
+};

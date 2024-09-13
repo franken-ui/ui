@@ -1,34 +1,29 @@
-export default function () {
-	return {
-		'hook-breadcrumb': {
-			'@apply text-sm': {}
-		},
-		// 'hook-breadcrumb-solid': {},
-		'hook-item': {
-			display: null,
-			alignItems: null,
-			fontSize: null,
-			fontWeight: null,
-			textDecoration: null,
-			color: null,
-			'@apply inline-flex items-center text-muted-foreground': {}
-		},
-		'hook-item-hover': {
-			'@apply text-foreground': {}
-		},
-		'hook-item-disabled': {
-			'@apply opacity-50': {}
-		},
-		'hook-item-active': {
-			'@apply font-medium text-foreground': {}
-		},
-		'hook-divider': {
-			margin: null,
-			color: null,
-			'@apply ml-2 mr-3 text-muted-foreground': {}
-		},
-		'hook-misc': {
-			'.uk-breadcrumb-solid': null
-		}
-	};
-}
+export default {
+	'.uk-breadcrumb': {
+		padding: '0',
+		listStyle: 'none',
+		'@apply text-sm': {}
+	},
+	'.uk-breadcrumb > *': {
+		display: 'contents'
+	},
+	'.uk-breadcrumb > * > *': {
+		'@apply inline-flex items-center text-muted-foreground': {}
+	},
+	'.uk-breadcrumb > * > :hover': {
+		textDecoration: 'none',
+		'@apply text-foreground': {}
+	},
+	'.uk-breadcrumb > :last-child > span, .uk-breadcrumb > :last-child > a:not([href])': {
+		'@apply font-medium text-foreground': {}
+	},
+	'.uk-breadcrumb > :nth-child(n + 2):not(.uk-first-column)::before': {
+		content: "'/'",
+		display: 'inline-block',
+		fontSize: '0.875rem',
+		'@apply ml-2 mr-3 text-muted-foreground': {}
+	},
+	'.uk-breadcrumb > .uk-disabled > *': {
+		'@apply opacity-50': {}
+	}
+};
