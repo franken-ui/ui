@@ -1,14 +1,10 @@
 export default {
-	'.uk-breadcrumb': {
-		padding: '0',
-		listStyle: 'none',
-		'@apply text-sm': {}
-	},
 	'.uk-breadcrumb > *': {
 		display: 'contents'
 	},
 	'.uk-breadcrumb > * > *': {
-		'@apply inline-flex items-center text-muted-foreground': {}
+		'@apply inline-flex items-center text-muted-foreground focus-visible:outline-dotted focus-visible:outline-ring':
+			{}
 	},
 	'.uk-breadcrumb > * > :hover': {
 		textDecoration: 'none',
@@ -18,9 +14,8 @@ export default {
 		'@apply font-medium text-foreground': {}
 	},
 	'.uk-breadcrumb > :nth-child(n + 2):not(.uk-first-column)::before': {
-		content: "'/'",
+		content: 'var(--uk-breadcrumb-divider)',
 		display: 'inline-block',
-		fontSize: '0.875rem',
 		'@apply ml-2 mr-3 text-muted-foreground': {}
 	},
 	'.uk-breadcrumb > .uk-disabled > *': {

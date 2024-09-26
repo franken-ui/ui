@@ -1,6 +1,8 @@
 export default {
 	'.uk-label': {
-		'@apply inline-flex items-center rounded-md border border-border px-2.5 py-0.5 text-xs font-semibold text-foreground shadow transition-colors':
+		borderRadius: 'var(--uk-border-radius)',
+		boxShadow: 'var(--uk-box-shadow)',
+		'@apply inline-flex items-center border border-border px-2.5 py-0.5 text-xs font-semibold text-foreground':
 			{}
 	},
 	'.uk-label-danger': {

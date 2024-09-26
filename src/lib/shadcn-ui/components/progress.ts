@@ -4,8 +4,8 @@ export default {
 		display: 'block',
 		width: '100%',
 		border: '0',
-		marginBottom: '20px',
-		height: '15px',
+		marginBottom: '1.25rem',
+		height: '1rem',
 		borderRadius: '500px',
 		overflow: 'hidden',
 		'@apply bg-primary/20': {}

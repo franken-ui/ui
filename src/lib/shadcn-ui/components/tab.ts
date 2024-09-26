@@ -30,7 +30,8 @@ export default {
 		fontSize: '0.875rem',
 		textTransform: 'none',
 		transition: 'color 0.1s ease-in-out',
-		'@apply font-semibold text-muted-foreground': {}
+		'@apply font-semibold text-muted-foreground focus-visible:outline-dotted focus-visible:outline-ring':
+			{}
 	},
 	'.uk-tab > * > a:hover': {
 		textDecoration: 'none'
@@ -85,20 +86,21 @@ export default {
 		borderBottom: 'none'
 	},
 	'.uk-tab .uk-dropdown': {
-		marginLeft: '30px'
+		marginLeft: '2rem'
 	},
 	'.uk-tab-alt': {
-		'@apply flex h-9 w-full items-center justify-center rounded-lg bg-muted p-1 text-muted-foreground':
-			{}
+		borderRadius: 'var(--uk-border-radius)',
+		'@apply flex h-9 w-full items-center justify-center bg-muted p-1 text-muted-foreground': {}
 	},
 	'.uk-tab-alt > *': {
 		'@apply flex-grow': {}
 	},
 	'.uk-tab-alt > * > a': {
-		'@apply inline-flex h-auto w-full items-center justify-center whitespace-nowrap px-3 py-1 text-sm font-medium no-underline':
+		'@apply inline-flex h-auto w-full items-center justify-center whitespace-nowrap px-3 py-1 font-medium no-underline focus-visible:outline-dotted focus-visible:outline-ring':
 			{}
 	},
 	'.uk-tab-alt > .uk-active > a': {
-		'@apply rounded-md border-b-0 bg-background text-foreground': {}
+		borderRadius: 'var(--uk-border-radius-s)',
+		'@apply border-b-0 bg-background text-foreground': {}
 	}
 };

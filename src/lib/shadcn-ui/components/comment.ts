@@ -2,12 +2,11 @@ export default {
 	'.uk-comment-body': {
 		display: 'flow-root',
 		overflowWrap: 'break-word',
-		wordWrap: 'break-word',
-		'@apply text-sm': {}
+		wordWrap: 'break-word'
 	},
 	'.uk-comment-header': {
 		display: 'flow-root',
-		marginBottom: '20px'
+		marginBottom: '1.25rem'
 	},
 	'.uk-comment-body > :last-child, .uk-comment-header > :last-child': {
 		marginBottom: '0'
@@ -16,7 +15,7 @@ export default {
 		'@apply text-base font-medium': {}
 	},
 	'.uk-comment-meta': {
-		'@apply text-xs text-muted-foreground mt-1': {}
+		'@apply text-muted-foreground mt-1': {}
 	},
 	'.uk-comment-list': {
 		padding: '0',
@@ -32,7 +31,8 @@ export default {
 		'@apply mt-6': {}
 	},
 	'.uk-comment-primary': {
-		'@apply bg-primary text-primary-foreground rounded-md': {}
+		borderRadius: 'var(--uk-border-radius)',
+		'@apply bg-primary text-primary-foreground': {}
 	},
 	'.uk-comment': {
 		'@apply p-3': {}

@@ -5,7 +5,7 @@ export default {
 	},
 	'.uk-divider-icon': {
 		position: 'relative',
-		height: '20px',
+		height: '1.25rem',
 		backgroundImage: 'var(--uk-divider-icon-image)',
 		backgroundRepeat: 'no-repeat',
 		backgroundPosition: '50% 50%'
@@ -14,22 +14,22 @@ export default {
 		content: "''",
 		position: 'absolute',
 		top: '50%',
-		maxWidth: 'calc(50% - (50px / 2))',
+		maxWidth: 'calc(50% - (3.5rem / 2))',
 		borderBottom: '1px solid',
 		'@apply border-border': {}
 	},
 	'.uk-divider-icon::before': {
-		right: 'calc(50% + (50px / 2))',
+		right: 'calc(50% + (3.5rem / 2))',
 		width: '100%'
 	},
 	'.uk-divider-icon::after': {
-		left: 'calc(50% + (50px / 2))',
+		left: 'calc(50% + (3.5rem / 2))',
 		width: '100%'
 	},
-	'.uk-divider-small': {
+	'.uk-divider-sm': {
 		lineHeight: '0'
 	},
-	'.uk-divider-small::after': {
+	'.uk-divider-sm::after': {
 		content: "''",
 		display: 'inline-block',
 		width: '100px',

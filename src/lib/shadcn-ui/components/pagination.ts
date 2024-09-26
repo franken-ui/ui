@@ -1,28 +1,19 @@
 export default {
-	'.uk-pagination': {
-		display: 'flex',
-		flexWrap: 'wrap',
-		alignItems: 'center',
-		listStyle: 'none',
-		'@apply gap-1': {}
+	'.uk-pgn': { '@apply flex flex-wrap items-center gap-1': {} },
+	'.uk-pgn > *': { '@apply relative flex-none': {} },
+	'.uk-pgn > * > *': { '@apply uk-btn': {} },
+	'.uk-pgn > .uk-active > *': { '@apply opacity-80': {} },
+	'.uk-pgn > .uk-disabled > *': { '@apply opacity-50': {} },
+	'.uk-pgn.uk-pgn-numbered > * > *': {
+		'@apply aspect-square p-0': {}
 	},
-	'.uk-pagination > *': {
-		flex: 'none',
-		position: 'relative'
-	},
-	'.uk-pagination > * > *': {
-		columnGap: '0.25em',
-		transition: 'color 0.1s ease-in-out',
-		'@apply inline-flex h-9 min-w-9 items-center justify-center whitespace-nowrap rounded-md': {}
-	},
-	'.uk-pagination > * > :hover': {
-		textDecoration: 'none',
-		'@apply bg-accent text-accent-foreground': {}
-	},
-	'.uk-pagination > .uk-active > *': {
-		'@apply border border-input shadow': {}
-	},
-	'.uk-pagination > .uk-disabled > *': {
-		'@apply opacity-50': {}
-	}
+	'.uk-pgn-xs > * > *': { '@apply uk-btn-xs': {} },
+	'.uk-pgn-sm > * > *': { '@apply uk-btn-sm': {} },
+	'.uk-pgn-lg > * > *': { '@apply uk-btn-lg': {} },
+	'.uk-pgn-xl > * > *': { '@apply uk-btn-xl': {} },
+	'.uk-pgn-default > * > *': { '@apply uk-btn-default': {} },
+	'.uk-pgn-primary > * > *': { '@apply uk-btn-primary': {} },
+	'.uk-pgn-secondary > * > *': { '@apply uk-btn-secondary': {} },
+	'.uk-pgn-ghost > * > *': { '@apply uk-btn-ghost': {} },
+	'.uk-pgn-danger > * > *': { '@apply uk-btn-danger': {} }
 };

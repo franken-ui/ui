@@ -1,6 +1,7 @@
 export default {
 	'.uk-slidenav': {
-		'@apply inline-flex h-9 w-9 items-center justify-center rounded-full border border-input shadow-sm bg-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring':
+		boxShadow: 'var(--uk-box-shadow-s)',
+		'@apply inline-flex h-9 w-9 items-center justify-center rounded-full border border-input bg-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring':
 			{}
 	},
 	'.uk-slidenav:hover': {
@@ -9,7 +10,7 @@ export default {
 	'.uk-slidenav:active': {
 		'@apply bg-accent text-accent-foreground': {}
 	},
-	'.uk-slidenav-large': {
+	'.uk-slidenav-lg': {
 		padding: '10px 10px'
 	},
 	'.uk-slidenav-container': {

@@ -9,8 +9,8 @@ export default {
 	'.uk-dropbar > :last-child': {
 		marginBottom: '0'
 	},
-	'.uk-dropbar-large': {
-		paddingTop: '40px',
-		paddingBottom: '40px'
+	'.uk-dropbar-lg': {
+		paddingTop: '2.5rem',
+		paddingBottom: '2.5rem'
 	}
 };

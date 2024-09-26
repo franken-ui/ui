@@ -29,7 +29,8 @@ export default {
 		transform: 'translateY(-100px)',
 		transition: '0.3s linear',
 		transitionProperty: 'opacity, transform',
-		'@apply overflow-hidden border border-border bg-background rounded-lg': {}
+		borderRadius: 'var(--uk-border-radius)',
+		'@apply overflow-hidden border border-border bg-background': {}
 	},
 	'.uk-open > .uk-modal-dialog': {
 		opacity: '1',
@@ -51,15 +52,15 @@ export default {
 	},
 	'.uk-modal-body': {
 		display: 'flow-root',
-		'@apply p-6': {}
+		'@apply p-4': {}
 	},
 	'.uk-modal-header': {
 		display: 'flow-root',
-		'@apply p-6': {}
+		'@apply p-4': {}
 	},
 	'.uk-modal-footer': {
 		display: 'flow-root',
-		'@apply p-6': {}
+		'@apply p-4': {}
 	},
 	'.uk-modal-body > :last-child, .uk-modal-header > :last-child, .uk-modal-footer > :last-child': {
 		marginBottom: '0'
@@ -107,6 +108,9 @@ export default {
 	},
 	'.uk-flex-top': {
 		'@apply items-start': {}
+	},
+	'.uk-flex-wrap-top': {
+		alignContent: 'flex-start'
 	},
 	'.uk-margin-auto-vertical': {
 		marginTop: 'auto !important',

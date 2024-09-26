@@ -15,7 +15,7 @@ export default {
 		pointerEvents: 'none'
 	},
 	'.uk-sortable-empty': {
-		minHeight: '50px'
+		minHeight: '3.5rem'
 	},
 	'.uk-sortable-handle:hover': {
 		cursor: 'move'

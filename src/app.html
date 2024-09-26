@@ -4,35 +4,26 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="preload" href="/fonts/Geist/Sans.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="/fonts/Geist/Mono.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="stylesheet" href="/fonts/Geist/style.css" />
+		<script>
+			const htmlElement = document.documentElement;
+
+			if (
+				localStorage.getItem('mode') === 'dark' ||
+				(!('mode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+			) {
+				htmlElement.classList.add('dark');
+			} else {
+				htmlElement.classList.remove('dark');
+			}
+
+			htmlElement.classList.add(localStorage.getItem('theme') || 'uk-theme-zinc');
+		</script>
 		%sveltekit.head%
 	</head>
-	<body class="h-screen bg-background text-foreground" data-sveltekit-preload-data="hover">
+	<body class="bg-background font-geist-sans text-foreground" data-sveltekit-preload-data="hover">
 		<div>%sveltekit.body%</div>
-		<script>
-			const themeToggleBtn = document.getElementById('theme-toggle');
-
-			themeToggleBtn?.addEventListener('click', function () {
-				// if set via local storage previously
-				if (localStorage.getItem('mode')) {
-					if (localStorage.getItem('mode') === 'light') {
-						document.documentElement.classList.add('dark');
-						localStorage.setItem('mode', 'dark');
-					} else {
-						document.documentElement.classList.remove('dark');
-						localStorage.setItem('mode', 'light');
-					}
-
-					// if NOT set via local storage previously
-				} else {
-					if (document.documentElement.classList.contains('dark')) {
-						document.documentElement.classList.remove('dark');
-						localStorage.setItem('mode', 'light');
-					} else {
-						document.documentElement.classList.add('dark');
-						localStorage.setItem('mode', 'dark');
-					}
-				}
-			});
-		</script>
 	</body>
 </html>

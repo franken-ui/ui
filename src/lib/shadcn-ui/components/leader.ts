@@ -4,7 +4,7 @@ export default {
 	},
 	'.uk-leader-fill::after': {
 		display: 'inline-block',
-		marginLeft: '15px',
+		marginLeft: '1rem',
 		width: '0',
 		content: 'attr(data-fill)',
 		whiteSpace: 'nowrap'

@@ -1,7 +1,7 @@
 export default {
 	'.uk-placeholder': {
-		marginBottom: '20px',
-		padding: '30px 30px',
+		marginBottom: '1.25rem',
+		padding: '2rem 2rem',
 		background: 'transparent',
 		border: '1px dashed',
 		'@apply border-border': {}

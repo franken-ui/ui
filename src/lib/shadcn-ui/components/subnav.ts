@@ -1,6 +1,6 @@
 export default {
 	'.uk-subnav': {
-		'@apply flex items-center text-sm': {}
+		'@apply flex items-center': {}
 	},
 	'.uk-subnav > * > :first-child': {
 		transition: '0.1s ease-in-out',

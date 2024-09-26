@@ -2,18 +2,17 @@ export default {
 	'.uk-table': {
 		borderCollapse: 'collapse',
 		borderSpacing: '0',
-		width: '100%',
-		'@apply text-sm': {}
+		width: '100%'
 	},
 	'.uk-table th': {
-		padding: '16px 12px',
+		padding: '1rem 0.75rem',
 		textAlign: 'left',
 		fontSize: '0.875rem',
 		fontWeight: 'normal',
 		'@apply text-muted-foreground': {}
 	},
 	'.uk-table td': {
-		padding: '16px 12px',
+		padding: '1rem 0.75rem',
 		verticalAlign: 'top'
 	},
 	'.uk-table tfoot': {
@@ -39,11 +38,11 @@ export default {
 	'.uk-table > tr.uk-active, .uk-table tbody tr.uk-active': {
 		'@apply bg-muted': {}
 	},
-	'.uk-table-small th, .uk-table-small td': {
-		padding: '10px 12px'
+	'.uk-table-sm th, .uk-table-sm td': {
+		padding: '0.625rem 0.75rem'
 	},
-	'.uk-table-large th, .uk-table-large td': {
-		padding: '22px 12px'
+	'.uk-table-lg th, .uk-table-lg td': {
+		padding: '1.5rem 0.75rem'
 	},
 	'.uk-table-justify th:first-child, .uk-table-justify td:first-child': {
 		paddingLeft: '0'
@@ -55,19 +54,16 @@ export default {
 		width: '1px'
 	},
 	'.uk-table-expand': {
-		minWidth: '150px'
+		minWidth: '10rem'
 	},
 	'.uk-table-link': {
 		padding: '0 !important'
 	},
 	'.uk-table-link > a': {
-		padding: '16px 12px'
+		padding: '1rem 0.75rem'
 	},
-	'.uk-table-small .uk-table-link > a': {
-		padding: '10px 12px'
-	},
-	'.uk-table tbody tr': {
-		transition: 'background-color 0.1s linear'
+	'.uk-table-sm .uk-table-link > a': {
+		padding: '0.625rem 0.75rem'
 	},
 	'.uk-table-striped > tr:nth-of-type(even):last-child, .uk-table-striped tbody tr:nth-of-type(even):last-child':
 		{

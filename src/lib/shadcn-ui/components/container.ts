@@ -5,8 +5,8 @@ export default {
 		maxWidth: '1200px',
 		marginLeft: 'auto',
 		marginRight: 'auto',
-		paddingLeft: '15px',
-		paddingRight: '15px'
+		paddingLeft: '1rem',
+		paddingRight: '1rem'
 	},
 	'.uk-container > :last-child': {
 		marginBottom: '0'
@@ -15,16 +15,16 @@ export default {
 		paddingLeft: '0',
 		paddingRight: '0'
 	},
-	'.uk-container-xsmall': {
+	'.uk-container-xs': {
 		maxWidth: '750px'
 	},
-	'.uk-container-small': {
+	'.uk-container-sm': {
 		maxWidth: '900px'
 	},
-	'.uk-container-large': {
+	'.uk-container-lg': {
 		maxWidth: '1400px'
 	},
-	'.uk-container-xlarge': {
+	'.uk-container-xl': {
 		maxWidth: '1600px'
 	},
 	'.uk-container-expand': {
@@ -37,12 +37,12 @@ export default {
 		marginRight: '0'
 	},
 	'.uk-container-item-padding-remove-left, .uk-container-item-padding-remove-right': {
-		width: 'calc(100% + 15px)'
+		width: 'calc(100% + 1rem)'
 	},
 	'.uk-container-item-padding-remove-left': {
-		marginLeft: '-15px'
+		marginLeft: '-1rem'
 	},
 	'.uk-container-item-padding-remove-right': {
-		marginRight: '-15px'
+		marginRight: '-1rem'
 	}
 };

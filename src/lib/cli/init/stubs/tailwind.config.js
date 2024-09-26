@@ -10,7 +10,10 @@ export default {
 		},
 		'ProseMirror',
 		'ProseMirror-focused',
-		'tiptap'
+		'tiptap',
+		'mr-2',
+		'mt-2',
+		'opacity-50'
 	],
 	theme: {
 		extend: {}

@@ -1,59 +1,40 @@
 export default {
-	'.uk-button': {
-		'@apply inline-flex h-9 items-center justify-center rounded-md px-4 py-2 text-sm font-medium shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring':
+	'.uk-btn': {
+		boxSizing: 'border-box',
+		borderRadius: 'var(--uk-border-radius)',
+		textAlign: 'center',
+		boxShadow: 'var(--uk-box-shadow-s)',
+		'@apply inline-flex h-10 items-center justify-center px-5 py-2.5 font-medium hover:opacity-80 focus-visible:outline-dotted focus-visible:outline-ring disabled:opacity-50':
 			{}
 	},
-	'.uk-button:not(:disabled)': {
-		cursor: 'pointer'
-	},
-	'.uk-button::-moz-focus-inner': {
-		border: '0',
-		padding: '0'
-	},
-	'.uk-button:hover': {
-		textDecoration: 'none'
-	},
-	'.uk-button-default': {
-		'@apply border border-input bg-background text-accent-foreground': {}
-	},
-	'.uk-button-default:hover': {
-		'@apply bg-accent': {}
-	},
-	'.uk-button-primary': {
-		border: '1px solid transparent',
-		'@apply bg-primary text-primary-foreground': {}
-	},
-	'.uk-button-primary:hover': {
-		'@apply opacity-90': {}
-	},
-	'.uk-button-secondary': {
-		border: '1px solid transparent',
+	'.uk-btn::-moz-focus-inner': { border: '0', padding: '0' },
+	'.uk-btn.uk-active': { '@apply opacity-80': {} },
+	'.uk-btn-default': { '@apply border border-border bg-transparent': {} },
+	'.uk-btn-primary': { '@apply bg-primary text-primary-foreground': {} },
+	'.uk-btn-secondary': {
 		'@apply bg-secondary text-secondary-foreground': {}
 	},
-	'.uk-button-secondary:hover': {
-		'@apply opacity-90': {}
-	},
-	'.uk-button-danger': {
-		border: '1px solid transparent',
+	'.uk-btn-danger': {
 		'@apply bg-destructive text-destructive-foreground': {}
 	},
-	'.uk-button-danger:hover': {
-		'@apply opacity-90': {}
+	'.uk-btn-xs': {
+		'@apply h-7 px-3 py-1.5 text-xs': {}
 	},
-	'.uk-button-default:disabled, .uk-button-primary:disabled, .uk-button-secondary:disabled, .uk-button-danger:disabled':
-		{
-			'@apply opacity-50': {}
-		},
-	'.uk-button-small': {
-		'@apply h-8 px-3 py-0 text-xs': {}
+	'.uk-btn-sm': { '@apply h-8 px-4 py-2 text-sm': {} },
+	'.uk-btn-lg': {
+		'@apply h-12 px-6 py-3': {}
 	},
-	'.uk-button-text': {
+	'.uk-btn-xl': {
+		'@apply h-14 px-7 py-3.5': {}
+	},
+	'.uk-btn-text': {
+		height: 'auto',
 		padding: '0',
-		background: 'none',
 		position: 'relative',
-		'@apply h-auto rounded-none shadow-none': {}
+		borderRadius: '0',
+		'@apply shadow-none': {}
 	},
-	'.uk-button-text::before': {
+	'.uk-btn-text::before': {
 		content: "''",
 		position: 'absolute',
 		bottom: '0',
@@ -62,34 +43,27 @@ export default {
 		borderBottom: '1px solid currentColor',
 		transition: 'right 0.3s ease-out'
 	},
-	'.uk-button-text:hover::before': {
-		right: '0'
+	'.uk-btn-text:hover::before': { right: '0' },
+	'.uk-btn-text:disabled::before': { display: 'none' },
+	'.uk-btn-group': { display: 'inline-flex', position: 'relative' },
+	'.uk-btn-group .uk-btn': { '@apply rounded-none': {} },
+	'.uk-btn-group > .uk-btn:first-child': {
+		borderTopLeftRadius: 'var(--uk-border-radius)',
+		borderBottomLeftRadius: 'var(--uk-border-radius)'
 	},
-	'.uk-button-text:disabled': {
-		'@apply opacity-50': {}
+	'.uk-btn-group > .uk-btn:last-child, .uk-btn-group > .uk-inline:last-child > .uk-btn': {
+		borderTopRightRadius: 'var(--uk-border-radius)',
+		borderBottomRightRadius: 'var(--uk-border-radius)'
 	},
-	'.uk-button-text:disabled::before': {
-		display: 'none'
+	'.uk-btn-group > .uk-btn:nth-child(n + 2), .uk-btn-group > div:nth-child(n + 2) .uk-btn': {
+		marginLeft: '-1px'
 	},
-	'.uk-button-link': {
-		padding: '0',
-		background: 'none',
-		'@apply h-auto rounded-none shadow-none': {}
-	},
-	'.uk-button-link:hover': {
-		textDecoration: 'none'
-	},
-	'.uk-button-link:disabled': {
-		textDecoration: 'none',
-		'@apply opacity-50': {}
-	},
-	'.uk-button-ghost': {
-		'@apply shadow-none': {}
-	},
-	'.uk-button-ghost:hover': {
-		'@apply bg-accent': {}
-	},
-	'.uk-button-xsmall': {
-		'@apply h-7 px-3 py-0 text-xs': {}
-	}
+	'.uk-btn-group .uk-btn:hover, .uk-btn-group .uk-btn:focus, .uk-btn-group .uk-btn:active, .uk-btn-group .uk-btn.uk-active':
+		{
+			position: 'relative',
+			zIndex: '1'
+		},
+	'.uk-btn-ghost': { '@apply shadow-none': {} },
+	'.uk-btn-ghost:not(:disabled):hover': { '@apply bg-accent': {} },
+	'.uk-btn-icon': { '@apply aspect-square p-0': {} }
 };

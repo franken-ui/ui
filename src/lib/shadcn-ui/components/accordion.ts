@@ -1,14 +1,10 @@
 export default {
-	'.uk-accordion': {
-		padding: '0',
-		listStyle: 'none',
-		'@apply text-sm': {}
-	},
 	'.uk-accordion-title': {
 		display: 'flex',
 		justifyContent: 'space-between',
 		overflow: 'hidden',
-		'@apply items-start px-0 py-4 font-medium text-foreground': {}
+		'@apply items-start py-4 font-medium text-foreground focus-visible:outline-dotted focus-visible:outline-ring':
+			{}
 	},
 	'.uk-accordion-icon': {
 		flex: 'none',

@@ -43,7 +43,7 @@ export default {
 	},
 	'.uk-lightbox-toolbar': {
 		backgroundColor: 'rgba(0, 0, 0, 0.3)',
-		'@apply p-4 text-sm text-white backdrop-blur-sm': {}
+		'@apply p-4 text-white backdrop-blur-sm': {}
 	},
 	'.uk-lightbox-toolbar-icon': {
 		'@apply text-white': {}

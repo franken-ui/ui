@@ -9,10 +9,10 @@ export default {
 		WebkitBackfaceVisibility: 'hidden',
 		backfaceVisibility: 'hidden'
 	},
-	".uk-sticky[class*='uk-animation-']": {
+	".uk-sticky[class*='uk-anmt-']": {
 		animationDuration: '0.2s'
 	},
-	'.uk-sticky.uk-animation-reverse': {
+	'.uk-sticky.uk-anmt-reverse': {
 		animationDuration: '0.2s'
 	},
 	'.uk-sticky-placeholder': {

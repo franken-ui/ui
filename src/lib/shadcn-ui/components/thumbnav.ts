@@ -5,10 +5,10 @@ export default {
 		margin: '0',
 		padding: '0',
 		listStyle: 'none',
-		marginLeft: '-15px'
+		marginLeft: '-1rem'
 	},
 	'.uk-thumbnav > *': {
-		paddingLeft: '15px'
+		paddingLeft: '1rem'
 	},
 	'.uk-thumbnav > * > *': {
 		display: 'inline-block',
@@ -33,10 +33,10 @@ export default {
 	'.uk-thumbnav-vertical': {
 		flexDirection: 'column',
 		marginLeft: '0',
-		marginTop: '-15px'
+		marginTop: '-1rem'
 	},
 	'.uk-thumbnav-vertical > *': {
 		paddingLeft: '0',
-		paddingTop: '15px'
+		paddingTop: '1rem'
 	}
 };

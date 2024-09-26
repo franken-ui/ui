@@ -9,7 +9,8 @@ export default {
 		boxSizing: 'border-box',
 		maxWidth: '200px',
 		fontSize: '0.75rem',
-		'@apply rounded-md bg-primary px-3 py-1.5 text-primary-foreground': {}
+		borderRadius: 'var(--uk-border-radius)',
+		'@apply bg-primary px-3 py-1.5 text-primary-foreground': {}
 	},
 	'.uk-tooltip.uk-active': {
 		display: 'block'

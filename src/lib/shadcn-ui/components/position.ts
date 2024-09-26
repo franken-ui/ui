@@ -49,15 +49,20 @@ export default {
 		transform: 'translate(var(--uk-position-translate-x), var(--uk-position-translate-y))',
 		width: 'max-content'
 	},
-	"[class*='uk-position-center-left'], [class*='uk-position-center-right']": {
-		top: 'calc(50% - var(--uk-position-margin-offset))',
-		'--uk-position-translate-y': '-50%',
-		transform: 'translate(0, var(--uk-position-translate-y))'
-	},
+	".uk-position-center-vertical, [class*='uk-position-center-left'], [class*='uk-position-center-right']":
+		{
+			top: 'calc(50% - var(--uk-position-margin-offset))',
+			'--uk-position-translate-y': '-50%',
+			transform: 'translate(0, var(--uk-position-translate-y))'
+		},
 	'.uk-position-center-left': {
 		left: '0'
 	},
 	'.uk-position-center-right': {
+		right: '0'
+	},
+	'.uk-position-center-vertical': {
+		left: '0',
 		right: '0'
 	},
 	'.uk-position-center-left-out': {
@@ -68,7 +73,7 @@ export default {
 		left: '100%',
 		width: 'max-content'
 	},
-	'.uk-position-top-center, .uk-position-bottom-center': {
+	'.uk-position-bottom-center, .uk-position-center-horizontal, .uk-position-top-center': {
 		left: 'calc(50% - var(--uk-position-margin-offset))',
 		'--uk-position-translate-x': '-50%',
 		transform: 'translate(var(--uk-position-translate-x), 0)',
@@ -80,6 +85,10 @@ export default {
 	'.uk-position-bottom-center': {
 		bottom: '0'
 	},
+	'.uk-position-center-horizontal': {
+		top: '0',
+		bottom: '0'
+	},
 	'.uk-position-cover': {
 		position: 'absolute',
 		top: '0',
@@ -87,15 +96,15 @@ export default {
 		left: '0',
 		right: '0'
 	},
-	'.uk-position-small': {
+	'.uk-position-sm': {
 		margin: '0.5rem',
 		'--uk-position-margin-offset': '0.5rem'
 	},
-	'.uk-position-medium': {
+	'.uk-position-md': {
 		margin: '2.5rem',
 		'--uk-position-margin-offset': '2.5rem'
 	},
-	'.uk-position-large': {
+	'.uk-position-lg': {
 		margin: '5rem',
 		'--uk-position-margin-offset': '5rem'
 	},
@@ -123,7 +132,7 @@ export default {
 	'.uk-position-z-index-high': {
 		zIndex: '990'
 	},
-	'.uk-position-xsmall': {
+	'.uk-position-xs': {
 		margin: '0.25rem',
 		'--uk-position-margin-offset': '0.25rem'
 	},
@@ -131,7 +140,7 @@ export default {
 		margin: '1rem',
 		'--uk-position-margin-offset': '1rem'
 	},
-	'.uk-position-xlarge': {
+	'.uk-position-xl': {
 		margin: '10rem',
 		'--uk-position-margin-offset': '10rem'
 	}

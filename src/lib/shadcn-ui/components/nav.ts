@@ -7,7 +7,8 @@ export default {
 	'.uk-nav li > a': {
 		display: 'flex',
 		alignItems: 'center',
-		textDecoration: 'none'
+		textDecoration: 'none',
+		'@apply focus-visible:outline-dotted focus-visible:outline-ring': {}
 	},
 	'ul.uk-nav-sub': {
 		'@apply ml-5 mr-1 space-y-1 border-l border-border': {}
@@ -16,7 +17,7 @@ export default {
 		'@apply ml-5 mt-1 space-y-1 border-l border-border': {}
 	},
 	'.uk-nav-sub a': {
-		'@apply rounded-md': {}
+		borderRadius: 'var(--uk-border-radius)'
 	},
 	'.uk-nav-parent-icon': {
 		marginLeft: 'auto',
@@ -58,7 +59,8 @@ export default {
 		'@apply text-foreground': {}
 	},
 	'.uk-nav-primary > li > a': {
-		'@apply px-4 py-2 m-1 rounded-md': {}
+		borderRadius: 'var(--uk-border-radius)',
+		'@apply px-4 py-2 m-1': {}
 	},
 	'.uk-nav-primary > li > a:hover': {
 		'@apply bg-accent text-accent-foreground': {}
@@ -86,7 +88,8 @@ export default {
 		marginTop: '0'
 	},
 	'.uk-nav-secondary > li > a': {
-		'@apply px-4 py-2 m-1 rounded-md': {}
+		borderRadius: 'var(--uk-border-radius)',
+		'@apply px-4 py-2 m-1': {}
 	},
 	'.uk-nav-secondary > li > a:hover': {
 		'@apply bg-secondary text-secondary-foreground': {}
@@ -114,9 +117,6 @@ export default {
 		null,
 	'.uk-nav.uk-nav-divider > :not(.uk-nav-header, .uk-nav-divider) + :not(.uk-nav-header, .uk-nav-divider)':
 		{},
-	'.uk-nav': {
-		'@apply text-sm': {}
-	},
 	'.uk-nav-sub li': {
 		'@apply relative': {}
 	},

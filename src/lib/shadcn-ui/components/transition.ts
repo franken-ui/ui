@@ -54,29 +54,29 @@ export default {
 	'.uk-transition-slide-right': {
 		'--uk-translate-x': '100%'
 	},
-	'.uk-transition-slide-top-small': {
+	'.uk-transition-slide-top-sm': {
 		'--uk-translate-y': 'calc(-1 * 10px)'
 	},
-	'.uk-transition-slide-bottom-small': {
+	'.uk-transition-slide-bottom-sm': {
 		'--uk-translate-y': '10px'
 	},
-	'.uk-transition-slide-left-small': {
+	'.uk-transition-slide-left-sm': {
 		'--uk-translate-x': 'calc(-1 * 10px)'
 	},
-	'.uk-transition-slide-right-small': {
+	'.uk-transition-slide-right-sm': {
 		'--uk-translate-x': '10px'
 	},
-	'.uk-transition-slide-top-medium': {
-		'--uk-translate-y': 'calc(-1 * 50px)'
+	'.uk-transition-slide-top-md': {
+		'--uk-translate-y': 'calc(-1 * 3.5rem)'
 	},
-	'.uk-transition-slide-bottom-medium': {
-		'--uk-translate-y': '50px'
+	'.uk-transition-slide-bottom-md': {
+		'--uk-translate-y': '3.5rem'
 	},
-	'.uk-transition-slide-left-medium': {
-		'--uk-translate-x': 'calc(-1 * 50px)'
+	'.uk-transition-slide-left-md': {
+		'--uk-translate-x': 'calc(-1 * 3.5rem)'
 	},
-	'.uk-transition-slide-right-medium': {
-		'--uk-translate-x': '50px'
+	'.uk-transition-slide-right-md': {
+		'--uk-translate-x': '3.5rem'
 	},
 	".uk-transition-toggle:hover [class*='uk-transition-slide'], .uk-transition-toggle:focus [class*='uk-transition-slide'], .uk-transition-toggle [class*='uk-transition-slide']:focus-within, .uk-transition-active.uk-active [class*='uk-transition-slide']":
 		{

@@ -5,11 +5,11 @@ export default {
 		margin: '0',
 		padding: '0',
 		listStyle: 'none',
-		marginLeft: '-12px'
+		marginLeft: '-0.75rem'
 	},
 	'.uk-dotnav > *': {
 		flex: 'none',
-		paddingLeft: '12px'
+		paddingLeft: '0.75rem'
 	},
 	'.uk-dotnav > * > *': {
 		display: 'block',
@@ -40,10 +40,10 @@ export default {
 	'.uk-dotnav-vertical': {
 		flexDirection: 'column',
 		marginLeft: '0',
-		marginTop: '-12px'
+		marginTop: '-0.75rem'
 	},
 	'.uk-dotnav-vertical > *': {
 		paddingLeft: '0',
-		paddingTop: '12px'
+		paddingTop: '0.75rem'
 	}
 };

@@ -40,16 +40,16 @@ export default {
 	'.uk-range::-webkit-slider-thumb': {
 		WebkitAppearance: 'none',
 		marginTop: '-7px',
-		height: '15px',
-		width: '15px',
+		height: '1rem',
+		width: '1rem',
 		borderRadius: '500px',
 		border: '1px solid',
 		'@apply border-primary/50 bg-background': {}
 	},
 	'.uk-range::-moz-range-thumb': {
 		border: '1px solid',
-		height: '15px',
-		width: '15px',
+		height: '1rem',
+		width: '1rem',
 		marginTop: '-7px',
 		borderRadius: '500px',
 		'@apply border-primary/50 bg-background': {}

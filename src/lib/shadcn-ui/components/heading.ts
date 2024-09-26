@@ -1,20 +1,20 @@
 export default {
-	'.uk-heading-small': {
+	'.uk-hero-sm': {
 		'@apply text-4xl': {}
 	},
-	'.uk-heading-medium': {
+	'.uk-hero-md': {
 		'@apply text-5xl': {}
 	},
-	'.uk-heading-large': {
+	'.uk-hero-lg': {
 		'@apply text-6xl': {}
 	},
-	'.uk-heading-xlarge': {
+	'.uk-hero-xl': {
 		'@apply text-7xl': {}
 	},
-	'.uk-heading-2xlarge': {
+	'.uk-hero-2xl': {
 		'@apply text-8xl': {}
 	},
-	'.uk-heading-3xlarge': {
+	'.uk-hero-3xl': {
 		'@apply text-9xl': {}
 	},
 	'.uk-heading-divider': {
