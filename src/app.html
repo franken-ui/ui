@@ -10,16 +10,20 @@
 		<script>
 			const htmlElement = document.documentElement;
 
+			const __FRANKEN__ = JSON.parse(localStorage.getItem('__FRANKEN__') || '{}');
+
 			if (
-				localStorage.getItem('mode') === 'dark' ||
-				(!('mode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+				__FRANKEN__.mode === 'dark' ||
+				(!__FRANKEN__.mode && window.matchMedia('(prefers-color-scheme: dark)').matches)
 			) {
 				htmlElement.classList.add('dark');
 			} else {
 				htmlElement.classList.remove('dark');
 			}
 
-			htmlElement.classList.add(localStorage.getItem('theme') || 'uk-theme-zinc');
+			htmlElement.classList.add(__FRANKEN__.theme || 'uk-theme-zinc');
+			htmlElement.classList.add(__FRANKEN__.radii || 'uk-radii-md');
+			htmlElement.classList.add(__FRANKEN__.shadows || 'uk-shadows-sm');
 		</script>
 		%sveltekit.head%
 	</head>

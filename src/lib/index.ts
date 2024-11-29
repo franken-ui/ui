@@ -614,7 +614,9 @@ export default plugin.withOptions((options: Options = {}) => {
 				'--uk-border-radius': '0.375rem',
 				'--uk-breadcrumb-divider': "'/'",
 				'--uk-box-shadow-s': '0 1px 2px 0 rgb(0 0 0 / 0.05)',
-				'--uk-box-shadow': '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)'
+				'--uk-box-shadow': '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)',
+				'--uk-offcanvas-bar-width': '288px',
+				'--uk-offcanvas-bar-width-i': '-288px'
 			}
 		});
 

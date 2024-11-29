@@ -251,6 +251,8 @@ export default {
 		'@apply pr-8': {}
 	},
 	'.uk-input-pin': {
+		borderRadius: 'var(--uk-border-radius)',
+		boxShadow: 'var(--uk-box-shadow-s)',
 		'@apply inline-flex items-center': {}
 	},
 	'.uk-input-pin input': {
@@ -268,8 +270,8 @@ export default {
 	},
 	'.uk-input-pin input:first-child': {
 		borderTopLeftRadius: 'var(--uk-border-radius)',
-		borderBottomLeftRadius: 'var(--uk-border-radius)',
-		'@apply ml-[1px]': {}
+		borderBottomLeftRadius: 'var(--uk-border-radius)'
+		// '@apply ml-[1px]': {}
 	},
 	'.uk-input-pin input:last-child': {
 		borderTopRightRadius: 'var(--uk-border-radius)',
@@ -284,9 +286,9 @@ export default {
 
 		'@apply -mr-0': {}
 	},
-	'.uk-input-pin.uk-input-pin-separated input:first-child': {
-		'@apply ml-0': {}
-	},
+	// '.uk-input-pin.uk-input-pin-separated input:first-child': {
+	// 	'@apply ml-0': {}
+	// },
 	'.uk-input-pin.uk-form-xs input': {
 		'@apply h-7 w-7 text-xs': {}
 	},
@@ -300,8 +302,9 @@ export default {
 		'@apply h-14 w-14': {}
 	},
 	'.uk-input-tag': {
+		boxShadow: 'var(--uk-box-shadow-s)',
 		borderRadius: 'var(--uk-border-radius)',
-		'@apply border-input bg-background has-[input:focus]:ring-ring flex min-h-10 flex-wrap items-center gap-1 border p-2 has-[input:focus]:ring-1':
+		'@apply border-input bg-transparent has-[input:focus]:ring-ring flex min-h-10 flex-wrap items-center gap-1 border p-2 has-[input:focus]:ring-1':
 			{}
 	},
 	'.uk-input-tag.uk-disabled': {

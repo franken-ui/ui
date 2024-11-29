@@ -45,8 +45,13 @@ export default {
 	},
 	'.uk-btn-text:hover::before': { right: '0' },
 	'.uk-btn-text:disabled::before': { display: 'none' },
-	'.uk-btn-group': { display: 'inline-flex', position: 'relative' },
-	'.uk-btn-group .uk-btn': { '@apply rounded-none': {} },
+	'.uk-btn-group': {
+		display: 'inline-flex',
+		position: 'relative',
+		boxShadow: 'var(--uk-box-shadow-s)',
+		borderRadius: 'var(--uk-border-radius)'
+	},
+	'.uk-btn-group .uk-btn': { '@apply rounded-none shadow-none': {} },
 	'.uk-btn-group > .uk-btn:first-child': {
 		borderTopLeftRadius: 'var(--uk-border-radius)',
 		borderBottomLeftRadius: 'var(--uk-border-radius)'

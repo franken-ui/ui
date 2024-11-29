@@ -15,15 +15,15 @@ export default {
 		position: 'absolute',
 		top: '0',
 		bottom: '0',
-		left: '-270px',
+		left: 'var(--uk-offcanvas-bar-width-i)',
 		boxSizing: 'border-box',
-		width: '270px',
+		width: 'var(--uk-offcanvas-bar-width)',
 		overflowY: 'auto',
 		'@apply border-r border-border bg-background': {}
 	},
 	'.uk-offcanvas-flip .uk-offcanvas-bar': {
 		left: 'auto',
-		right: '-270px',
+		right: 'var(--uk-offcanvas-bar-width-i)',
 		borderRight: 'none',
 		'@apply border-l border-border': {}
 	},
@@ -57,7 +57,7 @@ export default {
 		right: '0'
 	},
 	'.uk-open > .uk-offcanvas-reveal': {
-		width: '270px'
+		width: 'var(--uk-offcanvas-bar-width)'
 	},
 	'.uk-offcanvas-flip .uk-offcanvas-reveal': {
 		right: '0',
@@ -103,9 +103,9 @@ export default {
 		width: '100%'
 	},
 	':not(.uk-offcanvas-flip).uk-offcanvas-container-animation': {
-		left: '270px'
+		left: 'var(--uk-offcanvas-bar-width)'
 	},
 	'.uk-offcanvas-flip.uk-offcanvas-container-animation': {
-		left: '-270px'
+		left: 'var(--uk-offcanvas-bar-width-i)'
 	}
 };
