@@ -15,7 +15,7 @@ export default {
 		'@apply text-base font-medium': {}
 	},
 	'.uk-comment-meta': {
-		'@apply text-muted-foreground mt-1': {}
+		'@apply text-xs mt-1': {}
 	},
 	'.uk-comment-list': {
 		padding: '0',

@@ -49,28 +49,6 @@ export default {
 	".uk-inline-clip[class*='uk-border-']": {
 		WebkitTransform: 'translateZ(0)'
 	},
-	'@supports (filter: blur(0))': {
-		'.uk-box-shadow-bottom': {
-			display: 'inline-block',
-			position: 'relative',
-			zIndex: '0',
-			maxWidth: '100%',
-			verticalAlign: 'middle'
-		},
-		'.uk-box-shadow-bottom::after': {
-			content: "''",
-			position: 'absolute',
-			bottom: '-2rem',
-			left: '0',
-			right: '0',
-			zIndex: '-1',
-			height: '2rem',
-			borderRadius: '100%',
-			backgroundColor: '#444',
-			filter: 'blur(20px)',
-			willChange: 'filter'
-		}
-	},
 	'.uk-dropcap::first-letter, .uk-dropcap > p:first-of-type::first-letter': {
 		display: 'block',
 		marginRight: '10px',

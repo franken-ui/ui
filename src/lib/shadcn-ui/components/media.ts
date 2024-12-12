@@ -86,12 +86,6 @@ export default {
 		'.uk-container-item-padding-remove-right': {
 			marginRight: '-2.5rem'
 		},
-		'.uk-countdown-number': {
-			fontSize: '6rem'
-		},
-		'.uk-countdown-separator': {
-			fontSize: '3rem'
-		},
 		'.uk-dropbar': {
 			paddingLeft: '2.5rem',
 			paddingRight: '2.5rem'
