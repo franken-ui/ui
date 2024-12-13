@@ -1,10 +1,13 @@
 export default {
 	'.uk-btn': {
 		boxSizing: 'border-box',
-		borderRadius: 'var(--uk-border-radius)',
-		textAlign: 'center',
-		boxShadow: 'var(--uk-box-shadow-s)',
-		'@apply inline-flex h-10 items-center justify-center px-5 py-2.5 font-medium hover:opacity-80 focus-visible:outline-dotted focus-visible:outline-ring disabled:opacity-50':
+		borderRadius: 'var(--uk-btn-radius)',
+		boxShadow: 'var(--uk-btn-shadow)',
+		height: 'var(--uk-btn-height)',
+		padding: 'var(--uk-btn-padding)',
+		fontSize: 'var(--uk-btn-font-size)',
+		lineHeight: 'var(--uk-btn-line-height)',
+		'@apply box-border inline-flex items-center justify-center text-center font-medium hover:opacity-80 focus-visible:outline-dotted focus-visible:outline-ring disabled:opacity-50':
 			{}
 	},
 	'.uk-btn::-moz-focus-inner': { border: '0', padding: '0' },
@@ -14,18 +17,8 @@ export default {
 	'.uk-btn-secondary': {
 		'@apply bg-secondary text-secondary-foreground': {}
 	},
-	'.uk-btn-danger': {
+	'.uk-btn-destructive': {
 		'@apply bg-destructive text-destructive-foreground': {}
-	},
-	'.uk-btn-xs': {
-		'@apply h-7 px-3 py-1.5 text-xs': {}
-	},
-	'.uk-btn-sm': { '@apply h-8 px-4 py-2 text-sm': {} },
-	'.uk-btn-lg': {
-		'@apply h-12 px-6 py-3': {}
-	},
-	'.uk-btn-xl': {
-		'@apply h-14 px-7 py-3.5': {}
 	},
 	'.uk-btn-text': {
 		height: 'auto',
@@ -48,17 +41,17 @@ export default {
 	'.uk-btn-group': {
 		display: 'inline-flex',
 		position: 'relative',
-		boxShadow: 'var(--uk-box-shadow-s)',
-		borderRadius: 'var(--uk-border-radius)'
+		boxShadow: 'var(--uk-btn-shadow)',
+		borderRadius: 'var(--uk-btn-radius)'
 	},
 	'.uk-btn-group .uk-btn': { '@apply rounded-none shadow-none': {} },
 	'.uk-btn-group > .uk-btn:first-child': {
-		borderTopLeftRadius: 'var(--uk-border-radius)',
-		borderBottomLeftRadius: 'var(--uk-border-radius)'
+		borderTopLeftRadius: 'var(--uk-btn-radius)',
+		borderBottomLeftRadius: 'var(--uk-btn-radius)'
 	},
 	'.uk-btn-group > .uk-btn:last-child, .uk-btn-group > .uk-inline:last-child > .uk-btn': {
-		borderTopRightRadius: 'var(--uk-border-radius)',
-		borderBottomRightRadius: 'var(--uk-border-radius)'
+		borderTopRightRadius: 'var(--uk-btn-radius)',
+		borderBottomRightRadius: 'var(--uk-btn-radius)'
 	},
 	'.uk-btn-group > .uk-btn:nth-child(n + 2), .uk-btn-group > div:nth-child(n + 2) .uk-btn': {
 		marginLeft: '-1px'

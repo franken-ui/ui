@@ -37,10 +37,10 @@ export default {
 	'.uk-notification-message:hover .uk-notification-close': {
 		display: 'block'
 	},
-	'.uk-notification-message-danger': {
+	'.uk-notification-message-destructive': {
 		'@apply border-destructive bg-destructive text-destructive-foreground': {}
 	},
-	'.uk-notification-message-danger .uk-notification-close': {
+	'.uk-notification-message-destructive .uk-notification-close': {
 		'@apply text-destructive-foreground/50': {}
 	}
 };

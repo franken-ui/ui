@@ -3,8 +3,8 @@ export default {
 		display: 'flex',
 		justifyContent: 'space-between',
 		overflow: 'hidden',
-		'@apply items-start py-4 font-medium text-foreground focus-visible:outline-dotted focus-visible:outline-ring':
-			{}
+		padding: 'var(--uk-accordion-title-padding)',
+		'@apply items-start font-medium focus-visible:outline-dotted focus-visible:outline-ring': {}
 	},
 	'.uk-accordion-icon': {
 		flex: 'none',
@@ -19,7 +19,7 @@ export default {
 	},
 	'.uk-accordion-content': {
 		display: 'flow-root',
-		'@apply pb-4 text-foreground': {}
+		padding: 'var(--uk-accordion-content-padding)'
 	},
 	'.uk-accordion-content[hidden]': {
 		display: 'none'

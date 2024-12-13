@@ -115,17 +115,5 @@ export default {
 	},
 	'.uk-text-break': {
 		overflowWrap: 'break-word'
-	},
-	'.uk-rounded-sm': {
-		borderRadius: 'var(--uk-border-radius-s)'
-	},
-	'.uk-rounded': {
-		borderRadius: 'var(--uk-border-radius)'
-	},
-	'.uk-shadow-sm': {
-		boxShadow: 'var(--uk-box-shadow-s)'
-	},
-	'.uk-shadow': {
-		boxShadow: 'var(--uk-box-shadow)'
 	}
 };

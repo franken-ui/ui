@@ -2,32 +2,8 @@ export default {
 	'.uk-close': {
 		'@apply focus-visible:outline-dotted focus-visible:outline-ring': {}
 	},
-	'.uk-radii-none': {
-		'--uk-border-radius-s': '0',
-		'--uk-border-radius': '0'
-	},
-	'.uk-radii-sm': {
-		'--uk-border-radius-s': '0.25rem',
-		'--uk-border-radius': '0.125rem'
-	},
-	'.uk-radii-lg': {
-		'--uk-border-radius-s': '0.375rem',
-		'--uk-border-radius': '0.5rem'
-	},
-	'.uk-shadows-none': {
-		'--uk-box-shadow-s': '0 0 0 0',
-		'--uk-box-shadow': '0 0 0 0'
-	},
-	'.uk-shadows-md': {
-		'--uk-box-shadow-s': '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)',
-		'--uk-box-shadow': '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)'
-	},
-	'.uk-shadows-lg': {
-		'--uk-box-shadow-s': '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',
-		'--uk-box-shadow': '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)'
-	},
 	'.uk-kbd': {
-		borderRadius: 'var(--uk-border-radius)',
+		borderRadius: 'var(--uk-global-radius)',
 		'@apply pointer-events-none inline-flex select-none items-center border border-border bg-muted px-1.5 font-mono text-[0.8rem] font-medium text-muted-foreground':
 			{}
 	},
@@ -35,7 +11,7 @@ export default {
 		'@apply border-border': {}
 	},
 	'.uk-tag': {
-		borderRadius: 'var(--uk-border-radius-s)',
+		borderRadius: 'var(--uk-global-radius-s)',
 		'@apply inline-flex min-h-7 items-center gap-2 px-2 py-1 text-sm': {}
 	},
 	'.uk-tag-primary': {
@@ -44,7 +20,7 @@ export default {
 	'.uk-tag-secondary': {
 		'@apply bg-secondary text-secondary-foreground hover:bg-secondary/80': {}
 	},
-	'.uk-tag-danger': {
+	'.uk-tag-destructive': {
 		'@apply bg-destructive text-destructive-foreground hover:bg-destructive/80': {}
 	},
 	'.tiptap': {
@@ -85,7 +61,7 @@ export default {
 		'@apply cursor-pointer': {}
 	},
 	'.uk-tiptap-footer': {
-		boxShadow: 'var(--uk-box-shadow-s)',
+		boxShadow: 'var(--uk-global-shadow-s)',
 		'@apply border-border rounded-b-md border border-t-0 p-2 text-xs': {}
 	}
 };

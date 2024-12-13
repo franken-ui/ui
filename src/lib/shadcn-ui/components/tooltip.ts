@@ -2,15 +2,16 @@ export default {
 	'.uk-tooltip': {
 		display: 'none',
 		position: 'absolute',
-		zIndex: '1030',
+		zIndex: 'var(--uk-tooltip-z)',
 		'--uk-position-offset': '10px',
-		'--uk-position-viewport-offset': '10',
+		'--uk-position-viewport-offset': '8px',
 		top: '0',
 		boxSizing: 'border-box',
-		maxWidth: '200px',
+		maxWidth: 'var(--uk-tooltip-max-width)',
 		fontSize: '0.75rem',
 		borderRadius: 'var(--uk-border-radius)',
-		'@apply bg-primary px-3 py-1.5 text-primary-foreground': {}
+		padding: 'var(--uk-tooltip-padding)',
+		'@apply bg-primary text-primary-foreground': {}
 	},
 	'.uk-tooltip.uk-active': {
 		display: 'block'

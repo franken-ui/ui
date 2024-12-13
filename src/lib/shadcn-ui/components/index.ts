@@ -35,6 +35,7 @@ export { default as placeholder } from './placeholder.js';
 export { default as position } from './position.js';
 export { default as print } from './print.js';
 export { default as progress } from './progress.js';
+export { default as sizing } from './sizing.js';
 export { default as slidenav } from './slidenav.js';
 export { default as slider } from './slider.js';
 export { default as slideshow } from './slideshow.js';

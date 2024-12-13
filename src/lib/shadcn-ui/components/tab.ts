@@ -25,7 +25,7 @@ export default {
 		alignItems: 'center',
 		columnGap: '0.25em',
 		justifyContent: 'center',
-		padding: '5px 10px',
+		padding: 'var(--uk-tab-item-padding)',
 		borderBottom: '2px solid transparent',
 		fontSize: '0.875rem',
 		textTransform: 'none',

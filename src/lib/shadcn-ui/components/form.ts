@@ -41,17 +41,20 @@ export default {
 	'.uk-input, .uk-textarea': {
 		WebkitAppearance: 'none'
 	},
-	'.uk-input, .uk-select, .uk-textarea': {
+	'.uk-input, .uk-select, .uk-textarea, .uk-input-fake': {
 		maxWidth: '100%',
 		width: '100%',
-		borderRadius: 'var(--uk-border-radius)',
-		boxShadow: 'var(--uk-box-shadow-s)',
-		'@apply border border-input bg-transparent px-3 py-1.5 text-foreground': {}
+		borderRadius: 'var(--uk-form-input-radius)',
+		boxShadow: 'var(--uk-form-input-shadow)',
+		padding: 'var(--uk-form-input-padding)',
+		fontSize: 'var(--uk-form-input-font-size)',
+		lineHeight: 'var(--uk-form-input-line-height)',
+		'@apply border border-input bg-transparent text-foreground': {}
 	},
 	'.uk-input, .uk-select:not([multiple]):not([size])': {
 		verticalAlign: 'middle',
 		display: 'inline-block',
-		'@apply h-10': {}
+		height: 'var(--uk-form-input-height)'
 	},
 	'.uk-select[multiple], .uk-select[size], .uk-textarea': {
 		verticalAlign: 'top',
@@ -61,11 +64,11 @@ export default {
 	'.uk-select[multiple], .uk-select[size]': {
 		resize: 'vertical'
 	},
-	'.uk-input:focus, .uk-select:focus, .uk-textarea:focus': {
+	'.uk-input:focus, .uk-select:focus, .uk-textarea:focus, .uk-input-fake:focus': {
 		outline: 'none',
 		'@apply outline-none ring-1 ring-ring': {}
 	},
-	'.uk-input:disabled, .uk-select:disabled, .uk-textarea:disabled': {
+	'.uk-input:disabled, .uk-select:disabled, .uk-textarea:disabled, .uk-input-fake:disabled': {
 		'@apply opacity-50': {}
 	},
 	'.uk-input::placeholder': {
@@ -74,7 +77,7 @@ export default {
 	'.uk-textarea::placeholder': {
 		'@apply text-muted-foreground': {}
 	},
-	'.uk-form-danger, .uk-form-danger:focus': {
+	'.uk-form-destructive, .uk-form-destructive:focus': {
 		'@apply ring-destructive': {}
 	},
 	'.uk-form-blank': {
@@ -90,7 +93,7 @@ export default {
 		MozAppearance: 'none',
 		backgroundImage: 'var(--uk-form-list-image)',
 		backgroundRepeat: 'no-repeat',
-		backgroundPosition: 'right center',
+		backgroundPosition: 'var(--uk-form-list-image-position)',
 		'@apply pr-6': {}
 	},
 	'.uk-select:not([multiple]):not([size]) option': {
@@ -99,7 +102,7 @@ export default {
 	'.uk-input[list]': {
 		paddingRight: '1.25rem',
 		backgroundRepeat: 'no-repeat',
-		backgroundPosition: '100% 50%'
+		backgroundPosition: 'var(--uk-form-list-image-position)'
 	},
 	'.uk-input[list]:hover, .uk-input[list]:focus': {
 		backgroundImage: 'var(--uk-form-list-image)'
@@ -118,8 +121,8 @@ export default {
 		MozAppearance: 'none',
 		backgroundRepeat: 'no-repeat',
 		backgroundPosition: '50% 50%',
-		borderRadius: 'var(--uk-border-radius-s)',
-		boxShadow: 'var(--uk-box-shadow)',
+		borderRadius: 'var(--uk-form-radio-radius)',
+		boxShadow: 'var(--uk-form-radio-shadow)',
 		'@apply border border-primary': {}
 	},
 	'.uk-radio': {
@@ -178,7 +181,7 @@ export default {
 		position: 'relative',
 		boxSizing: 'border-box',
 		borderRadius: '2rem',
-		boxShadow: 'var(--uk-box-shadow-s)',
+		boxShadow: 'var(--uk-form-tswitch-shadow)',
 		'@apply h-5 w-9 bg-input focus-visible:outline-dotted focus-visible:outline-ring': {}
 	},
 	'.uk-toggle-switch::before': {
@@ -204,7 +207,7 @@ export default {
 	'.uk-toggle-switch-primary:checked': {
 		'@apply bg-primary': {}
 	},
-	'.uk-toggle-switch-danger:checked': {
+	'.uk-toggle-switch-destructive:checked': {
 		'@apply bg-destructive': {}
 	},
 	'.uk-form-help': {
@@ -218,48 +221,19 @@ export default {
 		verticalAlign: 'middle',
 		WebkitBackfaceVisibility: 'hidden'
 	},
-	'.uk-input.uk-form-xs, .uk-input-fake.uk-form-xs, .uk-select:not([multiple]):not([size]).uk-form-xs':
-		{
-			'@apply h-7 px-2 py-1 text-xs': {}
-		},
-	'.uk-input[list].uk-form-xs, .uk-select:not([multiple]):not([size]).uk-form-xs': {
-		backgroundPosition: 'right center',
-		'@apply pr-4': {}
-	},
-	'.uk-input.uk-form-sm, .uk-input-fake.uk-form-sm, .uk-select:not([multiple]):not([size]).uk-form-sm':
-		{
-			'@apply h-8 px-2 py-1 text-sm': {}
-		},
-	'.uk-input[list].uk-form-sm, .uk-select:not([multiple]):not([size]).uk-form-sm': {
-		backgroundPosition: 'right center',
-		'@apply pr-4': {}
-	},
-	'.uk-input.uk-form-lg, .uk-input-fake.uk-form-lg, .uk-select:not([multiple]):not([size]).uk-form-lg':
-		{
-			'@apply h-12 px-4 py-2': {}
-		},
-	'.uk-input[list].uk-form-lg, .uk-select:not([multiple]):not([size]).uk-form-lg': {
-		backgroundPosition: 'right 4px center',
-		'@apply pr-8': {}
-	},
-	'.uk-input.uk-form-xl, .uk-input-fake.uk-form-xl, .uk-select:not([multiple]):not([size]).uk-form-xl':
-		{
-			'@apply h-14 px-4 py-2': {}
-		},
-	'.uk-input[list].uk-form-xl, .uk-select:not([multiple]):not([size]).uk-form-xl': {
-		backgroundPosition: 'right 8px center',
-		'@apply pr-8': {}
-	},
 	'.uk-input-pin': {
-		borderRadius: 'var(--uk-border-radius)',
-		boxShadow: 'var(--uk-box-shadow-s)',
+		borderRadius: 'var(--uk-form-input-radius)',
+		boxShadow: 'var(--uk-form-input-shadow)',
 		'@apply inline-flex items-center': {}
 	},
 	'.uk-input-pin input': {
-		'@apply relative -mr-[1px] flex h-10 w-10 border border-input bg-transparent text-center text-sm placeholder-muted-foreground focus:z-10 focus:outline-none focus:ring-1 focus:ring-ring':
+		height: 'var(--uk-form-input-height)',
+		fontSize: 'var(--uk-form-input-font-size)',
+		lineHeight: 'var(--uk-form-input-line-height)',
+		'@apply relative -mr-[1px] aspect-square flex border border-input bg-transparent text-center placeholder-muted-foreground focus:z-10 focus:outline-none focus:ring-1 focus:ring-ring':
 			{}
 	},
-	'.uk-input-pin.uk-form-danger input': {
+	'.uk-input-pin.uk-form-destructive input': {
 		'@apply ring-destructive': {}
 	},
 	'.uk-input-pin input:focus': {
@@ -269,41 +243,29 @@ export default {
 		'@apply opacity-50': {}
 	},
 	'.uk-input-pin input:first-child': {
-		borderTopLeftRadius: 'var(--uk-border-radius)',
-		borderBottomLeftRadius: 'var(--uk-border-radius)'
+		borderTopLeftRadius: 'var(--uk-form-input-radius)',
+		borderBottomLeftRadius: 'var(--uk-form-input-radius)'
 		// '@apply ml-[1px]': {}
 	},
 	'.uk-input-pin input:last-child': {
-		borderTopRightRadius: 'var(--uk-border-radius)',
-		borderBottomRightRadius: 'var(--uk-border-radius)'
+		borderTopRightRadius: 'var(--uk-form-input-radius)',
+		borderBottomRightRadius: 'var(--uk-form-input-radius)'
 	},
 	'.uk-input-pin.uk-input-pin-separated': {
 		'@apply gap-2 shadow-none': {}
 	},
 	'.uk-input-pin.uk-input-pin-separated input': {
-		borderRadius: 'var(--uk-border-radius)',
-		boxShadow: 'var(--uk-box-shadow-s)',
+		borderRadius: 'var(--uk-form-input-radius)',
+		boxShadow: 'var(--uk-form-input-shadow)',
 
 		'@apply -mr-0': {}
 	},
 	// '.uk-input-pin.uk-input-pin-separated input:first-child': {
 	// 	'@apply ml-0': {}
 	// },
-	'.uk-input-pin.uk-form-xs input': {
-		'@apply h-7 w-7 text-xs': {}
-	},
-	'.uk-input-pin.uk-form-sm input': {
-		'@apply h-8 w-8 text-sm': {}
-	},
-	'.uk-input-pin.uk-form-lg input': {
-		'@apply h-12 w-12': {}
-	},
-	'.uk-input-pin.uk-form-xl input': {
-		'@apply h-14 w-14': {}
-	},
 	'.uk-input-tag': {
-		boxShadow: 'var(--uk-box-shadow-s)',
-		borderRadius: 'var(--uk-border-radius)',
+		boxShadow: 'var(--uk-form-input-shadow)',
+		borderRadius: 'var(--uk-form-input-radius)',
 		'@apply border-input bg-transparent has-[input:focus]:ring-ring flex min-h-10 flex-wrap items-center gap-1 border p-2 has-[input:focus]:ring-1':
 			{}
 	},
@@ -314,7 +276,7 @@ export default {
 		'@apply placeholder-muted-foreground text-foreground min-h-7 flex-1 bg-transparent px-1 focus:outline-none':
 			{}
 	},
-	'.uk-input-tag.uk-form-danger': {
+	'.uk-input-tag.uk-form-destructive': {
 		'@apply has-[input:focus]:ring-destructive': {}
 	},
 	'.uk-cs-search': { '@apply flex items-center px-3': {} },
@@ -328,18 +290,7 @@ export default {
 	'.uk-cs-item-text': { '@apply flex-1': {} },
 	'.uk-cs-check': { '@apply ml-2 flex-none': {} },
 	'.uk-input-fake': {
-		borderRadius: 'var(--uk-border-radius)',
-		boxShadow: 'var(--uk-box-shadow-s)',
-		'@apply flex h-10 items-center border border-input bg-transparent px-3 py-1.5 text-foreground':
-			{}
-	},
-	'.uk-input-fake-focus, .uk-input-fake:focus': {
-		'@apply ring-ring outline-none ring-1': {}
-	},
-	'.uk-input-fake-focus.uk-form-danger, .uk-input-fake.uk-form-danger:focus': {
-		'@apply ring-destructive': {}
-	},
-	'.uk-input-fake-disabled, .uk-input-fake:disabled': {
-		'@apply opacity-50': {}
+		height: 'var(--uk-form-input-height)',
+		'@apply flex items-center': {}
 	}
 };

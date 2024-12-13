@@ -37,6 +37,7 @@ import {
 	position,
 	print,
 	progress,
+	sizing,
 	slidenav,
 	slider,
 	slideshow,
@@ -58,6 +59,7 @@ import {
 } from './shadcn-ui/components/index.js';
 import merge from 'lodash/merge.js';
 import palette from './palette.js';
+import root from './root.js';
 
 export type Colors = {
 	'--background': string;
@@ -601,22 +603,10 @@ export default plugin.withOptions((options: Options = {}) => {
 
 	return async ({ addBase, addComponents }) => {
 		addBase({
-			':root': {
-				'--uk-breakpoint-s': '640px',
-				'--uk-breakpoint-m': '768px',
-				'--uk-breakpoint-l': '1024px',
-				'--uk-breakpoint-xl': '1080px',
-				'--uk-leader-fill-content': '.',
-				'--uk-position-margin-offset': '0px',
-				'--uk-z-drop': '1020',
-				'--uk-z-dropnav': '980',
-				'--uk-border-radius-s': '0.125rem',
-				'--uk-border-radius': '0.375rem',
-				'--uk-breadcrumb-divider': "'/'",
-				'--uk-box-shadow-s': '0 1px 2px 0 rgb(0 0 0 / 0.05)',
-				'--uk-box-shadow': '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)',
-				'--uk-offcanvas-bar-width': '288px',
-				'--uk-offcanvas-bar-width-i': '-288px'
+			':root': root,
+			body: {
+				fontSize: 'var(--uk-global-font-size)',
+				lineHeight: 'var(--uk-global-line-height)'
 			}
 		});
 
@@ -659,6 +649,7 @@ export default plugin.withOptions((options: Options = {}) => {
 			placeholder,
 			position,
 			progress,
+			sizing,
 			slidenav,
 			slider,
 			slideshow,

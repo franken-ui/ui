@@ -19,7 +19,7 @@ export default {
 		'@apply bg-secondary text-secondary-foreground hover:bg-secondary/80 hover:text-secondary-foreground':
 			{}
 	},
-	'.uk-subnav-danger > .uk-active > a': {
+	'.uk-subnav-destructive > .uk-active > a': {
 		'@apply bg-destructive text-destructive-foreground hover:bg-destructive/80 hover:text-destructive-foreground':
 			{}
 	}

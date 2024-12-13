@@ -2,7 +2,7 @@ export default {
 	'.uk-drop': {
 		display: 'none',
 		position: 'absolute',
-		zIndex: 'var(--uk-z-drop)',
+		zIndex: 'var(--uk-drop-z)',
 		'--uk-position-offset': '10px',
 		'--uk-position-viewport-offset': '8px',
 		boxSizing: 'border-box',

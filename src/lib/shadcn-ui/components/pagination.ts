@@ -6,11 +6,11 @@ export default {
 	'.uk-pgn > .uk-disabled > *': { '@apply opacity-50': {} },
 	'.uk-pgn-xs > * > *': { '@apply uk-btn-xs': {} },
 	'.uk-pgn-sm > * > *': { '@apply uk-btn-sm': {} },
+	'.uk-pgn-md > * > *': { '@apply uk-btn-md': {} },
 	'.uk-pgn-lg > * > *': { '@apply uk-btn-lg': {} },
-	'.uk-pgn-xl > * > *': { '@apply uk-btn-xl': {} },
 	'.uk-pgn-default > * > *': { '@apply uk-btn-default': {} },
 	'.uk-pgn-primary > * > *': { '@apply uk-btn-primary': {} },
 	'.uk-pgn-secondary > * > *': { '@apply uk-btn-secondary': {} },
 	'.uk-pgn-ghost > * > *': { '@apply uk-btn-ghost': {} },
-	'.uk-pgn-danger > * > *': { '@apply uk-btn-danger': {} }
+	'.uk-pgn-destructive > * > *': { '@apply uk-btn-destructive': {} }
 };

@@ -5,7 +5,7 @@ export default {
 		'@apply inline-flex items-center border border-border px-2.5 py-0.5 text-xs font-semibold text-foreground':
 			{}
 	},
-	'.uk-label-danger': {
+	'.uk-label-destructive': {
 		'@apply border-transparent bg-destructive text-destructive-foreground hover:bg-destructive/80':
 			{}
 	},

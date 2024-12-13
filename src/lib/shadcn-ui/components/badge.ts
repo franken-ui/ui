@@ -4,8 +4,11 @@ export default {
 		display: 'inline-flex',
 		justifyContent: 'center',
 		alignItems: 'center',
-		boxShadow: 'var(--uk-box-shadow)',
-		'@apply h-5 min-w-5 border border-border px-1.5 text-xs font-semibold text-foreground hover:opacity-80 focus-visible:outline-dotted focus-visible:outline-ring':
+		boxShadow: 'var(--uk-badge-shadow)',
+		height: 'var(--uk-badge-height)',
+		minWidth: 'var(--uk-badge-min-width)',
+		padding: 'var(--uk-badge-padding)',
+		'@apply border border-border text-xs font-semibold text-foreground hover:opacity-80 focus-visible:outline-dotted focus-visible:outline-ring':
 			{}
 	},
 	'.uk-badge-primary': {
@@ -14,7 +17,7 @@ export default {
 	'.uk-badge-secondary': {
 		'@apply border-transparent bg-secondary text-secondary-foreground': {}
 	},
-	'.uk-badge-danger': {
+	'.uk-badge-destructive': {
 		'@apply border-transparent bg-destructive text-destructive-foreground': {}
 	}
 };
