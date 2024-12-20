@@ -1,8 +1,10 @@
 export default {
 	'.uk-label': {
-		borderRadius: 'var(--uk-border-radius)',
-		boxShadow: 'var(--uk-box-shadow)',
-		'@apply inline-flex items-center border border-border px-2.5 py-0.5 text-xs font-semibold text-foreground':
+		borderRadius: 'var(--uk-global-radius)',
+		boxShadow: 'var(--uk-global-shadow)',
+		fontSize: 'var(--uk-global-font-size-s)',
+		lineHeight: 'var(--uk-global-line-height-s)',
+		'@apply inline-flex items-center border border-border px-2.5 py-0.5 font-semibold text-foreground':
 			{}
 	},
 	'.uk-label-destructive': {

@@ -8,8 +8,9 @@ export default {
 		top: '0',
 		boxSizing: 'border-box',
 		maxWidth: 'var(--uk-tooltip-max-width)',
-		fontSize: '0.75rem',
-		borderRadius: 'var(--uk-border-radius)',
+		fontSize: 'var(--uk-global-font-size-s)',
+		lineHeight: 'var(--uk-global-line-height-s)',
+		borderRadius: 'var(--uk-global-radius)',
 		padding: 'var(--uk-tooltip-padding)',
 		'@apply bg-primary text-primary-foreground': {}
 	},

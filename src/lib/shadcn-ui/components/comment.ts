@@ -15,7 +15,9 @@ export default {
 		'@apply text-base font-medium': {}
 	},
 	'.uk-comment-meta': {
-		'@apply text-xs mt-1': {}
+		fontSize: 'var(--uk-global-font-size-s)',
+		lineHeight: 'var(--uk-global-line-height-s)',
+		'@apply mt-1': {}
 	},
 	'.uk-comment-list': {
 		padding: '0',
@@ -31,7 +33,7 @@ export default {
 		'@apply mt-6': {}
 	},
 	'.uk-comment-primary': {
-		borderRadius: 'var(--uk-border-radius)',
+		borderRadius: 'var(--uk-global-radius)',
 		'@apply bg-primary text-primary-foreground': {}
 	},
 	'.uk-comment': {

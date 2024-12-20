@@ -8,7 +8,9 @@ export default {
 		height: 'var(--uk-badge-height)',
 		minWidth: 'var(--uk-badge-min-width)',
 		padding: 'var(--uk-badge-padding)',
-		'@apply border border-border text-xs font-semibold text-foreground hover:opacity-80 focus-visible:outline-dotted focus-visible:outline-ring':
+		fontSize: 'var(--uk-global-font-size-s)',
+		lineHeight: 'var(--uk-global-line-height-s)',
+		'@apply border border-border font-semibold text-foreground hover:opacity-80 focus-visible:outline-dotted focus-visible:outline-ring':
 			{}
 	},
 	'.uk-badge-primary': {

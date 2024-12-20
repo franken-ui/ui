@@ -12,7 +12,9 @@ export default {
 	},
 	'.uk-tag': {
 		borderRadius: 'var(--uk-global-radius-s)',
-		'@apply inline-flex min-h-7 items-center gap-2 px-2 py-1 text-sm': {}
+		fontSize: 'var(--uk-global-font-size-s)',
+		lineHeight: 'var(--uk-global-line-height-s)',
+		'@apply inline-flex min-h-7 items-center gap-2 px-2 py-1': {}
 	},
 	'.uk-tag-primary': {
 		'@apply bg-primary text-primary-foreground hover:bg-primary/80': {}

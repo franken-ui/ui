@@ -6,6 +6,8 @@ export default {
 
 	'--uk-global-font-size': '1rem',
 	'--uk-global-line-height': '1.5rem',
+	'--uk-global-font-size-s': '0.875rem',
+	'--uk-global-line-height-s': '1.25rem',
 	'--uk-global-radius-s': '0.125rem',
 	'--uk-global-radius': '0.375rem',
 	'--uk-global-shadow-s': '0 1px 2px 0 rgb(0 0 0 / 0.05)',
