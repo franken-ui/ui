@@ -1,6 +1,6 @@
 export default {
 	'.uk-slidenav': {
-		boxShadow: 'var(--uk-box-shadow-s)',
+		boxShadow: 'var(--uk-global-shadow-s)',
 		'@apply inline-flex h-9 w-9 items-center justify-center rounded-full border border-input bg-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring':
 			{}
 	},

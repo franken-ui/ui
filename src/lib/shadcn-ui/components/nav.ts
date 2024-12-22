@@ -17,7 +17,7 @@ export default {
 		'@apply ml-5 mt-1 space-y-1 border-l border-border': {}
 	},
 	'.uk-nav-sub a': {
-		borderRadius: 'var(--uk-border-radius)'
+		borderRadius: 'var(--uk-global-radius)'
 	},
 	'.uk-nav-parent-icon': {
 		marginLeft: 'auto',
@@ -59,7 +59,7 @@ export default {
 		'@apply text-foreground': {}
 	},
 	'.uk-nav-primary > li > a': {
-		borderRadius: 'var(--uk-border-radius)',
+		borderRadius: 'var(--uk-global-radius)',
 		'@apply px-4 py-2 m-1': {}
 	},
 	'.uk-nav-primary > li > a:hover': {
@@ -88,7 +88,7 @@ export default {
 		marginTop: '0'
 	},
 	'.uk-nav-secondary > li > a': {
-		borderRadius: 'var(--uk-border-radius)',
+		borderRadius: 'var(--uk-global-radius)',
 		'@apply px-4 py-2 m-1': {}
 	},
 	'.uk-nav-secondary > li > a:hover': {

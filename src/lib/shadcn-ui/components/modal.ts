@@ -29,7 +29,7 @@ export default {
 		transform: 'translateY(-100px)',
 		transition: '0.3s linear',
 		transitionProperty: 'opacity, transform',
-		borderRadius: 'var(--uk-border-radius)',
+		borderRadius: 'var(--uk-global-radius)',
 		'@apply overflow-hidden border border-border bg-background': {}
 	},
 	'.uk-open > .uk-modal-dialog': {

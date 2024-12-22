@@ -22,8 +22,8 @@ export default {
 	'.uk-notification-message': {
 		position: 'relative',
 		cursor: 'pointer',
-		borderRadius: 'var(--uk-border-radius)',
-		boxShadow: 'var(--uk-box-shadow)',
+		borderRadius: 'var(--uk-global-radius)',
+		boxShadow: 'var(--uk-global-shadow)',
 		'@apply border border-border bg-background p-4 pr-6 text-foreground': {}
 	},
 	'* + .uk-notification-message': {

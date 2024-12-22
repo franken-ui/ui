@@ -1,7 +1,7 @@
 export default {
 	'.uk-alert': {
 		position: 'relative',
-		borderRadius: 'var(--uk-border-radius)',
+		borderRadius: 'var(--uk-global-radius)',
 		padding: 'var(--uk-alert-padding)',
 		'@apply border border-border': {}
 	},

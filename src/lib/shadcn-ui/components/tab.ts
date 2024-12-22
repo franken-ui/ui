@@ -89,7 +89,7 @@ export default {
 		marginLeft: '2rem'
 	},
 	'.uk-tab-alt': {
-		borderRadius: 'var(--uk-border-radius)',
+		borderRadius: 'var(--uk-global-radius)',
 		'@apply flex h-9 w-full items-center justify-center bg-muted p-1 text-muted-foreground': {}
 	},
 	'.uk-tab-alt > *': {
@@ -100,7 +100,7 @@ export default {
 			{}
 	},
 	'.uk-tab-alt > .uk-active > a': {
-		borderRadius: 'var(--uk-border-radius-s)',
+		borderRadius: 'var(--uk-global-radius-s)',
 		'@apply border-b-0 bg-background text-foreground': {}
 	}
 };

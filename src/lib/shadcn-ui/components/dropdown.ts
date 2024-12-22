@@ -17,7 +17,7 @@ export default {
 		boxShadow: 'none'
 	},
 	'.uk-dropdown-nav > li > a': {
-		borderRadius: 'var(--uk-border-radius-s)',
+		borderRadius: 'var(--uk-dropdown-nav-item-radius)',
 		padding: 'var(--uk-dropdown-nav-item-padding)',
 		margin: 'var(--uk-dropdown-nav-item-margin)',
 		'@apply flex select-none items-center': {}
