@@ -63,16 +63,6 @@ export default {
 		right: '0',
 		left: 'auto'
 	},
-	'.uk-offcanvas-close': {
-		position: 'absolute',
-		zIndex: '1000',
-		top: '5px',
-		right: '5px',
-		padding: '5px'
-	},
-	'.uk-offcanvas-close:first-child + *': {
-		marginTop: '0'
-	},
 	'.uk-offcanvas-overlay': {
 		width: '100vw',
 		touchAction: 'none'

@@ -5,18 +5,6 @@ export default {
 	'.uk-text-meta': {
 		'@apply text-sm text-muted-foreground': {}
 	},
-	'.uk-text-xs': {
-		'@apply text-xs': {}
-	},
-	'.uk-text-sm': {
-		'@apply text-sm': {}
-	},
-	'.uk-text-base': {
-		'@apply text-base': {}
-	},
-	'.uk-text-lg': {
-		'@apply text-lg': {}
-	},
 	'.uk-text-background': {
 		WebkitBackgroundClip: 'text',
 		color: 'transparent !important',

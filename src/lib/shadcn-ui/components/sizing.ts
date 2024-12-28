@@ -90,6 +90,15 @@ export default {
 		'--uk-global-shadow': '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)'
 	},
 
+	'.uk-text-sm': {
+		fontSize: 'var(--uk-global-font-size-s)',
+		lineHeight: 'var(--uk-global-line-height-s)'
+	},
+	'.uk-text-base': {
+		fontSize: 'var(--uk-global-font-size)',
+		lineHeight: 'var(--uk-global-line-height)'
+	},
+
 	'.uk-table-sm': {
 		'--uk-table-cell-padding': '0.625rem 0.75rem'
 	},
