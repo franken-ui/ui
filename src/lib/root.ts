@@ -58,6 +58,16 @@ export default {
 
 	'--uk-leader-fill-content': '.',
 
+	'--uk-modal-padding': '1rem',
+	'--uk-modal-padding-header': 'var(--uk-modal-padding)',
+	'--uk-modal-padding-body': 'var(--uk-modal-padding)',
+	'--uk-modal-padding-footer': 'var(--uk-modal-padding)',
+	'--uk-modal-padding-top-between': '0',
+	'--uk-modal-padding-top-after-header': '0',
+	'--uk-modal-padding-bottom-scrollable': '0',
+	'--uk-modal-padding-top-after-scrollable': '0',
+	'--uk-modal-radius': 'var(--uk-global-radius)',
+
 	'--uk-position-margin-offset': '0px',
 
 	'--uk-drop-z': '1020',
