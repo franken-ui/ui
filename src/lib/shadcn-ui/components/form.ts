@@ -228,9 +228,10 @@ export default {
 	},
 	'.uk-input-pin input': {
 		height: 'var(--uk-form-input-height)',
+		width: 'var(--uk-form-input-height)',
 		fontSize: 'var(--uk-form-input-font-size)',
 		lineHeight: 'var(--uk-form-input-line-height)',
-		'@apply relative -mr-[1px] aspect-square flex border border-input bg-transparent text-center placeholder-muted-foreground focus:z-10 focus:outline-none focus:ring-1 focus:ring-ring':
+		'@apply relative -mr-[1px] flex border border-input bg-transparent text-center placeholder-muted-foreground focus:z-10 focus:outline-none focus:ring-1 focus:ring-ring':
 			{}
 	},
 	'.uk-input-pin.uk-form-destructive input': {
