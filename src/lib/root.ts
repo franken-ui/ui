@@ -65,7 +65,7 @@ export default {
 	'--uk-modal-padding-top-between': '0',
 	'--uk-modal-padding-top-after-header': '0',
 	'--uk-modal-padding-bottom-scrollable': '0',
-	'--uk-modal-padding-top-after-scrollable': '0',
+	'--uk-modal-padding-top-after-scrollable': 'var(--uk-modal-padding)',
 	'--uk-modal-radius': 'var(--uk-global-radius)',
 
 	'--uk-position-margin-offset': '0px',

@@ -14,13 +14,8 @@ Franken UI is an independent, MIT-licensed open source project with its ongoing 
 Thanks to the following:
 
 <p align="center">
-  <a target="_blank" href="https://answer.ai">
-    <img alt="Atuin" src="https://next.franken-ui.dev/images/sponsors/answerdotai.jpg" width="150" />
-  </a>
-</p>
-<p align="center">
-  <a target="_blank" href="https://atuin.sh">
-    <img alt="Atuin" src="https://next.franken-ui.dev/images/sponsors/atuin.png" width="150" />
+  <a target="_blank" href="https://next.franken-ui.dev/#sponsors">
+    <img alt="Franken UI Sponsors" src="https://next.franken-ui.dev/images/sponsors/all.png" />
   </a>
 </p>
 
