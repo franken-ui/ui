@@ -7,18 +7,33 @@ export default {
 		padding: 'var(--uk-btn-padding)',
 		fontSize: 'var(--uk-btn-font-size)',
 		lineHeight: 'var(--uk-btn-line-height)',
-		'@apply box-border inline-flex items-center justify-center text-center font-medium hover:opacity-80 focus-visible:outline-dotted focus-visible:outline-ring disabled:opacity-50':
+		'@apply box-border inline-flex items-center justify-center text-center font-medium focus-visible:outline-dotted focus-visible:outline-ring disabled:opacity-50':
 			{}
 	},
 	'.uk-btn::-moz-focus-inner': { border: '0', padding: '0' },
-	'.uk-btn.uk-active': { '@apply opacity-80': {} },
-	'.uk-btn-default': { '@apply border border-border bg-transparent': {} },
-	'.uk-btn-primary': { '@apply bg-primary text-primary-foreground': {} },
+	'.uk-btn-default': {
+		'@apply border border-border bg-background hover:bg-accent hover:text-accent-foreground': {}
+	},
+	'.uk-btn-default.uk-active': {
+		'@apply bg-accent text-accent-foreground': {}
+	},
+	'.uk-btn-primary': {
+		'@apply bg-primary text-primary-foreground hover:bg-primary/90': {}
+	},
+	'.uk-btn-primary.uk-active': {
+		'@apply bg-primary/90': {}
+	},
 	'.uk-btn-secondary': {
-		'@apply bg-secondary text-secondary-foreground': {}
+		'@apply bg-secondary text-secondary-foreground hover:bg-secondary/80': {}
+	},
+	'.uk-btn-secondary.uk-active': {
+		'@apply bg-secondary/80': {}
 	},
 	'.uk-btn-destructive': {
-		'@apply bg-destructive text-destructive-foreground': {}
+		'@apply bg-destructive text-destructive-foreground hover:bg-destructive/90': {}
+	},
+	'.uk-btn-destructive.uk-active': {
+		'@apply bg-destructive/90': {}
 	},
 	'.uk-btn-text': {
 		height: 'auto',
@@ -63,5 +78,6 @@ export default {
 		},
 	'.uk-btn-ghost': { '@apply shadow-none': {} },
 	'.uk-btn-ghost:not(:disabled):hover': { '@apply bg-accent': {} },
+	'.uk-btn-ghost.uk-active': { '@apply bg-accent': {} },
 	'.uk-btn-icon': { '@apply aspect-square p-0': {} }
 };
