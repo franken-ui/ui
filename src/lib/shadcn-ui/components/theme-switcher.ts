@@ -17,5 +17,9 @@ export default {
 		'@apply flex h-4 w-4 shrink-0 -translate-x-1 items-center justify-center rounded-full text-white':
 			{}
 	},
-	'.uk-ts-text:not(:first-child)': { '@apply ml-2': {} }
+	'.uk-ts-text:not(:first-child)': {
+		overflow: 'hidden',
+		textOverflow: 'ellipsis',
+		'@apply ml-2': {}
+	}
 };
