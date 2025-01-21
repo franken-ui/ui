@@ -293,5 +293,26 @@ export default {
 	'.uk-input-fake': {
 		height: 'var(--uk-form-input-height)',
 		'@apply flex items-center': {}
+	},
+	'.uk-form-custom': {
+		display: 'inline-block',
+		position: 'relative',
+		maxWidth: '100%',
+		verticalAlign: 'middle'
+	},
+	'.uk-form-custom select, .uk-form-custom input[type="file"]': {
+		position: 'absolute',
+		top: '0',
+		zIndex: '1',
+		width: '100%',
+		height: '100%',
+		left: '0',
+		WebkitAppearance: 'none',
+		opacity: '0',
+		cursor: 'pointer'
+	},
+	'.uk-form-custom input[type="file"]': {
+		fontSize: '500px',
+		overflow: 'hidden'
 	}
 };
