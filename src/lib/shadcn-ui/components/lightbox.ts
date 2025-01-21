@@ -7,14 +7,17 @@ export default {
 		bottom: '0',
 		left: '0',
 		zIndex: '1010',
-		backgroundColor: '#000',
 		opacity: '0',
 		transition: 'opacity 0.15s linear',
-		touchAction: 'pinch-zoom'
+		touchAction: 'pinch-zoom',
+		'@apply bg-background': {}
 	},
 	'.uk-lightbox.uk-open': {
 		display: 'block',
 		opacity: '1'
+	},
+	'.uk-lightbox :focus-visible': {
+		'@apply outline-dotted outline-ring': {}
 	},
 	'.uk-lightbox-page': {
 		overflow: 'hidden'
@@ -27,29 +30,34 @@ export default {
 		left: '0',
 		display: 'none',
 		justifyContent: 'center',
-		alignItems: 'center',
-		willChange: 'transform, opacity'
-	},
-	'.uk-lightbox-items > * > *': {
-		maxWidth: '100vw',
-		maxHeight: '100vh'
-	},
-	'.uk-lightbox-items > * > :not(iframe)': {
-		width: 'auto',
-		height: 'auto'
+		alignItems: 'flex-start',
+		willChange: 'transform, opacity',
+		overflow: 'auto'
 	},
 	'.uk-lightbox-items > .uk-active': {
 		display: 'flex'
 	},
-	'.uk-lightbox-toolbar': {
-		backgroundColor: 'rgba(0, 0, 0, 0.3)',
-		'@apply p-4 text-white backdrop-blur-sm': {}
+	'.uk-lightbox-items-fit > *': { alignItems: 'center' },
+	'.uk-lightbox-items-fit > * > *': { maxWidth: '100vw', maxHeight: '100vh' },
+	'.uk-lightbox-items-fit > * > :not(iframe)': {
+		width: 'auto',
+		height: 'auto'
 	},
-	'.uk-lightbox-toolbar-icon': {
-		'@apply text-white': {}
+	'.uk-lightbox-items.uk-lightbox-items-fit .uk-lightbox-zoom:hover': {
+		cursor: 'zoom-in'
 	},
-	'.uk-lightbox-toolbar-icon:hover': {
-		color: '#fff'
+	'.uk-lightbox-items:not(.uk-lightbox-items-fit) .uk-lightbox-zoom:hover': {
+		cursor: 'zoom-out'
+	},
+	'.uk-lightbox-thumbnav-vertical :where(img, video)': { maxWidth: '100px' },
+	'.uk-lightbox-thumbnav:not(.uk-lightbox-thumbnav-vertical) :where(img, video)': {
+		maxHeight: '100px'
+	},
+	'.uk-lightbox-thumbnav:empty, .uk-lightbox-dotnav:empty': {
+		display: 'none'
+	},
+	'.uk-lightbox-caption': {
+		'@apply bg-secondary p-4 text-secondary-foreground backdrop-blur-sm': {}
 	},
 	'.uk-lightbox-caption:empty': {
 		display: 'none'
@@ -57,11 +65,5 @@ export default {
 	'.uk-lightbox-iframe': {
 		width: '80%',
 		height: '80%'
-	},
-	'.uk-lightbox-toolbar-icon:focus-visible': {
-		'@apply outline-none': {}
-	},
-	'.uk-lightbox-toolbar-icon svg': {
-		'@apply h-4 w-4': {}
 	}
 };
