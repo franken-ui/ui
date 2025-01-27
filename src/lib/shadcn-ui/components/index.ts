@@ -9,6 +9,7 @@ export { default as cmd } from './cmd.js';
 export { default as comment } from './comment.js';
 export { default as container } from './container.js';
 export { default as cover } from './cover.js';
+export { default as date } from './date.js';
 export { default as divider } from './divider.js';
 export { default as dotnav } from './dotnav.js';
 export { default as drop } from './drop.js';

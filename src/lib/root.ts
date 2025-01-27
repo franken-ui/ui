@@ -37,6 +37,13 @@ export default {
 	'--uk-card-body-padding': '1rem',
 	'--uk-card-footer-padding': '1rem',
 
+	'--uk-cal-cell-size': '2.25rem',
+	'--uk-cal-cell-radius': 'var(--uk-global-radius)',
+	'--uk-cal-cell-header-font-size': 'var(--uk-global-font-size-s)',
+	'--uk-cal-cell-body-font-size': 'var(--uk-global-font-size)',
+
+	'--uk-datepicker-spacing': '0.75rem',
+
 	'--uk-dropdown-radius': 'var(--uk-global-radius)',
 	'--uk-dropdown-shadow': 'var(--uk-global-shadow)',
 	'--uk-dropdown-nav-item-padding': '0.375rem 0.25rem 0.375rem 0.25rem',
