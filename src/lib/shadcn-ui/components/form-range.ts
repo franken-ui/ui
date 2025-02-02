@@ -67,7 +67,7 @@ export default {
 	},
 	'.uk-input-range-knob': {
 		boxShadow: 'var(--uk-global-shadow)',
-		'@apply border-primary/50 bg-background focus-visible:ring-ring absolute top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full border focus-visible:outline-none focus-visible:ring-1 disabled:opacity-50':
+		'@apply border-primary/50 bg-background focus-visible:ring-ring absolute top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full border focus-visible:outline-none focus-visible:ring-1 disabled:cursor-not-allowed':
 			{}
 	},
 	'.uk-input-range-label': {
