@@ -53,5 +53,27 @@ export default {
 		marginTop: '-7px',
 		borderRadius: '500px',
 		'@apply border-primary/50 bg-background': {}
+	},
+	'.uk-input-range': {
+		'@apply relative block h-10 select-none': {}
+	},
+	'.uk-input-range-runnable-track': {
+		borderRadius: 'var(--uk-global-radius)',
+		'@apply bg-primary/20 absolute left-0 right-0 top-1/2 h-1.5 -translate-y-1/2': {}
+	},
+	'.uk-input-range-track': {
+		borderRadius: 'var(--uk-global-radius)',
+		'@apply bg-primary absolute top-1/2 h-1.5 -translate-y-1/2': {}
+	},
+	'.uk-input-range-knob': {
+		boxShadow: 'var(--uk-global-shadow)',
+		'@apply border-primary/50 bg-background focus-visible:ring-ring absolute top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full border focus-visible:outline-none focus-visible:ring-1 disabled:opacity-50':
+			{}
+	},
+	'.uk-input-range-label': {
+		'@apply absolute top-4 -translate-x-1/2 whitespace-nowrap': {}
+	},
+	'.uk-input-range-label.top': {
+		'@apply -top-8': {}
 	}
 };
