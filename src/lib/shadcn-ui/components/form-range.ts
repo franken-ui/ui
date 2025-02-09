@@ -74,6 +74,6 @@ export default {
 		'@apply absolute top-4 -translate-x-1/2 whitespace-nowrap': {}
 	},
 	'.uk-input-range-label.top': {
-		'@apply -top-8': {}
+		'@apply -top-6': {}
 	}
 };
