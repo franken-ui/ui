@@ -7,9 +7,6 @@ export default {
 		boxShadow: 'var(--uk-dropdown-shadow)',
 		'@apply border border-border bg-popover text-popover-foreground': {}
 	},
-	'.uk-dropdown > :last-child': {
-		marginBottom: '0'
-	},
 	'.uk-dropdown-dropbar': {
 		width: 'auto',
 		background: 'transparent',
