@@ -147,6 +147,10 @@ export default {
 	'.uk-form-label': {
 		'@apply text-sm font-medium leading-none': {}
 	},
+	'.uk-form-label-required::after': {
+		content: '" *"',
+		'@apply text-destructive': {}
+	},
 	'.uk-form-stacked .uk-form-label': {
 		display: 'block',
 		marginBottom: '5px'

@@ -5,6 +5,7 @@ export { default as badge } from './badge.js';
 export { default as breadcrumb } from './breadcrumb.js';
 export { default as button } from './button.js';
 export { default as card } from './card.js';
+export { default as chart } from './chart.js';
 export { default as cmd } from './cmd.js';
 export { default as comment } from './comment.js';
 export { default as container } from './container.js';

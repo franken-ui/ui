@@ -23,7 +23,7 @@
 	},
 	"homepage": "https://www.franken-ui.dev",
 	"license": "MIT",
-	"version": "2.0.0-internal.43",
+	"version": "2.0.0-internal.44",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
