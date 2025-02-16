@@ -1,6 +1,6 @@
 {
 	"name": "franken-ui",
-	"author": "Sveltecult <leader@sveltecult.com>",
+	"author": "Sveltecult <reden@franken-ui.dev>",
 	"description": "Franken UI is an HTML-first, open-source library of UI components based on the utility-first Tailwind CSS with UIkit 3 compatibility. The design is based on shadcn/ui ported to be framework-agnostic.",
 	"keywords": [
 		"uikit",

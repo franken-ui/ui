@@ -2,10 +2,12 @@
 
 Franken UI is an HTML-first, open-source library of UI components that works as a standalone or as a Tailwind CSS plugin. It is compatible with UIkit 3. The design is influenced by shadcn/ui. 
 
-## Documentation
+## Documentations
 
-- [Version 2](https://next.franken-ui.dev) (preview)
-- [Version 1](https://franken-ui.dev)
+|               **Version**               |   **Status**   |
+|:---------------------------------------:|:--------------:|
+| [Version 2](https://franken-ui.dev)     | ⚡ Active       |
+| [Version 1](https://uno.franken-ui.dev) | 💀 Discontinued |
 
 ## Sponsors
 
@@ -23,7 +25,7 @@ And the amazing individuals from [Ko-Fi](https://ko-fi.com/sveltecult) who helpe
 
 ## Development
 
-Code contributions are now accepted from the community. To ensure effective collaboration and minimize potential conflicts, contributors are requested to [reach out](mailto:sveltecult@proton.me) before starting work on any new features or bug fixes. This allows discussion of proposed changes, guidance on project architecture and coding standards, and ensures all contributions align with the project's overall vision.
+Code contributions are now accepted from the community. To ensure effective collaboration and minimize potential conflicts, contributors are requested to [reach out](mailto:reden@franken-ui.dev) before starting work on any new features or bug fixes. This allows discussion of proposed changes, guidance on project architecture and coding standards, and ensures all contributions align with the project's overall vision.
 
 To get started with development, please follow these steps:
 
