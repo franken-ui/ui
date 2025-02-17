@@ -9,6 +9,18 @@ Franken UI is an HTML-first, open-source library of UI components that works as 
 | [Version 2](https://franken-ui.dev)     | ⚡ Active       |
 | [Version 1](https://uno.franken-ui.dev) | 💀 Discontinued |
 
+## Shameless Self-Promotion
+
+Really, inside a GitHub repo? What the heck, this is my project! Portfolio? [You're looking at it](https://franken-ui.dev). This may look like it’s run by an army of devs from a company with millions in VC backing, but trust me, it's just me, Llama 3.1, and Claude.AI running the entire show!
+
+Speaking of which, this UI is now used by solo devs, small teams, a CEO who won’t just hire a designer, and heck, even companies with millions in funding. Don’t believe me? I can’t either!
+
+If you need extra brain cells, I’ve got the skills: Laravel (preferred), Vanilla PHP, JS or TS, and every framework-of-the-month in between. Note that I know nothing about Rust, Python, or Go because I'm a real programmer, so please do not send me those offers.
+
+### Availability:
+
+I can squeeze in 20 hours a week, or go full-time if you have the budget. I look like I'm joking, but I’m dead serious. [Let me help you translate those ideas into a successful product](mailto:reden@franken-ui.dev)!
+
 ## Sponsors
 
 Franken UI is an independent, MIT-licensed open source project with its ongoing development made possible entirely by the support of the community. If Franken UI has been beneficial to you in any way, please consider contributing by making a donation, which will help maintain and improve it for the benefit of everyone.
@@ -16,8 +28,8 @@ Franken UI is an independent, MIT-licensed open source project with its ongoing 
 Thanks to the following:
 
 <p align="center">
-  <a target="_blank" href="https://next.franken-ui.dev/#sponsors">
-    <img alt="Franken UI Sponsors" src="https://next.franken-ui.dev/images/sponsors/all.png" />
+  <a target="_blank" href="https://franken-ui.dev/#sponsors">
+    <img alt="Franken UI Sponsors" src="https://franken-ui.dev/images/sponsors/all.png" />
   </a>
 </p>
 
