@@ -27,13 +27,28 @@ Franken UI is an independent, MIT-licensed open source project with its ongoing 
 
 Thanks to the following:
 
-<p align="center">
-  <a target="_blank" href="https://franken-ui.dev/#sponsors">
-    <img alt="Franken UI Sponsors" src="https://franken-ui.dev/images/sponsors/all.png" />
-  </a>
-</p>
-
-And the amazing individuals from [Ko-Fi](https://ko-fi.com/sveltecult) who helped it since day one.
+<table>
+  <tr>
+    <td><img src="https://omnigres.com/assets/favicon-oor5iO8W.png" width="16" height="16"></td>
+    <td><a href="https://omnigres.com">Omnigres</a></td>
+  </tr>
+  <tr>
+    <td><img src="https://www.answer.ai/logo.png" width="16" height="16"></td>
+    <td><a href="https://answer.ai">Answer.ai</a></td>
+  </tr>
+  <tr>
+    <td><img src="https://atuin.sh/favicon.svg" width="16" height="16"></td>
+    <td><a href="https://atuin.sh">Atuin</a></td>
+  </tr>
+  <tr>
+    <td><img src="https://tic.io/favicons/favicon.ico" width="16" height="16"></td>
+    <td><a href="https://tic.io">The Intelligence Company</a></td>
+  </tr>
+  <tr>
+    <td><img src="https://ko-fi.com/favicon.ico" width="16" height="16"></td>
+    <td><a href="https://ko-fi.com/sveltecult">Ko-Fi Supporters</a></td>
+  </tr>
+</table>
 
 ## Development
 
