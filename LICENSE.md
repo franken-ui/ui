@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2024 [Sveltecult contributors](https://github.com/franken-ui/ui/graphs/contributors)
+Copyright (c) 2024 [Franken UI contributors](https://github.com/franken-ui/ui/graphs/contributors)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

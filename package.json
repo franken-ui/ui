@@ -1,6 +1,6 @@
 {
 	"name": "franken-ui",
-	"author": "Sveltecult <reden@franken-ui.dev>",
+	"author": "Reden <reden@franken-ui.dev>",
 	"description": "Franken UI is an HTML-first, open-source library of UI components based on the utility-first Tailwind CSS with UIkit 3 compatibility. The design is based on shadcn/ui ported to be framework-agnostic.",
 	"keywords": [
 		"uikit",
@@ -23,13 +23,13 @@
 	},
 	"homepage": "https://www.franken-ui.dev",
 	"license": "MIT",
-	"version": "2.0.0-internal.44",
+	"version": "2.1.0-badger.3",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
 		"preview": "vite preview",
 		"package": "svelte-kit sync && svelte-package",
-		"prepublishOnly": "./package.sh",
+		"prepublishOnly": "./package.sh --minify",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check . && eslint .",
@@ -47,8 +47,7 @@
 		"./js/*": {
 			"default": "./dist/js/*.js"
 		},
-		"./css/custom-palette.css": "./dist/css/custom-palette.css",
-		"./css/npf.css": "./dist/css/npf.css",
+		"./css/franken-ui.css": "./dist/css/franken-ui.css",
 		"./postcss/*": {
 			"types": "./dist/postcss/*.d.cts",
 			"default": "./dist/postcss/*.cjs"
@@ -66,7 +65,9 @@
 	],
 	"peerDependencies": {
 		"lodash": "^4.17.21",
+		"postcss": "^8.0.0",
 		"postcss-combine-duplicated-selectors": "^10.0.3",
+		"postcss-js": "^4.0.0",
 		"postcss-sort-media-queries": "^5.2.0",
 		"tailwindcss": "^3.4.9 || ^4.0.0"
 	},
@@ -78,13 +79,16 @@
 		"@types/eslint": "^9.6.0",
 		"@types/lodash": "^4.17.0",
 		"@types/node": "^20.14.9",
+		"@types/postcss-js": "^4.0.4",
 		"autoprefixer": "^10.4.18",
 		"eslint": "^9.7.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.45.1",
 		"globals": "^15.0.0",
 		"lodash": "^4.17.21",
+		"postcss": "^8.5.3",
 		"postcss-combine-duplicated-selectors": "^10.0.3",
+		"postcss-js": "^4.0.1",
 		"postcss-sort-media-queries": "^5.2.0",
 		"prettier": "^3.3.2",
 		"prettier-plugin-svelte": "^3.2.6",
@@ -97,9 +101,6 @@
 		"typescript": "^5.5.0",
 		"typescript-eslint": "^8.0.0",
 		"vite": "^5.4.4"
-	},
-	"optionalPeerDependencies": {
-	  "tailwindcss": "^4.0.0"
 	},
 	"types": "./dist/index.d.ts",
 	"type": "module"
