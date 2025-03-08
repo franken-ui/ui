@@ -1,67 +1,6 @@
 import plugin from 'tailwindcss/plugin.js';
-import {
-	accordion,
-	alert,
-	animation,
-	badge,
-	breadcrumb,
-	button,
-	card,
-	chart,
-	cmd,
-	comment,
-	container,
-	cover,
-	date,
-	divider,
-	dotnav,
-	drop,
-	dropbar,
-	dropdown,
-	dropnav,
-	extensions,
-	formRange,
-	form,
-	heading,
-	icon,
-	label,
-	leader,
-	lightbox,
-	link,
-	list,
-	media,
-	modal,
-	nav,
-	notification,
-	offcanvas,
-	pagination,
-	placeholder,
-	position,
-	print,
-	progress,
-	sizing,
-	slidenav,
-	slider,
-	slideshow,
-	sortable,
-	spinner,
-	stepper,
-	sticky,
-	subnav,
-	svg,
-	switcher,
-	tab,
-	table,
-	text,
-	themeSwitcher,
-	thumbnav,
-	tooltip,
-	transition,
-	utility
-} from './shadcn-ui/components/index.js';
 import merge from 'lodash/merge.js';
-import palette from './palette.js';
-import root from './root.js';
+import { defaults, palettes, components } from './rules.js';
 
 export type Colors = {
 	'--background': string;
@@ -86,12 +25,13 @@ export type Colors = {
 };
 
 export type Options = {
+	preflight?: boolean;
 	customPalette?: {
 		[key: string]: Colors;
 	};
 };
 
-const variables: {
+export const variables: {
 	[key: string]: Colors;
 } = {
 	'.uk-theme-zinc': {
@@ -601,80 +541,10 @@ const variables: {
 };
 
 export default plugin.withOptions((options: Options = {}) => {
-	const { customPalette } = options;
-
 	return async ({ addBase, addComponents }) => {
-		addBase({
-			':root': root,
-			body: {
-				fontSize: 'var(--uk-global-font-size)',
-				lineHeight: 'var(--uk-global-line-height)'
-			}
-		});
+		addBase(defaults);
 
-		const palettes = Object.assign(variables, customPalette);
-
-		const rules = merge(
-			palette(palettes),
-			accordion,
-			alert,
-			animation,
-			badge,
-			breadcrumb,
-			button,
-			card,
-			chart,
-			cmd,
-			comment,
-			container,
-			cover,
-			date,
-			divider,
-			dotnav,
-			drop,
-			dropbar,
-			dropdown,
-			dropnav,
-			extensions,
-			formRange,
-			form,
-			heading,
-			icon,
-			label,
-			leader,
-			lightbox,
-			link,
-			list,
-			modal,
-			nav,
-			notification,
-			offcanvas,
-			pagination,
-			placeholder,
-			position,
-			progress,
-			sizing,
-			slidenav,
-			slider,
-			slideshow,
-			sortable,
-			spinner,
-			stepper,
-			sticky,
-			subnav,
-			svg,
-			switcher,
-			tab,
-			table,
-			text,
-			themeSwitcher,
-			thumbnav,
-			tooltip,
-			transition,
-			utility,
-			media,
-			print
-		);
+		const rules = merge(palettes(options), components);
 
 		addComponents(rules);
 	};

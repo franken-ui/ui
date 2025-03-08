@@ -1,38 +1,53 @@
-import type { Plugin } from 'vite';
-import fs from 'fs';
+import type { ResolvedConfig } from 'vite';
+import fs, { readFileSync } from 'fs';
 import path from 'path';
-import convertToHexPalette from './palette.js';
-import type { Options } from './index.js';
+import merge from 'lodash/merge.js';
 import { fileURLToPath } from 'url';
+import { preflight, root } from './components/index.js';
+import { type Options } from './index.js';
+import { defaults, palettes, components } from './rules.js';
+import postcssJs from 'postcss-js';
+import postcss from 'postcss';
 
-function generateCss(palette: { [key: string]: { [key: string]: string } }): string {
-	let css = '';
+function css(rules: { [key: string]: any }): string {
+	const processor = postcss([]);
 
-	for (const [theme, colors] of Object.entries(palette)) {
-		css += `${theme} {\n`;
-		for (const [colorKey, colorValue] of Object.entries(colors)) {
-			css += `  ${colorKey}: ${colorValue};\n`;
-		}
-		css += `}\n`;
-	}
-
-	return css;
+	return processor.process(rules, { parser: postcssJs.parse }).css;
 }
 
-export default function customPalettePlugin(options: Options): Plugin {
-	return {
-		name: 'vite-plugin-custom-palette',
-		apply: 'serve',
-		buildStart() {
-			if (options?.customPalette) {
-				const palette = convertToHexPalette(options.customPalette);
-				const css = generateCss(palette);
-				const __dirname = path.dirname(fileURLToPath(import.meta.url));
-				const outputPath = path.join(__dirname, '/css/custom-palette.css');
+export default function customPalettePlugin(options: Options): any {
+	let config: ResolvedConfig;
 
-				fs.mkdirSync(path.dirname(outputPath), { recursive: true });
-				fs.writeFileSync(outputPath, css);
-			}
+	return {
+		name: 'vite-plugin-franken',
+		configResolved(resolvedConfig: ResolvedConfig) {
+			config = resolvedConfig;
+
+			try {
+				const pkgJson = JSON.parse(readFileSync('package.json', 'utf-8'));
+
+				const tailwindVersion =
+					pkgJson.dependencies?.tailwindcss || pkgJson.devDependencies?.tailwindcss;
+
+				if (tailwindVersion?.startsWith('^4.') && options?.preflight) {
+					console.warn(
+						'\n[@franken-ui/ui] Warning: Tailwind CSS v4 detected in your project.' +
+							'\nYou may want to disable preflight in Franken UI since Tailwind v4' +
+							'\nalready includes modern CSS reset styles.\n'
+					);
+				}
+			} catch (error) {}
+		},
+		buildStart() {
+			let rules = options?.preflight ? { ...preflight } : {};
+
+			rules = merge(rules, root, defaults, palettes(options), components);
+
+			const __dirname = path.dirname(fileURLToPath(import.meta.url));
+			const outputPath = path.join(__dirname, '/css/franken-ui.css');
+
+			fs.mkdirSync(path.dirname(outputPath), { recursive: true });
+			fs.writeFileSync(outputPath, css(rules));
 		}
 	};
 }
