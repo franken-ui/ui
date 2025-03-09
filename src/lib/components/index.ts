@@ -3,6 +3,32 @@ import customSelect from './form/custom-select.js';
 import pin from './form/pin.js';
 import range from './form/range.js';
 import tag from './form/tag.js';
+import position from './position.js';
+import transition from './transition.js';
+
+export const core = {
+	'.uk-flex': {
+		display: 'flex !important'
+	},
+	'.uk-flex-top': {
+		alignItems: 'flex-start'
+	},
+	'.uk-flex-wrap-top': {
+		alignContent: 'flex-start'
+	},
+	'.uk-margin-auto-vertical': {
+		marginTop: 'auto !important',
+		marginBottom: 'auto !important'
+	},
+	'.uk-overflow-auto': {
+		overflow: 'auto'
+	},
+	'.uk-overflow-auto > :last-child': {
+		marginBottom: '0'
+	},
+	...position,
+	...transition
+};
 
 export const form = { ...basic, ...customSelect, ...pin, ...range, ...tag };
 
@@ -35,7 +61,6 @@ export { default as nav } from './nav.js';
 export { default as notification } from './notification.js';
 export { default as offcanvas } from './offcanvas.js';
 export { default as pagination } from './pagination.js';
-export { default as position } from './position.js';
 export { default as preflight } from './preflight.js';
 export { default as print } from './print.js';
 export { default as root } from './root.js';
@@ -53,5 +78,4 @@ export { default as text } from './text.js';
 export { default as themeSwitcher } from './theme-switcher.js';
 export { default as thumbnav } from './thumbnav.js';
 export { default as tooltip } from './tooltip.js';
-export { default as transition } from './transition.js';
 export { default as utility } from './utility.js';

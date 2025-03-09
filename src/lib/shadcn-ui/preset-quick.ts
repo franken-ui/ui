@@ -1,5 +1,6 @@
 import defaultTheme from 'tailwindcss/defaultTheme.js';
-import ui, { type Options } from '../index.js';
+import ui from '../index.js';
+import type { Options } from '../types.js';
 
 export default function (options: Options = {}) {
 	return {

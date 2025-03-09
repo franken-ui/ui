@@ -63,7 +63,7 @@ export default {
 	'.uk-cal table thead th': {
 		width: 'var(--uk-cal-cell-size, 2.5rem)', // Customizable cell size
 		fontSize: 'var(--uk-cal-cell-header-font-size, var(--font-size-small, 0.875rem))', // Customizable header font size, defaults to small font size
-		fontWeight: 400, // Static font weight
+		fontWeight: '400', // Static font weight
 		color: 'var(--uk-cal-cell-header-color, hsl(var(--muted-foreground)))' // Customizable header color
 	},
 	'.uk-cal table tbody tr, .uk-cal table thead tr': {
@@ -96,15 +96,15 @@ export default {
 			'var(--uk-cal-cell-hover-transition-duration, var(--uk-cal-hover-duration, 150ms))', // Customizable hover duration, nested fallback for backward compatibility
 		transitionTimingFunction: 'ease-in-out' // Fixed timing function
 	},
-	'.uk-cal table tbody tr td button:disabled': { opacity: 0.5 }, // Static opacity for disabled state
+	'.uk-cal table tbody tr td button:disabled': { opacity: '0.5' }, // Static opacity for disabled state
 	'.uk-cal table tbody tr td.uk-cal-oom button': {
-		color: 'var(--uk-cal-cell-outside-month-color, hsl(var(--muted-foreground)))' // Customizable color for outside of month cells
+		color: 'var(--uk-cal-cell-oom-color, hsl(var(--muted-foreground)))' // Customizable color for outside of month cells
 	},
 	'.uk-cal table tbody tr td.uk-active button': {
 		backgroundColor: 'var(--uk-cal-cell-active-bg, hsl(var(--primary)))', // Customizable active cell background color
 		color: 'var(--uk-cal-cell-active-color, hsl(var(--primary-foreground)))' // Customizable active cell color
 	},
-	'.uk-cal table tbody tr td.uk-disabled button': { opacity: 0.5 }, // Static opacity for disabled cells
+	'.uk-cal table tbody tr td.uk-disabled button': { opacity: '0.5' }, // Static opacity for disabled cells
 	'.uk-cal-divider table tbody': { gap: 'var(--uk-cal-divider-table-body-row-gap, 0.25rem)' }, // Customizable divider table body row gap
 	'.uk-cal-divider table tbody tr': {
 		borderBottomWidth: 'var(--uk-cal-divider-table-row-border-width, 1px)', // Customizable divider table row border width

@@ -90,23 +90,4 @@ export default {
 	'.uk-modal-body.uk-overflow-auto + .uk-modal-footer': {
 		paddingTop: 'var(--uk-modal-padding-top-after-scrollable)'
 	},
-	'.uk-flex': {
-		display: 'flex !important'
-	},
-	'.uk-flex-top': {
-		alignItems: 'flex-start'
-	},
-	'.uk-flex-wrap-top': {
-		alignContent: 'flex-start'
-	},
-	'.uk-margin-auto-vertical': {
-		marginTop: 'auto !important',
-		marginBottom: 'auto !important'
-	},
-	'.uk-overflow-auto': {
-		overflow: 'auto'
-	},
-	'.uk-overflow-auto > :last-child': {
-		marginBottom: '0'
-	}
 };

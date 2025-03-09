@@ -2,21 +2,21 @@ export default {
 	'.uk-offcanvas': {
 		display: 'none', // Static - core visibility
 		position: 'fixed', // Static - core positioning
-		top: 0, // Static - core positioning
-		bottom: 0, // Static - core positioning
-		left: 0, // Static - core positioning
+		top: '0', // Static - core positioning
+		bottom: '0', // Static - core positioning
+		left: '0', // Static - core positioning
 		zIndex: 'var(--uk-offcanvas-z-index, 1000)'
 	},
 
 	'.uk-offcanvas-flip .uk-offcanvas': {
-		right: 0, // Static - core flip positioning
+		right: '0', // Static - core flip positioning
 		left: 'auto' // Static - core flip positioning
 	},
 
 	'.uk-offcanvas-bar': {
 		position: 'absolute', // Static - core positioning
-		top: 0, // Static - core positioning
-		bottom: 0, // Static - core positioning
+		top: '0', // Static - core positioning
+		bottom: '0', // Static - core positioning
 		left: 'var(--uk-offcanvas-bar-width-i)', // Initial offscreen position
 		boxSizing: 'border-box', // Static - core sizing
 		width: 'var(--uk-offcanvas-bar-width)',
@@ -35,12 +35,12 @@ export default {
 	},
 
 	'.uk-open > .uk-offcanvas-bar': {
-		left: 0 // Static - core positioning when open
+		left: '0' // Static - core positioning when open
 	},
 
 	'.uk-offcanvas-flip .uk-open > .uk-offcanvas-bar': {
 		left: 'auto', // Static - core flip positioning
-		right: 0 // Static - core flip positioning
+		right: '0' // Static - core flip positioning
 	},
 
 	'.uk-offcanvas-bar-animation': {
@@ -53,10 +53,10 @@ export default {
 
 	'.uk-offcanvas-reveal': {
 		position: 'absolute', // Static - core positioning
-		top: 0, // Static - core positioning
-		bottom: 0, // Static - core positioning
-		left: 0, // Static - core positioning
-		width: 0, // Static - initial reveal state
+		top: '0', // Static - core positioning
+		bottom: '0', // Static - core positioning
+		left: '0', // Static - core positioning
+		width: '0', // Static - initial reveal state
 		overflow: 'hidden', // Static - content clipping
 		transition: 'var(--uk-offcanvas-reveal-transition, width 0.3s ease-out)'
 	},
@@ -87,12 +87,12 @@ export default {
 	'.uk-offcanvas-overlay::before': {
 		content: '""', // Static - pseudo-element content
 		position: 'absolute', // Static - overlay positioning
-		top: 0, // Static - overlay positioning
-		bottom: 0, // Static - overlay positioning
-		left: 0, // Static - overlay positioning
-		right: 0, // Static - overlay positioning
+		top: '0', // Static - overlay positioning
+		bottom: '0', // Static - overlay positioning
+		left: '0', // Static - overlay positioning
+		right: '0', // Static - overlay positioning
 		backgroundColor: 'var(--uk-offcanvas-overlay-bg, rgba(0, 0, 0, 0.8))',
-		opacity: 0, // Static - initial state
+		opacity: '0', // Static - initial state
 		transition: 'var(--uk-offcanvas-overlay-transition, opacity 0.15s linear)',
 		WebkitBackdropFilter: 'blur(var(--uk-offcanvas-overlay-blur))',
 		backdropFilter: 'blur(var(--uk-offcanvas-overlay-blur))'
@@ -108,7 +108,7 @@ export default {
 
 	'.uk-offcanvas-container': {
 		position: 'relative', // Static - container positioning
-		left: 0, // Static - initial position
+		left: '0', // Static - initial position
 		transition: 'var(--uk-offcanvas-container-transition, left 0.3s ease-out)',
 		boxSizing: 'border-box', // Static - core sizing
 		width: '100%' // Static - container width

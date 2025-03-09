@@ -1,35 +1,7 @@
 import plugin from 'tailwindcss/plugin.js';
-import merge from 'lodash/merge.js';
-import { defaults, palettes, components } from './rules.js';
-
-export type Colors = {
-	'--background': string;
-	'--foreground': string;
-	'--muted': string;
-	'--muted-foreground': string;
-	'--popover': string;
-	'--popover-foreground': string;
-	'--card': string;
-	'--card-foreground': string;
-	'--border': string;
-	'--input': string;
-	'--primary': string;
-	'--primary-foreground': string;
-	'--secondary': string;
-	'--secondary-foreground': string;
-	'--accent': string;
-	'--accent-foreground': string;
-	'--destructive': string;
-	'--destructive-foreground': string;
-	'--ring': string;
-};
-
-export type Options = {
-	preflight?: boolean;
-	customPalette?: {
-		[key: string]: Colors;
-	};
-};
+import { defaults, palettes, components } from './context.js';
+import type { Colors, Context, CSSRuleObject, Options } from './types.js';
+import merger from './merger.js';
 
 export const variables: {
 	[key: string]: Colors;
@@ -542,9 +514,24 @@ export const variables: {
 
 export default plugin.withOptions((options: Options = {}) => {
 	return async ({ addBase, addComponents }) => {
-		addBase(defaults);
+		let context: Context = {
+			defaults,
+			palettes: palettes(options),
+			components
+		};
 
-		const rules = merge(palettes(options), components);
+		if (options.extensions) {
+			for (const [plugin, config] of options.extensions) {
+				context = plugin(context, config);
+			}
+		}
+
+		addBase(context.defaults);
+
+		const rules: CSSRuleObject = merger({
+			palettes: context.palettes,
+			components: context.components
+		});
 
 		addComponents(rules);
 	};
