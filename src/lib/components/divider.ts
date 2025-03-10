@@ -4,6 +4,10 @@ export default {
 		height: 'var(--uk-divider-height, 1px)'
 	},
 
+	'.uk-hr': {
+		borderColor: 'var(--uk-hr-color, hsl(var(--border)))'
+	},
+
 	'.uk-divider-icon': {
 		position: 'relative', // Static - core positioning
 		height: 'var(--uk-divider-icon-height, 1.25rem)',

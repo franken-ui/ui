@@ -67,5 +67,11 @@ export default {
 	'.uk-table-striped > tr:nth-of-type(even):last-child, .uk-table-striped tbody tr:nth-of-type(even):last-child':
 		{
 			borderBottom: 'var(--uk-table-striped-last-border, 1px solid hsl(var(--border)))'
-		}
+		},
+	'.uk-table-sm': {
+		'--uk-table-cell-padding': '0.625rem 0.75rem'
+	},
+	'.uk-table-lg': {
+		'--uk-table-cell-padding': '1.5rem 0.75rem'
+	}
 };

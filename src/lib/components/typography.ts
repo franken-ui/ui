@@ -1,4 +1,66 @@
 export default {
+	'.uk-text-lead': {
+		fontSize: 'var(--uk-text-lead-font-size, 1.25rem)',
+		lineHeight: 'var(--uk-text-lead-line-height, 1.75rem)',
+		color: 'var(--uk-text-lead-color, hsl(var(--muted-foreground)))'
+	},
+	'.uk-text-meta': {
+		color: 'var(--uk-text-meta-color, var(--uk-chart-muted-color, hsl(var(--muted-foreground))))' // Nested variable, allow override of meta color and fallback to chart muted color and then muted-foreground
+	},
+	'.uk-text-background': {
+		WebkitBackgroundClip: 'text', // vendor prefix, static
+		color: 'transparent !important', // important and functional, static
+		display: 'inline-block', // structural, static
+		backgroundColor: 'var(--uk-text-background-background-color, #1e87f0)', // Customizable background color
+		backgroundImage:
+			'var(--uk-text-background-image, linear-gradient(90deg, #1e87f0 0%, #411ef0 100%))' // Customizable background image/gradient
+	},
+	'.uk-paragraph': {
+		lineHeight: 'var(--uk-paragraph-line-height, 1.75rem)'
+	},
+	'.uk-paragraph:not(:first-child)': {
+		marginTop: 'var(--uk-paragraph-margin-top, 1.5rem)'
+	},
+	'.uk-blockquote': {
+		marginTop: 'var(--uk-blockquote-margin-top, 1.5rem)',
+		borderLeftWidth: 'var(--uk-blockquote-border-width, 2px)',
+		borderColor: 'var(--uk-blockquote-border-color, hsl(var(--border)))',
+		paddingLeft: 'var(--uk-blockquote-padding-left, 1.5rem)',
+		fontStyle: 'italic'
+	},
+	'.uk-codespan': {
+		position: 'relative',
+		borderRadius: 'var(--uk-codespan-radius, 0.25rem)',
+		backgroundColor: 'var(--uk-codespan-bg, hsl(var(--muted)))',
+		padding: 'var(--uk-codespan-padding, 0.2rem 0.3rem)',
+		fontFamily:
+			'var(--uk-codespan-font-family, ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace)',
+		fontWeight: 'var(--uk-codespan-font-weight, 600)'
+	},
+	'.uk-kbd': {
+		// Layout
+		display: 'var(--uk-kbd-display, inline-flex)',
+		alignItems: 'var(--uk-kbd-align, center)',
+		padding: 'var(--uk-kbd-padding, 0 0.375rem)',
+
+		// Visual
+		borderRadius: 'var(--uk-global-radius)',
+		borderWidth: 'var(--uk-kbd-border-width, 1px)',
+		borderStyle: 'var(--uk-kbd-border-style, solid)',
+		borderColor: 'var(--uk-kbd-border-color, hsl(var(--border)))',
+		backgroundColor: 'var(--uk-kbd-bg, hsl(var(--muted)))',
+
+		// Typography
+		fontFamily:
+			'var(--uk-kbd-font-family, ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace)',
+		fontSize: 'var(--uk-kbd-font-size, 0.8rem)',
+		fontWeight: 'var(--uk-kbd-font-weight, 500)',
+		color: 'var(--uk-kbd-color, hsl(var(--muted-foreground)))',
+
+		// Behavior
+		pointerEvents: 'none',
+		userSelect: 'none'
+	},
 	// Hero sizes
 	'.uk-hero-sm': {
 		// Typography

@@ -63,5 +63,35 @@ export default {
 		overflow: 'hidden', // Removed variable - fundamental text behavior
 		textOverflow: 'ellipsis', // Removed variable - fundamental text behavior
 		marginLeft: 'var(--uk-theme-switcher-text-margin, 0.5rem)'
+	},
+	'.uk-radii-none': {
+		'--uk-global-radius-s': '0',
+		'--uk-global-radius': '0'
+	},
+	'.uk-radii-sm': {
+		'--uk-global-radius-s': '0.25rem',
+		'--uk-global-radius': '0.125rem'
+	},
+	'.uk-radii-lg': {
+		'--uk-global-radius-s': '0.375rem',
+		'--uk-global-radius': '0.5rem'
+	},
+	'.uk-shadows-none': {
+		'--uk-global-shadow-s': '0 0 0 0',
+		'--uk-global-shadow': '0 0 0 0'
+	},
+	'.uk-shadows-md': {
+		'--uk-global-shadow-s': '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)',
+		'--uk-global-shadow': '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)'
+	},
+	'.uk-shadows-lg': {
+		'--uk-global-shadow-s': '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',
+		'--uk-global-shadow': '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)'
+	},
+	'.uk-font-sm': {
+		'--uk-global-font-size': '0.875rem',
+		'--uk-global-leading': '1.25rem',
+		'--uk-global-font-size-s': '0.75rem',
+		'--uk-global-leading-s': '1rem'
 	}
 };

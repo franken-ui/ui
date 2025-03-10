@@ -160,5 +160,25 @@ export default {
 		{
 			position: 'relative',
 			zIndex: '1'
-		}
+		},
+	'.uk-btn-xs': {
+		'--uk-btn-height': '1.75rem',
+		'--uk-btn-padding': '0.375rem 0.75rem',
+		'--uk-btn-font-size': 'var(--uk-global-font-size-s)',
+		'--uk-btn-leading': 'var(--uk-global-leading-s)'
+	},
+	'.uk-btn-sm': {
+		'--uk-btn-height': '2rem',
+		'--uk-btn-padding': '0.5rem 1rem',
+		'--uk-btn-font-size': 'var(--uk-global-font-size-s)',
+		'--uk-btn-leading': 'var(--uk-global-leading-s)'
+	},
+	'.uk-btn-md': {
+		'--uk-btn-height': '3rem',
+		'--uk-btn-padding': '0.75rem 1.5rem'
+	},
+	'.uk-btn-lg': {
+		'--uk-btn-height': '3.5rem',
+		'--uk-btn-padding': '0.875rem 1.75rem'
+	}
 };
