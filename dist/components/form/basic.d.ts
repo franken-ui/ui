@@ -263,5 +263,27 @@ declare const _default: {
         fontSize: string;
         overflow: string;
     };
+    '.uk-form-xs': {
+        '--uk-form-input-font-size': string;
+        '--uk-form-input-leading': string;
+        '--uk-form-input-height': string;
+        '--uk-form-input-padding': string;
+    };
+    '.uk-form-sm': {
+        '--uk-form-input-font-size': string;
+        '--uk-form-input-leading': string;
+        '--uk-form-input-height': string;
+        '--uk-form-input-padding': string;
+    };
+    '.uk-form-md': {
+        '--uk-form-input-height': string;
+        '--uk-form-input-padding': string;
+        '--uk-form-list-image-position': string;
+    };
+    '.uk-form-lg': {
+        '--uk-form-input-height': string;
+        '--uk-form-input-padding': string;
+        '--uk-form-list-image-position': string;
+    };
 };
 export default _default;

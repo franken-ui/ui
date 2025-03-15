@@ -1,10 +1,3 @@
-import basic from './form/basic.js';
-import customSelect from './form/custom-select.js';
-import pin from './form/pin.js';
-import range from './form/range.js';
-import tag from './form/tag.js';
-import position from './position.js';
-import transition from './transition.js';
 export const core = {
     '.uk-flex': {
         display: 'flex !important'
@@ -25,8 +18,6 @@ export const core = {
     '.uk-overflow-auto > :last-child': {
         marginBottom: '0'
     },
-    ...position,
-    ...transition,
     '.uk-text-truncate': {
         maxWidth: '100%',
         overflow: 'hidden',
@@ -43,35 +34,11 @@ export const core = {
         wordBreak: 'break-word'
     }
 };
-export const form = {
-    ...basic,
-    ...customSelect,
-    ...pin,
-    ...range,
-    ...tag,
-    '.uk-form-xs': {
-        '--uk-form-input-font-size': 'var(--uk-global-font-size-s)',
-        '--uk-form-input-leading': 'var(--uk-global-leading-s)',
-        '--uk-form-input-height': '1.75rem',
-        '--uk-form-input-padding': '0.25rem 0.5rem'
-    },
-    '.uk-form-sm': {
-        '--uk-form-input-font-size': 'var(--uk-global-font-size-s)',
-        '--uk-form-input-leading': 'var(--uk-global-leading-s)',
-        '--uk-form-input-height': '2rem',
-        '--uk-form-input-padding': '0.25rem 0.5rem'
-    },
-    '.uk-form-md': {
-        '--uk-form-input-height': '3rem',
-        '--uk-form-input-padding': '0.5rem 1rem',
-        '--uk-form-list-image-position': 'right 4px center'
-    },
-    '.uk-form-lg': {
-        '--uk-form-input-height': '3.5rem',
-        '--uk-form-input-padding': '0.5rem 1rem',
-        '--uk-form-list-image-position': 'right 8px center'
-    }
-};
+export { default as form } from './form/basic.js';
+export { default as customSelect } from './form/custom-select.js';
+export { default as inputPin } from './form/pin.js';
+export { default as inputRange } from './form/range.js';
+export { default as inputTag } from './form/tag.js';
 export { default as accordion } from './accordion.js';
 export { default as alert } from './alert.js';
 export { default as animation } from './animation.js';
@@ -101,6 +68,7 @@ export { default as notification } from './notification.js';
 export { default as offcanvas } from './offcanvas.js';
 export { default as pagination } from './pagination.js';
 export { default as placeholder } from './placeholder.js';
+export { default as position } from './position.js';
 export { default as preflight } from './preflight.js';
 export { default as print } from './print.js';
 export { default as progress } from './progress.js';
@@ -118,5 +86,6 @@ export { default as tag } from './tag.js';
 export { default as themeSwitcher } from './theme-switcher.js';
 export { default as thumbnav } from './thumbnav.js';
 export { default as tooltip } from './tooltip.js';
+export { default as transition } from './transition.js';
 export { default as typography } from './typography.js';
 export { default as utility } from './utility.js';

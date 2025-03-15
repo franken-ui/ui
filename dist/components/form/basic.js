@@ -262,5 +262,27 @@ export default {
     '.uk-form-custom input[type="file"]': {
         fontSize: 'var(--uk-form-custom-file-font-size, 500px)',
         overflow: 'var(--uk-form-custom-file-overflow, hidden)'
+    },
+    '.uk-form-xs': {
+        '--uk-form-input-font-size': 'var(--uk-global-font-size-s)',
+        '--uk-form-input-leading': 'var(--uk-global-leading-s)',
+        '--uk-form-input-height': '1.75rem',
+        '--uk-form-input-padding': '0.25rem 0.5rem'
+    },
+    '.uk-form-sm': {
+        '--uk-form-input-font-size': 'var(--uk-global-font-size-s)',
+        '--uk-form-input-leading': 'var(--uk-global-leading-s)',
+        '--uk-form-input-height': '2rem',
+        '--uk-form-input-padding': '0.25rem 0.5rem'
+    },
+    '.uk-form-md': {
+        '--uk-form-input-height': '3rem',
+        '--uk-form-input-padding': '0.5rem 1rem',
+        '--uk-form-list-image-position': 'right 4px center'
+    },
+    '.uk-form-lg': {
+        '--uk-form-input-height': '3.5rem',
+        '--uk-form-input-padding': '0.5rem 1rem',
+        '--uk-form-list-image-position': 'right 8px center'
     }
 };
