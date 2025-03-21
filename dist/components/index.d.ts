@@ -39,6 +39,8 @@ export { default as customSelect } from './form/custom-select.js';
 export { default as inputPin } from './form/pin.js';
 export { default as inputRange } from './form/range.js';
 export { default as inputTag } from './form/tag.js';
+export { default as keyval } from './form/keyval.js';
+export { default as rte } from './form/rte.js';
 export { default as accordion } from './accordion.js';
 export { default as alert } from './alert.js';
 export { default as animation } from './animation.js';

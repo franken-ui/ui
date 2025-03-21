@@ -1,4 +1,4 @@
-import { root, accordion, alert, animation, badge, breadcrumb, button, card, chart, cmd, comment, container, core, cover, customSelect, date, divider, dotnav, drop, form, icon, inputPin, inputRange, inputTag, media, modal, nav, notification, offcanvas, label, leader, lightbox, link, list, pagination, placeholder, position, print, progress, slider, sortable, spinner, stepper, sticky, svg, switcher, tab, table, tag, themeSwitcher, thumbnav, tooltip, transition, typography, utility } from './components/index.js';
+import { root, accordion, alert, animation, badge, breadcrumb, button, card, chart, cmd, comment, container, core, cover, customSelect, date, divider, dotnav, drop, form, icon, inputPin, inputRange, inputTag, media, modal, nav, notification, offcanvas, label, leader, lightbox, link, list, keyval, pagination, placeholder, position, print, progress, rte, slider, sortable, spinner, stepper, sticky, svg, switcher, tab, table, tag, themeSwitcher, thumbnav, tooltip, transition, typography, utility } from './components/index.js';
 import { variables } from './index.js';
 import palette from './palette.js';
 export const defaults = {
@@ -33,20 +33,21 @@ export const components = {
     comment,
     container,
     cover,
-    customSelect,
+    'custom-select': customSelect,
     date,
     divider,
     dotnav,
     drop,
     form,
     icon,
-    inputPin,
-    inputRange,
-    inputTag,
+    'input-pin': inputPin,
+    'input-range': inputRange,
+    'input-tag': inputTag,
     label,
     leader,
     lightbox,
     link,
+    keyval,
     list,
     modal,
     nav,
@@ -56,6 +57,7 @@ export const components = {
     placeholder,
     position,
     progress,
+    rte,
     slider,
     sortable,
     spinner,

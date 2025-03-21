@@ -285,5 +285,11 @@ declare const _default: {
         '--uk-form-input-padding': string;
         '--uk-form-list-image-position': string;
     };
+    '.uk-form-icon.uk-disabled': {
+        opacity: string;
+    };
+    '.uk-inline:has(input[disabled]) .uk-form-icon': {
+        opacity: string;
+    };
 };
 export default _default;

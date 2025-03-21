@@ -284,5 +284,11 @@ export default {
         '--uk-form-input-height': '3.5rem',
         '--uk-form-input-padding': '0.5rem 1rem',
         '--uk-form-list-image-position': 'right 8px center'
+    },
+    '.uk-form-icon.uk-disabled': {
+        opacity: 'var(--uk-toggle-switch-disabled-opacity, 0.5)'
+    },
+    '.uk-inline:has(input[disabled]) .uk-form-icon': {
+        opacity: 'var(--uk-toggle-switch-disabled-opacity, 0.5)'
     }
 };
