@@ -44,6 +44,7 @@ export { default as rte } from './form/rte.js';
 export { default as accordion } from './accordion.js';
 export { default as alert } from './alert.js';
 export { default as animation } from './animation.js';
+export { default as avatar } from './avatar.js';
 export { default as badge } from './badge.js';
 export { default as breadcrumb } from './breadcrumb.js';
 export { default as button } from './button.js';
