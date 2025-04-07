@@ -30,7 +30,7 @@ export default {
     '.uk-stepper-default .uk-stepper-checked a::before': {
         content: '""', // required for pseudo-element, obvious value
         display: 'var(--uk-stepper-checked-indicator-display, none)', // Customizable display of checked indicator - can be hidden or shown
-        backgroundImage: 'var(--uk-stepper-checked-indicator-image, var(--uk-stepper-check-image))', // Customizable checked indicator image, can fallback to global check image variable if defined later
+        backgroundImage: 'var(--uk-stepper-checked-indicator-image, var(--uk-form-radio-image))', // Customizable checked indicator image, can fallback to global check image variable if defined later
         backgroundRepeat: 'no-repeat', // obvious value, ensure image doesn't repeat
         backgroundPosition: '50% 50%', // obvious value, center image
         position: 'absolute', // obvious value, for positioning indicator
