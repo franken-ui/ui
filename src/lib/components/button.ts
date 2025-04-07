@@ -152,7 +152,7 @@ export default {
 		borderBottomRightRadius: 'var(--uk-btn-radius)'
 	},
 
-	'.uk-btn-group > .uk-btn:nth-child(n + 2), & > div:nth-child(n + 2) .uk-btn': {
+	'.uk-btn-group > .uk-btn:nth-child(n + 2), .uk-btn-group > div:nth-child(n + 2) .uk-btn': {
 		marginLeft: '-1px'
 	},
 
