@@ -43,7 +43,8 @@ export default function customPalettePlugin(options) {
             // merged rules of palettes and components
             const r = merger({
                 palettes: context.palettes,
-                components: context.components
+                components: context.components,
+                layer: options.layer
             });
             rules = merge(rules, context.defaults, r);
             const __dirname = path.dirname(fileURLToPath(import.meta.url));

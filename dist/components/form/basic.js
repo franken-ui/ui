@@ -86,7 +86,7 @@ export default {
         boxShadow: 'var(--uk-form-blank-shadow, none)' //shadow-none conversion
     },
     '.uk-form-blank:focus': {
-        boxShadow: 'var(--uk-form-blank-focus-shadow, 0 0 0 0 transparent, 0 0 0 0 transparent, 0 0 #0000)' //ring-0 conversion
+        boxShadow: 'var(--uk-form-blank-focus-shadow, none)'
     },
     '.uk-select:not([multiple]):not([size])': {
         WebkitAppearance: 'none',
@@ -108,7 +108,7 @@ export default {
         backgroundImage: 'var(--uk-form-list-image)'
     },
     '.uk-input[list]::-webkit-calendar-picker-indicator': {
-        display: 'var(--uk-form-input-list-webkit-calendar-display, none !important)'
+        display: 'none !important'
     },
     '.uk-radio, .uk-checkbox': {
         display: 'var(--uk-form-radio-display, inline-block)',

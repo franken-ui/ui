@@ -28,6 +28,7 @@ export type Palette = {
 };
 export type Options = {
     preflight?: boolean;
+    layer?: boolean;
     customPalette?: Palette;
     extensions?: Extensions;
 };
