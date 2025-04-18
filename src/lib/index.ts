@@ -1,5 +1,5 @@
 import plugin from 'tailwindcss/plugin.js';
-import { defaults, palettes, components } from './context.js';
+import { theme, base, palettes, components } from './context.js';
 import type { Colors, Context, CSSRuleObject, Options } from './types.js';
 import merger from './merger.js';
 
@@ -515,7 +515,8 @@ export const variables: {
 export default plugin.withOptions((options: Options = {}) => {
 	return async ({ addBase, addComponents }) => {
 		let context: Context = {
-			defaults,
+			theme,
+			base,
 			palettes: palettes(options),
 			components
 		};
@@ -526,7 +527,7 @@ export default plugin.withOptions((options: Options = {}) => {
 			}
 		}
 
-		addBase(context.defaults);
+		addBase({ ...theme, ...base });
 
 		const rules: CSSRuleObject = merger({
 			palettes: context.palettes,

@@ -94,7 +94,8 @@ export type Components = {
 } & { [key: string]: Component };
 
 export type Context = {
-	defaults: { ':root': CSSRuleObject; '.dark': CSSRuleObject; [key: string]: CSSRuleObject };
+	theme: { ':root': CSSRuleObject; '.dark': CSSRuleObject };
+	base: { [key: string]: CSSRuleObject };
 	palettes: CSSRuleObject;
 	components: Components;
 };

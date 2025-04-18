@@ -59,9 +59,12 @@ import { variables } from './index.js';
 import palette from './palette.js';
 import type { Components, CSSRuleObject, Options } from './types.js';
 
-export const defaults = {
+export const theme = {
 	':root': root[':root'],
-	'.dark': root['.dark'],
+	'.dark': root['.dark']
+};
+
+export const base = {
 	body: {
 		fontSize: 'var(--uk-global-font-size)',
 		lineHeight: 'var(--uk-global-leading)'
