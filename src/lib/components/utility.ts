@@ -5,9 +5,6 @@ export default {
 	'.uk-overflow-auto': {
 		overflow: 'auto'
 	},
-	'.uk-overflow-auto > :last-child': {
-		marginBottom: '0'
-	},
 	'.uk-resize': {
 		resize: 'both'
 	},
@@ -120,5 +117,30 @@ export default {
 	'.uk-text-base': {
 		fontSize: 'var(--uk-global-font-size)',
 		lineHeight: 'var(--uk-global-leading)'
+	},
+	'.uk-flex': {
+		display: 'flex !important'
+	},
+	'.uk-flex-top': {
+		alignItems: 'flex-start'
+	},
+	'.uk-flex-wrap-top': {
+		alignContent: 'flex-start'
+	},
+	'.uk-margin-auto-vertical': {
+		marginTop: 'auto !important',
+		marginBottom: 'auto !important'
+	},
+	'.uk-text-truncate': {
+		maxWidth: '100%',
+		overflow: 'hidden',
+		textOverflow: 'ellipsis',
+		whiteSpace: 'nowrap'
+	},
+	'th.uk-text-truncate, td.uk-text-truncate': {
+		maxWidth: '0'
+	},
+	'th.uk-text-break, td.uk-text-break': {
+		wordBreak: 'break-word'
 	}
 };

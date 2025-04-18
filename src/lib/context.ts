@@ -11,7 +11,6 @@ import {
 	cmd,
 	comment,
 	container,
-	core,
 	cover,
 	customSelect,
 	date,
@@ -78,8 +77,7 @@ export const defaults = {
 			transitionProperty: 'var(--uk-global-focus-transition-property, outline)',
 			transitionDuration: 'var(--uk-global-focus-transition-duration, 150ms)',
 			transitionTimingFunction: 'var(--uk-global-focus-transition-timing, ease-in-out)'
-		},
-	...core
+		}
 };
 
 export const components: Components = {
