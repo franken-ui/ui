@@ -41,7 +41,6 @@ export { default as inputPin } from './form/pin.js';
 export { default as inputRange } from './form/range.js';
 export { default as inputTag } from './form/tag.js';
 export { default as keyval } from './form/keyval.js';
-export { default as rte } from './form/rte.js';
 
 export { default as accordion } from './accordion.js';
 export { default as alert } from './alert.js';
@@ -51,7 +50,6 @@ export { default as badge } from './badge.js';
 export { default as breadcrumb } from './breadcrumb.js';
 export { default as button } from './button.js';
 export { default as card } from './card.js';
-export { default as chart } from './chart.js';
 export { default as cmd } from './cmd.js';
 export { default as comment } from './comment.js';
 export { default as container } from './container.js';
