@@ -33,6 +33,7 @@ export type Palette = {
 export type Options = {
 	preflight?: boolean;
 	layer?: boolean;
+	layerExceptions?: string[];
 	customPalette?: Palette;
 	extensions?: Extensions;
 };

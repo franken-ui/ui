@@ -23,7 +23,7 @@
 	},
 	"homepage": "https://www.franken-ui.dev",
 	"license": "MIT",
-	"version": "2.1.0-next.3",
+	"version": "2.1.0-next.4",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -42,6 +42,10 @@
 		"./shadcn-ui/*": {
 			"types": "./dist/shadcn-ui/*.d.ts",
 			"default": "./dist/shadcn-ui/*.js"
+		},
+		"./extensions/*": {
+			"types": "./dist/extensions/*.d.ts",
+			"default": "./dist/extensions/*.js"
 		},
 		"./js/*": {
 			"default": "./dist/js/*.js"

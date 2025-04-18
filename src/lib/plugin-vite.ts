@@ -68,8 +68,7 @@ export default function customPalettePlugin(options: Options): any {
 			const r: CSSRuleObject = merger({
 				palettes: context.palettes,
 				components: context.components,
-				layer: options.layer,
-				options
+				pluginOptions: options
 			});
 
 			rules = merge(rules, defaults, r);

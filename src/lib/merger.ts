@@ -4,10 +4,10 @@ import type { Components, CSSRuleObject, ComponentKey, Options } from './types.j
 export default (options: {
 	palettes: CSSRuleObject;
 	components: Components;
-	layer?: boolean;
-	options?: Options;
+	pluginOptions?: Options;
 }): CSSRuleObject => {
-	const { palettes, components, layer = false } = options;
+	const { palettes, components, pluginOptions = {} } = options;
+	const { layer = false, layerExceptions = [] } = pluginOptions;
 
 	// Define exception components that should not be in the layer
 	let exceptions: ComponentKey[] = ['utility'];
@@ -21,12 +21,11 @@ export default (options: {
 	// Process components
 	for (const key in components) {
 		if (Object.prototype.hasOwnProperty.call(components, key)) {
-			// Check if component is not in exceptions
-			if (!exceptions.includes(key)) {
+			if (layerExceptions.includes(key)) {
+				merge(rules, components[key]);
+			} else if (!exceptions.includes(key)) {
 				merge(layers.components, components[key]);
 			}
-
-			// TODO: Refactor to include check for user-defined exceptions, handle user-defined exceptions
 		}
 	}
 
@@ -40,6 +39,6 @@ export default (options: {
 		return rules;
 	} else {
 		// No layering - use original behavior
-		return { ...palettes, ...layers.components, ...components.utility };
+		return merge({}, palettes, layers.components, rules, components.utilities);
 	}
 };
