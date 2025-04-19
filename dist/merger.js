@@ -30,6 +30,6 @@ export default (options) => {
     }
     else {
         // No layering - use original behavior
-        return merge({}, palettes, layers.components, rules, components.utilities);
+        return merge({}, palettes, layers.components, rules, components.utility);
     }
 };
