@@ -29,6 +29,7 @@ export type Palette = {
 export type Options = {
     preflight?: boolean;
     layer?: boolean;
+    layerExceptions?: string[];
     customPalette?: Palette;
     extensions?: Extensions;
 };
@@ -43,9 +44,11 @@ export type Components = {
     [key: string]: Component;
 };
 export type Context = {
-    defaults: {
+    theme: {
         ':root': CSSRuleObject;
         '.dark': CSSRuleObject;
+    };
+    base: {
         [key: string]: CSSRuleObject;
     };
     palettes: CSSRuleObject;

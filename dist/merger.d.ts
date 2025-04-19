@@ -1,7 +1,7 @@
-import type { Components, CSSRuleObject } from './types.js';
+import type { Components, CSSRuleObject, Options } from './types.js';
 declare const _default: (options: {
     palettes: CSSRuleObject;
     components: Components;
-    layer?: boolean;
+    pluginOptions?: Options;
 }) => CSSRuleObject;
 export default _default;

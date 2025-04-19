@@ -3,7 +3,7 @@ import path from 'path';
 import merge from 'lodash/merge.js';
 import { fileURLToPath } from 'url';
 import { preflight } from './components/index.js';
-import { defaults, palettes, components } from './context.js';
+import { theme, base, palettes, components } from './context.js';
 import postcssJs from 'postcss-js';
 import postcss from 'postcss';
 import merger from './merger.js';
@@ -31,7 +31,8 @@ export default function customPalettePlugin(options) {
         buildStart() {
             let rules = options?.preflight ? { ...preflight } : {};
             let context = {
-                defaults,
+                theme,
+                base,
                 palettes: palettes(options),
                 components
             };
@@ -40,13 +41,21 @@ export default function customPalettePlugin(options) {
                     context = plugin(context, config);
                 }
             }
+            let defaults = {};
+            if (options.layer) {
+                defaults['@layer theme'] = theme;
+                defaults['@layer base'] = base;
+            }
+            else {
+                defaults = { ...theme, ...base };
+            }
             // merged rules of palettes and components
             const r = merger({
                 palettes: context.palettes,
                 components: context.components,
-                layer: options.layer
+                pluginOptions: options
             });
-            rules = merge(rules, context.defaults, r);
+            rules = merge(rules, defaults, r);
             const __dirname = path.dirname(fileURLToPath(import.meta.url));
             const outputPath = path.join(__dirname, '/css/franken-ui.css');
             fs.mkdirSync(path.dirname(outputPath), { recursive: true });

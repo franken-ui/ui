@@ -1,11 +1,6 @@
 import { type Options } from './index.js';
 export declare const defaults: {
     ':root': {
-        '--chart-1': string;
-        '--chart-2': string;
-        '--chart-3': string;
-        '--chart-4': string;
-        '--chart-5': string;
         '--uk-breakpoint-s': string;
         '--uk-breakpoint-m': string;
         '--uk-breakpoint-l': string;
@@ -61,13 +56,7 @@ export declare const defaults: {
         '--uk-nav-sub-width': string;
         '--uk-position-margin-offset': string;
     };
-    '.dark': {
-        '--chart-1': string;
-        '--chart-5': string;
-        '--chart-3': string;
-        '--chart-4': string;
-        '--chart-2': string;
-    };
+    '.dark': {};
     body: {
         fontSize: string;
         lineHeight: string;

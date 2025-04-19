@@ -1,5 +1,5 @@
 import plugin from 'tailwindcss/plugin.js';
-import { defaults, palettes, components } from './context.js';
+import { theme, base, palettes, components } from './context.js';
 import merger from './merger.js';
 export const variables = {
     '.uk-theme-zinc': {
@@ -510,7 +510,8 @@ export const variables = {
 export default plugin.withOptions((options = {}) => {
     return async ({ addBase, addComponents }) => {
         let context = {
-            defaults,
+            theme,
+            base,
             palettes: palettes(options),
             components
         };
@@ -519,7 +520,7 @@ export default plugin.withOptions((options = {}) => {
                 context = plugin(context, config);
             }
         }
-        addBase(context.defaults);
+        addBase({ ...theme, ...base });
         const rules = merger({
             palettes: context.palettes,
             components: context.components

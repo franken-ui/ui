@@ -5,9 +5,6 @@ declare const _default: {
     '.uk-overflow-auto': {
         overflow: string;
     };
-    '.uk-overflow-auto > :last-child': {
-        marginBottom: string;
-    };
     '.uk-resize': {
         resize: string;
     };
@@ -119,6 +116,31 @@ declare const _default: {
     '.uk-text-base': {
         fontSize: string;
         lineHeight: string;
+    };
+    '.uk-flex': {
+        display: string;
+    };
+    '.uk-flex-top': {
+        alignItems: string;
+    };
+    '.uk-flex-wrap-top': {
+        alignContent: string;
+    };
+    '.uk-margin-auto-vertical': {
+        marginTop: string;
+        marginBottom: string;
+    };
+    '.uk-text-truncate': {
+        maxWidth: string;
+        overflow: string;
+        textOverflow: string;
+        whiteSpace: string;
+    };
+    'th.uk-text-truncate, td.uk-text-truncate': {
+        maxWidth: string;
+    };
+    'th.uk-text-break, td.uk-text-break': {
+        wordBreak: string;
     };
 };
 export default _default;

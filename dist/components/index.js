@@ -1,46 +1,9 @@
-export const core = {
-    '.uk-flex': {
-        display: 'flex !important'
-    },
-    '.uk-flex-top': {
-        alignItems: 'flex-start'
-    },
-    '.uk-flex-wrap-top': {
-        alignContent: 'flex-start'
-    },
-    '.uk-margin-auto-vertical': {
-        marginTop: 'auto !important',
-        marginBottom: 'auto !important'
-    },
-    '.uk-overflow-auto': {
-        overflow: 'auto'
-    },
-    '.uk-overflow-auto > :last-child': {
-        marginBottom: '0'
-    },
-    '.uk-text-truncate': {
-        maxWidth: '100%',
-        overflow: 'hidden',
-        textOverflow: 'ellipsis',
-        whiteSpace: 'nowrap'
-    },
-    'th.uk-text-truncate, td.uk-text-truncate': {
-        maxWidth: '0'
-    },
-    '.uk-text-break': {
-        overflowWrap: 'break-word'
-    },
-    'th.uk-text-break, td.uk-text-break': {
-        wordBreak: 'break-word'
-    }
-};
 export { default as form } from './form/basic.js';
 export { default as customSelect } from './form/custom-select.js';
 export { default as inputPin } from './form/pin.js';
 export { default as inputRange } from './form/range.js';
 export { default as inputTag } from './form/tag.js';
 export { default as keyval } from './form/keyval.js';
-export { default as rte } from './form/rte.js';
 export { default as accordion } from './accordion.js';
 export { default as alert } from './alert.js';
 export { default as animation } from './animation.js';
@@ -49,7 +12,6 @@ export { default as badge } from './badge.js';
 export { default as breadcrumb } from './breadcrumb.js';
 export { default as button } from './button.js';
 export { default as card } from './card.js';
-export { default as chart } from './chart.js';
 export { default as cmd } from './cmd.js';
 export { default as comment } from './comment.js';
 export { default as container } from './container.js';

@@ -1,32 +1,35 @@
 import merge from 'lodash/merge.js';
 export default (options) => {
-    const { palettes, components, layer = false } = options;
+    const { palettes, components, pluginOptions = {} } = options;
+    const { layer = false, layerExceptions = [] } = pluginOptions;
     // Define exception components that should not be in the layer
-    const exceptions = ['chart'];
+    let exceptions = ['utility'];
     // Initialize rule objects
     const rules = {};
-    const exceptionRules = {};
-    const layerRules = {};
+    const layers = {
+        components: {}
+    };
     // Process components
     for (const key in components) {
         if (Object.prototype.hasOwnProperty.call(components, key)) {
-            // Check if component is an exception
-            if (exceptions.includes(key)) {
-                merge(exceptionRules, components[key]);
+            if (layerExceptions.includes(key)) {
+                merge(rules, components[key]);
             }
-            else {
-                merge(layerRules, components[key]);
+            else if (!exceptions.includes(key)) {
+                merge(layers.components, components[key]);
             }
         }
     }
     // Combine rules based on layer option
     if (layer) {
         // Structure for layered output
-        rules['@layer components'] = layerRules;
-        return { ...palettes, ...exceptionRules, ...rules };
+        rules['@layer theme'] = palettes;
+        rules['@layer components'] = layers.components;
+        rules['@layer utilities'] = components.utility;
+        return rules;
     }
     else {
         // No layering - use original behavior
-        return { ...palettes, ...exceptionRules, ...layerRules };
+        return merge({}, palettes, layers.components, rules, components.utilities);
     }
 };

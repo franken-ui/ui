@@ -1,45 +1,6 @@
 import type { Components, CSSRuleObject, Options } from './types.js';
-export declare const defaults: {
-    '.uk-flex': {
-        display: string;
-    };
-    '.uk-flex-top': {
-        alignItems: string;
-    };
-    '.uk-flex-wrap-top': {
-        alignContent: string;
-    };
-    '.uk-margin-auto-vertical': {
-        marginTop: string;
-        marginBottom: string;
-    };
-    '.uk-overflow-auto': {
-        overflow: string;
-    };
-    '.uk-overflow-auto > :last-child': {
-        marginBottom: string;
-    };
-    '.uk-text-truncate': {
-        maxWidth: string;
-        overflow: string;
-        textOverflow: string;
-        whiteSpace: string;
-    };
-    'th.uk-text-truncate, td.uk-text-truncate': {
-        maxWidth: string;
-    };
-    '.uk-text-break': {
-        overflowWrap: string;
-    };
-    'th.uk-text-break, td.uk-text-break': {
-        wordBreak: string;
-    };
+export declare const theme: {
     ':root': {
-        '--chart-1': string;
-        '--chart-2': string;
-        '--chart-3': string;
-        '--chart-4': string;
-        '--chart-5': string;
         '--uk-breakpoint-s': string;
         '--uk-breakpoint-m': string;
         '--uk-breakpoint-l': string;
@@ -95,13 +56,9 @@ export declare const defaults: {
         '--uk-nav-sub-width': string;
         '--uk-position-margin-offset': string;
     };
-    '.dark': {
-        '--chart-1': string;
-        '--chart-5': string;
-        '--chart-3': string;
-        '--chart-4': string;
-        '--chart-2': string;
-    };
+    '.dark': {};
+};
+export declare const base: {
     body: {
         fontSize: string;
         lineHeight: string;

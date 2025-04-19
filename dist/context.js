@@ -1,9 +1,11 @@
-import { root, accordion, alert, animation, avatar, badge, breadcrumb, button, card, chart, cmd, comment, container, core, cover, customSelect, date, divider, dotnav, drop, form, icon, inputPin, inputRange, inputTag, media, modal, nav, notification, offcanvas, label, leader, lightbox, link, list, keyval, pagination, placeholder, position, print, progress, rte, slider, sortable, spinner, stepper, sticky, svg, switcher, tab, table, tag, themeSwitcher, thumbnav, tooltip, transition, typography, utility } from './components/index.js';
+import { root, accordion, alert, animation, avatar, badge, breadcrumb, button, card, cmd, comment, container, cover, customSelect, date, divider, dotnav, drop, form, icon, inputPin, inputRange, inputTag, media, modal, nav, notification, offcanvas, label, leader, lightbox, link, list, keyval, pagination, placeholder, position, print, progress, slider, sortable, spinner, stepper, sticky, svg, switcher, tab, table, tag, themeSwitcher, thumbnav, tooltip, transition, typography, utility } from './components/index.js';
 import { variables } from './index.js';
 import palette from './palette.js';
-export const defaults = {
+export const theme = {
     ':root': root[':root'],
-    '.dark': root['.dark'],
+    '.dark': root['.dark']
+};
+export const base = {
     body: {
         fontSize: 'var(--uk-global-font-size)',
         lineHeight: 'var(--uk-global-leading)'
@@ -17,8 +19,7 @@ export const defaults = {
         transitionProperty: 'var(--uk-global-focus-transition-property, outline)',
         transitionDuration: 'var(--uk-global-focus-transition-duration, 150ms)',
         transitionTimingFunction: 'var(--uk-global-focus-transition-timing, ease-in-out)'
-    },
-    ...core
+    }
 };
 export const components = {
     accordion,
@@ -29,7 +30,6 @@ export const components = {
     breadcrumb,
     button,
     card,
-    chart,
     cmd,
     comment,
     container,
@@ -58,7 +58,6 @@ export const components = {
     placeholder,
     position,
     progress,
-    rte,
     slider,
     sortable,
     spinner,
