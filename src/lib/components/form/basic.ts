@@ -65,10 +65,7 @@ export default {
 		outlineStyle: 'var(--uk-form-focus-outline-style, none)',
 		outlineOffset: 'var(--uk-form-focus-outline-offset, 0px)',
 		boxShadow:
-			'var(--uk-form-focus-shadow, 0 0 0 0 transparent, 0 0 0 1px hsl(var(--ring)), 0 0 #0000)',
-		transitionProperty: 'var(--uk-form-focus-transition-property, box-shadow)',
-		transitionDuration: 'var(--uk-form-focus-transition-duration, 150ms)',
-		transitionTimingFunction: 'var(--uk-form-focus-transition-timing, ease-in-out)'
+			'var(--uk-form-focus-shadow, 0 0 0 0 transparent, 0 0 0 1px hsl(var(--ring)), 0 0 #0000)'
 	},
 	'.uk-input:disabled, .uk-select:disabled, .uk-textarea:disabled, .uk-input-fake:disabled': {
 		opacity: 'var(--uk-form-disabled-opacity, 0.5)'

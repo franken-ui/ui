@@ -36,10 +36,6 @@ export default {
             outlineColor: 'var(--uk-input-pin-input-focus-outline-color, transparent)',
             outlineOffset: 'var(--uk-input-pin-input-focus-outline-offset, 2px)',
             boxShadow: 'var(--uk-input-pin-input-focus-shadow, 0 0 0 0 transparent, 0 0 0 1px var(--focus-shadow-color), 0 0 #0000)',
-            // Transitions
-            transitionProperty: 'var(--uk-input-pin-input-focus-transition-property, box-shadow)',
-            transitionDuration: 'var(--uk-input-pin-input-focus-transition-duration, 150ms)',
-            transitionTimingFunction: 'var(--uk-input-pin-input-focus-transition-timing, ease-in-out)',
             '&::placeholder': {
                 color: 'var(--uk-input-pin-focus-placeholder-color, hsl(var(--background)))'
             }

@@ -30,9 +30,6 @@ declare const _default: {
             outlineColor: string;
             outlineOffset: string;
             boxShadow: string;
-            transitionProperty: string;
-            transitionDuration: string;
-            transitionTimingFunction: string;
             '&::placeholder': {
                 color: string;
             };

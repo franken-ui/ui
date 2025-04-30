@@ -63,9 +63,6 @@ declare const _default: {
         outlineStyle: string;
         outlineOffset: string;
         boxShadow: string;
-        transitionProperty: string;
-        transitionDuration: string;
-        transitionTimingFunction: string;
     };
     '.uk-input:disabled, .uk-select:disabled, .uk-textarea:disabled, .uk-input-fake:disabled': {
         opacity: string;
