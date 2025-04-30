@@ -23,7 +23,7 @@ export default {
             outlineStyle: 'var(--uk-input-tag-focus-outline-style, solid)',
             outlineColor: 'var(--uk-input-tag-focus-outline-color, transparent)',
             outlineOffset: 'var(--uk-input-tag-focus-outline-offset, 2px)',
-            boxShadow: 'var(--uk-input-tag-focus-shadow, 0 0 0 0 transparent, 0 0 0 1px var(--focus-shadow-color), 0 0 #0000)'
+            boxShadow: 'var(--uk-input-tag-focus-shadow, 0 0 0 0 transparent, 0 0 0 1px var(--focus-shadow-color))'
         }
     },
     '.uk-input-tag.uk-disabled': {

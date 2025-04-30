@@ -23,8 +23,7 @@ export default (context: Context): Context => {
 			outlineWidth: 'var(--uk-form-focus-outline-width, 0)',
 			outlineStyle: 'var(--uk-form-focus-outline-style, none)',
 			outlineOffset: 'var(--uk-form-focus-outline-offset, 0px)',
-			boxShadow:
-				'var(--uk-form-focus-shadow, 0 0 0 0 transparent, 0 0 0 1px hsl(var(--ring)), 0 0 #0000)'
+			boxShadow: 'var(--uk-form-focus-shadow, 0 0 0 0 transparent, 0 0 0 1px hsl(var(--ring)))'
 		},
 		'.uk-rte': {
 			boxShadow: 'var(--uk-global-shadow)',

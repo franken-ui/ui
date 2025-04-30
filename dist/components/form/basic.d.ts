@@ -75,7 +75,6 @@ declare const _default: {
     };
     '.uk-form-destructive:focus': {
         boxShadow: string;
-        transition: string;
     };
     '.uk-form-blank': {
         background: string;
@@ -129,11 +128,9 @@ declare const _default: {
         outline: string;
         outlineOffset: string;
         boxShadow: string;
-        transition: string;
     };
     '.uk-radio:checked:focus, .uk-checkbox:checked:focus, .uk-checkbox:indeterminate:focus': {
         boxShadow: string;
-        transition: string;
     };
     '.uk-radio:checked': {
         backgroundImage: string;

@@ -64,8 +64,7 @@ export default {
 		outlineWidth: 'var(--uk-form-focus-outline-width, 0)',
 		outlineStyle: 'var(--uk-form-focus-outline-style, none)',
 		outlineOffset: 'var(--uk-form-focus-outline-offset, 0px)',
-		boxShadow:
-			'var(--uk-form-focus-shadow, 0 0 0 0 transparent, 0 0 0 1px hsl(var(--ring)), 0 0 #0000)'
+		boxShadow: 'var(--uk-form-focus-shadow, 0 0 0 0 transparent, 0 0 0 1px hsl(var(--ring)))'
 	},
 	'.uk-input:disabled, .uk-select:disabled, .uk-textarea:disabled, .uk-input-fake:disabled': {
 		opacity: 'var(--uk-form-disabled-opacity, 0.5)'
@@ -78,8 +77,7 @@ export default {
 	},
 	'.uk-form-destructive:focus': {
 		boxShadow:
-			'var(--uk-form-destructive-shadow, 0 0 0 0 transparent, 0 0 0 1px hsl(var(--destructive)), 0 0 #0000)', //ring-destructive conversion
-		transition: 'box-shadow 150ms' //Added transition
+			'var(--uk-form-destructive-shadow, 0 0 0 0 transparent, 0 0 0 1px hsl(var(--destructive)))' //ring-destructive conversion
 	},
 	'.uk-form-blank': {
 		background: 'var(--uk-form-blank-bg, none)',
@@ -132,14 +130,11 @@ export default {
 	'.uk-radio:focus, .uk-checkbox:focus': {
 		outline: 'var(--uk-form-radio-focus-outline, none)',
 		outlineOffset: 'var(--uk-form-radio-focus-outline-offset, 0px)',
-		boxShadow:
-			'var(--uk-form-radio-focus-shadow, 0 0 0 0 transparent, 0 0 0 1px hsl(var(--ring)), 0 0 #0000)', //ring-1 ring-ring conversion
-		transition: 'box-shadow 150ms' //Added transition
+		boxShadow: 'var(--uk-form-radio-focus-shadow, 0 0 0 0 transparent, 0 0 0 1px hsl(var(--ring)))' //ring-1 ring-ring conversion
 	},
 	'.uk-radio:checked:focus, .uk-checkbox:checked:focus, .uk-checkbox:indeterminate:focus': {
 		boxShadow:
-			'var(--uk-form-radio-checked-focus-shadow, 0 0 0 0 transparent, 0 0 0 1px hsl(var(--ring)), 0 0 #0000)', //ring-1 ring-ring conversion
-		transition: 'box-shadow 150ms' //Added transition
+			'var(--uk-form-radio-checked-focus-shadow, 0 0 0 0 transparent, 0 0 0 1px hsl(var(--ring)))' //ring-1 ring-ring conversion
 	},
 	'.uk-radio:checked': {
 		backgroundImage: 'var(--uk-form-radio-image)'
