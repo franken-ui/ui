@@ -62,7 +62,7 @@ export default {
         outlineWidth: 'var(--uk-form-focus-outline-width, 0)',
         outlineStyle: 'var(--uk-form-focus-outline-style, none)',
         outlineOffset: 'var(--uk-form-focus-outline-offset, 0px)',
-        boxShadow: 'var(--uk-form-focus-shadow, 0 0 0 0 transparent, 0 0 0 1px hsl(var(--ring)))'
+        boxShadow: 'var(--uk-form-focus-shadow, 0 0 0 1px hsl(var(--ring)))'
     },
     '.uk-input:disabled, .uk-select:disabled, .uk-textarea:disabled, .uk-input-fake:disabled': {
         opacity: 'var(--uk-form-disabled-opacity, 0.5)'
@@ -74,7 +74,7 @@ export default {
         color: 'var(--uk-form-placeholder-color, hsl(var(--muted-foreground)))'
     },
     '.uk-form-destructive:focus': {
-        boxShadow: 'var(--uk-form-destructive-shadow, 0 0 0 0 transparent, 0 0 0 1px hsl(var(--destructive)))' //ring-destructive conversion
+        boxShadow: 'var(--uk-form-destructive-shadow, 0 0 0 1px hsl(var(--destructive)))'
     },
     '.uk-form-blank': {
         background: 'var(--uk-form-blank-bg, none)',
@@ -127,10 +127,10 @@ export default {
     '.uk-radio:focus, .uk-checkbox:focus': {
         outline: 'var(--uk-form-radio-focus-outline, none)',
         outlineOffset: 'var(--uk-form-radio-focus-outline-offset, 0px)',
-        boxShadow: 'var(--uk-form-radio-focus-shadow, 0 0 0 0 transparent, 0 0 0 1px hsl(var(--ring)))' //ring-1 ring-ring conversion
+        boxShadow: 'var(--uk-form-radio-focus-shadow, 0 0 0 1px hsl(var(--ring)))'
     },
     '.uk-radio:checked:focus, .uk-checkbox:checked:focus, .uk-checkbox:indeterminate:focus': {
-        boxShadow: 'var(--uk-form-radio-checked-focus-shadow, 0 0 0 0 transparent, 0 0 0 1px hsl(var(--ring)))' //ring-1 ring-ring conversion
+        boxShadow: 'var(--uk-form-radio-checked-focus-shadow, 0 0 0 1px hsl(var(--ring)))'
     },
     '.uk-radio:checked': {
         backgroundImage: 'var(--uk-form-radio-image)'
@@ -187,10 +187,7 @@ export default {
         boxShadow: 'var(--uk-form-toggle-switch-shadow)',
         height: 'var(--uk-toggle-switch-height, 1.25rem)', //h-5 conversion
         width: 'var(--uk-toggle-switch-width, 2.25rem)', //w-9 conversion
-        backgroundColor: 'var(--uk-toggle-switch-bg, hsl(var(--input)))', //bg-input conversion
-        '&:focus-visible': {
-            outline: 'var(--uk-toggle-switch-focus-outline, dotted hsl(var(--ring)))' //focus-visible:outline-dotted focus-visible:outline-ring conversion
-        }
+        backgroundColor: 'var(--uk-toggle-switch-bg, hsl(var(--input)))' //bg-input conversion
     },
     '.uk-toggle-switch::before': {
         content: 'var(--uk-toggle-switch-before-content, "")',

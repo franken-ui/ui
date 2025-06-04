@@ -188,9 +188,6 @@ declare const _default: {
         height: string;
         width: string;
         backgroundColor: string;
-        '&:focus-visible': {
-            outline: string;
-        };
     };
     '.uk-toggle-switch::before': {
         content: string;
