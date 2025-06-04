@@ -41,8 +41,7 @@ export default {
 			outlineStyle: 'var(--uk-input-pin-input-focus-outline-style, solid)',
 			outlineColor: 'var(--uk-input-pin-input-focus-outline-color, transparent)',
 			outlineOffset: 'var(--uk-input-pin-input-focus-outline-offset, 2px)',
-			boxShadow:
-				'var(--uk-input-pin-input-focus-shadow, 0 0 0 0 transparent, 0 0 0 1px var(--focus-shadow-color))',
+			boxShadow: 'var(--uk-input-pin-input-focus-shadow, 0 0 0 1px var(--focus-shadow-color))',
 
 			'&::placeholder': {
 				color: 'var(--uk-input-pin-focus-placeholder-color, hsl(var(--background)))'
