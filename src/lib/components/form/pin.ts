@@ -28,25 +28,25 @@ export default {
 		outline: 'none',
 		borderWidth: 'var(--uk-input-pin-input-border-width, 1px)',
 		borderStyle: 'var(--uk-input-pin-input-border-style, solid)',
-		borderColor: 'var(--uk-input-pin-input-border-color, hsl(var(--input)))',
+		borderColor: 'var(--uk-input-pin-input-border-color, hsl(var(--input)))'
+	},
 
-		'&::placeholder': {
-			color: 'var(--uk-input-pin-placeholder-color, hsl(var(--muted-foreground)))'
-		},
+	'.uk-input-pin input::placeholder': {
+		color: 'var(--uk-input-pin-placeholder-color, hsl(var(--muted-foreground)))'
+	},
 
-		'&:focus': {
-			// Visual
-			zIndex: 'var(--uk-input-pin-input-focus-z, 10)',
-			outlineWidth: 'var(--uk-input-pin-input-focus-outline-width, 2px)',
-			outlineStyle: 'var(--uk-input-pin-input-focus-outline-style, solid)',
-			outlineColor: 'var(--uk-input-pin-input-focus-outline-color, transparent)',
-			outlineOffset: 'var(--uk-input-pin-input-focus-outline-offset, 2px)',
-			boxShadow: 'var(--uk-input-pin-input-focus-shadow, 0 0 0 1px var(--focus-shadow-color))',
+	'.uk-input-pin input:focus': {
+		// Visual
+		zIndex: 'var(--uk-input-pin-input-focus-z, 10)',
+		outlineWidth: 'var(--uk-input-pin-input-focus-outline-width, 2px)',
+		outlineStyle: 'var(--uk-input-pin-input-focus-outline-style, solid)',
+		outlineColor: 'var(--uk-input-pin-input-focus-outline-color, transparent)',
+		outlineOffset: 'var(--uk-input-pin-input-focus-outline-offset, 2px)',
+		boxShadow: 'var(--uk-input-pin-input-focus-shadow, 0 0 0 1px var(--focus-shadow-color))'
+	},
 
-			'&::placeholder': {
-				color: 'var(--uk-input-pin-focus-placeholder-color, hsl(var(--background)))'
-			}
-		}
+	'.uk-input-pin input:focus::placeholder': {
+		color: 'var(--uk-input-pin-focus-placeholder-color, hsl(var(--background)))'
 	},
 
 	'.uk-input-pin.uk-form-destructive': {

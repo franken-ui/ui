@@ -8,9 +8,9 @@ export default {
 		border: '0 solid'
 	},
 	':host,html': {
-		lineHeight: 1.5,
+		lineHeight: '1.5',
 		WebkitTextSizeAdjust: '100%',
-		tabSize: 4,
+		tabSize: '4',
 		fontFamily:
 			"var(--default-font-family,ui-sans-serif,system-ui,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji')",
 		fontFeatureSettings: 'var(--default-font-feature-settings,normal)',
@@ -34,7 +34,7 @@ export default {
 		fontSize: '1em'
 	},
 	small: { fontSize: '80%' },
-	'sub,sup': { fontSize: '75%', lineHeight: 0, position: 'relative' },
+	'sub,sup': { fontSize: '75%', lineHeight: '0', position: 'relative' },
 	sub: { bottom: '-.25em' },
 	sup: { top: '-.5em' },
 	table: {
@@ -58,7 +58,7 @@ export default {
 		color: 'inherit',
 		borderRadius: '0',
 		backgroundColor: 'transparent',
-		opacity: 1
+		opacity: '1'
 	},
 	':where(select:is([multiple],[size])) optgroup': { fontWeight: 'bolder' },
 	':where(select:is([multiple],[size])) optgroup option': {
@@ -66,7 +66,7 @@ export default {
 	},
 	'::file-selector-button': { marginInlineEnd: '4px' },
 	'::placeholder': {
-		opacity: 1,
+		opacity: '1',
 		color: 'color-mix(in oklab,currentColor 50%,transparent)'
 	},
 	textarea: { resize: 'vertical' },

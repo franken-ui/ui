@@ -116,15 +116,10 @@ export default {
 		cursor: 'var(--uk-input-range-knob-cursor, pointer)',
 		borderRadius: 'var(--uk-input-range-knob-radius, 9999px)',
 		border: 'var(--uk-input-range-knob-border, 1px solid hsl(var(--primary) / 0.5))',
-		backgroundColor: 'var(--uk-input-range-knob-bg, hsl(var(--background)))',
-		'&:focus-visible': {
-			outline: 'var(--uk-input-range-knob-focus-outline, none)',
-			ringColor: 'var(--uk-input-range-knob-ring-color, hsl(var(--ring)))',
-			ringWidth: 'var(--uk-input-range-knob-ring-width, 1px)'
-		},
-		'&:disabled': {
-			cursor: 'var(--uk-input-range-knob-disabled-cursor, not-allowed)'
-		}
+		backgroundColor: 'var(--uk-input-range-knob-bg, hsl(var(--background)))'
+	},
+	'.uk-input-range-knob:disabled': {
+		cursor: 'var(--uk-input-range-knob-disabled-cursor, not-allowed)'
 	},
 	'.uk-input-range-label': {
 		position: 'var(--uk-input-range-label-position, absolute)',

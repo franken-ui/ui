@@ -17,10 +17,10 @@ export default {
         padding: 'var(--uk-custom-select-search-input-padding, 0.75rem 0)',
         // Visual
         backgroundColor: 'transparent',
-        outline: 'none',
-        '&::placeholder': {
-            color: 'var(--uk-custom-select-search-placeholder-color, hsl(var(--muted-foreground)))'
-        }
+        outline: 'none'
+    },
+    '.uk-custom-select-search input::placeholder': {
+        color: 'var(--uk-custom-select-search-placeholder-color, hsl(var(--muted-foreground)))'
     },
     '.uk-custom-select-options': {
         // Layout

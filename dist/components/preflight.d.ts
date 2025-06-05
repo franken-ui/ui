@@ -12,9 +12,9 @@ declare const _default: {
         border: string;
     };
     ':host,html': {
-        lineHeight: number;
+        lineHeight: string;
         WebkitTextSizeAdjust: string;
-        tabSize: number;
+        tabSize: string;
         fontFamily: string;
         fontFeatureSettings: string;
         fontVariationSettings: string;
@@ -53,7 +53,7 @@ declare const _default: {
     };
     'sub,sup': {
         fontSize: string;
-        lineHeight: number;
+        lineHeight: string;
         position: string;
     };
     sub: {
@@ -92,7 +92,7 @@ declare const _default: {
         color: string;
         borderRadius: string;
         backgroundColor: string;
-        opacity: number;
+        opacity: string;
     };
     ':where(select:is([multiple],[size])) optgroup': {
         fontWeight: string;
@@ -104,7 +104,7 @@ declare const _default: {
         marginInlineEnd: string;
     };
     '::placeholder': {
-        opacity: number;
+        opacity: string;
         color: string;
     };
     textarea: {

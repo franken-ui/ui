@@ -13,13 +13,13 @@ declare const _default: {
         borderStyle: string;
         borderColor: string;
         '--focus-shadow-color': string;
-        '&:has(input:focus)': {
-            outlineWidth: string;
-            outlineStyle: string;
-            outlineColor: string;
-            outlineOffset: string;
-            boxShadow: string;
-        };
+    };
+    '.uk-input-tag:has(input:focus)': {
+        outlineWidth: string;
+        outlineStyle: string;
+        outlineColor: string;
+        outlineOffset: string;
+        boxShadow: string;
     };
     '.uk-input-tag.uk-disabled': {
         opacity: string;
@@ -31,9 +31,9 @@ declare const _default: {
         flex: string;
         padding: string;
         color: string;
-        '&::placeholder': {
-            color: string;
-        };
+    };
+    '.uk-input-tag input::placeholder': {
+        color: string;
     };
     '.uk-input-tag.uk-form-destructive': {
         '--focus-shadow-color': string;

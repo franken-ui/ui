@@ -13,9 +13,9 @@ declare const _default: {
         padding: string;
         backgroundColor: string;
         outline: string;
-        '&::placeholder': {
-            color: string;
-        };
+    };
+    '.uk-custom-select-search input::placeholder': {
+        color: string;
     };
     '.uk-custom-select-options': {
         maxHeight: string;

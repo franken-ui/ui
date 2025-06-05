@@ -90,14 +90,9 @@ declare const _default: {
         borderRadius: string;
         border: string;
         backgroundColor: string;
-        '&:focus-visible': {
-            outline: string;
-            ringColor: string;
-            ringWidth: string;
-        };
-        '&:disabled': {
-            cursor: string;
-        };
+    };
+    '.uk-input-range-knob:disabled': {
+        cursor: string;
     };
     '.uk-input-range-label': {
         position: string;

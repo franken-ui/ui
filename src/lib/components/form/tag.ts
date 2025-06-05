@@ -19,16 +19,15 @@ export default {
 		borderColor: 'var(--uk-input-tag-border-color, hsl(var(--input)))',
 
 		// Theme
-		'--focus-shadow-color': 'hsl(var(--ring))',
+		'--focus-shadow-color': 'hsl(var(--ring))'
+	},
 
-		// Focus state
-		'&:has(input:focus)': {
-			outlineWidth: 'var(--uk-input-tag-focus-outline-width, 2px)',
-			outlineStyle: 'var(--uk-input-tag-focus-outline-style, solid)',
-			outlineColor: 'var(--uk-input-tag-focus-outline-color, transparent)',
-			outlineOffset: 'var(--uk-input-tag-focus-outline-offset, 2px)',
-			boxShadow: 'var(--uk-input-tag-focus-shadow, 0 0 0 1px var(--focus-shadow-color))'
-		}
+	'.uk-input-tag:has(input:focus)': {
+		outlineWidth: 'var(--uk-input-tag-focus-outline-width, 2px)',
+		outlineStyle: 'var(--uk-input-tag-focus-outline-style, solid)',
+		outlineColor: 'var(--uk-input-tag-focus-outline-color, transparent)',
+		outlineOffset: 'var(--uk-input-tag-focus-outline-offset, 2px)',
+		boxShadow: 'var(--uk-input-tag-focus-shadow, 0 0 0 1px var(--focus-shadow-color))'
 	},
 
 	'.uk-input-tag.uk-disabled': {
@@ -46,10 +45,11 @@ export default {
 		padding: 'var(--uk-input-tag-input-padding, 0 0.25rem)',
 
 		// Typography
-		color: 'var(--uk-input-tag-input-color, hsl(var(--foreground)))',
-		'&::placeholder': {
-			color: 'var(--uk-input-tag-placeholder-color, hsl(var(--muted-foreground)))'
-		}
+		color: 'var(--uk-input-tag-input-color, hsl(var(--foreground)))'
+	},
+
+	'.uk-input-tag input::placeholder': {
+		color: 'var(--uk-input-tag-placeholder-color, hsl(var(--muted-foreground)))'
 	},
 
 	'.uk-input-tag.uk-form-destructive': {

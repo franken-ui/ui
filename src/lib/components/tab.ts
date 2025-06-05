@@ -38,11 +38,7 @@ export default {
 		borderBottom: 'var(--uk-tab-link-border, 2px solid transparent)',
 
 		// Transitions
-		transition: 'var(--uk-tab-link-transition, color 100ms ease-in-out)',
-
-		'&:focus-visible': {
-			outline: 'var(--uk-tab-link-focus-outline, dotted hsl(var(--ring)))'
-		}
+		transition: 'var(--uk-tab-link-transition, color 100ms ease-in-out)'
 	},
 	'.uk-tab > * > a:hover': {
 		textDecoration: 'var(--uk-tab-link-hover-decoration, none)'
@@ -122,11 +118,7 @@ export default {
 		// Typography
 		fontWeight: 'var(--uk-tab-alt-link-font-weight, 500)',
 		whiteSpace: 'var(--uk-tab-alt-link-whitespace, nowrap)',
-		textDecoration: 'var(--uk-tab-alt-link-decoration, none)',
-
-		'&:focus-visible': {
-			outline: 'var(--uk-tab-alt-link-focus-outline, dotted hsl(var(--ring)))'
-		}
+		textDecoration: 'var(--uk-tab-alt-link-decoration, none)'
 	},
 	'.uk-tab-alt > .uk-active > a': {
 		borderRadius: 'var(--uk-tab-alt-active-radius, var(--uk-global-radius-s))',

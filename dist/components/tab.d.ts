@@ -29,9 +29,6 @@ declare const _default: {
         color: string;
         borderBottom: string;
         transition: string;
-        '&:focus-visible': {
-            outline: string;
-        };
     };
     '.uk-tab > * > a:hover': {
         textDecoration: string;
@@ -107,9 +104,6 @@ declare const _default: {
         fontWeight: string;
         whiteSpace: string;
         textDecoration: string;
-        '&:focus-visible': {
-            outline: string;
-        };
     };
     '.uk-tab-alt > .uk-active > a': {
         borderRadius: string;

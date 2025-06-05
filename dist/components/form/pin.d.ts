@@ -20,20 +20,20 @@ declare const _default: {
         borderWidth: string;
         borderStyle: string;
         borderColor: string;
-        '&::placeholder': {
-            color: string;
-        };
-        '&:focus': {
-            zIndex: string;
-            outlineWidth: string;
-            outlineStyle: string;
-            outlineColor: string;
-            outlineOffset: string;
-            boxShadow: string;
-            '&::placeholder': {
-                color: string;
-            };
-        };
+    };
+    '.uk-input-pin input::placeholder': {
+        color: string;
+    };
+    '.uk-input-pin input:focus': {
+        zIndex: string;
+        outlineWidth: string;
+        outlineStyle: string;
+        outlineColor: string;
+        outlineOffset: string;
+        boxShadow: string;
+    };
+    '.uk-input-pin input:focus::placeholder': {
+        color: string;
     };
     '.uk-input-pin.uk-form-destructive': {
         '--focus-shadow-color': string;

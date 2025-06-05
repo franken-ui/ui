@@ -40,7 +40,7 @@ export default function customPalettePlugin(options: Options): any {
 			} catch (error) {}
 		},
 		buildStart() {
-			let rules = options?.preflight ? { ...preflight } : {};
+			let rules = !options?.layer && options?.preflight ? { ...preflight } : {};
 
 			let context: Context = {
 				theme,
@@ -59,7 +59,12 @@ export default function customPalettePlugin(options: Options): any {
 
 			if (options.layer) {
 				defaults['@layer theme'] = theme;
-				defaults['@layer base'] = base;
+
+				if (options.preflight) {
+					defaults['@layer base'] = { ...preflight, ...base };
+				} else {
+					defaults['@layer base'] = base;
+				}
 			} else {
 				defaults = { ...theme, ...base };
 			}
