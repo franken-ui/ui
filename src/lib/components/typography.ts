@@ -33,8 +33,7 @@ export default {
 		borderRadius: 'var(--uk-codespan-radius, 0.25rem)',
 		backgroundColor: 'var(--uk-codespan-bg, hsl(var(--muted)))',
 		padding: 'var(--uk-codespan-padding, 0.2rem 0.3rem)',
-		fontFamily:
-			'var(--uk-codespan-font-family, ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace)',
+		fontFamily: 'var(--uk-codespan-font-family, var(--uk-global-font-family-mono))',
 		fontWeight: 'var(--uk-codespan-font-weight, 600)'
 	},
 	'.uk-kbd': {
@@ -51,8 +50,7 @@ export default {
 		backgroundColor: 'var(--uk-kbd-bg, hsl(var(--muted)))',
 
 		// Typography
-		fontFamily:
-			'var(--uk-kbd-font-family, ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace)',
+		fontFamily: 'var(--uk-kbd-font-family, var(--uk-global-font-family-mono))',
 		fontSize: 'var(--uk-kbd-font-size, 0.8rem)',
 		fontWeight: 'var(--uk-kbd-font-weight, 500)',
 		color: 'var(--uk-kbd-color, hsl(var(--muted-foreground)))',

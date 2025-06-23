@@ -12,9 +12,9 @@ export default {
 		WebkitTextSizeAdjust: '100%',
 		tabSize: '4',
 		fontFamily:
-			"var(--default-font-family,ui-sans-serif,system-ui,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji')",
-		fontFeatureSettings: 'var(--default-font-feature-settings,normal)',
-		fontVariationSettings: 'var(--default-font-variation-settings,normal)',
+			'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
+		fontFeatureSettings: 'normal',
+		fontVariationSettings: 'normal',
 		WebkitTapHighlightColor: 'transparent'
 	},
 	body: { lineHeight: 'inherit' },
@@ -28,9 +28,9 @@ export default {
 	'b,strong': { fontWeight: 'bolder' },
 	'code,kbd,pre,samp': {
 		fontFamily:
-			"var(--default-mono-font-family,ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace)",
-		fontFeatureSettings: 'var(--default-mono-font-feature-settings,normal)',
-		fontVariationSettings: 'var(--default-mono-font-variation-settings,normal)',
+			'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
+		fontFeatureSettings: 'normal',
+		fontVariationSettings: 'normal',
 		fontSize: '1em'
 	},
 	small: { fontSize: '80%' },
