@@ -13,6 +13,8 @@ declare const _default: {
         '--uk-global-radius': string;
         '--uk-global-shadow-s': string;
         '--uk-global-shadow': string;
+        '--uk-global-font-family-sans': string;
+        '--uk-global-font-family-mono': string;
         '--uk-btn-font-size': string;
         '--uk-btn-leading': string;
         '--uk-btn-padding': string;

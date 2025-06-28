@@ -45,5 +45,12 @@ declare const _default: {
     '.uk-cmd-item-text': {
         flex: string;
     };
+    '.uk-cmd-item-key': {
+        fontFamily: string;
+        fontSize: string;
+        lineHeight: string;
+        letterSpacing: string;
+        color: string;
+    };
 };
 export default _default;

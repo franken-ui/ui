@@ -1,7 +1,7 @@
 {
 	"name": "franken-ui",
 	"author": "Reden <reden@franken-ui.dev>",
-	"description": "Franken UI is an open-source library of UI components. Under the hood, it uses UIkit 3 and extended with LitElement. The design is based on shadcn/ui.",
+	"description": "Franken UI is an HTML-first UI component library built on UIkit 3 and extended with LitElement, inspired by shadcn/ui.",
 	"keywords": [
 		"uikit",
 		"tailwind",
@@ -23,7 +23,7 @@
 	},
 	"homepage": "https://www.franken-ui.dev",
 	"license": "MIT",
-	"version": "2.1.0-next.9",
+	"version": "2.1.0-next.10",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",

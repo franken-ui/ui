@@ -13,6 +13,8 @@ export default {
         '--uk-global-radius': '0.375rem',
         '--uk-global-shadow-s': '0 1px 2px 0 rgb(0 0 0 / 0.05)',
         '--uk-global-shadow': '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)',
+        '--uk-global-font-family-sans': 'Geist Sans, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
+        '--uk-global-font-family-mono': 'Geist Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New"',
         '--uk-btn-font-size': 'var(--uk-global-font-size)',
         '--uk-btn-leading': 'var(--uk-global-leading)',
         '--uk-btn-padding': '0.625rem 1.25rem',

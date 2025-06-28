@@ -44,5 +44,12 @@ export default {
     },
     '.uk-cmd-item-text': {
         flex: '1' // obvious - should take remaining space
+    },
+    '.uk-cmd-item-key': {
+        fontFamily: 'var(--uk-cmd-item-key-font-family, var(--uk-global-font-family-mono))',
+        fontSize: 'var(--uk-cmd-item-key-font-size, var(--uk-global-font-size-s))',
+        lineHeight: 'var(--uk-cmd-item-key-leading, var(--uk-global-leading-s))',
+        letterSpacing: 'var(--uk-cmd-item-key-tracking, 0.1em)',
+        color: 'var(--uk-cmd-item-key-color, hsl(var(--muted-foreground)))'
     }
 };
