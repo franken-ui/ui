@@ -2,6 +2,28 @@
 
 Franken UI is an HTML-first UI component library built on UIkit 3 and extended with LitElement, inspired by shadcn/ui.
 
+## Is this project dead?
+
+Let’s settle this. Just because you haven't seen recent activity doesn't mean it's abandoned. The project is **feature complete**. We've hit our goals and are now focused on maintaining stability and making gradual improvements.
+
+### We're in for the long haul
+
+This isn’t some fly-by-night project. I’m committed to keeping it going for the long term, as long as there’s enough community support.
+
+This is a one-person, fully independent effort. No company funding. No hidden team. No VC nonsense. Support it via **GitHub Sponsors** to help keep it going. Unfortunately, maintaining it takes real time and resources.
+
+If community funding isn't enough, a paid LTS (Long-Term Support) option is being considered. If you're using this in a serious or business-critical project, please [reach out](mailto:reden@franken-ui.dev).
+
+### What your support enables:
+
+* Keeping it stable and compatible with browsers, Node.js, Vite, and the ever-changing JavaScript ecosystem (good luck with that)
+* Regular updates of upstream dependencies so everything continues to work together smoothly
+* Keeping documentation accurate and up to date
+* Ensuring long-term availability and usability for everyone
+* Continuing the "it just works" ethos
+
+Thanks for your support!
+
 ## Documentations
 
 |               **Version**               |   **Status**    |
