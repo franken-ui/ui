@@ -73,5 +73,33 @@ export default {
 	},
 	'.uk-table-lg': {
 		'--uk-table-cell-padding': '1.5rem 0.75rem'
+	},
+	// Responsive table enhancements
+	'.uk-table-responsive': {
+		'--uk-table-responsive-label-width': '50%',
+		'--uk-table-responsive-label-align': 'left',
+		'--uk-table-responsive-data-align': 'right',
+		'--uk-table-responsive-label-weight': '500',
+		'--uk-table-responsive-label-color': 'hsl(var(--muted-foreground))',
+		'--uk-table-responsive-label-size': '0.875rem',
+		'--uk-table-responsive-row-border': '1px solid hsl(var(--border))',
+		'--uk-table-responsive-padding-y': '0.5rem'
+	},
+	// Compact responsive layout variant
+	'.uk-table-responsive.uk-table-responsive-compact': {
+		'--uk-table-responsive-label-width': '40%',
+		'--uk-table-responsive-padding-y': '0.25rem'
+	},
+	// Stack layout variant (original behavior)
+	'.uk-table-responsive.uk-table-responsive-stack td[data-label]': {
+		paddingLeft: 'var(--uk-table-cell-padding, 1rem)',
+		textAlign: 'var(--uk-table-header-align, left)'
+	},
+	'.uk-table-responsive.uk-table-responsive-stack td[data-label]::before': {
+		position: 'static',
+		display: 'block',
+		width: 'auto',
+		marginBottom: 'var(--uk-table-responsive-stack-gap, 0.25rem)',
+		fontWeight: 'var(--uk-table-responsive-label-weight, 500)'
 	}
 };
