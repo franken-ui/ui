@@ -124,10 +124,33 @@ declare const _default: {
             overflow: string;
             whiteSpace: string;
         };
-        '.uk-table-responsive th:not(:first-child):not(.uk-table-link), .uk-table-responsive td:not(:first-child):not(.uk-table-link), .uk-table-responsive .uk-table-link:not(:first-child) > a': {
+        '.uk-table-responsive td[data-label]': {
+            position: string;
+            paddingLeft: string;
+            textAlign: string;
+            borderBottom: string;
+        };
+        '.uk-table-responsive td[data-label]::before': {
+            content: string;
+            position: string;
+            left: string;
+            top: string;
+            width: string;
+            textAlign: string;
+            fontWeight: string;
+            color: string;
+            fontSize: string;
+            whiteSpace: string;
+            overflow: string;
+            textOverflow: string;
+        };
+        '.uk-table-responsive tr:last-child td[data-label]:last-child': {
+            borderBottom: string;
+        };
+        '.uk-table-responsive th:not(:first-child):not(.uk-table-link), .uk-table-responsive td:not(:first-child):not(.uk-table-link):not([data-label]), .uk-table-responsive .uk-table-link:not(:first-child) > a': {
             paddingTop: string;
         };
-        '.uk-table-responsive th:not(:last-child):not(.uk-table-link), .uk-table-responsive td:not(:last-child):not(.uk-table-link), .uk-table-responsive .uk-table-link:not(:last-child) > a': {
+        '.uk-table-responsive th:not(:last-child):not(.uk-table-link), .uk-table-responsive td:not(:last-child):not(.uk-table-link):not([data-label]), .uk-table-responsive .uk-table-link:not(:last-child) > a': {
             paddingBottom: string;
         };
         '.uk-table-justify.uk-table-responsive th, .uk-table-justify.uk-table-responsive td': {

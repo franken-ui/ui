@@ -124,10 +124,35 @@ export default {
             overflow: 'visible !important',
             whiteSpace: 'normal !important'
         },
-        '.uk-table-responsive th:not(:first-child):not(.uk-table-link), .uk-table-responsive td:not(:first-child):not(.uk-table-link), .uk-table-responsive .uk-table-link:not(:first-child) > a': {
+        // Enhanced responsive table with header labels
+        '.uk-table-responsive td[data-label]': {
+            position: 'relative',
+            paddingLeft: 'var(--uk-table-responsive-label-width, 50%)',
+            textAlign: 'var(--uk-table-responsive-data-align, right)',
+            borderBottom: 'var(--uk-table-responsive-row-border, 1px solid hsl(var(--border)))'
+        },
+        '.uk-table-responsive td[data-label]::before': {
+            content: 'attr(data-label) ":"',
+            position: 'absolute',
+            left: 'var(--uk-table-cell-padding, 1rem)',
+            top: 'var(--uk-table-cell-padding, 1rem)',
+            width: 'var(--uk-table-responsive-label-width, calc(50% - 1rem))',
+            textAlign: 'var(--uk-table-responsive-label-align, left)',
+            fontWeight: 'var(--uk-table-responsive-label-weight, 500)',
+            color: 'var(--uk-table-responsive-label-color, hsl(var(--muted-foreground)))',
+            fontSize: 'var(--uk-table-responsive-label-size, 0.875rem)',
+            whiteSpace: 'nowrap',
+            overflow: 'hidden',
+            textOverflow: 'ellipsis'
+        },
+        '.uk-table-responsive tr:last-child td[data-label]:last-child': {
+            borderBottom: 'none'
+        },
+        // Fallback for tables without data-label attributes (original behavior)
+        '.uk-table-responsive th:not(:first-child):not(.uk-table-link), .uk-table-responsive td:not(:first-child):not(.uk-table-link):not([data-label]), .uk-table-responsive .uk-table-link:not(:first-child) > a': {
             paddingTop: 'var(--uk-table-responsive-padding-y, 5px) !important'
         },
-        '.uk-table-responsive th:not(:last-child):not(.uk-table-link), .uk-table-responsive td:not(:last-child):not(.uk-table-link), .uk-table-responsive .uk-table-link:not(:last-child) > a': {
+        '.uk-table-responsive th:not(:last-child):not(.uk-table-link), .uk-table-responsive td:not(:last-child):not(.uk-table-link):not([data-label]), .uk-table-responsive .uk-table-link:not(:last-child) > a': {
             paddingBottom: 'var(--uk-table-responsive-padding-y, 5px) !important'
         },
         '.uk-table-justify.uk-table-responsive th, .uk-table-justify.uk-table-responsive td': {

@@ -68,5 +68,30 @@ declare const _default: {
     '.uk-table-lg': {
         '--uk-table-cell-padding': string;
     };
+    '.uk-table-responsive': {
+        '--uk-table-responsive-label-width': string;
+        '--uk-table-responsive-label-align': string;
+        '--uk-table-responsive-data-align': string;
+        '--uk-table-responsive-label-weight': string;
+        '--uk-table-responsive-label-color': string;
+        '--uk-table-responsive-label-size': string;
+        '--uk-table-responsive-row-border': string;
+        '--uk-table-responsive-padding-y': string;
+    };
+    '.uk-table-responsive.uk-table-responsive-compact': {
+        '--uk-table-responsive-label-width': string;
+        '--uk-table-responsive-padding-y': string;
+    };
+    '.uk-table-responsive.uk-table-responsive-stack td[data-label]': {
+        paddingLeft: string;
+        textAlign: string;
+    };
+    '.uk-table-responsive.uk-table-responsive-stack td[data-label]::before': {
+        position: string;
+        display: string;
+        width: string;
+        marginBottom: string;
+        fontWeight: string;
+    };
 };
 export default _default;
