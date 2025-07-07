@@ -24,7 +24,7 @@ export default {
         outline: 'none',
         borderWidth: 'var(--uk-input-pin-input-border-width, 1px)',
         borderStyle: 'var(--uk-input-pin-input-border-style, solid)',
-        borderColor: 'var(--uk-input-pin-input-border-color, hsl(var(--input)))'
+        borderColor: 'var(--uk-input-pin-input-border-color, hsl(var(--input) / var(--input-alpha, 1)))'
     },
     '.uk-input-pin input::placeholder': {
         color: 'var(--uk-input-pin-placeholder-color, hsl(var(--muted-foreground)))'
@@ -42,7 +42,7 @@ export default {
         color: 'var(--uk-input-pin-focus-placeholder-color, hsl(var(--background)))'
     },
     '.uk-input-pin.uk-form-destructive': {
-        '--focus-shadow-color': 'hsl(var(--destructive))'
+        '--focus-shadow-color': 'hsl(var(--destructive) / var(--destructive-alpha, 1))'
     },
     '.uk-input-pin.uk-disabled input, .uk-input-pin input:disabled': {
         opacity: 'var(--uk-input-pin-disabled-opacity, 0.5)'

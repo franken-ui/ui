@@ -42,14 +42,14 @@ export default {
     '.uk-list-divider > :nth-child(n+2)': {
         marginTop: 'var(--uk-list-divider-item-margin-top, 0.5rem)',
         borderTopWidth: 'var(--uk-list-divider-border-width, 1px)',
-        borderColor: 'var(--uk-list-divider-border-color, hsl(var(--border)))',
+        borderColor: 'var(--uk-list-divider-border-color, hsl(var(--border) / var(--border-alpha, 1)))',
         paddingTop: 'var(--uk-list-divider-item-padding-top, 0.5rem)'
     },
     '.uk-list-striped > *': { padding: 'var(--uk-list-striped-item-padding, 0.5rem)' },
     '.uk-list-striped > *:nth-of-type(odd)': {
         borderTopWidth: 'var(--uk-list-striped-border-width, 1px)', // Shorthand variable
         borderBottomWidth: 'var(--uk-list-striped-border-width, 1px)', // Shorthand variable
-        borderColor: 'var(--uk-list-striped-border-color, hsl(var(--border)))'
+        borderColor: 'var(--uk-list-striped-border-color, hsl(var(--border) / var(--border-alpha, 1)))'
     },
     '.uk-list-striped > :nth-of-type(odd)': {
         backgroundColor: 'var(--uk-list-striped-background-color, hsl(var(--muted) / 0.5))'

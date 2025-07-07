@@ -47,7 +47,7 @@ export default {
     },
     // Default
     '.uk-btn-default': {
-        '--uk-btn-border-color': 'hsl(var(--border))',
+        '--uk-btn-border-color': 'hsl(var(--border) / var(--border-alpha, 1))',
         '--uk-btn-bg': 'hsl(var(--background))',
         '--uk-btn-color': 'hsl(var(--foreground))'
     },
@@ -75,11 +75,12 @@ export default {
     },
     // Destructive
     '.uk-btn-destructive': {
-        '--uk-btn-bg': 'hsl(var(--destructive))',
+        '--uk-btn-bg': 'hsl(var(--destructive) / var(--destructive-alpha, 1))',
         '--uk-btn-color': 'hsl(var(--destructive-foreground))'
     },
     '.uk-btn-destructive:hover, .uk-btn-destructive.uk-active': {
-        '--uk-btn-bg': 'var(--uk-btn-destructive-hover-bg, hsl(var(--destructive) / 0.9))',
+        '--uk-btn-destructive-hover-alpha': 'calc(var(--destructive-alpha, 1) * 0.9)',
+        '--uk-btn-bg': 'var(--uk-btn-destructive-hover-bg, hsl(var(--destructive) / var(--uk-btn-destructive-hover-alpha)))',
         '--uk-btn-color': 'hsl(var(--destructive-foreground))'
     },
     // Text

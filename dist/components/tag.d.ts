@@ -37,6 +37,7 @@ declare const _default: {
         '--uk-tag-color': string;
     };
     '.uk-tag-destructive:hover': {
+        '--uk-tag-destructive-alpha': string;
         '--uk-tag-bg': string;
     };
 };

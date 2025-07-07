@@ -9,7 +9,7 @@ export default {
         borderRadius: 'var(--uk-alert-radius, var(--uk-global-radius))',
         borderWidth: 'var(--uk-alert-border-width, 1px)',
         borderStyle: 'var(--uk-alert-border-style, solid)',
-        borderColor: 'var(--uk-alert-border-color, hsl(var(--border)))'
+        borderColor: 'var(--uk-alert-border-color, hsl(var(--border) / var(--border-alpha, 1)))'
     },
     '.uk-alert-close': {
         // Layout
@@ -17,9 +17,9 @@ export default {
         inset: 'var(--uk-alert-close-inset, 1rem 1rem auto auto)'
     },
     '.uk-alert-destructive': {
-        '--uk-alert-bg': 'hsl(var(--destructive))',
+        '--uk-alert-bg': 'hsl(var(--destructive) / var(--destructive-alpha, 1))',
         '--uk-alert-color': 'hsl(var(--destructive-foreground))',
-        '--uk-alert-border-color': 'hsl(var(--destructive))'
+        '--uk-alert-border-color': 'hsl(var(--destructive) / var(--destructive-alpha, 1))'
     },
     '.uk-alert a:not([class])': {
         // Typography

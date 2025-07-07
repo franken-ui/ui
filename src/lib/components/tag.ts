@@ -44,10 +44,11 @@ export default {
 		'--uk-tag-bg': 'hsl(var(--secondary) / 0.8)'
 	},
 	'.uk-tag-destructive': {
-		'--uk-tag-bg': 'hsl(var(--destructive))',
+		'--uk-tag-bg': 'hsl(var(--destructive) / var(--destructive-alpha, 1))',
 		'--uk-tag-color': 'hsl(var(--destructive-foreground))'
 	},
 	'.uk-tag-destructive:hover': {
-		'--uk-tag-bg': 'hsl(var(--destructive) / 0.8)'
+		'--uk-tag-destructive-alpha': 'calc(var(--destructive-alpha, 1) * 0.8)',
+		'--uk-tag-bg': 'hsl(var(--destructive) / var(--uk-tag-destructive-alpha))'
 	}
 };

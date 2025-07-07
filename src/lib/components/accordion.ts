@@ -29,6 +29,7 @@ export default {
 	'.uk-accordion > li': {
 		borderWidth: 'var(--uk-accordion-item-border-width, 0 0 1px 0)',
 		borderStyle: 'var(--uk-accordion-item-border-style, solid)',
-		borderColor: 'var(--uk-accordion-item-border-color, hsl(var(--border)))'
+		borderColor:
+			'var(--uk-accordion-item-border-color, hsl(var(--border) / var(--border-alpha, 1)))'
 	}
 };

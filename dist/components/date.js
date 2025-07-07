@@ -105,7 +105,7 @@ export default {
     '.uk-cal-divider table tbody': { gap: 'var(--uk-cal-divider-table-body-row-gap, 0.25rem)' }, // Customizable divider table body row gap
     '.uk-cal-divider table tbody tr': {
         borderBottomWidth: 'var(--uk-cal-divider-table-row-border-width, 1px)', // Customizable divider table row border width
-        borderColor: 'var(--uk-cal-divider-table-row-border-color, hsl(var(--border)))' // Customizable divider table row border color
+        borderColor: 'var(--uk-cal-divider-table-row-border-color, hsl(var(--border) / var(--border-alpha, 1)))' // Customizable divider table row border color
     },
     '.uk-cal-divider table tbody tr td': {
         marginBottom: 'var(--uk-cal-divider-cell-margin-bottom, 0.25rem)'
@@ -117,7 +117,7 @@ export default {
         height: '0px', // Initial height, static
         borderStyle: 'solid', // Static border style
         borderWidth: 'var(--uk-cal-cell-body-font-size, 1rem) var(--uk-cal-cell-body-font-size, 1rem) 0 0', // Border widths linked to font size
-        borderColor: 'var(--uk-cal-marked-color, hsl(var(--destructive))) transparent transparent transparent', // Customizable marker color
+        borderColor: 'var(--uk-cal-marked-color, hsl(var(--destructive) / var(--destructive-alpha, 1))) transparent transparent transparent', // Customizable marker color
         transform: 'rotate(0deg)', // Static transform
         position: 'absolute', // Static absolute position
         top: '0', // Static top position

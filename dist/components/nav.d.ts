@@ -76,7 +76,6 @@ declare const _default: {
         bottom: string;
         top: string;
         width: string;
-        backgroundColor: string;
     };
     '.uk-nav-sub li.uk-active::before': {
         backgroundColor: string;
@@ -169,6 +168,7 @@ declare const _default: {
     '.uk-subnav-destructive': {
         '--uk-subnav-item-active-background': string;
         '--uk-subnav-item-active-color': string;
+        '--uk-subnav-item-active-hover-alpha': string;
         '--uk-subnav-item-active-hover-background': string;
         '--uk-subnav-item-active-hover-color': string;
     };

@@ -22,7 +22,8 @@ export default {
 		width: 'var(--uk-offcanvas-bar-width)',
 		overflowY: 'auto', // Static - core scrolling
 		borderRightWidth: 'var(--uk-offcanvas-bar-border-width, 1px)',
-		borderColor: 'var(--uk-offcanvas-bar-border-color, hsl(var(--border)))',
+		borderColor:
+			'var(--uk-offcanvas-bar-border-color, hsl(var(--border) / var(--border-alpha, 1)))',
 		backgroundColor: 'var(--uk-offcanvas-bar-bg, hsl(var(--background)))'
 	},
 
@@ -31,7 +32,7 @@ export default {
 		right: 'var(--uk-offcanvas-bar-width-i)', // Initial offscreen position
 		borderRight: 'none', // Static - core border
 		borderLeftWidth: 'var(--uk-offcanvas-bar-border-width, 1px)',
-		borderColor: 'var(--uk-offcanvas-bar-border-color, hsl(var(--border)))'
+		borderColor: 'var(--uk-offcanvas-bar-border-color, hsl(var(--border) / var(--border-alpha, 1)))'
 	},
 
 	'.uk-open > .uk-offcanvas-bar': {

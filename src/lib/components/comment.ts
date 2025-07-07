@@ -30,7 +30,8 @@ export default {
 		marginTop: 'var(--uk-comment-nested-margin-top, 1.5rem)',
 		borderInlineStartWidth: 'var(--uk-comment-nested-border-width, 1px)',
 		borderInlineStartStyle: 'var(--uk-comment-nested-border-style, solid)',
-		borderInlineStartColor: 'var(--uk-comment-nested-border-color, hsl(var(--border)))'
+		borderInlineStartColor:
+			'var(--uk-comment-nested-border-color, hsl(var(--border) / var(--border-alpha, 1)))'
 	},
 	'.uk-comment-list .uk-comment ~ ul > :nth-child(n + 2)': {
 		marginTop: 'var(--uk-comment-nested-item-gap, 1.5rem)'

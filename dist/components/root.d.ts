@@ -57,6 +57,10 @@ declare const _default: {
         '--uk-nav-sub-width': string;
         '--uk-position-margin-offset': string;
     };
-    '.dark': {};
+    '.dark': {
+        '--destructive-alpha': string;
+        '--border-alpha': string;
+        '--input-alpha': string;
+    };
 };
 export default _default;

@@ -11,7 +11,7 @@ export default {
         // Visual
         borderRadius: 'var(--uk-label-radius, var(--uk-global-radius))',
         boxShadow: 'var(--uk-label-shadow, var(--uk-global-shadow))',
-        border: 'var(--uk-label-border, 1px solid hsl(var(--border)))',
+        border: 'var(--uk-label-border, 1px solid hsl(var(--border) / var(--border-alpha, 1)))',
         backgroundColor: 'var(--uk-label-bg, transparent)',
         color: 'var(--uk-label-color, hsl(var(--foreground)))'
     },
@@ -33,8 +33,8 @@ export default {
         '--uk-label-color': 'hsl(var(--secondary-foreground))'
     },
     '.uk-label-destructive': {
-        '--uk-label-border': '1px solid hsl(var(--destructive))',
-        '--uk-label-bg': 'hsl(var(--destructive))',
+        '--uk-label-border': '1px solid hsl(var(--destructive) / var(--destructive-alpha, 1))',
+        '--uk-label-bg': 'hsl(var(--destructive) / var(--destructive-alpha, 1))',
         '--uk-label-color': 'hsl(var(--destructive-foreground))'
     }
 };

@@ -240,7 +240,7 @@ export default (context) => {
             '--chart-4': '175.3 77.4% 26.1%',
             '--chart-5': '176.1 69.4% 21.8%'
         },
-        '.uk-theme-mono': {
+        '.uk-theme-stone': {
             '--chart-1': '24 5.7% 82.9%',
             '--chart-2': '25 5.3% 44.7%',
             '--chart-3': '33.3 5.5% 32.4%',

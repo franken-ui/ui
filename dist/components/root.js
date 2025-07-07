@@ -57,5 +57,9 @@ export default {
         '--uk-nav-sub-width': '1px',
         '--uk-position-margin-offset': '0px'
     },
-    '.dark': {}
+    '.dark': {
+        '--destructive-alpha': '60%',
+        '--border-alpha': '10%',
+        '--input-alpha': '15%'
+    }
 };

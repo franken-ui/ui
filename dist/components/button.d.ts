@@ -70,6 +70,7 @@ declare const _default: {
         '--uk-btn-color': string;
     };
     '.uk-btn-destructive:hover, .uk-btn-destructive.uk-active': {
+        '--uk-btn-destructive-hover-alpha': string;
         '--uk-btn-bg': string;
         '--uk-btn-color': string;
     };

@@ -16,7 +16,7 @@ export default {
 		// Visual
 		borderRadius: 'var(--uk-badge-radius, 500px)',
 		boxShadow: 'var(--uk-badge-box-shadow, var(--uk-global-shadow))',
-		border: 'var(--uk-badge-border, 1px solid hsl(var(--border)))',
+		border: 'var(--uk-badge-border, 1px solid hsl(var(--border) / var(--border-alpha, 1)))',
 		backgroundColor: 'var(--uk-badge-bg, transparent)',
 		color: 'var(--uk-badge-color, hsl(var(--foreground)))'
 
@@ -39,8 +39,8 @@ export default {
 		'--uk-badge-color': 'hsl(var(--secondary-foreground))'
 	},
 	'.uk-badge-destructive': {
-		'--uk-badge-border': '1px solid hsl(var(--destructive))',
-		'--uk-badge-bg': 'hsl(var(--destructive))',
+		'--uk-badge-border': '1px solid hsl(var(--destructive) / var(--destructive-alpha, 1))',
+		'--uk-badge-bg': 'hsl(var(--destructive) / var(--destructive-alpha, 1))',
 		'--uk-badge-color': 'hsl(var(--destructive-foreground))'
 	}
 };

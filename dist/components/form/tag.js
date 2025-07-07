@@ -14,7 +14,7 @@ export default {
         borderRadius: 'var(--uk-input-tag-radius, var(--uk-form-input-radius))',
         borderWidth: 'var(--uk-input-tag-border-width, 1px)',
         borderStyle: 'var(--uk-input-tag-border-style, solid)',
-        borderColor: 'var(--uk-input-tag-border-color, hsl(var(--input)))',
+        borderColor: 'var(--uk-input-tag-border-color, hsl(var(--input) / var(--input-alpha, 1)))',
         // Theme
         '--focus-shadow-color': 'hsl(var(--ring))'
     },
@@ -43,6 +43,6 @@ export default {
         color: 'var(--uk-input-tag-placeholder-color, hsl(var(--muted-foreground)))'
     },
     '.uk-input-tag.uk-form-destructive': {
-        '--focus-shadow-color': 'hsl(var(--destructive))'
+        '--focus-shadow-color': 'hsl(var(--destructive) / var(--destructive-alpha, 1))'
     }
 };

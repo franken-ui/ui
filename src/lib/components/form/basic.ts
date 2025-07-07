@@ -42,7 +42,7 @@ export default {
 		lineHeight: 'var(--uk-form-input-leading)',
 		borderWidth: 'var(--uk-form-input-border-width, 1px)',
 		borderStyle: 'var(--uk-form-input-border-style, solid)',
-		borderColor: 'var(--uk-form-input-border-color, hsl(var(--input)))',
+		borderColor: 'var(--uk-form-input-border-color, hsl(var(--input) / var(--input-alpha, 1)))',
 		backgroundColor: 'var(--uk-form-input-bg, transparent)',
 		color: 'var(--uk-form-input-color, hsl(var(--foreground)))'
 	},
@@ -76,7 +76,8 @@ export default {
 		color: 'var(--uk-form-placeholder-color, hsl(var(--muted-foreground)))'
 	},
 	'.uk-form-destructive:focus': {
-		boxShadow: 'var(--uk-form-destructive-shadow, 0 0 0 1px hsl(var(--destructive)))'
+		boxShadow:
+			'var(--uk-form-destructive-shadow, 0 0 0 1px hsl(var(--destructive) / var(--destructive-alpha, 1)))'
 	},
 	'.uk-form-blank': {
 		background: 'var(--uk-form-blank-bg, none)',
@@ -150,7 +151,8 @@ export default {
 	},
 	'.uk-form-label-required::after': {
 		content: '" *"',
-		color: 'var(--uk-form-label-required-color, hsl(var(--destructive)))' //text-destructive conversion
+		color:
+			'var(--uk-form-label-required-color, hsl(var(--destructive) / var(--destructive-alpha, 1)))' //text-destructive conversion
 	},
 	'.uk-form-stacked .uk-form-label': {
 		display: 'var(--uk-form-stacked-label-display, block)',
@@ -189,7 +191,7 @@ export default {
 		boxShadow: 'var(--uk-form-toggle-switch-shadow)',
 		height: 'var(--uk-toggle-switch-height, 1.25rem)', //h-5 conversion
 		width: 'var(--uk-toggle-switch-width, 2.25rem)', //w-9 conversion
-		backgroundColor: 'var(--uk-toggle-switch-bg, hsl(var(--input)))' //bg-input conversion
+		backgroundColor: 'var(--uk-toggle-switch-bg, hsl(var(--input) / var(--input-alpha, 1)))' //bg-input conversion
 	},
 	'.uk-toggle-switch::before': {
 		content: 'var(--uk-toggle-switch-before-content, "")',
@@ -218,7 +220,8 @@ export default {
 		backgroundColor: 'var(--uk-toggle-switch-primary-checked-bg, hsl(var(--primary)))' //bg-primary conversion
 	},
 	'.uk-toggle-switch-destructive:checked': {
-		backgroundColor: 'var(--uk-toggle-switch-destructive-checked-bg, hsl(var(--destructive)))' //bg-destructive conversion
+		backgroundColor:
+			'var(--uk-toggle-switch-destructive-checked-bg, hsl(var(--destructive) / var(--destructive-alpha, 1)))' //bg-destructive conversion
 	},
 	'.uk-form-help': {
 		fontSize: 'var(--uk-form-help-font-size, 0.8rem)',

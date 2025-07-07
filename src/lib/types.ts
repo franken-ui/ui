@@ -24,6 +24,11 @@ export type Colors = {
 	'--destructive': string;
 	'--destructive-foreground': string;
 	'--ring': string;
+
+	// For compatibility with legacy colors
+	'--destructive-alpha'?: string;
+	'--border-alpha'?: string;
+	'--input-alpha'?: string;
 };
 
 export type Palette = {

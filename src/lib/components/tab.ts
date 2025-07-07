@@ -14,7 +14,8 @@ export default {
 		content: "''",
 		position: 'var(--uk-tab-before-position, absolute)',
 		inset: 'var(--uk-tab-before-inset, auto 0 0 0)',
-		borderBottom: 'var(--uk-tab-before-border, 1px solid hsl(var(--border)))'
+		borderBottom:
+			'var(--uk-tab-before-border, 1px solid hsl(var(--border) / var(--border-alpha, 1)))'
 	},
 	'.uk-tab > *': {
 		flex: 'var(--uk-tab-item-flex, none)',
@@ -69,12 +70,14 @@ export default {
 	},
 	'.uk-tab-left::before': {
 		inset: 'var(--uk-tab-left-before-inset, 0 0 0 auto)',
-		borderLeft: 'var(--uk-tab-left-before-border, 1px solid hsl(var(--border)))',
+		borderLeft:
+			'var(--uk-tab-left-before-border, 1px solid hsl(var(--border) / var(--border-alpha, 1)))',
 		borderBottom: 'none'
 	},
 	'.uk-tab-right::before': {
 		inset: 'var(--uk-tab-right-before-inset, 0 auto 0 0)',
-		borderLeft: 'var(--uk-tab-right-before-border, 1px solid hsl(var(--border)))',
+		borderLeft:
+			'var(--uk-tab-right-before-border, 1px solid hsl(var(--border) / var(--border-alpha, 1)))',
 		borderBottom: 'none'
 	},
 	'.uk-tab-left > * > a': {

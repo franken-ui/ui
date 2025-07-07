@@ -41,7 +41,7 @@ export default {
 			content: '""', // different from stepper.ts default "/" separator
 			width: 'var(--uk-stepper-separator-width-sm, 100%)',
 			height: 'var(--uk-stepper-separator-height-sm, 1px)',
-			background: 'var(--uk-stepper-separator-color, hsl(var(--border)))',
+			background: 'var(--uk-stepper-separator-color, hsl(var(--border) / var(--border-alpha, 1)))',
 			marginLeft: 'var(--uk-stepper-separator-margin-horizontal-start, 1.5rem)',
 			marginRight: 'var(--uk-stepper-separator-margin-horizontal-end, 1.5rem)'
 		},
@@ -130,7 +130,8 @@ export default {
 			position: 'relative',
 			paddingLeft: 'var(--uk-table-responsive-label-width, 50%)',
 			textAlign: 'var(--uk-table-responsive-data-align, right)',
-			borderBottom: 'var(--uk-table-responsive-row-border, 1px solid hsl(var(--border)))'
+			borderBottom:
+				'var(--uk-table-responsive-row-border, 1px solid hsl(var(--border) / var(--border-alpha, 1)))'
 		},
 		'.uk-table-responsive td[data-label]::before': {
 			content: 'attr(data-label) ":"',

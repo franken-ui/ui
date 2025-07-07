@@ -22,7 +22,7 @@ export default {
 	},
 	'.uk-avatar.uk-avatar-bordered': {
 		borderWidth: 'var(--uk-avatar-bordered-border-width, 0.125rem)',
-		borderColor: 'hsl(var(--border))',
+		borderColor: 'hsl(var(--border) / var(--border-alpha, 1))',
 		padding: 'var(--uk-avatar-bordered-padding, 0.25rem)'
 	},
 	'.uk-avatar img': {

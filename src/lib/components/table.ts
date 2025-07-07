@@ -31,11 +31,14 @@ export default {
 	},
 	'.uk-table-divider > tr:not(:first-child), .uk-table-divider > :not(:first-child) > tr, .uk-table-divider > :first-child > tr:not(:first-child)':
 		{
-			borderTop: 'var(--uk-table-divider-border, 1px solid hsl(var(--border)))'
+			borderTop:
+				'var(--uk-table-divider-border, 1px solid hsl(var(--border) / var(--border-alpha, 1)))'
 		},
 	'.uk-table-striped > tr:nth-of-type(odd), .uk-table-striped tbody tr:nth-of-type(odd)': {
-		borderTop: 'var(--uk-table-striped-border-top, 1px solid hsl(var(--border)))',
-		borderBottom: 'var(--uk-table-striped-border-bottom, 1px solid hsl(var(--border)))',
+		borderTop:
+			'var(--uk-table-striped-border-top, 1px solid hsl(var(--border) / var(--border-alpha, 1)))',
+		borderBottom:
+			'var(--uk-table-striped-border-bottom, 1px solid hsl(var(--border) / var(--border-alpha, 1)))',
 		backgroundColor: 'var(--uk-table-striped-bg, hsl(var(--muted) / 0.5))'
 	},
 	'.uk-table-hover > tr:hover, .uk-table-hover tbody tr:hover': {
@@ -66,7 +69,8 @@ export default {
 	},
 	'.uk-table-striped > tr:nth-of-type(even):last-child, .uk-table-striped tbody tr:nth-of-type(even):last-child':
 		{
-			borderBottom: 'var(--uk-table-striped-last-border, 1px solid hsl(var(--border)))'
+			borderBottom:
+				'var(--uk-table-striped-last-border, 1px solid hsl(var(--border) / var(--border-alpha, 1)))'
 		},
 	'.uk-table-sm': {
 		'--uk-table-cell-padding': '0.625rem 0.75rem'
@@ -82,7 +86,7 @@ export default {
 		'--uk-table-responsive-label-weight': '500',
 		'--uk-table-responsive-label-color': 'hsl(var(--muted-foreground))',
 		'--uk-table-responsive-label-size': '0.875rem',
-		'--uk-table-responsive-row-border': '1px solid hsl(var(--border))',
+		'--uk-table-responsive-row-border': '1px solid hsl(var(--border) / var(--border-alpha, 1))',
 		'--uk-table-responsive-padding-y': '0.5rem'
 	},
 	// Compact responsive layout variant

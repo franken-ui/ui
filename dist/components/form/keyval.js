@@ -3,7 +3,7 @@ export default {
         borderRadius: 'var(--uk-global-radius)',
         boxShadow: 'var(--uk-global-shadow)',
         borderWidth: '1px',
-        borderColor: 'hsl(var(--border))'
+        borderColor: 'hsl(var(--border) / var(--border-alpha, 1))'
     },
     '.uk-keyval-value-wrapper': { width: '100%' },
     '.uk-keyval-actions': {

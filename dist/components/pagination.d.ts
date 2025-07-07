@@ -110,6 +110,7 @@ declare const _default: {
         '--uk-pgn-item-color': string;
     };
     '.uk-pgn-destructive > * > *:hover,.uk-pgn-destructive > * > *.uk-active': {
+        '--uk-pgn-destructive-item-hover-alpha': string;
         '--uk-pgn-item-bg': string;
         '--uk-pgn-item-color': string;
     };

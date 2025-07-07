@@ -86,7 +86,8 @@ export default {
 		'--uk-pgn-item-padding': 'var(--uk-pgn-lg-item-padding, 0.875rem 1.75rem)'
 	},
 	'.uk-pgn-default > * > *': {
-		'--uk-pgn-item-border-color': 'var(--uk-pgn-default-item-border-color, hsl(var(--border)))',
+		'--uk-pgn-item-border-color':
+			'var(--uk-pgn-default-item-border-color, hsl(var(--border) / var(--border-alpha, 1)))',
 		'--uk-pgn-item-bg': 'var(--uk-pgn-default-item-bg, hsl(var(--background)))',
 		'--uk-pgn-item-color': 'var(--uk-pgn-default-item-color, hsl(var(--foreground)))'
 	},
@@ -117,12 +118,15 @@ export default {
 	},
 	'.uk-pgn-ghost > * > *': { boxShadow: 'var(--uk-pgn-ghost-item-shadow, none)' },
 	'.uk-pgn-destructive > * > *': {
-		'--uk-pgn-item-bg': 'var(--uk-pgn-destructive-item-bg, hsl(var(--destructive)))',
+		'--uk-pgn-item-bg':
+			'var(--uk-pgn-destructive-item-bg, hsl(var(--destructive) / var(--destructive-alpha, 1)))',
 		'--uk-pgn-item-color':
 			'var(--uk-pgn-destructive-item-color, hsl(var(--destructive-foreground)))'
 	},
 	'.uk-pgn-destructive > * > *:hover,.uk-pgn-destructive > * > *.uk-active': {
-		'--uk-pgn-item-bg': 'var(--uk-pgn-destructive-item-hover-bg, hsl(var(--destructive) / 0.9))',
+		'--uk-pgn-destructive-item-hover-alpha': 'calc(var(--destructive-alpha, 1) * 0.9)',
+		'--uk-pgn-item-bg':
+			'var(--uk-pgn-destructive-item-hover-bg, hsl(var(--destructive) / var(--uk-pgn-destructive-item-hover-alpha)))',
 		'--uk-pgn-item-color':
 			'var(--uk-pgn-destructive-item-hover-color, hsl(var(--destructive-foreground)))'
 	}

@@ -24,7 +24,7 @@ export default {
 	'.uk-blockquote': {
 		marginTop: 'var(--uk-blockquote-margin-top, 1.5rem)',
 		borderLeftWidth: 'var(--uk-blockquote-border-width, 2px)',
-		borderColor: 'var(--uk-blockquote-border-color, hsl(var(--border)))',
+		borderColor: 'var(--uk-blockquote-border-color, hsl(var(--border) / var(--border-alpha, 1)))',
 		paddingLeft: 'var(--uk-blockquote-padding-left, 1.5rem)',
 		fontStyle: 'italic'
 	},
@@ -46,7 +46,7 @@ export default {
 		borderRadius: 'var(--uk-global-radius)',
 		borderWidth: 'var(--uk-kbd-border-width, 1px)',
 		borderStyle: 'var(--uk-kbd-border-style, solid)',
-		borderColor: 'var(--uk-kbd-border-color, hsl(var(--border)))',
+		borderColor: 'var(--uk-kbd-border-color, hsl(var(--border) / var(--border-alpha, 1)))',
 		backgroundColor: 'var(--uk-kbd-bg, hsl(var(--muted)))',
 
 		// Typography
@@ -96,7 +96,8 @@ export default {
 		// Border
 		borderBottomWidth: 'calc(0.2px + 0.05em)',
 		borderBottomStyle: 'solid',
-		borderBottomColor: 'var(--uk-heading-divider-border, hsl(var(--border)))'
+		borderBottomColor:
+			'var(--uk-heading-divider-border, hsl(var(--border) / var(--border-alpha, 1)))'
 	},
 
 	'.uk-heading-bullet': {
@@ -115,7 +116,7 @@ export default {
 		// Border
 		borderLeftWidth: 'calc(5px + 0.1em)',
 		borderLeftStyle: 'solid',
-		borderLeftColor: 'var(--uk-heading-bullet-border, hsl(var(--border)))'
+		borderLeftColor: 'var(--uk-heading-bullet-border, hsl(var(--border) / var(--border-alpha, 1)))'
 	},
 
 	'.uk-heading-line': {
@@ -131,7 +132,7 @@ export default {
 		top: 'calc(50% - (calc(0.2px + 0.05em) / 2))',
 		width: '2000px',
 		borderBottom: 'calc(0.2px + 0.05em) solid',
-		borderColor: 'var(--uk-heading-line-border, hsl(var(--border)))'
+		borderColor: 'var(--uk-heading-line-border, hsl(var(--border) / var(--border-alpha, 1)))'
 	},
 	'.uk-heading-line > ::before': {
 		right: '100%',

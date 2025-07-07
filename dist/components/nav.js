@@ -43,7 +43,7 @@ export default {
     '.uk-nav-divider': {
         borderWidth: 'var(--uk-nav-divider-width, 1px 0 0 0)',
         borderStyle: 'var(--uk-nav-divider-style, solid)',
-        borderColor: 'var(--uk-nav-divider-color, hsl(var(--border)))'
+        borderColor: 'var(--uk-nav-divider-color, hsl(var(--border) / var(--border-alpha, 1)))'
     },
     'ul.uk-nav-sub > :not([hidden]) ~ :not([hidden])': {
         marginTop: 'var(--uk-nav-sub-item-margin-top, 0.25rem)',
@@ -55,8 +55,8 @@ export default {
     },
     '.uk-nav-sub, .uk-nav-sub ul': {
         borderInlineStartWidth: 'var(--uk-nav-sub-width)',
-        borderColor: 'hsl(var(--border))',
-        borderInlineStartColor: 'hsl(var(--border))'
+        borderColor: 'hsl(var(--border) / var(--border-alpha, 1))',
+        borderInlineStartColor: 'hsl(var(--border) / var(--border-alpha, 1))'
     },
     '.uk-nav-sub': {
         marginInlineStart: 'var(--uk-nav-sub-margin-start, 1.25rem)',
@@ -73,8 +73,8 @@ export default {
         left: 'calc(var(--uk-nav-sub-width) * -1)',
         bottom: '0px',
         top: '0px',
-        width: 'var(--uk-nav-sub-width)',
-        backgroundColor: 'hsl(var(--border))'
+        width: 'var(--uk-nav-sub-width)'
+        // backgroundColor: 'hsl(var(--border) / var(--border-alpha, 1))'
     },
     '.uk-nav-sub li.uk-active::before': {
         backgroundColor: 'hsl(var(--primary))'
@@ -168,9 +168,10 @@ export default {
         '--uk-subnav-item-active-hover-color': 'hsl(var(--secondary-foreground))'
     },
     '.uk-subnav-destructive': {
-        '--uk-subnav-item-active-background': 'hsl(var(--destructive))',
+        '--uk-subnav-item-active-background': 'hsl(var(--destructive) / var(--destructive-alpha, 1))',
         '--uk-subnav-item-active-color': 'hsl(var(--destructive-foreground))',
-        '--uk-subnav-item-active-hover-background': 'hsl(var(--destructive) / 0.8)',
+        '--uk-subnav-item-active-hover-alpha': 'calc(var(--destructive-alpha, 1) * 0.8)',
+        '--uk-subnav-item-active-hover-background': 'hsl(var(--destructive) / var(--uk-subnav-item-active-hover-alpha))',
         '--uk-subnav-item-active-hover-color': 'hsl(var(--destructive-foreground))'
     }
 };

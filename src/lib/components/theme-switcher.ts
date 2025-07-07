@@ -32,7 +32,8 @@ export default {
 		// Visual
 		borderRadius: 'var(--uk-theme-switcher-button-radius, var(--uk-global-radius))',
 		boxShadow: 'var(--uk-theme-switcher-button-shadow, var(--uk-global-shadow-s))',
-		border: 'var(--uk-theme-switcher-button-border, 1px solid hsl(var(--input)))',
+		border:
+			'var(--uk-theme-switcher-button-border, 1px solid hsl(var(--input) / var(--input-alpha, 1)))',
 		backgroundColor: 'var(--uk-theme-switcher-button-bg, hsl(var(--background)))',
 		color: 'var(--uk-theme-switcher-button-color, hsl(var(--foreground)))'
 	},

@@ -2,7 +2,7 @@ export default {
 	'.uk-card': {
 		position: 'relative', // obvious value, no need for var
 		boxSizing: 'border-box', // obvious value, no need for var
-		border: 'var(--uk-card-border, 1px solid hsl(var(--border)))',
+		border: 'var(--uk-card-border, 1px solid hsl(var(--border) / var(--border-alpha, 1)))',
 		borderRadius: 'var(--uk-card-radius, var(--uk-global-radius))',
 		boxShadow: 'var(--uk-card-shadow, var(--uk-global-shadow))',
 		backgroundColor: 'var(--uk-card-bg, hsl(var(--card)))',
@@ -39,7 +39,7 @@ export default {
 
 	'.uk-card-destructive': {
 		'--uk-card-border': '1px solid transparent',
-		'--uk-card-bg': 'hsl(var(--destructive))',
+		'--uk-card-bg': 'hsl(var(--destructive) / var(--destructive-alpha, 1))',
 		'--uk-card-color': 'hsl(var(--destructive-foreground))'
 	},
 

@@ -50,7 +50,7 @@ export default {
         boxShadow: 'var(--uk-dropdown-shadow, var(--uk-global-shadow))',
         borderWidth: 'var(--uk-dropdown-border-width, 1px)',
         borderStyle: 'var(--uk-dropdown-border-style, solid)',
-        borderColor: 'var(--uk-dropdown-border-color, hsl(var(--border)))',
+        borderColor: 'var(--uk-dropdown-border-color, hsl(var(--border) / var(--border-alpha, 1)))',
         backgroundColor: 'var(--uk-dropdown-bg, hsl(var(--popover)))',
         color: 'var(--uk-dropdown-color, hsl(var(--popover-foreground)))'
     },
@@ -78,7 +78,7 @@ export default {
         '--uk-nav-divider-margin': 'var(--uk-dropdown-nav-divider-margin, 0)',
         '--uk-nav-divider-width': 'var(--uk-dropdown-nav-divider-border-width, 1px) 0 0 0',
         '--uk-nav-divider-style': 'var(--uk-dropdown-nav-divider-border-style, solid)',
-        '--uk-nav-divider-color': 'var(--uk-dropdown-nav-divider-border-color, hsl(var(--border)))',
+        '--uk-nav-divider-color': 'var(--uk-dropdown-nav-divider-border-color, hsl(var(--border) / var(--border-alpha, 1)))',
         'user-select': 'var(--uk-dropdown-nav-item-select, none)'
     },
     // Dropnav

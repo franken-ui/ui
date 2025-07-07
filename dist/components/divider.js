@@ -4,7 +4,7 @@ export default {
         height: 'var(--uk-divider-height, 1px)'
     },
     '.uk-hr': {
-        borderColor: 'var(--uk-hr-color, hsl(var(--border)))'
+        borderColor: 'var(--uk-hr-color, hsl(var(--border) / var(--border-alpha, 1)))'
     },
     '.uk-divider-icon': {
         position: 'relative', // Static - core positioning
@@ -18,7 +18,7 @@ export default {
         position: 'absolute', // Static - core positioning
         top: '50%', // Static - vertical centering
         maxWidth: 'calc(50% - (3.5rem / 2))', // Static - line width calculation
-        borderBottom: 'var(--uk-divider-icon-line-border, 1px solid hsl(var(--border)))'
+        borderBottom: 'var(--uk-divider-icon-line-border, 1px solid hsl(var(--border) / var(--border-alpha, 1)))'
     },
     '.uk-divider-icon::before': {
         right: 'calc(50% + (3.5rem / 2))', // Static - line positioning
@@ -36,16 +36,16 @@ export default {
         display: 'inline-block', // Static - layout behavior
         width: 'var(--uk-divider-sm-width, 100px)',
         maxWidth: '100%', // Static - responsive behavior
-        borderTop: 'var(--uk-divider-sm-border, 1px solid hsl(var(--border)))',
+        borderTop: 'var(--uk-divider-sm-border, 1px solid hsl(var(--border) / var(--border-alpha, 1)))',
         verticalAlign: 'top', // Static - alignment
-        borderBottom: 'var(--uk-divider-sm-border, 1px solid hsl(var(--border)))'
+        borderBottom: 'var(--uk-divider-sm-border, 1px solid hsl(var(--border) / var(--border-alpha, 1)))'
     },
     '.uk-divider-vertical': {
         width: 'max-content', // Static - content fitting
         height: 'var(--uk-divider-vertical-height, 100px)',
         marginLeft: 'auto', // Static - horizontal centering
         marginRight: 'auto', // Static - horizontal centering
-        borderLeft: 'var(--uk-divider-vertical-border, 1px solid hsl(var(--border)))',
-        borderBottom: 'var(--uk-divider-vertical-border, 1px solid hsl(var(--border)))'
+        borderLeft: 'var(--uk-divider-vertical-border, 1px solid hsl(var(--border) / var(--border-alpha, 1)))',
+        borderBottom: 'var(--uk-divider-vertical-border, 1px solid hsl(var(--border) / var(--border-alpha, 1)))'
     }
 };

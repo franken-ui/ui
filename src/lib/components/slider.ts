@@ -28,7 +28,7 @@ export default {
 		justifyContent: 'center', // obvious value
 		borderRadius: 'var(--uk-slidenav-radius, 9999px)',
 		borderWidth: 'var(--uk-slidenav-border-width, 1px)',
-		borderColor: 'var(--uk-slidenav-border-color, hsl(var(--input)))',
+		borderColor: 'var(--uk-slidenav-border-color, hsl(var(--border) / var(--border-alpha, 1)))',
 		backgroundColor: 'var(--uk-slidenav-bg, hsl(var(--background)))'
 	},
 	'.uk-slidenav:hover': {

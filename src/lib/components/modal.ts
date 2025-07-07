@@ -35,7 +35,7 @@ export default {
 		overflow: 'hidden', // Static - core content clipping
 		borderWidth: 'var(--uk-modal-dialog-border-width, 1px)',
 		borderStyle: 'solid', // Static - core border style
-		borderColor: 'var(--uk-modal-dialog-border-color, hsl(var(--border)))',
+		borderColor: 'var(--uk-modal-dialog-border-color, hsl(var(--border) / var(--border-alpha, 1)))',
 		backgroundColor: 'var(--uk-modal-dialog-bg, hsl(var(--background)))'
 	},
 	'.uk-open > .uk-modal-dialog': {
@@ -89,5 +89,5 @@ export default {
 	},
 	'.uk-modal-body.uk-overflow-auto + .uk-modal-footer': {
 		paddingTop: 'var(--uk-modal-padding-top-after-scrollable)'
-	},
+	}
 };

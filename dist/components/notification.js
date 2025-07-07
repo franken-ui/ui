@@ -24,7 +24,7 @@ export default {
         cursor: 'pointer', // obvious value for interaction
         borderRadius: 'var(--uk-notification-radius, var(--uk-global-radius))',
         boxShadow: 'var(--uk-notification-shadow, var(--uk-global-shadow))',
-        border: 'var(--uk-notification-border, 1px solid hsl(var(--border)))',
+        border: 'var(--uk-notification-border, 1px solid hsl(var(--border) / var(--border-alpha, 1)))',
         backgroundColor: 'var(--uk-notification-bg, hsl(var(--background)))',
         padding: 'var(--uk-notification-padding, 1rem 1.5rem 1rem 1rem)',
         color: 'var(--uk-notification-color, hsl(var(--foreground)))'
@@ -59,8 +59,8 @@ export default {
     },
     // Destructive modifier
     '.uk-notification-message-destructive': {
-        '--uk-notification-border': '1px solid hsl(var(--destructive))',
-        '--uk-notification-bg': 'hsl(var(--destructive))',
+        '--uk-notification-border': '1px solid hsl(var(--destructive) / var(--destructive-alpha, 1))',
+        '--uk-notification-bg': 'hsl(var(--destructive) / var(--destructive-alpha, 1))',
         '--uk-notification-color': 'hsl(var(--destructive-foreground))',
         '--uk-notification-close-color': 'hsl(var(--destructive-foreground) / 0.5)'
     }
