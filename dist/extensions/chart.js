@@ -21,7 +21,7 @@ export default (context) => {
             // Split border properties
             borderWidth: 'var(--uk-chart-tooltip-border-width, 1px)',
             borderStyle: 'var(--uk-chart-tooltip-border-style, solid)',
-            borderColor: 'var(--uk-chart-tooltip-border-color, hsl(var(--border)))',
+            borderColor: 'var(--uk-chart-tooltip-border-color, hsl(var(--border) / var(--border-alpha, 1)))',
             backgroundColor: 'var(--uk-chart-tooltip-bg, hsl(var(--background)))'
         },
         '.uk-chart .apexcharts-tooltip-title': {
@@ -37,7 +37,7 @@ export default (context) => {
             // Split border properties
             borderBottomWidth: 'var(--uk-chart-tooltip-title-border-width, 1px)',
             borderBottomStyle: 'var(--uk-chart-tooltip-title-border-style, solid)',
-            borderBottomColor: 'var(--uk-chart-tooltip-title-border-color, hsl(var(--border)))'
+            borderBottomColor: 'var(--uk-chart-tooltip-title-border-color, hsl(var(--border) / var(--border-alpha, 1)))'
         },
         '.uk-chart .apexcharts-tooltip-marker::before': {
             fontSize: 'var(--uk-chart-tooltip-marker-font-size, inherit)'
@@ -45,7 +45,7 @@ export default (context) => {
         '.uk-chart-container': {
             borderRadius: 'var(--uk-chart-container-radius, var(--uk-global-radius))',
             boxShadow: 'var(--uk-chart-container-shadow, var(--uk-global-shadow))',
-            border: 'var(--uk-chart-container-border, 1px solid hsl(var(--border)))',
+            border: 'var(--uk-chart-container-border, 1px solid hsl(var(--border) / var(--border-alpha, 1)))',
             backgroundColor: 'var(--uk-chart-container-background, hsl(var(--background)))',
             color: 'var(--uk-chart-container-color, hsl(var(--foreground)))'
         },
