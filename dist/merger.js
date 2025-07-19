@@ -23,13 +23,15 @@ export default (options) => {
     // Combine rules based on layer option
     if (layer) {
         // Structure for layered output
-        rules['@layer theme'] = palettes;
-        rules['@layer components'] = layers.components;
-        rules['@layer utilities'] = components.utility;
-        return rules;
+        const result = {};
+        result['@layer theme'] = palettes;
+        result['@layer components'] = layers.components;
+        result['@layer utilities'] = components.utility;
+        merge(result, rules);
+        return result;
     }
     else {
         // No layering - use original behavior
-        return merge({}, palettes, layers.components, rules, components.utility);
+        return merge({}, palettes, layers.components, components.utility, rules);
     }
 };
