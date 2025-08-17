@@ -6,23 +6,7 @@ Franken UI is an HTML-first UI component library built on UIkit 3 and extended w
 
 Let’s settle this. Just because you haven't seen recent activity doesn't mean it's abandoned. The project is **feature complete**. We've hit our goals and are now focused on maintaining stability and making gradual improvements.
 
-### We're in for the long haul
-
-This isn’t some fly-by-night project. I’m committed to keeping it going for the long term, as long as there’s enough community support.
-
-This is a one-person, fully independent effort. No company funding. No hidden team. No VC nonsense. Support it via **GitHub Sponsors** to help keep it going. Unfortunately, maintaining it takes real time and resources.
-
-If community funding isn't enough, a paid LTS (Long-Term Support) option is being considered. If you're using this in a serious or business-critical project, please [reach out](mailto:reden@franken-ui.dev).
-
-### What your support enables:
-
-* Keeping it stable and compatible with browsers, Node.js, Vite, and the ever-changing JavaScript ecosystem (good luck with that)
-* Regular updates of upstream dependencies so everything continues to work together smoothly
-* Keeping documentation accurate and up to date
-* Ensuring long-term availability and usability for everyone
-* Continuing the "it just works" ethos
-
-Thanks for your support!
+Support Franken UI via **GitHub Sponsors** to help keep it going.
 
 ## Documentations
 
@@ -39,16 +23,16 @@ Thanks to the following:
 
 <table>
   <tr>
-    <td><img src="https://omnigres.com/assets/favicon-oor5iO8W.png" width="16" height="16"></td>
+    <td><img src="https://omnigres.com/favicon.png" width="16" height="16"></td>
     <td><a href="https://omnigres.com">Omnigres</a></td>
+  </tr>
+  <tr>
+    <td><img src="https://atuin.sh/icon.png" width="16" height="16"></td>
+    <td><a href="https://atuin.sh">Atuin</a></td>
   </tr>
   <tr>
     <td><img src="https://www.answer.ai/logo.png" width="16" height="16"></td>
     <td><a href="https://answer.ai">Answer.ai</a></td>
-  </tr>
-  <tr>
-    <td><img src="https://atuin.sh/favicon.svg" width="16" height="16"></td>
-    <td><a href="https://atuin.sh">Atuin</a></td>
   </tr>
   <tr>
     <td><img src="https://tic.io/favicons/favicon.ico" width="16" height="16"></td>
@@ -62,7 +46,7 @@ Thanks to the following:
 
 ## Hire Me
 
-I maybe open to new projects and collaborations! Feel free to [get in touch](mailto:reden@franken-ui.dev) to discuss potential collaborations or freelance work.
+I'm open to new projects! Feel free to [get in touch](mailto:reden@franken-ui.dev) to discuss potential collaborations or freelance work.
 
 ## License
 

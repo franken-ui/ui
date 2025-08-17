@@ -9,6 +9,7 @@ export default {
 	},
 
 	'.uk-divider-icon': {
+		opacity: 'var(--border-alpha)',
 		position: 'relative', // Static - core positioning
 		height: 'var(--uk-divider-icon-height, 1.25rem)',
 		backgroundImage: 'var(--uk-divider-icon-image)',
@@ -21,8 +22,7 @@ export default {
 		position: 'absolute', // Static - core positioning
 		top: '50%', // Static - vertical centering
 		maxWidth: 'calc(50% - (3.5rem / 2))', // Static - line width calculation
-		borderBottom:
-			'var(--uk-divider-icon-line-border, 1px solid hsl(var(--border) / var(--border-alpha, 1)))'
+		borderBottom: 'var(--uk-divider-icon-line-border, 1px solid hsl(var(--border)))'
 	},
 
 	'.uk-divider-icon::before': {

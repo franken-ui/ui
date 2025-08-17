@@ -7,6 +7,7 @@ declare const _default: {
         borderColor: string;
     };
     '.uk-divider-icon': {
+        opacity: string;
         position: string;
         height: string;
         backgroundImage: string;
