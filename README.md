@@ -1,34 +1,23 @@
+[![ Frankenstyle is the spiritual successor to Franken UI.](https://franken.style/images/frankenstyle-banner.png)](https://franken.style)
+
+> All efforts now focus on [Frankenstyle](https://github.com/franken-ui/style), featuring new code, new features, better accessibility, internationalization, and developer experience, with the same core principles as Franken UI, so you'll feel right at home!
+
 # Franken UI
 
-Franken UI is an HTML-first UI component library built on UIkit 3 and extended with LitElement, inspired by shadcn/ui.
-
-## Is this project dead?
-
-Let’s settle this. Just because you haven't seen recent activity doesn't mean it's abandoned. The project is **feature complete**. We've hit our goals and are now focused on maintaining stability and making gradual improvements.
-
-Support Franken UI via **GitHub Sponsors** to help keep it going.
-
-## Documentations
-
-|               **Version**               |   **Status**    |
-|:---------------------------------------:|:---------------:|
-| [Version 2](https://franken-ui.dev)     | ⚡ Active        |
-| [Version 1](https://uno.franken-ui.dev) | 💀 Discontinued |
+Franken UI is an HTML-first UI component library built on UIkit 3 and extended with LitElement, inspired by shadcn/ui. You can find the documentation at [https://franken-ui.dev](https://franken-ui.dev).
 
 ## Support
 
-Franken UI is an independent, MIT-licensed open source project with its ongoing development made possible entirely by the support of the community. If Franken UI has been beneficial to you in any way, please consider contributing by making a donation, which will help maintain and improve it for the benefit of everyone.
-
-Thanks to the following:
+Thank you to all the amazing companies and individuals who helped Franken UI expand to multiple projects. This wouldn’t have been possible without them.
 
 <table>
   <tr>
-    <td><img src="https://omnigres.com/favicon.png" width="16" height="16"></td>
-    <td><a href="https://omnigres.com">Omnigres</a></td>
-  </tr>
-  <tr>
     <td><img src="https://atuin.sh/icon.png" width="16" height="16"></td>
     <td><a href="https://atuin.sh">Atuin</a></td>
+  </tr>
+  <tr>
+    <td><img src="https://omnigres.com/favicon.png" width="16" height="16"></td>
+    <td><a href="https://omnigres.com">Omnigres</a></td>
   </tr>
   <tr>
     <td><img src="https://www.answer.ai/logo.png" width="16" height="16"></td>
@@ -43,10 +32,6 @@ Thanks to the following:
     <td><a href="https://ko-fi.com/sveltecult">Ko-Fi Supporters</a></td>
   </tr>
 </table>
-
-## Hire Me
-
-I'm open to new projects! Feel free to [get in touch](mailto:reden@franken-ui.dev) to discuss potential collaborations or freelance work.
 
 ## License
 
