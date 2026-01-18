@@ -108,15 +108,16 @@ export default {
 		color: 'var(--uk-tab-alt-color, hsl(var(--muted-foreground)))'
 	},
 	'.uk-tab-alt > *': {
-		flexGrow: 'var(--uk-tab-alt-item-grow, 1)'
+		flexGrow: 'var(--uk-tab-alt-item-grow, 1)',
+		height: 'var(--uk-tab-alt-item-height, 100%)'
 	},
 	'.uk-tab-alt > * > a': {
 		display: 'var(--uk-tab-alt-link-display, inline-flex)',
 		width: 'var(--uk-tab-alt-link-width, 100%)',
-		height: 'var(--uk-tab-alt-link-height, auto)',
+		height: 'var(--uk-tab-alt-link-height, 100%)',
 		alignItems: 'var(--uk-tab-alt-link-align, center)',
 		justifyContent: 'var(--uk-tab-alt-link-justify, center)',
-		padding: 'var(--uk-tab-alt-link-padding, 0.25rem 0.75rem)',
+		padding: 'var(--uk-tab-alt-link-padding, 0 0.75rem 0 0.75rem)',
 
 		// Typography
 		fontWeight: 'var(--uk-tab-alt-link-font-weight, 500)',

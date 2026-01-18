@@ -93,6 +93,7 @@ declare const _default: {
     };
     '.uk-tab-alt > *': {
         flexGrow: string;
+        height: string;
     };
     '.uk-tab-alt > * > a': {
         display: string;
